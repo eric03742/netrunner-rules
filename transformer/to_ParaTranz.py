@@ -45,24 +45,38 @@ def parse_rule(collector: list[list[str]], content: dict[str, Any], index: str):
         identifier = content["rule"]
         text = content["text"]
         write_line(collector, identifier, f"{index} {text}")
-        # if "examples" in content:
-        #     examples = content["examples"]
-        #     for order, example in enumerate(examples, start=1):
-        #         parse_example(collector, example, identifier, order)
+        if "examples" in content:
+            examples = content["examples"]
+            for order, example in enumerate(examples, start=1):
+                parse_example(collector, example, identifier, order)
     elif "subsection" in content:
         identifier = content["subsection"]
         text = content["text"]
         write_line(collector, identifier, f"{index} {text}")
-        # if "examples" in content:
-        #     examples = content["examples"]
-        #     for index, example in enumerate(examples):
-        #         parse_example(example, content["subsection"], index, collector)
+        if "examples" in content:
+            examples = content["examples"]
+            for order, example in enumerate(examples, start=1):
+                parse_example(collector, example, identifier, order)
 
         rules = content["rules"]
         for sub_index, rule in enumerate(rules, start=1):
             parse_rule(collector, rule, f"{index}{chr(ord('a') + sub_index - 1)}.")
     elif "timing_structure" in content:
-        pass
+        elements = content["elements"]
+        for sub_index, element in enumerate(elements, start=1):
+            parse_element(collector, element, f"{index}{sub_index}.")
+
+
+def parse_element(collector: list[list[str]], content: dict[str, Any], index: str):
+    identifier = f"{index}-element"
+    if "text" in content:
+        text = content["text"]
+        write_line(collector, identifier, f"{index} {text}")
+
+    if "elements" in content:
+        elements = content["elements"]
+        for sub_index, element in enumerate(elements, start=1):
+            parse_element(collector, element, f"{index}{sub_index}.")
 
 
 def parse_example(collector: list[list[str]], content: dict[str, Any], identifier: str, order: int):
