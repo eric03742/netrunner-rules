@@ -239,6 +239,11 @@ def yaml_to_document(config: Config) -> Document:
 def read_nrdb_info_from_file() -> dict[str, str]:
   with open(f'generated/nrdb/nrdb.yaml', "r", encoding="utf8") as stream:
     nrdb_info = load_yaml(stream)
+
+  with open(f'generated/nrdb/localize_nrdb.yaml', "r", encoding="utf8") as stream2:
+    localize_info = load_yaml(stream2)
+    nrdb_info.update(localize_info)
+
     return nrdb_info
 
 if __name__ == "__main__":
