@@ -1,0 +1,437 @@
+[
+    {
+        "key": "chpt_parts_of_a_card",
+        "original": "2. Parts of a Card",
+        "translation": ""
+    },
+    {
+        "key": "sec_card_name",
+        "original": "2.1. Name",
+        "translation": ""
+    },
+    {
+        "key": "rule_card_name_definition",
+        "original": "2.1.1. The identifier of a card is its {term:name}, alternatively referred to as its title. It is written along the top of the card for identities, agendas, ice, operations, events, and resources, or immediately below the art box in the case of assets, upgrades, hardware, and programs.",
+        "translation": ""
+    },
+    {
+        "key": "rule_identity_subtitles",
+        "original": "2.1.2. Identities have a subtitle written immediately below the main title line. Their full name is the combination of their main title and subtitle.",
+        "translation": ""
+    },
+    {
+        "key": "rule_identity_pronouns",
+        "original": "2.1.2.a. Runner identities may have the pronouns of the character represented by that identity written next to the subtitle. Pronouns do not affect gameplay.",
+        "translation": ""
+    },
+    {
+        "key": "rule_self_reference",
+        "original": "2.1.3. When a card refers to its own name, it is a self-reference. See {ref:sec_old_self_reference_rules}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_copies_of",
+        "original": "2.1.4. When a card refers to \"copies of\" cards with a particular name, it refers to any card with that name.",
+        "translation": ""
+    },
+    {
+        "key": "rule_act_on_different_names",
+        "original": "2.1.5. If a player is directed to choose or search for cards \"with different names\", each card chosen or found by the search must have a different English name from every other card chosen or found. See also {ref:sec_searching_cards}.",
+        "translation": ""
+    },
+    {
+        "key": "sec_unique_symbol",
+        "original": "2.2. Unique Symbol",
+        "translation": ""
+    },
+    {
+        "key": "rule_unique_symbol",
+        "original": "2.2.1. Some cards are {term:unique}, and have a unique symbol (◆) before their name to designate this. See {ref:rule_uniqueness}.",
+        "translation": ""
+    },
+    {
+        "key": "sec_printed_cost",
+        "original": "2.3. Play Cost, Install Cost, or Rez Cost",
+        "translation": ""
+    },
+    {
+        "key": "rule_printed_cost_definition",
+        "original": "2.3.1. The play, install, or rez cost of a card is a number that appears in the top-left corner of most card types. Play and install costs appear within a large circular icon, while rez costs appear within a small octagonal icon.",
+        "translation": ""
+    },
+    {
+        "key": "rule_paying_printed_costs",
+        "original": "2.3.2. Play, install, and rez costs on cards are all paid in credits. {ref:Chpt_card_manipulation} details how cards are played, installed, and rezzed.",
+        "translation": ""
+    },
+    {
+        "key": "rule_card_types_with_play_costs",
+        "original": "2.3.3. Events and operations have a play cost.",
+        "translation": ""
+    },
+    {
+        "key": "rule_card_types_with_install_costs",
+        "original": "2.3.4. Hardware, programs, and resources have an install cost.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ice_have_install_costs_too",
+        "original": "2.3.4.a. Ice also has an install cost, but it does not appear on the card. The install cost of ice is determined by the configuration of other installed ice rather than being intrinsic to the card. See {ref:rule_install_cost}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_card_types_with_rez_costs",
+        "original": "2.3.5. Assets, ice, and upgrades have a rez cost.",
+        "translation": ""
+    },
+    {
+        "key": "sec_adv_req",
+        "original": "2.4. Advancement Requirement",
+        "translation": ""
+    },
+    {
+        "key": "rule_adv_requirement_location",
+        "original": "2.4.1. The advancement requirement appears only on agendas. It is a number in the top-right corner of the card, within a small circle.",
+        "translation": ""
+    },
+    {
+        "key": "rule_adv_requirement_citation",
+        "original": "2.4.2. {ref:Sec_score_scoring_steal} details how agendas are scored and the purpose of the advancement requirement.",
+        "translation": ""
+    },
+    {
+        "key": "sec_agenda_points",
+        "original": "2.5. Agenda Points",
+        "translation": ""
+    },
+    {
+        "key": "rule_agenda_points_location",
+        "original": "2.5.1. The agenda point value appears only on agendas. It is the number in the center-left of the card, on top of a graphic depicting three pillars.",
+        "translation": ""
+    },
+    {
+        "key": "rule_agenda_points_citation",
+        "original": "2.5.2. The agenda points in a player's score area contribute toward that player winning the game. See {ref:sec_ending_the_game}.",
+        "translation": ""
+    },
+    {
+        "key": "sec_trash_cost",
+        "original": "2.6. Trash Cost",
+        "translation": ""
+    },
+    {
+        "key": "rule_trash_cost_location",
+        "original": "2.6.1. Assets, upgrades, and some ice and operations have trash costs. A trash cost is a number appearing in the lower-right corner of the card within a [trashcost] symbol.",
+        "translation": ""
+    },
+    {
+        "key": "rule_trash_cost_citation",
+        "original": "2.6.2. {ref:Rule_basic_trash_ability} details how the Runner can trash a card they access by paying its trash cost.",
+        "translation": ""
+    },
+    {
+        "key": "sec_strength",
+        "original": "2.7. Strength",
+        "translation": ""
+    },
+    {
+        "key": "rule_strength_location",
+        "original": "2.7.1. Strength is a number appearing on ice and on {subtype:icebreaker} programs. It appears on the bottom-left corner of the card within a large semicircle.",
+        "translation": ""
+    },
+    {
+        "key": "rule_strength_dash",
+        "original": "2.7.2. Non-{subtype:icebreaker} programs have a dash ([dash]) in the bottom-left corner instead of a strength value.",
+        "translation": ""
+    },
+    {
+        "key": "rule_strength_citation",
+        "original": "2.7.3. {ref:Subsec_icebreakers} discusses the interaction between ice strength and {subtype:icebreaker} strength.",
+        "translation": ""
+    },
+    {
+        "key": "sec_memory_cost",
+        "original": "2.8. Memory Cost",
+        "translation": ""
+    },
+    {
+        "key": "rule_memory_cost_location",
+        "original": "2.8.1. Memory Cost is a number appearing only on programs. It appears to the right of the install cost, within an [MU] symbol.",
+        "translation": ""
+    },
+    {
+        "key": "rule_memory_cost_citation",
+        "original": "2.8.2. {ref:Sec_memory} discusses the topic of memory, and {ref:rule_program_memory_cost} details how programs interact with the Runner's memory limit based on their memory cost.",
+        "translation": ""
+    },
+    {
+        "key": "sec_base_link",
+        "original": "2.9. Base Link",
+        "translation": ""
+    },
+    {
+        "key": "rule_base_link_location",
+        "original": "2.9.1. Base link is a number appearing near the top-left of Runner identity cards, next to the [link] symbol.",
+        "translation": ""
+    },
+    {
+        "key": "rule_base_link_citation",
+        "original": "2.9.2. The Runner's base link contributes to their link value. {ref:Sec_link} defines how the Runner's link value is calculated, and {ref:sec_traces} explains how it contributes to contesting trace attempts.",
+        "translation": ""
+    },
+    {
+        "key": "sec_memory_limit",
+        "original": "2.10. Starting Memory Limit",
+        "translation": ""
+    },
+    {
+        "key": "rule_memory_limit_location",
+        "original": "2.10.1. Starting memory limit is a number appearing near the top-left of Runner identity cards, within the [MU] symbol.",
+        "translation": ""
+    },
+    {
+        "key": "rule_memory_limit_citation",
+        "original": "2.10.2. The Runner's memory limit is checked against the total memory cost of programs they have installed. This value is calculated by applying any active modifiers to the Runner's starting memory limit. See {ref:sec_memory}.",
+        "translation": ""
+    },
+    {
+        "key": "sec_min_deck_size",
+        "original": "2.11. Minimum Deck Size",
+        "translation": ""
+    },
+    {
+        "key": "rule_min_deck_size_location",
+        "original": "2.11.1. Minimum deck size is a number shown as the uppermost of two small boxes in the lower-left of Corp identities and the lower-right of Runner identities.",
+        "translation": ""
+    },
+    {
+        "key": "rule_min_deck_size_citation",
+        "original": "2.11.2. {ref:Sec_deck_construction} details the rules for building a deck, including the requirement to adhere to the minimum deck size of the deck's associated identity.",
+        "translation": ""
+    },
+    {
+        "key": "sec_inf_limit",
+        "original": "2.12. Influence Limit",
+        "translation": ""
+    },
+    {
+        "key": "rule_inf_limit_location",
+        "original": "2.12.1. The influence limit is a number shown as the lowermost of two small boxes in the lower-left of Corp identities and the lower-right of Runner identities.",
+        "translation": ""
+    },
+    {
+        "key": "rule_inf_limit_citation",
+        "original": "2.12.2. {ref:Sec_deck_construction} details the rules for building a deck, including the requirement that out-of-faction cards in the deck adhere to the influence limit of the associated identity.",
+        "translation": ""
+    },
+    {
+        "key": "sec_faction",
+        "original": "2.13. Faction Affiliation",
+        "translation": ""
+    },
+    {
+        "key": "rule_faction_list",
+        "original": "2.13.1. Cards are divided into ten factions: four Corp factions, three Runner factions, and three Runner mini-factions. Factions and influence restrict deckbuilding options, allowing each faction to have distinct play differences from one another.",
+        "translation": ""
+    },
+    {
+        "key": "rule_corp_faction_list",
+        "original": "2.13.1.a. The Corp factions are Haas-Bioroid, Jinteki, NBN, and the Weyland Consortium.",
+        "translation": ""
+    },
+    {
+        "key": "rule_runner_major_faction_list",
+        "original": "2.13.1.b. The major Runner factions are Anarch, Criminal, and Shaper.",
+        "translation": ""
+    },
+    {
+        "key": "rule_runner_minifaction_list",
+        "original": "2.13.1.c. The Runner mini-factions are Adam, Apex, and Sunny Lebeau.",
+        "translation": ""
+    },
+    {
+        "key": "rule_faction_identification",
+        "original": "2.13.2. A card's faction can be identified by the color of its background, as well as a faction logo in one of its four corners. This logo also appears as a watermark behind the text box. If a card has a white background and no logo, it is neutral.",
+        "translation": ""
+    },
+    {
+        "key": "rule_faction_citation",
+        "original": "2.13.3. Each identity is associated with one faction. {ref:Sec_deck_construction} details how factions affect deckbuilding.",
+        "translation": ""
+    },
+    {
+        "key": "sec_inf_cost",
+        "original": "2.14. Influence Cost",
+        "translation": ""
+    },
+    {
+        "key": "rule_inf_cost_location",
+        "original": "2.14.1. A card's influence cost, or influence value, is represented in a bar with 5 circular slots near the bottom of most cards. The influence cost is the number of slots that are filled with a blue circle, and can range from 0 to 5.",
+        "translation": ""
+    },
+    {
+        "key": "rule_inf_cost_absent",
+        "original": "2.14.2. Some cards cannot be played out of faction, and therefore do not have an influence value, which is different from an influence cost of \"0\". These cards do not have the influence bar at all.",
+        "translation": ""
+    },
+    {
+        "key": "rule_alliance",
+        "original": "2.14.3. Some Corp cards have the subtype {subtype:alliance} and text defining adjustments to their influence costs. The ability adjusting the influence cost of an {subtype:alliance} card applies only when determining the legality of an already constructed deck and does not have any effect during gameplay. The ability references other cards included in the deck to determine whether the card should apply its printed influence cost or 0 against the deck's influence limit.",
+        "translation": ""
+    },
+    {
+        "key": "rule_inf_cost_citation",
+        "original": "2.14.4. {ref:Sec_deck_construction} details how a card's influence cost (or lack thereof) affects deckbuilding.",
+        "translation": ""
+    },
+    {
+        "key": "sec_card_type",
+        "original": "2.15. Card Type",
+        "translation": ""
+    },
+    {
+        "key": "rule_type_line_location",
+        "original": "2.15.1. A card's types appear as a line of text across the center of non-ice cards above the text box. For ice, they run along the left side of the text box, rotated 90° from the rest of the text.",
+        "translation": ""
+    },
+    {
+        "key": "rule_card_type_list",
+        "original": "2.15.2. Each card has one card type, which can be identity, agenda, asset, ice, operation, upgrade, event, hardware, program, or resource. It is written in bold at the beginning of the type line.",
+        "translation": ""
+    },
+    {
+        "key": "rule_card_type_while_inactive",
+        "original": "2.15.3. While inactive, a card is still considered a card of the type printed on it, with the exception of facedown installed Runner cards. See {ref:sec_facedown_runner_cards}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_card_type_conversion_citation",
+        "original": "2.15.4. Abilities can change a card from its printed type to an agenda. See {ref:rule_add_card_to_score_area}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_card_type_counters",
+        "original": "2.15.5. Counters never have card types.",
+        "translation": ""
+    },
+    {
+        "key": "sec_subtypes",
+        "original": "2.16. Subtypes",
+        "translation": ""
+    },
+    {
+        "key": "rule_subtypes",
+        "original": "2.16.1. Cards may have one or more subtypes, which are written following the primary type. Subtypes are card descriptors that can be referenced by card abilities. Cards that share a subtype often share a distinct characteristic or ability.",
+        "translation": ""
+    },
+    {
+        "key": "rule_subtype_special_rules",
+        "original": "2.16.1.a. The subtypes {subtype:region}, {subtype:console}, and {subtype:icebreaker} have special rules, discussed in {ref:subsec_regions,subsec_consoles,subsec_icebreakers} respectively. Other subtypes have no intrinsic rules meaning.",
+        "translation": ""
+    },
+    {
+        "key": "rule_subtype_bold",
+        "original": "2.16.2. In card text, subtypes are always referenced in bold text. If a word or phrase that is also a subtype appears in a card's text but is not in bold text, that word or phrase does not reference the subtype.",
+        "translation": ""
+    },
+    {
+        "key": "rule_lack_of_subtype",
+        "original": "2.16.3. Some abilities reference cards by a lack of subtype, such as \"non-{subtype:virus}\". These abilities can only affect cards that do not have the specified subtype, regardless of any other subtypes the cards do have.",
+        "translation": ""
+    },
+    {
+        "key": "rule_subtypes_active",
+        "original": "2.16.4. A card has all of its subtypes at all times, even while inactive, with the exception of facedown installed Runner cards. See {ref:sec_facedown_runner_cards}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_add_remove_subtypes",
+        "original": "2.16.5. Abilities can add or remove subtypes. The number of times a card has, gains, and loses each subtype is tracked as a running total, but the result is binary: if the total number of instances of the subtype exceeds the number of times it is removed, the card has that subtype. Otherwise, it does not.",
+        "translation": ""
+    },
+    {
+        "key": "rule_add_remove_subtypes-1-example",
+        "original": "The Runner plays {card:Tinkering} on a {card:Lycan} hosting 1 advancement counter. {card:Lycan} has two instances of {subtype:sentry}, one printed and one from {card:Tinkering}, and has lost one instance of {subtype:sentry} from its own ability. Thus it is still a {subtype:sentry}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_choose_valid_subtype",
+        "original": "2.16.6. If an effect requires a player to choose a subtype, that player must choose a single subtype that has been printed on at least one card. If a player is required to choose a subtype belonging to a specific card type, they must choose a subtype that has been printed on at least one card with that type.",
+        "translation": ""
+    },
+    {
+        "key": "rule_subtypes_list",
+        "original": "2.16.7. Below is a list of all subtypes.",
+        "translation": ""
+    },
+    {
+        "key": "rule_identity_subtypes",
+        "original": "2.16.7.a. The identity subtypes are Bioroid, Clone, Corp, Cyborg, Digital, Division, G-mod, Megacorp, Natural, Police Department, Stealth, Subsidiary, and Unsubstantiated.",
+        "translation": ""
+    },
+    {
+        "key": "rule_agenda_subtypes",
+        "original": "2.16.7.b. The agenda subtypes are Ambush, Assassination, Expansion, Expendable, Initiative, NEXT, Psi, Public, Research, Security, Sensie, and Source.",
+        "translation": ""
+    },
+    {
+        "key": "rule_asset_subtypes",
+        "original": "2.16.7.c. The asset subtypes are Academic, Advertisement, Alliance, Ambush, Beanstalk, Bioroid, Cast, Character, Clone, Corporation, Deep Net, Enforcer, Executive, Facility, Government, Hostile, Illicit, Industrial, Political, Psi, Region, Research, Ritzy, Seedy, and Transaction.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ice_subtypes",
+        "original": "2.16.7.d. The ice subtypes are AP, Advertisement, Ambush, Barrier, Bioroid, Code Gate, Deep Net, Deflector, Destroyer, Expendable, Grail, Harmonic, Illicit, Morph, Mythic, NEXT, Observer, Psi, Sentry, Tracer, and Trap.",
+        "translation": ""
+    },
+    {
+        "key": "rule_operation_subtypes",
+        "original": "2.16.7.e. The operation subtypes are Alliance, Black Ops, Condition, Current, Double, Gray Ops, Illicit, Lockdown, Mandate, Psi, Reprisal, Terminal, Transaction, and Triple.",
+        "translation": ""
+    },
+    {
+        "key": "rule_upgrade_subtypes",
+        "original": "2.16.7.f. The upgrade subtypes are Academic, Advertisement, Alliance, Ambush, Beanstalk, Bioroid, Character, Clone, Enforcer, Executive, Expendable, Facility, Hostile, Off-site, Orgcrime, Psi, Region, Ritzy, Seedy, Security Protocol, Sysop, and Unorthodox.",
+        "translation": ""
+    },
+    {
+        "key": "rule_event_subtypes",
+        "original": "2.16.7.g. The event subtypes are Condition, Current, Double, Job, Mod, Orgcrime, Priority, Run, Sabotage, Stealth, and Terminal.",
+        "translation": ""
+    },
+    {
+        "key": "rule_hardware_subtypes",
+        "original": "2.16.7.h. The hardware subtypes are Chip, Companion, Console, Consumer-grade, Cybernetic, Gear, Link, Mod, Stealth, Vehicle, and Weapon.",
+        "translation": ""
+    },
+    {
+        "key": "rule_program_subtypes",
+        "original": "2.16.7.i. The program subtypes are AI, Caïssa, Cloud, Daemon, Decoder, Deep Net, Deva, Fracter, Icebreaker, Killer, Stealth, Trojan, Virus, and Weapon.",
+        "translation": ""
+    },
+    {
+        "key": "rule_resource_subtypes",
+        "original": "2.16.7.j. The resource subtypes are Clan, Clone, Companion, Connection, Directive, Genetics, Government, Job, Link, Location, Remote, Ritzy, Sabotage, Seedy, Source, Stealth, and Virtual.",
+        "translation": ""
+    },
+    {
+        "key": "sec_text_box",
+        "original": "2.17. Text Box",
+        "translation": ""
+    },
+    {
+        "key": "rule_text_box_definition",
+        "original": "2.17.1. The {term:text box} is the central area on a card containing any abilities the card has. Abilities usually only apply when the card they appear on is active. {ref:Rule_ability_active_inactive_source_card} details exceptions.",
+        "translation": ""
+    },
+    {
+        "key": "rule_flavor_text",
+        "original": "2.17.2. Many cards have italicised text written after their game text. This is {term:flavor text}, and has no effect on the game or the function of the card, nor can other abilities reference or interact with it.",
+        "translation": ""
+    },
+    {
+        "key": "rule_reminder_text",
+        "original": "2.17.3. Some cards have italicised text in parentheses. This is {term:reminder text}, and has no effect on the game or the function of the card, nor can other abilities reference or interact with it directly. Reminder text simply summarizes a rule that may apply to that card text.",
+        "translation": ""
+    }
+]

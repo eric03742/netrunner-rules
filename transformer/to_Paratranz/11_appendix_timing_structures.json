@@ -1,0 +1,507 @@
+[
+    {
+        "key": "chpt_appendix_timing_structures",
+        "original": "11. Appendix: Timing Structure Reference",
+        "translation": ""
+    },
+    {
+        "key": "sec_timing_structure_overview",
+        "original": "11.1. Overview",
+        "translation": ""
+    },
+    {
+        "key": "rule_timing_structure_quick_ref",
+        "original": "11.1.1. The following pages contain quick reference guides for the main timing structures in the game. When initiating a new timing structure, begin at the first numbered step and proceed through the structure sequentially, unless instructed to move to a different phase or step.",
+        "translation": ""
+    },
+    {
+        "key": "rule_timing_structure_reference_only",
+        "original": "11.1.2. These guides are intended to serve as shorthand references only; for comprehensive rules relating to each timing structure, see the accompanying rules sections.",
+        "translation": ""
+    },
+    {
+        "key": "sec_appendix_timing_structure_corps_turn",
+        "original": "11.2. Timing Structure of The Corp's Turn ({ref:Sec_steps_corp_turn})",
+        "translation": ""
+    },
+    {
+        "key": "11.2.1.1.-element",
+        "original": "11.2.1.1. Draw Phase",
+        "translation": ""
+    },
+    {
+        "key": "11.2.1.1.1.-element",
+        "original": "11.2.1.1.1. The Corp gains allotted clicks.",
+        "translation": ""
+    },
+    {
+        "key": "11.2.1.1.2.-element",
+        "original": "11.2.1.1.2. Paid ability window: (P) (R) (S).",
+        "translation": ""
+    },
+    {
+        "key": "11.2.1.1.3.-element",
+        "original": "11.2.1.1.3. The Corp's recurring credits refill.",
+        "translation": ""
+    },
+    {
+        "key": "11.2.1.1.4.-element",
+        "original": "11.2.1.1.4. The Corp's turn begins.",
+        "translation": ""
+    },
+    {
+        "key": "11.2.1.1.5.-element",
+        "original": "11.2.1.1.5. The Corp draws 1 card.",
+        "translation": ""
+    },
+    {
+        "key": "11.2.1.2.-element",
+        "original": "11.2.1.2. Action Phase",
+        "translation": ""
+    },
+    {
+        "key": "11.2.1.2.1.-element",
+        "original": "11.2.1.2.1. Paid ability window: (P) (R) (S).",
+        "translation": ""
+    },
+    {
+        "key": "11.2.1.2.2.-element",
+        "original": "11.2.1.2.2. Does the Corp have unspent clicks?",
+        "translation": ""
+    },
+    {
+        "key": "11.2.1.2.2.1.-element",
+        "original": "11.2.1.2.2.1. If no, go to {n}(d){/n}.",
+        "translation": ""
+    },
+    {
+        "key": "11.2.1.2.2.2.-element",
+        "original": "11.2.1.2.2.2. If yes, the Corp takes an action.",
+        "translation": ""
+    },
+    {
+        "key": "11.2.1.2.3.-element",
+        "original": "11.2.1.2.3. Return to (a).",
+        "translation": ""
+    },
+    {
+        "key": "11.2.1.2.4.-element",
+        "original": "11.2.1.2.4. The Corp's action phase ends.",
+        "translation": ""
+    },
+    {
+        "key": "11.2.1.3.-element",
+        "original": "11.2.1.3. Discard Phase",
+        "translation": ""
+    },
+    {
+        "key": "11.2.1.3.1.-element",
+        "original": "11.2.1.3.1. The Corp discards cards.",
+        "translation": ""
+    },
+    {
+        "key": "11.2.1.3.2.-element",
+        "original": "11.2.1.3.2. Paid ability window: (P) (R).",
+        "translation": ""
+    },
+    {
+        "key": "11.2.1.3.3.-element",
+        "original": "11.2.1.3.3. The Corp loses unspent [click].",
+        "translation": ""
+    },
+    {
+        "key": "11.2.1.3.4.-element",
+        "original": "11.2.1.3.4. The Corp's turn ends.",
+        "translation": ""
+    },
+    {
+        "key": "11.2.1.3.5.-element",
+        "original": "11.2.1.3.5. The Corp's turn is complete, and the game moves to the Runner's turn.",
+        "translation": ""
+    },
+    {
+        "key": "sec_appendix_timing_structure_runners_turn",
+        "original": "11.3. Timing Structure of The Runner's Turn ({ref:Sec_steps_runner_turn})",
+        "translation": ""
+    },
+    {
+        "key": "11.3.1.1.-element",
+        "original": "11.3.1.1. Action Phase",
+        "translation": ""
+    },
+    {
+        "key": "11.3.1.1.1.-element",
+        "original": "11.3.1.1.1. The Runner gains allotted clicks.",
+        "translation": ""
+    },
+    {
+        "key": "11.3.1.1.2.-element",
+        "original": "11.3.1.1.2. Paid ability window: (P) (R).",
+        "translation": ""
+    },
+    {
+        "key": "11.3.1.1.3.-element",
+        "original": "11.3.1.1.3. The Runner's recurring credits refill.",
+        "translation": ""
+    },
+    {
+        "key": "11.3.1.1.4.-element",
+        "original": "11.3.1.1.4. The Runner's turn begins.",
+        "translation": ""
+    },
+    {
+        "key": "11.3.1.1.5.-element",
+        "original": "11.3.1.1.5. Paid ability window: (P) (R).",
+        "translation": ""
+    },
+    {
+        "key": "11.3.1.1.6.-element",
+        "original": "11.3.1.1.6. Does the Runner have unspent clicks?",
+        "translation": ""
+    },
+    {
+        "key": "11.3.1.1.6.1.-element",
+        "original": "11.3.1.1.6.1. If no, go to {n}(h){/n}.",
+        "translation": ""
+    },
+    {
+        "key": "11.3.1.1.6.2.-element",
+        "original": "11.3.1.1.6.2. If yes, the Runner takes an action.",
+        "translation": ""
+    },
+    {
+        "key": "11.3.1.1.7.-element",
+        "original": "11.3.1.1.7. Return to (e).",
+        "translation": ""
+    },
+    {
+        "key": "11.3.1.1.8.-element",
+        "original": "11.3.1.1.8. The Runner's action phase ends.",
+        "translation": ""
+    },
+    {
+        "key": "11.3.1.2.-element",
+        "original": "11.3.1.2. Discard Phase",
+        "translation": ""
+    },
+    {
+        "key": "11.3.1.2.1.-element",
+        "original": "11.3.1.2.1. The Runner discards cards.",
+        "translation": ""
+    },
+    {
+        "key": "11.3.1.2.2.-element",
+        "original": "11.3.1.2.2. Paid ability window: (P) (R).",
+        "translation": ""
+    },
+    {
+        "key": "11.3.1.2.3.-element",
+        "original": "11.3.1.2.3. The Runner loses unspent [click].",
+        "translation": ""
+    },
+    {
+        "key": "11.3.1.2.4.-element",
+        "original": "11.3.1.2.4. The Runner's turn ends.",
+        "translation": ""
+    },
+    {
+        "key": "11.3.1.2.5.-element",
+        "original": "11.3.1.2.5. The Runner's turn is complete, and the game moves to the Corp's turn.",
+        "translation": ""
+    },
+    {
+        "key": "sec_appendix_timing_structure_of_a_run",
+        "original": "11.4. Timing Structure of a Run ({ref:Sec_steps_of_a_run})",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.1.-element",
+        "original": "11.4.1.1. Initiation Phase",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.1.1.-element",
+        "original": "11.4.1.1.1. The Runner announces the attacked server.",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.1.2.-element",
+        "original": "11.4.1.1.2. The Runner gains bad publicity credits.",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.1.3.-element",
+        "original": "11.4.1.1.3. The run begins.",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.1.4.-element",
+        "original": "11.4.1.1.4. The Runner's position is set to the outermost ice, if any.",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.1.5.-element",
+        "original": "11.4.1.1.5. Paid ability window: (P) (R).",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.1.6.-element",
+        "original": "11.4.1.1.6. Does the Runner have a position corresponding to a piece of ice?",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.1.6.1.-element",
+        "original": "11.4.1.1.6.1. If yes, go to (2).",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.1.6.2.-element",
+        "original": "11.4.1.1.6.2. If no, go to (4).",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.2.-element",
+        "original": "11.4.1.2. Approach Ice Phase",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.2.1.-element",
+        "original": "11.4.1.2.1. The Runner approaches ice.",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.2.2.-element",
+        "original": "11.4.1.2.2. Paid ability window: (P) (R) and ice can be rezzed.",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.2.3.-element",
+        "original": "11.4.1.2.3. Is the approached ice rezzed?",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.2.3.1.-element",
+        "original": "11.4.1.2.3.1. If yes, go to (3).",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.2.3.2.-element",
+        "original": "11.4.1.2.3.2. If no, go to (4).",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.3.-element",
+        "original": "11.4.1.3. Encounter Ice Phase",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.3.1.-element",
+        "original": "11.4.1.3.1. The Runner encounters ice.",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.3.2.-element",
+        "original": "11.4.1.3.2. Paid ability window: (P) and subroutines can be broken.",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.3.3.-element",
+        "original": "11.4.1.3.3. Are there unbroken subroutines to resolve?",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.3.3.1.-element",
+        "original": "11.4.1.3.3.1. If yes, the Corp resolves the next one.",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.3.3.2.-element",
+        "original": "11.4.1.3.3.2. If no, go to (e).",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.3.4.-element",
+        "original": "11.4.1.3.4. Return to (c).",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.3.5.-element",
+        "original": "11.4.1.3.5. Go to (4).",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.4.-element",
+        "original": "11.4.1.4. Movement Phase",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.4.1.-element",
+        "original": "11.4.1.4.1. If the run got here from (2) or (3), the Runner passes ice.",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.4.2.-element",
+        "original": "11.4.1.4.2. Paid ability window: (P).",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.4.3.-element",
+        "original": "11.4.1.4.3. The Runner may jack out.",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.4.4.-element",
+        "original": "11.4.1.4.4. The Runner moves 1 position inward, if possible.",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.4.5.-element",
+        "original": "11.4.1.4.5. Paid ability window: (P) (R).",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.4.6.-element",
+        "original": "11.4.1.4.6. Did the Runner move to a new position?",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.4.6.1.-element",
+        "original": "11.4.1.4.6.1. If yes, go to (2).",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.4.6.2.-element",
+        "original": "11.4.1.4.6.2. If no, go to (g).",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.4.7.-element",
+        "original": "11.4.1.4.7. The Runner approaches the server.",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.4.8.-element",
+        "original": "11.4.1.4.8. Go to (5).",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.5.-element",
+        "original": "11.4.1.5. Success Phase",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.5.1.-element",
+        "original": "11.4.1.5.1. The run is declared successful.",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.5.2.-element",
+        "original": "11.4.1.5.2. The Runner breaches the attacked server.",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.5.3.-element",
+        "original": "11.4.1.5.3. Go to (6).",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.6.-element",
+        "original": "11.4.1.6. Run Ends Phase",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.6.1.-element",
+        "original": "11.4.1.6.1. Close or resolve priority windows from before \"end the run\".",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.6.2.-element",
+        "original": "11.4.1.6.2. The Runner loses unspent bad publicity credits.",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.6.3.-element",
+        "original": "11.4.1.6.3. If applicable, the run is declared unsuccessful.",
+        "translation": ""
+    },
+    {
+        "key": "11.4.1.6.4.-element",
+        "original": "11.4.1.6.4. The run is complete.",
+        "translation": ""
+    },
+    {
+        "key": "sec_appendix_timing_structure_of_breaching_a_server",
+        "original": "11.5. Timing Structure of Breaching a Server ({ref:Sec_breaching_steps})",
+        "translation": ""
+    },
+    {
+        "key": "11.5.1.1.-element",
+        "original": "11.5.1.1. The breach begins.",
+        "translation": ""
+    },
+    {
+        "key": "11.5.1.2.-element",
+        "original": "11.5.1.2. If breaching Archives, facedown cards in Archives are turned faceup.",
+        "translation": ""
+    },
+    {
+        "key": "11.5.1.3.-element",
+        "original": "11.5.1.3. If breaching HQ or R&D, determine how many accesses from Corp's hand or deck.",
+        "translation": ""
+    },
+    {
+        "key": "11.5.1.4.-element",
+        "original": "11.5.1.4. Are there candidate cards remaining to access?",
+        "translation": ""
+    },
+    {
+        "key": "11.5.1.4.1.-element",
+        "original": "11.5.1.4.1. If yes, the Runner chooses a candidate.",
+        "translation": ""
+    },
+    {
+        "key": "11.5.1.4.2.-element",
+        "original": "11.5.1.4.2. If no, go to (7).",
+        "translation": ""
+    },
+    {
+        "key": "11.5.1.5.-element",
+        "original": "11.5.1.5. The Runner accesses the chosen card.",
+        "translation": ""
+    },
+    {
+        "key": "11.5.1.6.-element",
+        "original": "11.5.1.6. Return to (4).",
+        "translation": ""
+    },
+    {
+        "key": "11.5.1.7.-element",
+        "original": "11.5.1.7. Breaching the server is complete.",
+        "translation": ""
+    },
+    {
+        "key": "sec_appendix_timing_structure_of_accessing_a_card",
+        "original": "11.6. Timing Structure of Accessing a Card ({ref:Sec_steps_accessing_card})",
+        "translation": ""
+    },
+    {
+        "key": "11.6.1.1.-element",
+        "original": "11.6.1.1. The card is accessed.",
+        "translation": ""
+    },
+    {
+        "key": "11.6.1.2.-element",
+        "original": "11.6.1.2. The Runner may trash the card or use another mid-access ability.",
+        "translation": ""
+    },
+    {
+        "key": "11.6.1.3.-element",
+        "original": "11.6.1.3. If the card is an agenda, the Runner steals it.",
+        "translation": ""
+    },
+    {
+        "key": "11.6.1.4.-element",
+        "original": "11.6.1.4. Access is complete.",
+        "translation": ""
+    }
+]

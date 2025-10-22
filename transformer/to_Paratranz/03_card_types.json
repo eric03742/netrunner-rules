@@ -1,0 +1,517 @@
+[
+    {
+        "key": "chpt_card_types",
+        "original": "3. Card Types",
+        "translation": ""
+    },
+    {
+        "key": "sec_identities",
+        "original": "3.1. Identities",
+        "translation": ""
+    },
+    {
+        "key": "rule_identity_play_area",
+        "original": "3.1.1. Each player starts the game with a single identity active in the play area. See {ref:sec_starting_the_game}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_identity_double_sided",
+        "original": "3.1.1.a. Some identities are double-sided. Only the front side of a double-sided identity will have values for its minimum deck size and influence limit. Only the side of a double-sided identity that is currently faceup is active at any given time.",
+        "translation": ""
+    },
+    {
+        "key": "rule_identity_not_installed",
+        "original": "3.1.1.b. Identities are not installed.",
+        "translation": ""
+    },
+    {
+        "key": "rule_identity_deck_size_influence",
+        "original": "3.1.2. Only identity cards have minimum deck sizes and influence limits. These values do not apply during the game; instead, they determine deckbuilding constraints for decks associated with that identity. See {ref:sec_deck_construction}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_identity_base_link",
+        "original": "3.1.3. Only Runner identities have a base link. This value is used in calculating the Runner's link value. See {ref:sec_link}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_identity_HQ",
+        "original": "3.1.4. The Corp's identity card is used to mark the location of HQ. See {ref:subsec_hq}.",
+        "translation": ""
+    },
+    {
+        "key": "sec_agendas",
+        "original": "3.2. Agendas",
+        "translation": ""
+    },
+    {
+        "key": "sec_agendas-snippet",
+        "original": "Agendas represent valuable pieces of Corporate data. When the Corp advances and scores agendas, it represents completion of critical Corporate projects. When the Runner steals agendas, it represents their acquisition of secret Corporate data.",
+        "translation": ""
+    },
+    {
+        "key": "rule_agendas_in_roots",
+        "original": "3.2.1. The Corp may install agendas only in the roots of remote servers. There can be only one agenda or one asset installed in the root of any given remote server at a time. See {ref:subsec_remote_servers}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_agenda_advancement_requirement_agenda_points",
+        "original": "3.2.2. Only agendas have advancement requirements and agenda points. See {ref:sec_score_scoring_steal}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_agenda_advancement_requirement",
+        "original": "3.2.2.a. An agenda's advancement requirement is the minimum number of advancement counters that must be on that agenda for the Corp to score it.",
+        "translation": ""
+    },
+    {
+        "key": "rule_score_from_score_area",
+        "original": "3.2.2.b. The agenda points on an agenda contribute to a player's score while the agenda is in their score area.",
+        "translation": ""
+    },
+    {
+        "key": "rule_agendas_not_rezzed",
+        "original": "3.2.3. Agendas cannot be rezzed and are inactive while installed. Agendas are active in the Corp's score area. Agendas are inactive in the Runner's score area unless the agenda's card text specifies otherwise. See {ref:sec_score_area}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_agendas_faceup",
+        "original": "3.2.3.a. Some agendas may be installed faceup or turned faceup through card abilities. Faceup agendas are neither rezzed nor unrezzed. If an agenda's printed text directs the Corp to install it faceup, that agenda's abilities are active while it is installed.",
+        "translation": ""
+    },
+    {
+        "key": "rule_advancemenet_requirements_modification",
+        "original": "3.2.3.b. Some agendas modify the requirements for stealing or scoring them. These abilities are always active, according to any restrictions or requirements specified. See {ref:rule_ability_active_inactive_source_card}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_agendas_advanced",
+        "original": "3.2.4. Agendas can always be advanced. See {ref:sec_advancing_cards}.",
+        "translation": ""
+    },
+    {
+        "key": "sec_assets",
+        "original": "3.3. Assets",
+        "translation": ""
+    },
+    {
+        "key": "sec_assets-snippet",
+        "original": "Assets represent various resources and connections at the Corp's disposal.",
+        "translation": ""
+    },
+    {
+        "key": "rule_asset_root_remote",
+        "original": "3.3.1. The Corp may install assets only in the roots of remote servers. There can be only one agenda or one asset installed in the root of any given remote server at a time. See {ref:subsec_remote_servers}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_asset_rez_cost",
+        "original": "3.3.2. Assets are among the card types that have rez costs. They are installed unrezzed and remain inactive until the Corp rezzes them by paying their rez costs during a paid ability window. See {ref:sec_faceup_facedown_status}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_asset_trash_cost",
+        "original": "3.3.3. Assets are among the card types that have trash costs. If the Runner accesses an asset, they may pay the trash cost to trash that asset. See {ref:rule_basic_trash_ability}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_asset_lady_liberty",
+        "original": "3.3.4. One asset, {card:Lady Liberty}, has the subtype {subtype:region} and the text \"Limit 1 {subtype:region} per server.\" See {ref:subsec_regions} for rules governing {subtype:region} cards.",
+        "translation": ""
+    },
+    {
+        "key": "sec_ice",
+        "original": "3.4. Ice",
+        "translation": ""
+    },
+    {
+        "key": "sec_ice-snippet",
+        "original": "Ice are sophisticated security systems that protect Corporate servers through a variety of means. \"Ice\" has been suggested to stand for a variety of expressions, but is most commonly expanded as \"Intrusion Countermeasures Electronics\".",
+        "translation": ""
+    },
+    {
+        "key": "rule_ice_piece_of_ice",
+        "original": "3.4.1. \"Ice\" and \"piece of ice\" are synonymous.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ice_install",
+        "original": "3.4.2. Ice are the only type of card installed protecting servers. Ice are not installed in the roots of servers. See {ref:subsec_protecting_a_server}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ice_layout",
+        "original": "3.4.2.a. Ice protecting a server are laid out horizontally in front of that server, with the outermost piece of ice furthest from the server.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ice_instal_outermost",
+        "original": "3.4.2.b. When the Corp installs a piece of ice, they must install it in the outermost position protecting a server. See {ref:sec_install_uninstall}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ice_rez_cost",
+        "original": "3.4.3. Ice are among the card types that have rez costs. They are installed unrezzed and remain inactive until the Corp rezzes them by paying their rez costs. See {ref:sec_faceup_facedown_status}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ice_rez_window",
+        "original": "3.4.3.a. Unlike assets and upgrades, ice can normally only be rezzed while being approached during a run. See {ref:sec_approach_ice_phase}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ice_strength_value",
+        "original": "3.4.4. Ice are among the card types that have strength. An ice's strength determines which icebreakers are allowed to interface with it. See {ref:subsec_icebreakers}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ice_strength_modification_duration",
+        "original": "3.4.4.a. If an ability modifies the strength of a piece of ice for the remainder of a run, and that ability resolves during an encounter outside of a run, the modification instead lasts for the remainder of that encounter.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ice_strength_modification_duration-1-example",
+        "original": "The Runner accesses and encounters an {card:Archangel} in HQ with {card:Gang Sign}. The Runner uses {card:Devil Charm} to lower the strength of {card:Archangel}. That strength reduction would normally last for the remainder of the current run, but since no run is in progress, it instead lasts for the remainder of the encounter.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ice_trash_cost",
+        "original": "3.4.5. Some ice have trash costs. If the Runner accesses an ice with a trash cost, they may pay the trash cost to trash that ice. See {ref:rule_basic_trash_ability}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ice_access",
+        "original": "3.4.5.a. Unlike assets, upgrades, and agendas, ice are not normally accessed while installed. Encountering a piece of ice does not entail accessing that ice and does not give the Runner an opportunity to pay its trash cost.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ice_install_cost",
+        "original": "3.4.6. Ice are the only Corp cards with install costs. The install cost of a piece of ice is not a printed value but instead a calculated value based on the number of other ice already protecting the relevant server. See {ref:rule_install_cost}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ice_subroutine",
+        "original": "3.4.7. Ice are the only cards with subroutines. See {ref:sec_subroutines}.",
+        "translation": ""
+    },
+    {
+        "key": "sec_operations",
+        "original": "3.5. Operations",
+        "translation": ""
+    },
+    {
+        "key": "rule_operation_play",
+        "original": "3.5.1. Operations are the only Corp cards that are played. Operations are never installed. Playing an operation causes its abilities to become active, and once those abilities are fully resolved the operation is trashed. See {ref:sec_playing_events_and_operations}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_operation_condition",
+        "original": "3.5.1.a. Some operations have the subtype {subtype:condition}. As part of their abilities, {subtype:condition} operations convert themselves into {subtype:condition} counters and install themselves. A {subtype:condition} operation cannot be installed by an install effect; it can only be installed through its own conversion ability. See {ref:rule_card_to_counter}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_operation_current",
+        "original": "3.5.1.b. Some operations have the subtype {subtype:current}. As part of their abilities, {subtype:current} operations prevent themselves from being trashed until another {subtype:current} operation or event is played or the Runner steals an agenda. When one of these occurs, the active {subtype:current} is trashed during the next checkpoint. See {ref:rule_play_not_trashed_until}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_operation_lockdown",
+        "original": "3.5.1.c. Some operations have the subtype {subtype:lockdown}. As part of their abilities, {subtype:lockdown} operations prevent themselves from being trashed until the start of the Corp's next turn after the operation is played. Once the Corp's turn begins, this effect expires and the operation is trashed during the next checkpoint, before any conditional abilities marked pending at that time can be triggered. See {ref:rule_play_not_trashed_until}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_operation_play_cost",
+        "original": "3.5.2. Operations are the only Corp cards with play costs. An operation's play cost is the number of credits the Corp must spend to play the operation. See {ref:sec_playing_events_and_operations}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_operation_trash_cost",
+        "original": "3.5.3. Some operations have trash costs. If the Runner accesses an operation with a trash cost, they may pay the trash cost to trash that operation. See {ref:rule_basic_trash_ability}.",
+        "translation": ""
+    },
+    {
+        "key": "sec_upgrades",
+        "original": "3.6. Upgrades",
+        "translation": ""
+    },
+    {
+        "key": "rule_upgrade_install",
+        "original": "3.6.1. The Corp may install upgrades in the root of any server. Upgrades are the only card type that can be installed in the root of a central server.",
+        "translation": ""
+    },
+    {
+        "key": "rule_upgrade_no_limit",
+        "original": "3.6.2. There is no limit to the number of upgrades that can be installed in the root of a single server.",
+        "translation": ""
+    },
+    {
+        "key": "rule_upgrade_rez_cost",
+        "original": "3.6.3. Upgrades are among the card types that have rez costs. They are installed unrezzed and remain inactive until the Corp rezzes them by paying their rez costs during a paid ability window. See {ref:sec_faceup_facedown_status}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_upgrade_trash_cost",
+        "original": "3.6.4. Upgrades are among the card types that have trash costs. If the Runner accesses an upgrade, they may pay the trash cost to trash that upgrade. See {ref:rule_basic_trash_ability}.",
+        "translation": ""
+    },
+    {
+        "key": "subsec_regions",
+        "original": "3.6.5. Regions",
+        "translation": ""
+    },
+    {
+        "key": "rule_upgrade_region",
+        "original": "3.6.5.a. Some upgrades have the subtype {subtype:region}. All {subtype:regions} have the text \"Limit 1 {subtype:region} per server.\"",
+        "translation": ""
+    },
+    {
+        "key": "rule_region_one_root",
+        "original": "3.6.5.b. The {subtype:region} limitation applies only to cards with the subtype {subtype:region} that are installed or in the process of being installed in the root of a server. It does not apply to cards in central servers, and it does not apply to ice.",
+        "translation": ""
+    },
+    {
+        "key": "rule_region_active_inactive",
+        "original": "3.6.5.c. The {subtype:region} limitation applies to all cards as specified in {ref:rule_region_one_root}, regardless of the active or inactive state of those cards.",
+        "translation": ""
+    },
+    {
+        "key": "rule_region_install",
+        "original": "3.6.5.d. When the Corp installs a card with the subtype {subtype:region} into the root of a server that already has a {subtype:region}, they must trash the already-installed {subtype:region}. See {ref:sec_install_uninstall}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_region_swap",
+        "original": "3.6.5.e. The Corp cannot swap a {subtype:region} card with a non-{subtype:region} card in another location if there is another {subtype:region} card already installed in the destination location.",
+        "translation": ""
+    },
+    {
+        "key": "sec_events",
+        "original": "3.7. Events",
+        "translation": ""
+    },
+    {
+        "key": "rule_event_play",
+        "original": "3.7.1. Events are the only Runner cards that are played. Events are never installed. Playing an event causes its abilities to become active, and once those abilities are fully resolved the event is trashed. See {ref:sec_playing_events_and_operations}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_event_condition",
+        "original": "3.7.1.a. One event, {card:On the Lam}, has the subtype {subtype:condition}. As part of its abilities, it converts itself into a condition counter and installs itself. This event cannot be installed by an install effect; it can only be installed through its own conversion ability. See {ref:rule_card_to_counter}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_event_current",
+        "original": "3.7.1.b. Some events have the subtype {subtype:current}. As part of their abilities, {subtype:current} events prevent themselves from being trashed until another {subtype:current} operation or event is played or the Corp scores an agenda. When one of these occurs, the active {subtype:current} is trashed during the next checkpoint. See {ref:rule_play_not_trashed_until}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_event_play_cost",
+        "original": "3.7.2. Events are the only Runner cards with play costs. An event's play cost is the number of credits the Runner must spend to play the event. See {ref:sec_playing_events_and_operations}.",
+        "translation": ""
+    },
+    {
+        "key": "sec_hardware",
+        "original": "3.8. Hardware",
+        "translation": ""
+    },
+    {
+        "key": "sec_hardware-snippet",
+        "original": "The Runner's hardware are the physical tools at their disposal: the computers, chips, and other machinery that make up their rig.",
+        "translation": ""
+    },
+    {
+        "key": "rule_hardware_piece_of_hardware",
+        "original": "3.8.1. \"Hardware\" and \"piece of hardware\" are synonymous.",
+        "translation": ""
+    },
+    {
+        "key": "rule_hardware_install",
+        "original": "3.8.2. The Runner installs hardware into the play area.",
+        "translation": ""
+    },
+    {
+        "key": "rule_hardware_install_cost",
+        "original": "3.8.3. Hardware are among the types of cards with install costs. The Runner installs a hardware faceup and active by paying its install cost. See {ref:sec_install_uninstall}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_hardware_no_limit",
+        "original": "3.8.4. There is no limit to the number of hardware the Runner can have installed.",
+        "translation": ""
+    },
+    {
+        "key": "subsec_consoles",
+        "original": "3.8.5. Consoles",
+        "translation": ""
+    },
+    {
+        "key": "rule_hardware_console",
+        "original": "3.8.5.a. Some hardware have the subtype {subtype:console}. All {subtype:consoles} have the text \"Limit 1 {subtype:console} per player.\"",
+        "translation": ""
+    },
+    {
+        "key": "rule_install_console",
+        "original": "3.8.5.b. If a player ever controls more than one installed {subtype:console}, all but the most recently active {subtype:console} are trashed. Trashing cards this way cannot be prevented.",
+        "translation": ""
+    },
+    {
+        "key": "rule_console_limitation",
+        "original": "3.8.5.c. This limitation applies only to hardware with the subtype {subtype:console}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_console_limitation_active",
+        "original": "3.8.5.d. This limitation applies only to active {subtype:console}. A player can have multiple copies of a {subtype:console}, and even different {subtype:consoles}, in their deck.",
+        "translation": ""
+    },
+    {
+        "key": "sec_programs",
+        "original": "3.9. Programs",
+        "translation": ""
+    },
+    {
+        "key": "sec_programs-snippet",
+        "original": "Programs are digital tools at the Runner's disposal, primarily used as a means of intrusion.",
+        "translation": ""
+    },
+    {
+        "key": "rule_program_install",
+        "original": "3.9.1. The Runner installs programs into the play area.",
+        "translation": ""
+    },
+    {
+        "key": "rule_program_install_cost",
+        "original": "3.9.2. Programs are among the types of cards with install costs. The Runner installs a program faceup and active by paying its install cost. See {ref:sec_install_uninstall}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_program_memory_cost",
+        "original": "3.9.3. Programs are the only card type that have a memory cost. A program's memory cost is the number of memory units that program requires while it is installed.",
+        "translation": ""
+    },
+    {
+        "key": "rule_program_memory",
+        "original": "3.9.3.a. Installing a program does not permanently consume memory. The program claims its designated quantity of memory units until it becomes uninstalled, at which point those memory units become available for use by other programs.",
+        "translation": ""
+    },
+    {
+        "key": "rule_program_install_exceed_memory_limit",
+        "original": "3.9.3.b. When the Runner installs a program that would increase the total memory cost of installed programs over their memory limit, they must trash one or more installed programs such that the total memory cost of installed programs including the new program will not exceed their memory limit. See {ref:sec_install_uninstall}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_program_other_exceed_memory_limit",
+        "original": "3.9.3.c. If the Runner's memory limit decreases below the total memory cost of installed programs, or if the total memory cost of installed programs increases above the memory limit for any reason other than installing another program, the Runner must trash one or more installed programs such that the total memory cost of the remaining programs does not exceed their memory limit. This occurs during the next checkpoint after the memory limit is exceeded. See {ref:sec_checkpoints}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_program_memory_not_a_cost",
+        "original": "3.9.3.d. A program's memory cost is not a cost. It cannot be increased, lowered, ignored, or otherwise modified by abilities that affect costs to install programs.",
+        "translation": ""
+    },
+    {
+        "key": "rule_program_strength_value",
+        "original": "3.9.4. Programs are among the card types that have strength.",
+        "translation": ""
+    },
+    {
+        "key": "rule_icebreakers_strength_value",
+        "original": "3.9.4.a. Programs with the subtype {subtype:icebreaker} have a printed numerical strength value. An {subtype:icebreaker}'s strength determines which ice it is allowed to interface with. See {ref:subsec_icebreakers}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_programs_without_strength_value",
+        "original": "3.9.4.b. Programs without the subtype {subtype:icebreaker} do not have a strength value. A dash (–) is printed on non-{subtype:icebreaker} program cards in the place where strength is printed on {subtype:icebreaker} program cards.",
+        "translation": ""
+    },
+    {
+        "key": "subsec_icebreakers",
+        "original": "3.9.5. Icebreakers",
+        "translation": ""
+    },
+    {
+        "key": "rule_program_icebreaker",
+        "original": "3.9.5.a. Some programs have the subtype {subtype:icebreaker}. {subtype:Icebreaker} programs have strength and abilities that interface with ice.",
+        "translation": ""
+    },
+    {
+        "key": "rule_icebreaker_strength_increase_implicit",
+        "original": "3.9.5.b. Paid abilities on an {subtype:icebreaker} that modify that {subtype:icebreaker}'s strength implicitly have a duration of \"for the remainder of the current encounter\".",
+        "translation": ""
+    },
+    {
+        "key": "rule_icebreaker_strength_increase_implicit-1-example",
+        "original": "{card:Corroder} has the ability \"1[c]: +1 strength.\"\" Since no duration is specified, this strength increase applies until the end of the current encounter.",
+        "translation": ""
+    },
+    {
+        "key": "rule_icebreaker_strength_increase_specified",
+        "original": "3.9.5.c. If an {subtype:icebreaker}'s paid ability specifies another duration for modifying its strength, that modification lasts until both the stated duration and the implicit encounter duration have expired.",
+        "translation": ""
+    },
+    {
+        "key": "rule_icebreaker_strength_increase_specified-1-example",
+        "original": "{card:Gordian Blade} has the ability \"1[c]: +1 strength for the remainder of this run.\" This ability applies until the end of the current run, whether it is triggered during an encounter or another step of the run. If the ability is triggered during an encounter that takes place outside of a run, the strength increase applies for the duration of that encounter.",
+        "translation": ""
+    },
+    {
+        "key": "rule_icebreaker_strength_increase_outside_of_encounter",
+        "original": "3.9.5.d. If an {subtype:icebreaker}'s paid ability modifies its strength outside of an encounter and does not specify another applicable duration, the modification expires during the next checkpoint.",
+        "translation": ""
+    },
+    {
+        "key": "rule_icebreaker_strength_increase_outside_of_encounter-1-example",
+        "original": "If the Runner uses {card:Corroder}'s ability to increase its strength outside of an encounter, it applies only until the next checkpoint.",
+        "translation": ""
+    },
+    {
+        "key": "rule_icebreaker_interface",
+        "original": "3.9.5.e. All {subtype:icebreakers} have abilities that {term:interface} with ice, sometimes referred to as \"interface abilities\". These abilities are indicated by the \"interface\" flag preceding the ability's text.",
+        "translation": ""
+    },
+    {
+        "key": "rule_icebreaker_interface_during_encounter",
+        "original": "3.9.5.f. The Runner can only use an interface ability during {ref:step_encounter_paw} of an encounter, and can only choose the encountered piece of ice and its subroutines as targets for the ability's effects. See {ref:sec_targets} for more information about targeting.",
+        "translation": ""
+    },
+    {
+        "key": "rule_icebreaker_interface_strength",
+        "original": "3.9.5.g. The Runner can only use an interface ability on an {subtype:icebreaker} if the {subtype:icebreaker} has strength greater than or equal to the strength of the encountered ice.",
+        "translation": ""
+    },
+    {
+        "key": "rule_icebreaker_interface_subtype",
+        "original": "3.9.5.h. If an interface ability specifies that it affects a particular subtype of ice, then that ability can only be used on a piece of ice that has the specified subtype. If an ability on an {subtype:icebreaker} does not specify a subtype of ice that it affects, that ability can be used on any piece of ice.",
+        "translation": ""
+    },
+    {
+        "key": "sec_resources",
+        "original": "3.10. Resources",
+        "translation": ""
+    },
+    {
+        "key": "sec_resources-snippet",
+        "original": "Resources are a wide variety of connections and skills that aid the Runner.",
+        "translation": ""
+    },
+    {
+        "key": "rule_resource_install",
+        "original": "3.10.1. The Runner installs resources into the play area.",
+        "translation": ""
+    },
+    {
+        "key": "rule_resource_install_cost",
+        "original": "3.10.2. Resources are among the types of cards with install costs. The Runner installs a resource faceup and active by paying its install cost. See {ref:sec_install_uninstall}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_resource_no_limit",
+        "original": "3.10.3. There is no limit to the number of resources the Runner can have installed.",
+        "translation": ""
+    },
+    {
+        "key": "rule_resource_trash_action",
+        "original": "3.10.4. While the Runner is tagged, the Corp may spend [click] and 2[c] to trash an installed resource as a basic action. See {ref:sec_tags}.",
+        "translation": ""
+    }
+]

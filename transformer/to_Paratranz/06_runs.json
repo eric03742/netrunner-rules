@@ -1,0 +1,862 @@
+[
+    {
+        "key": "chpt_runs",
+        "original": "6. Runs",
+        "translation": ""
+    },
+    {
+        "key": "sec_run_general",
+        "original": "6.1. General",
+        "translation": ""
+    },
+    {
+        "key": "rule_run",
+        "original": "6.1.1. A {term:run} is a Runner's attack on a server. There are 6 phases used in the procedure of carrying out a run, described in {ref/through:sec_run_initiation,sec_run_ends_phase}. A run always begins with the Initiation Phase. {ref:Sec_steps_of_a_run} contains the full set of steps carried out during each phase, and should be referred to in conjunction with the sections discussing the phases.",
+        "translation": ""
+    },
+    {
+        "key": "rule_attacked_server",
+        "original": "6.1.2. The {term:attacked server} is the server the Runner is attempting to reach, usually to breach that server.",
+        "translation": ""
+    },
+    {
+        "key": "rule_announce_attacked_server",
+        "original": "6.1.2.a. The Runner announces the attacked server in the initiation phase of the run.",
+        "translation": ""
+    },
+    {
+        "key": "rule_change_attacked_server",
+        "original": "6.1.2.b. Card abilities can sometimes change the attacked server during the run. This does not end the run, but it can affect whether or not certain card abilities or effects apply.",
+        "translation": ""
+    },
+    {
+        "key": "rule_change_runner_position",
+        "original": "6.1.2.c. If an ability changes the Runner's position, the attacked server and the current timing step of the run could also change. See {ref:rule_move_runner_to_position}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_change_attacked_server_directly",
+        "original": "6.1.2.d. A few abilities change the attacked server directly, without referring to the Runner's position. These abilities do not change the current timing step of the run.",
+        "translation": ""
+    },
+    {
+        "key": "rule_change_attacked_server_directly-1-example",
+        "original": "{card:Sneakdoor Beta}'s ability changes the attacked server from Archives to HQ. The Runner does not need to encounter ice protecting HQ after resolving this ability.",
+        "translation": ""
+    },
+    {
+        "key": "rule_modify_run_steps",
+        "original": "6.1.3. Many abilities modify the sequence of steps taken to resolve a run. Such abilities can direct players to skip steps or phases, replace steps with other effects, move directly from the current timing point to a new phase, or make other changes to the procedures explained in this section. Heed the Golden Rules in {ref:sec_golden_rules}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_directly_approach_encounter",
+        "original": "6.1.3.a. Some abilities direct the Runner to approach or encounter a piece of ice as part of moving them to that ice's position. See {ref:rule_move_runner_to_position}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_approach_directly",
+        "original": "6.1.3.b. One card, {card:Code Replicator}, directs the Runner to approach the piece of ice in their position without first moving them to a new position. This effect changes the current timing step of the run to {ref:rule_sec_run_approach_ice_phase}, the Approach Ice Phase.",
+        "translation": ""
+    },
+    {
+        "key": "rule_forced_encounter_link",
+        "original": "6.1.3.c. An ability that directs the Runner to encounter a piece of ice without first moving the Runner's position does not change the current timing point of the run, the attacked server, or the Runner's position. The effect of such an ability is to resolve an Encounter Ice Phase independent of the current state of the run. See {ref:subsec_forced_encounters}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_move_new_run_phase",
+        "original": "6.1.3.d. Any time the current timing step of the run is moved to a different phase of the run, except for an instruction to end the run (See {ref:rule_end_the_run}, below), no more steps in the previously-active phase are carried out. If a paid ability window is open, players complete that window normally. Then the active phase is complete and a checkpoint occurs. Finally, the game proceeds to the new phase.",
+        "translation": ""
+    },
+    {
+        "key": "rule_run_phase_after",
+        "original": "6.1.3.e. If a condition refers to encountering a piece of ice \"after\" an approach or passing a piece of ice \"after\" an encounter, then that condition is only met by the indicated phases or steps occurring in direct sequence according to the standard progression of the run.",
+        "translation": ""
+    },
+    {
+        "key": "rule_run_phase_after-1-example",
+        "original": "The Runner uses {card:Inversificator} to break the subroutine on a {card:Mirāju} that is protecting Archives. When the encounter ends, {card:Mirāju}'s ability creates a replacement effect so that the Runner moves to the outermost position of Archives instead of passing {card:Mirāju}. Because the ice is not passed, {card:Inversificator}'s ability does not meet its trigger condition. Later, the Runner encounters the same {card:Mirāju} again and does not break its subroutine. When this encounter ends, the Runner passes {card:Mirāju}. Even though the Runner has used {card:Inversificator} to fully break {card:Mirāju} during an encounter earlier in the run, {card:Inversificator}'s trigger condition is not met when the Runner passes {card:Mirāju} because the Runner is not passing it after the relevant encounter.",
+        "translation": ""
+    },
+    {
+        "key": "rule_end_the_run",
+        "original": "6.1.4. To {term:end the run} is to halt the Runner's progress toward the server. When an effect ends the run, the current phase of the run ends without following any of its remaining steps, and before completing open priority windows. The game immediately moves from the current timing point to {ref:rule_sec_run_run_ends_phase}, the Run Ends Phase.",
+        "translation": ""
+    },
+    {
+        "key": "rule_jacking_out",
+        "original": "6.1.5. {term:Jacking out} is the process by which a Runner voluntarily ends a run. Jacking out follows the usual process for ending the run as described in {ref:rule_end_the_run}, but some card abilities function differently depending on whether or not the Runner chose to end the run by jacking out.",
+        "translation": ""
+    },
+    {
+        "key": "rule_jack_out_after_passing_ice",
+        "original": "6.1.5.a. The Runner has the opportunity to jack out after passing a piece of ice.",
+        "translation": ""
+    },
+    {
+        "key": "rule_jack_out_before_approach",
+        "original": "6.1.5.b. If there is no ice protecting the server, the Runner has the opportunity to jack out before approaching the server.",
+        "translation": ""
+    },
+    {
+        "key": "sec_position",
+        "original": "6.2. Position",
+        "translation": ""
+    },
+    {
+        "key": "rule_position",
+        "original": "6.2.1. Each server has a sequence of {term:positions} that assign an order to ice protecting that server. A piece of ice protecting a server always occupies exactly 1 position in that server's sequence at a time.",
+        "translation": ""
+    },
+    {
+        "key": "rule_hosted_ice_has_no_position",
+        "original": "6.2.1.a. A piece of ice that is hosted on another card is not protecting a server and does not occupy a position, regardless of whether the ice is installed.",
+        "translation": ""
+    },
+    {
+        "key": "rule_create_position",
+        "original": "6.2.2. When a piece of ice is installed protecting a server or an installed piece of ice is moved, a new position is created for that ice. For ice being installed, the position is created when the Corp declares an install destination for the ice ({ref:rule_steps_installing_destination}), and the ice occupies that position once the ice becomes installed ({ref:rule_steps_installing_become_installed}). For installed ice being moved, the position is created when the movement happens, and the ice occupies that position immediately.",
+        "translation": ""
+    },
+    {
+        "key": "rule_create_position_outermost",
+        "original": "6.2.2.a. If a piece of ice is being installed in or moved to the outermost position protecting a server, the new position is outward from the outermost already-existing position. If an instruction to install a piece of ice does not explicitly specify otherwise, the ice is installed in the outermost position.",
+        "translation": ""
+    },
+    {
+        "key": "rule_create_position_innermost",
+        "original": "6.2.2.b. If a piece of ice is being installed in or moved to the innermost position protecting a server, the new position is inward from the innermost already-existing position.",
+        "translation": ""
+    },
+    {
+        "key": "rule_create_position_directly_inward",
+        "original": "6.2.2.c. If a piece of ice is being installed \"directly inward\" from another piece of ice, the new position is inward from that ice's position, and outward from the next already-existing position inward, if there is one.",
+        "translation": ""
+    },
+    {
+        "key": "rule_create_position_any_position",
+        "original": "6.2.2.d. If a piece of ice is being installed \"in any position\", the new position can be created outward from all existing positions, inward from all existing positions, or between any two existing consecutive positions, as the Corp chooses.",
+        "translation": ""
+    },
+    {
+        "key": "rule_create_position_mutate",
+        "original": "6.2.2.e. One card, {card:Mutate}, has an ability that installs a piece of ice in the \"same position\" as a particular piece of ice that was previously trashed. This is a different usage of \"same position\" from that described in {ref:rule_count_positions}. For this installation, the ice is installed protecting the same server the trashed ice was protecting, and the new position is created at the same place in that server's sequence of positions as the position the trashed ice had.",
+        "translation": ""
+    },
+    {
+        "key": "rule_create_position_swap",
+        "original": "6.2.2.f. If a piece of ice is swapped with a piece of ice protecting a server, no new position is created. The first ice will occupy the position previously held by the second ice (and vice-versa, if the first piece of ice was also protecting a server).",
+        "translation": ""
+    },
+    {
+        "key": "rule_count_positions",
+        "original": "6.2.3. Some abilities refer to ice in the \"same position\" protecting different servers. Two pieces of ice occupy the \"same position\" if their respective servers have the same number of positions inward from their respective positions.",
+        "translation": ""
+    },
+    {
+        "key": "rule_count_positions-1-example",
+        "original": "A server has 2 pieces of ice protecting it, and a copy of {card:Rook} is hosted on the outermost of those 2 pieces of ice. {card:Rook}'s ability can move it to the 2nd piece of ice protecting any server, counted starting from the innermost piece of ice and moving outward. The {card:Rook} cannot be moved to a server protected by only 1 piece of ice.",
+        "translation": ""
+    },
+    {
+        "key": "rule_count_positions-2-example",
+        "original": "The Runner passes a piece of ice in the innermost position protecting a server, and uses {card:Slipstream} to move to another server. Since positions are compared working from the innermost position, the Runner will be able to approach the innermost ice protecting any server, regardless of how many other pieces of ice are outward from that ice.",
+        "translation": ""
+    },
+    {
+        "key": "rule_destroy_position",
+        "original": "6.2.4. If a piece of ice leaves its position, except by being swapped with another piece of ice, its former position ceases to exist. This happens during {ref:step_checkpoint_vacant_position} of the next checkpoint, unless the Runner is in that position, in which case the position continues to exist until the Runner moves to another position or ceases to have a position.",
+        "translation": ""
+    },
+    {
+        "key": "rule_position_runner",
+        "original": "6.2.5. During a run, the Runner occupies the attacked server's positions.",
+        "translation": ""
+    },
+    {
+        "key": "rule_position_initial",
+        "original": "6.2.5.a. The Runner enters the outermost position protecting the attacked server at {ref:step_runner_position} of the Initiation Phase.",
+        "translation": ""
+    },
+    {
+        "key": "rule_position_progression",
+        "original": "6.2.5.b. The Runner progresses through the positions of the attacked server in order. While the Runner occupies a position, they approach, encounter (if the ice is rezzed), and pass the ice in that position, then they proceed to the next position moving inward, until they complete this process for the innermost position or the run is ended.",
+        "translation": ""
+    },
+    {
+        "key": "rule_no_position_after_innermost_ice",
+        "original": "6.2.5.c. Once the Runner leaves the innermost position protecting a server, they no longer have a position. This occurs at {ref:step_move_position} of the Movement Phase. However, abilities can still move the Runner to a position later in that phase.",
+        "translation": ""
+    },
+    {
+        "key": "rule_no_position_after_approach_server",
+        "original": "6.2.5.d. During the Success Phase and the Run Ends Phase, the Runner has no position and can no longer move to a position.",
+        "translation": ""
+    },
+    {
+        "key": "rule_no_position_after_approach_server-1-example",
+        "original": "The Corp uses {card:Ganked!} to force the Runner to encounter {card:Cell Portal} in the middle of breaching a server. Since the run is already successful, resolving {card:Cell Portal}'s subroutine will have no meaningful effect except to derez {card:Cell Portal}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_no_position_outside_run",
+        "original": "6.2.5.e. The Runner does not have a position while they are not engaged in a run, nor do they maintain their position from one run to the next.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ice_change_can_affect_position",
+        "original": "6.2.6. The Runner's current position is a specific element of the sequence of positions, not an index into that sequence. Adding or removing other positions protecting the attacked server does not affect the Runner's position.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ice_change_outward",
+        "original": "6.2.6.a. If a position outward from the Runner's current position is added to the attacked server, the Runner will normally not need to approach or encounter the new piece of ice to reach the server.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ice_change_outward-1-example",
+        "original": "The Runner runs a server protected by 2 pieces of ice. The Runner approaches the outermost ice, and the Corp rezzes {card:Drafter}. During the subsequent encounter, the Corp resolves {card:Drafter}'s second subroutine, installing a new piece of ice protecting the attacked server and trashing both of the other pieces of ice in the process. The new ice is installed to the outermost position protecting the server, which is outward from the Runner's current position, so the Runner will not approach the new piece of ice. This is true even though the number of positions between the new ice and the server is less than the number of positions that were previously between the Runner and the server.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ice_change_inward",
+        "original": "6.2.6.b. If a position inward from the Runner's current position is added to or removed from the attacked server, the ice the Runner will need to approach and/or encounter changes accordingly.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ice_change_inward-1-example",
+        "original": "The Runner encounters {card:Brân 1.0} and breaks its last two subroutines. {card:Brân 1.0}'s first subroutine resolves and the Corp installs a new piece of ice in the next inward position protecting the server. The Runner will have to approach that new piece of ice later in this run because its position is inward from their current position.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ice_change_current_position",
+        "original": "6.2.7. Changes to the piece of ice in the Runner's current position can affect the progression of the run, but they do so differently during an encounter than outside of an encounter.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ice_change_approach_uninstall_move",
+        "original": "6.2.7.a. If a piece of ice is uninstalled or moved to another position (protecting this or another server) while it is being approached, the approach ends and the run continues to the Movement Phase.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ice_change_approach_swap",
+        "original": "6.2.7.b. If a piece of ice currently being approached is swapped with another piece of ice, the Runner remains in their current position and the run remains in the Approach Ice Phase. The Runner is now approaching the new piece of ice occupying that position. Trigger conditions related to a piece of ice being approached are not met for the new ice.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ice_change_encounter_uninstall_derez",
+        "original": "6.2.7.c. If a piece of ice is uninstalled or derezzed while it is being encountered, the Encounter Phase ends and the run continues to the Movement Phase.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ice_change_encounter_move_swap",
+        "original": "6.2.7.d. If a piece of ice currently being encountered moves to another position or is swapped with installed ice in another position, the Runner remains with the encountered ice and continues the run from that ice's new position.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ice_change_encounter_move_swap-1-example",
+        "original": "The Runner encounters {card:Bullfrog} as the innermost piece of ice protecting a remote server. {card:Bullfrog}'s subroutine resolves and it is moved to be the outermost piece of ice protecting Archives. The Runner is now running on Archives and continues the run from {card:Bullfrog}'s new position.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ice_change_during_movement",
+        "original": "6.2.7.e. If the piece of ice in the Runner's position is uninstalled, derezzed, moved, or swapped during the Initiation Phase or the Movement Phase, the Runner is not moved and the current timing step of the run does not change.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ice_change_during_movement-1-example",
+        "original": "A run begins, and before the Runner approaches the outermost piece of ice protecting the attacked server, the Corp uses {card:Project Yagi-Uda} to swap that ice with another piece of ice. The Runner will approach the new ice.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ice_change_during_movement-2-example",
+        "original": "The Runner passes a piece of ice, and in {ref:step_before_jack_out_paw}, the Corp uses {card:Project Yagi-Uda} to swap that ice with another piece of ice. The Runner has still passed their position (but has not passed the new ice occupying that position) and will proceed to the next position in {ref:step_move_position}. They will not approach or encounter the new ice.",
+        "translation": ""
+    },
+    {
+        "key": "rule_move_runner_to_position",
+        "original": "6.2.8. During a run, abilities can move the Runner directly to a position.",
+        "translation": ""
+    },
+    {
+        "key": "rule_move_to_piece_of_ice",
+        "original": "6.2.8.a. If an ability instructs the Runner to move to a piece of ice in a different position, the Runner's position becomes the position corresponding to that ice, and the server that ice protects becomes the attacked server. The current timing step becomes {ref:rule_sec_run_approach_ice_phase}, the Approach Ice Phase, or {ref:rule_sec_run_encounter_ice_phase}, the Encounter Ice Phase, according to whether the Runner was directed to approach or encounter the ice.",
+        "translation": ""
+    },
+    {
+        "key": "rule_move_to_specific_position",
+        "original": "6.2.8.b. If an ability instructs the Runner to move to \"the outermost position\" of a server, that server becomes the attacked server. If there is any ice protecting that server, the Runner's position becomes the position of the outermost such piece of ice, and the current timing step becomes {ref:rule_sec_run_approach_ice_phase}, the Approach Ice Phase. If there is no ice, the Runner ceases to have a position, and the current timing step becomes {ref:rule_sec_run_movement_phase}, the Movement Phase.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ineffective_move",
+        "original": "6.2.8.c. If an ability instructs the Runner to move to a position during the Success Phase, during the Run Ends Phase, or while there is no run in progress, instead the Runner does nothing. See {ref:rule_no_position_after_approach_server}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_move_to_current_ice",
+        "original": "6.2.8.d. If an ability instructs the Runner to move to and approach a position they are already approaching, instead the Runner does nothing.",
+        "translation": ""
+    },
+    {
+        "key": "sec_run_initiation",
+        "original": "6.3. Initiation",
+        "translation": ""
+    },
+    {
+        "key": "rule_run_initiation_phase",
+        "original": "6.3.1. The {term:initiation phase} sets the parameters for the run and begins the run.",
+        "translation": ""
+    },
+    {
+        "key": "rule_start_initiation_phase",
+        "original": "6.3.2. At the start of the Initiation Phase, the Runner announces a server to be the attacked server.",
+        "translation": ""
+    },
+    {
+        "key": "rule_cannot_run_abilities",
+        "original": "6.3.2.a. Some abilities state that the Runner \"cannot run on\" or \"cannot initiate a run on\" certain servers under certain conditions. These effects refer to the announcement of the attacked server in the Initiation Phase.",
+        "translation": ""
+    },
+    {
+        "key": "rule_cannot_run_abilities-1-example",
+        "original": "{card:Off the Grid} states in part, \"The Runner cannot initiate a run on this server.\" This only prohibits the Runner from announcing this particular remote server as the attacked server at the beginning of the run. If an ability changes the attacked server while a run is in progress, {card:Off the Grid} does not interfere with that ability.",
+        "translation": ""
+    },
+    {
+        "key": "rule_additional_cost_to_run",
+        "original": "6.3.2.b. Some abilities impose an additional cost to run, either generally or on a particular server. Any costs to run a server must be paid at the time that server is announced as the attacked server.",
+        "translation": ""
+    },
+    {
+        "key": "rule_initiation_bad_publicity",
+        "original": "6.3.3. After the attacked server is announced, the Runner receives credits equal to the number of bad publicity the Corp has. See {ref:sec_bad_publicity} for an explanation of bad publicity.",
+        "translation": ""
+    },
+    {
+        "key": "rule_bad_publicity_cost_to_run",
+        "original": "6.3.3.a. Credits from bad publicity cannot be spent to pay costs to make the run, as they are received after the attacked server is announced.",
+        "translation": ""
+    },
+    {
+        "key": "rule_bad_publicity_in_credit_pool",
+        "original": "6.3.3.b. Once they are received, credits from bad publicity are in the Runner's credit pool and behave just as any other credits. They can be spent, lost, placed on cards, and so on as normally allowed.",
+        "translation": ""
+    },
+    {
+        "key": "rule_bad_publicity_gone_in_run_ends_phase",
+        "original": "6.3.3.c. During the Run Ends Phase, any credits from bad publicity remaining in the Runner's credit pool are lost.",
+        "translation": ""
+    },
+    {
+        "key": "rule_abilities_during_a_run",
+        "original": "6.3.4. Some abilities look for particular conditions occurring \"during a run\" or are restricted to being used \"during a run.\" For purposes of abilities, the run formally begins only after the attacked server is announced and any costs are paid.",
+        "translation": ""
+    },
+    {
+        "key": "rule_abilities_during_a_run-1-example",
+        "original": "The Runner initiates a run against a server with a rezzed {card:Heinlein Grid} while the Corp has {card:Enhanced Login Protocol} in play. They do not lose any credits to {card:Heinlein Grid}'s ability, as the additional click {card:Enhanced Login Protocol} requires them to spend is spent to initiate the run, and is not spent during the run.",
+        "translation": ""
+    },
+    {
+        "key": "rule_run_initiation_phase_next_phase",
+        "original": "6.3.5. When the Initiation Phase completes, the run moves either to the Approach Ice Phase ({ref:sec_approach_ice_phase}) or the Movement Phase ({ref:sec_movement_phase}). If there is ice protecting the attacked server, the Runner's position becomes the outermost piece of ice, and the run proceeds to the Approach Ice Phase. If there is no ice protecting the server, then the run moves directly to the Movement Phase.",
+        "translation": ""
+    },
+    {
+        "key": "sec_approach_ice_phase",
+        "original": "6.4. Approach Ice",
+        "translation": ""
+    },
+    {
+        "key": "rule_approach_ice_phase",
+        "original": "6.4.1. The {term:approach ice phase} gives the Corp the opportunity to rez the ice in the Runner's current position.",
+        "translation": ""
+    },
+    {
+        "key": "rule_approach_condition",
+        "original": "6.4.2. For purposes of meeting trigger conditions, the Runner approaching a piece of ice is equivalent to the Approach Ice Phase beginning at that ice's position. Abilities with this trigger condition are subject to {ref:rule_reaction_window_closing_timing_structure}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_rez_ice_restriction",
+        "original": "6.4.3. The paid ability window in {ref:step_approach_paw} of the Approach Ice Phase is the only time the Corp can normally rez ice. In this window, the Corp only gains the ability to rez the piece of ice being approached, not any other ice.",
+        "translation": ""
+    },
+    {
+        "key": "rule_approach_ice_next_phase",
+        "original": "6.4.4. When the Approach Ice Phase completes, the run moves either to the Encounter Ice Phase ({ref:sec_encounter_ice_phase}) or the Movement Phase ({ref:sec_movement_phase}). If the approached piece of ice is rezzed, the Runner encounters it next. If the approached piece of ice is unrezzed or if there is no longer ice installed in that position, then the run moves directly to the Movement Phase.",
+        "translation": ""
+    },
+    {
+        "key": "sec_encounter_ice_phase",
+        "original": "6.5. Encounter Ice",
+        "translation": ""
+    },
+    {
+        "key": "rule_encounter_ice_phase",
+        "original": "6.5.1. The {term:encounter ice phase} gives the Runner the opportunity to interact with the ice in their current position, then requires the Corp to resolve unbroken subroutines on that ice.",
+        "translation": ""
+    },
+    {
+        "key": "rule_encounter_condition",
+        "original": "6.5.2. For purposes of meeting trigger conditions, the Runner encountering a piece of ice is equivalent to the Encounter Ice Phase beginning at that ice's position. Abilities with this trigger condition are subject to {ref:rule_reaction_window_closing_timing_structure}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_encounter_unbroken_sub_status",
+        "original": "6.5.3. As each encounter begins, each subroutine on the encountered ice gains an \"unbroken\" status associated with that encounter. See {ref:sec_subroutines} for details.",
+        "translation": ""
+    },
+    {
+        "key": "rule_encounter_break_paw",
+        "original": "6.5.4. During the paid ability window in the Encounter Ice Phase ({ref:step_encounter_paw}), the Runner can break subroutines on the ice. See {ref:rule_break_subroutine}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_encounter_sub_resolve",
+        "original": "6.5.5. After the paid ability window in the Encounter Ice Phase closes, unbroken subroutines on the encountered ice resolve. See {ref:rule_resolve_unbroken_subroutines}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_encounter_ice_next_phase",
+        "original": "6.5.6. At the end of the Encounter Ice Phase, the run continues to the Movement Phase, {ref:sec_movement_phase}.",
+        "translation": ""
+    },
+    {
+        "key": "subsec_fully_break",
+        "original": "6.5.7. Fully Break",
+        "translation": ""
+    },
+    {
+        "key": "rule_fully_break",
+        "original": "6.5.7.a. During each encounter, the Runner {term:fully breaks} the encountered ice the first time all subroutines on that ice are broken.",
+        "translation": ""
+    },
+    {
+        "key": "rule_object_fully_break",
+        "original": "6.5.7.b. Whenever the Runner fully breaks a piece of ice, if all its subroutines were broken using abilities on a single object, that object also {term:fully breaks} the ice.",
+        "translation": ""
+    },
+    {
+        "key": "rule_fully_break_no_subroutines",
+        "original": "6.5.7.c. If an encountered piece of ice has no subroutines, the Runner fully breaks it when {ref:step_encounter_paw} of the encounter begins. No objects fully break the ice in this case.",
+        "translation": ""
+    },
+    {
+        "key": "rule_fully_broken_not_retracted",
+        "original": "6.5.7.d. If the encountered piece of ice gains subroutines after the Runner fully breaks it, the Runner's status of having fully broken the ice remains in place. Conditions that check whether the Runner fully broke the ice will still be met as normal. Breaking the new subroutines will not fully break the ice or meet related conditions again.",
+        "translation": ""
+    },
+    {
+        "key": "subsec_bypass",
+        "original": "6.5.8. Bypass",
+        "translation": ""
+    },
+    {
+        "key": "rule_bypass",
+        "original": "6.5.8.a. When an effect allows the Runner to {term:bypass} a piece of ice, the Encounter Ice Phase is aborted and the Runner immediately proceeds to pass that ice.",
+        "translation": ""
+    },
+    {
+        "key": "rule_bypass_start_of_encounter",
+        "original": "6.5.8.b. Most bypass effects occur at the beginning of an encounter and result in {ref:step_encounter_paw,step_resolve_subroutine} never occurring, meaning that subroutines on the encountered ice are neither broken nor resolved.",
+        "translation": ""
+    },
+    {
+        "key": "rule_bypass_during_encounter",
+        "original": "6.5.8.c. A few bypass effects can be triggered later. If ice is bypassed in {ref:step_encounter_paw}, subroutines may or may not have been broken, but {ref:step_resolve_subroutine} never occurs so no subroutines resolve. Note that for ice with zero subroutines, the Runner has \"broken all subroutines\" if and only if {ref:step_encounter_paw} was reached. See {ref:rule_vacuous_truth}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_bypass_during_encounter-1-example",
+        "original": "The Runner plays {card:Forked} and encounters a {card:Troll} that they can bypass with {card:Femme Fatale}. The Runner pays 0[c] to bypass the {card:Troll} with {card:Femme Fatale}. {card:Forked} does not meet its trigger condition, and {card:Troll} is not trashed, because the opportunity to break subroutines was never reached.",
+        "translation": ""
+    },
+    {
+        "key": "subsec_forced_encounters",
+        "original": "6.5.9. Forced Encounters",
+        "translation": ""
+    },
+    {
+        "key": "rule_forced_encounter",
+        "original": "6.5.9.a. If an ability directs the Runner to encounter a piece of ice without first changing their position, resolve an Encounter Ice Phase but do not change the Runner's position, if any. After the encounter, return to the effect that caused the encounter and proceed from there. This type of encounter outside the normal progression of a run is referred to as a {term:forced encounter}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_forced_encounter-1-example",
+        "original": "If {card:Shiro} causes {card:Chrysalis} to be accessed, resolve the encounter with {card:Chrysalis} and then return to resolving subroutines on {card:Shiro}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_forced_encounter_during_run",
+        "original": "6.5.9.b. If a forced encounter occurs during a run, an instruction to end the run during that encounter is applied to both the Encounter Ice Phase being resolved and the phase from which the additional encounter was initiated. If a forced encounter occurs outside of a run, an instruction to end the run simply closes the Encounter Ice Phase and returns the game to the effect that called for the encounter.",
+        "translation": ""
+    },
+    {
+        "key": "rule_forced_encounter_during_run-1-example",
+        "original": "The Corp uses {card:The Twins} to force the Runner to encounter a piece of ice again when they pass it. If a subroutine directs the Corp to end the run during the extra encounter, both that encounter and the original Movement Phase are aborted, and the game proceeds to the Run Ends phase.",
+        "translation": ""
+    },
+    {
+        "key": "rule_forced_encounter_end",
+        "original": "6.5.9.c. An instruction that creates a forced encounter is not finished resolving until the encounter is complete.",
+        "translation": ""
+    },
+    {
+        "key": "rule_move_during_forced",
+        "original": "6.5.9.d. During a forced encounter, if an ability moves the Runner or directs the Runner to approach a piece of ice, that movement resolves and changes the parameters of the underlying run normally, but does not end or interfere with the forced encounter.",
+        "translation": ""
+    },
+    {
+        "key": "sec_movement_phase",
+        "original": "6.6. Movement",
+        "translation": ""
+    },
+    {
+        "key": "rule_movement_phase",
+        "original": "6.6.1. The {term:movement phase} handles the progression of the run between pieces of ice and after the innermost piece of ice, up to the point when the Runner approaches the attacked server.",
+        "translation": ""
+    },
+    {
+        "key": "rule_pass_ice",
+        "original": "6.6.2. If the Movement Phase was reached from the Approach Ice Phase or the Encounter Ice Phase, the Runner passes the ice in their position.",
+        "translation": ""
+    },
+    {
+        "key": "rule_jack_out_movement_phase",
+        "original": "6.6.3. During each Movement Phase, the Runner has the opportunity to jack out. See {ref:rule_jacking_out}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_runner_continues",
+        "original": "6.6.4. If the Runner declines to jack out, their position moves to the next inward position if there is one.",
+        "translation": ""
+    },
+    {
+        "key": "rule_runner_approach_new_position",
+        "original": "6.6.5. If the Runner moves to a new position, the run continues from the Movement Phase to the Approach Ice Phase, {ref:sec_approach_ice_phase}. The Runner will approach the piece of ice in their new position.",
+        "translation": ""
+    },
+    {
+        "key": "rule_approach_server",
+        "original": "6.6.6. If the Runner does not jack out or return to the Approach Ice Phase, they approach the server. This has no inherent effects, but is referred to by some card abilities. After the Runner approaches the server, the run continues to the Success Phase, {ref:sec_success_phase}.",
+        "translation": ""
+    },
+    {
+        "key": "sec_success_phase",
+        "original": "6.7. Success",
+        "translation": ""
+    },
+    {
+        "key": "rule_success_phase",
+        "original": "6.7.1. The {term:success phase} declares the run successful and allows the Runner to breach the attacked server.",
+        "translation": ""
+    },
+    {
+        "key": "rule_successful_run",
+        "original": "6.7.2. A run during which the runner breaks through the Corp's defenses and reaches the server itself is declared a {term:successful run}. This label is frequently referred to by card abilities.",
+        "translation": ""
+    },
+    {
+        "key": "rule_declaring_successful_run",
+        "original": "6.7.3. Declaring a run to be successful is not the same as the Success Phase beginning. Accordingly, abilities that have trigger conditions related to a successful run are not subject to {ref:rule_reaction_window_closing_timing_structure}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_if_successful",
+        "original": "6.7.4. Many abilities that initiate a run contain a conditional ability with the trigger condition \"If successful\". This means, \"After the run created this way becomes successful\".",
+        "translation": ""
+    },
+    {
+        "key": "rule_if_successful_tied_to_server",
+        "original": "6.7.4.a. If an effect that initiates a run specifies that that run must be made against a specific server or servers, any \"If successful\" abilities associated with that effect are tied to that server or servers. If the attacked server has changed since the run was initiated, and no longer is a server that could have been chosen for this run, the \"If successful\" abilities do not meet their trigger conditions.",
+        "translation": ""
+    },
+    {
+        "key": "rule_if_successful_tied_to_server-1-example",
+        "original": "The Runner plays {card:Because I Can}, which directs them to make a run on a remote server. If an effect moves the run to a central server, the \"If successful\" effect on {card:Because I Can} will not apply. However, if the run is moved instead to another remote server, the \"If successful\" effect is still applied, since {card:Because I Can} would have allowed a run on the second remote server to begin with.",
+        "translation": ""
+    },
+    {
+        "key": "rule_if_successful_lingering_effect",
+        "original": "6.7.4.b. \"If successful\" abilities frequently create lingering effects (see {ref:sec_lingering_effects}) that modify the procedure for accessing cards or replace breaching the attacked server with another effect entirely. These effects apply to the breach permitted by the rules for this run (see {ref:rule_breach_link}), and they expire when the run is complete.",
+        "translation": ""
+    },
+    {
+        "key": "rule_if_successful_ability_optional",
+        "original": "6.7.4.c. If an \"If successful\" effect gives the Runner an effect they can optionally carry out instead of breaching, that decision is made at the time the breach would begin, in {ref:step_breach}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_if_successful_ability_optional-1-example",
+        "original": "The Runner plays {card:Account Siphon} while {card:Ash 2X3ZB9CY} is installed in the root of HQ, and the run is successful. The Runner can wait until after the trace from {card:Ash 2X3ZB9CY} completes before deciding to access cards normally or force the Corp to lose credits.",
+        "translation": ""
+    },
+    {
+        "key": "rule_breach_link",
+        "original": "6.7.5. When the Runner breaches the server, they follow the procedures detailed in {ref:chpt_access_breach}.",
+        "translation": ""
+    },
+    {
+        "key": "sec_run_ends_phase",
+        "original": "6.8. Run Ends Phase",
+        "translation": ""
+    },
+    {
+        "key": "rule_run_ends_phase",
+        "original": "6.8.1. The {term:run ends phase} formalizes the end of the run and prepares the game to return to the timing structure from which the run was initiated.",
+        "translation": ""
+    },
+    {
+        "key": "rule_run_ends_process_priority_windows",
+        "original": "6.8.2. At the beginning of the Run Ends Phase, the game processes each priority window that was open when the run was ended. This is done according to the following procedure:",
+        "translation": ""
+    },
+    {
+        "key": "rule_run_ends_close_paws",
+        "original": "6.8.2.a. If a paid ability window was open when the run was ended, the window closes. No player can trigger further paid abilities or resolve other options the window would normally allow (such as rezzing cards).",
+        "translation": ""
+    },
+    {
+        "key": "rule_run_ends_close_paws-1-example",
+        "original": "The Corp spends a counter from a scored {card:Nisei MK II} to end the run. Once this happens, the Runner does not have an opportunity to use their bad publicity credits from this run to pay for using {card:Self-modifying Code}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_run_ends_close_reaction_window",
+        "original": "6.8.2.b. If the run was ended during a reaction window opened due to a phase beginning, the reaction window closes, as per {ref:rule_reaction_window_closing_timing_structure}. No other pending abilities are resolved.",
+        "translation": ""
+    },
+    {
+        "key": "rule_run_ends_close_reaction_window-1-example",
+        "original": "The Runner uses the ability on {card:Security Nexus} during a reaction window at the beginning of the Encounter Ice Phase. The trace is successful, so the ability ends the run. If {card:Tollbooth}'s ability is also pending in this reaction window, it will not be resolved, since the encounter has ended.",
+        "translation": ""
+    },
+    {
+        "key": "rule_run_ends_other_priority_windows",
+        "original": "6.8.2.c. Any other open priority window is completed normally. If more than one priority window needs to be completed this way, they are resolved in the usual order described in {ref:rule_resolve_ability}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_run_ends_lose_bad_pub_credits",
+        "original": "6.8.3. During the Run Ends Phase, if the Runner has any credits from bad publicity remaining in their credit pool, the Runner loses those credits.",
+        "translation": ""
+    },
+    {
+        "key": "rule_unsuccessful_run",
+        "original": "6.8.4. As part of the Run Ends Phase, the game determines whether the run should be declared an {term:unsuccessful run}. This is a label applied to runs in which the Runner failed to reach the server they attacked, and is referred to by card abilities. The run is declared unsuccessful if neither of the following conditions have been met:",
+        "translation": ""
+    },
+    {
+        "key": "rule_not_unsuccessful_when_reached_success_phase",
+        "original": "6.8.4.a. If the run reached {ref:rule_sec_run_success_phase}, the Success Phase, it is not declared unsuccessful. This is the case regardless of whether the run was actually declared successful.",
+        "translation": ""
+    },
+    {
+        "key": "rule_not_unsuccessful_when_reached_success_phase-1-example",
+        "original": "The Runner reaches a server with {card:Crisium Grid} rezzed. {card:Crisium Grid}'s ability stops the run from being declared successful, but the run is not declared unsuccessful either.",
+        "translation": ""
+    },
+    {
+        "key": "rule_server_cease_to_exist_unsuccesful_exception",
+        "original": "6.8.4.b. If the attacked server has ceased to exist, the run is not declared unsuccessful. See {ref:rule_server_ceases_to_exist}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_run_ends_condition",
+        "original": "6.8.5. Conditions related to a run ending are not met as soon as an \"end the run\" effect resolves or at the beginning of the Run Ends Phase. Instead, these conditions are met at {ref:step_run_complete}, when the entire run timing structure is complete. Similarly, static abilities that apply during a run and durations that apply until the end of a run expire at {ref:step_run_complete}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_run_ends_condition-1-example",
+        "original": "The Runner plays {card:The Noble Path} to make a run in which they prevent all damage. During the run, the subroutine on Chum resolves, and then the Runner encounters {card:Wall of Static} and does not break its subroutine. When the \"end the run\" ability resolves, the encounter also ends, so the trigger condition on {card:Chum}'s delayed conditional ability is met. The ability will resolve and fail to damage the Runner during the Run Ends Phase, because {card:The Noble Path}'s effect still applies. Similarly, {card:Georgia Emelyov}'s first ability meets its trigger condition at {ref:step_run_declared_unsuccessful}, which is still before the run is over, so the damage will be prevented.",
+        "translation": ""
+    },
+    {
+        "key": "rule_run_ends_condition-2-example",
+        "original": "The Runner plays {card:The Noble Path} to make a run in which they prevent all damage. The run is successful but the Runner takes a tag during the run. When the run ends, {card:Dedicated Response Team}'s ability meets its trigger condition at the same time that {card:The Noble Path}'s effect expires, so the Runner will suffer 2 meat damage.",
+        "translation": ""
+    },
+    {
+        "key": "sec_steps_of_a_run",
+        "original": "6.9. Steps of a Run",
+        "translation": ""
+    },
+    {
+        "key": "rule_sec_run_initiation_phase",
+        "original": "6.9.1. Initiation Phase",
+        "translation": ""
+    },
+    {
+        "key": "step_initiation_announce",
+        "original": "6.9.1.a. The Runner announces the attacked server.",
+        "translation": ""
+    },
+    {
+        "key": "step_initiation_bad_publicity",
+        "original": "6.9.1.b. The Runner gains 1[c] to spend during the run for each bad publicity the Corp has.",
+        "translation": ""
+    },
+    {
+        "key": "step_initiation_formal_begin",
+        "original": "6.9.1.c. The run formally begins. Conditions related to the run beginning or initiating are met.",
+        "translation": ""
+    },
+    {
+        "key": "step_runner_position",
+        "original": "6.9.1.d. The Runner's position is set corresponding to the outermost ice protecting the attacked server, if any.",
+        "translation": ""
+    },
+    {
+        "key": "step_initiation_paw",
+        "original": "6.9.1.e. A paid ability window occurs, in which players may use paid abilities and the Corp may rez non-ice cards. (P) (R)",
+        "translation": ""
+    },
+    {
+        "key": "step_initiation_complete",
+        "original": "6.9.1.f. The Initiation Phase is complete. If the Runner has a position corresponding to a piece of ice, proceed to {ref:rule_sec_run_approach_ice_phase}, Approach Ice Phase, approaching the piece of ice corresponding to their position. If the Runner has no position or if there is no ice in their position, proceed to {ref:rule_sec_run_movement_phase}, Movement Phase.",
+        "translation": ""
+    },
+    {
+        "key": "rule_sec_run_approach_ice_phase",
+        "original": "6.9.2. Approach Ice Phase",
+        "translation": ""
+    },
+    {
+        "key": "step_approach_begins",
+        "original": "6.9.2.a. The approach begins. Conditions related to the Runner approaching this ice are met.",
+        "translation": ""
+    },
+    {
+        "key": "step_approach_paw",
+        "original": "6.9.2.b. A paid ability window occurs, in which players may use paid abilities and the Corp may rez non-ice cards. Additionally, the Corp can rez the approached piece of ice. (P) (R)",
+        "translation": ""
+    },
+    {
+        "key": "step_approach_complete",
+        "original": "6.9.2.c. The Approach Ice Phase is complete. If the approached piece of ice is rezzed, continue to {ref:rule_sec_run_encounter_ice_phase}, Encounter Ice Phase. Otherwise, proceed to {ref:rule_sec_run_movement_phase}, Movement Phase.",
+        "translation": ""
+    },
+    {
+        "key": "rule_sec_run_encounter_ice_phase",
+        "original": "6.9.3. Encounter Ice Phase",
+        "translation": ""
+    },
+    {
+        "key": "step_encounter_begins",
+        "original": "6.9.3.a. The encounter begins. Conditions related to the Runner encountering this ice are met.",
+        "translation": ""
+    },
+    {
+        "key": "step_encounter_paw",
+        "original": "6.9.3.b. A paid ability window occurs, in which players may only use paid abilities. Subroutines on the encountered ice can be broken during this window. (P)",
+        "translation": ""
+    },
+    {
+        "key": "step_resolve_subroutine",
+        "original": "6.9.3.c. If there are unbroken subroutines that have not yet resolved this encounter, the Corp resolves the next such subroutine in order. Otherwise, skip to (e).",
+        "translation": ""
+    },
+    {
+        "key": "step_resolve_subroutine_loop",
+        "original": "6.9.3.d. Return to (c).",
+        "translation": ""
+    },
+    {
+        "key": "step_encounter_complete",
+        "original": "6.9.3.e. The Encounter Ice Phase is complete. Continue to {ref:rule_sec_run_movement_phase}, Movement Phase.",
+        "translation": ""
+    },
+    {
+        "key": "rule_sec_run_movement_phase",
+        "original": "6.9.4. Movement Phase",
+        "translation": ""
+    },
+    {
+        "key": "step_pass_ice",
+        "original": "6.9.4.a. If the Runner's position corresponds to a piece of ice, the Runner passes that ice. Conditions related to passing ice are met. If there are no positions more inward than the ice just passed, conditions related to passing all of the ice protecting a server are also met.",
+        "translation": ""
+    },
+    {
+        "key": "step_before_jack_out_paw",
+        "original": "6.9.4.b. A paid ability window occurs, in which players may only use paid abilities. (P)",
+        "translation": ""
+    },
+    {
+        "key": "step_jack_out_choice",
+        "original": "6.9.4.c. The Runner may choose to jack out, proceeding to {ref:rule_sec_run_run_ends_phase}, Run Ends Phase. If the Runner does not, continue to (d).",
+        "translation": ""
+    },
+    {
+        "key": "step_move_position",
+        "original": "6.9.4.d. The Runner's position moves to the next position inward, if any.",
+        "translation": ""
+    },
+    {
+        "key": "step_after_jack_out_paw",
+        "original": "6.9.4.e. A paid ability window occurs, in which players may use paid abilities and the Corp may rez non-ice cards. (P) (R)",
+        "translation": ""
+    },
+    {
+        "key": "step_approach_new_ice",
+        "original": "6.9.4.f. If the Runner moved to a new position, return to {ref:rule_sec_run_approach_ice_phase}, Approach Ice Phase, approaching the piece of ice in their new position. If not, continue to (g).",
+        "translation": ""
+    },
+    {
+        "key": "step_approach_server",
+        "original": "6.9.4.g. The Runner approaches the attacked server. Conditions related to the Runner approaching a server are met.",
+        "translation": ""
+    },
+    {
+        "key": "step_movement_complete",
+        "original": "6.9.4.h. The Movement Phase is complete. Continue to {ref:rule_sec_run_success_phase}, Success Phase.",
+        "translation": ""
+    },
+    {
+        "key": "rule_sec_run_success_phase",
+        "original": "6.9.5. Success Phase",
+        "translation": ""
+    },
+    {
+        "key": "step_run_declared_successful",
+        "original": "6.9.5.a. The run is declared successful. Conditions related to a successful run are met.",
+        "translation": ""
+    },
+    {
+        "key": "step_breach",
+        "original": "6.9.5.b. The Runner breaches the attacked server.",
+        "translation": ""
+    },
+    {
+        "key": "step_success_complete",
+        "original": "6.9.5.c. The Success Phase is complete. Continue to {ref:rule_sec_run_run_ends_phase}, Run Ends Phase.",
+        "translation": ""
+    },
+    {
+        "key": "rule_sec_run_run_ends_phase",
+        "original": "6.9.6. Run Ends Phase",
+        "translation": ""
+    },
+    {
+        "key": "step_open_priority_windows_closed",
+        "original": "6.9.6.a. Any priority windows that were open when the run moved to this phase are completed or closed as described in {ref:rule_run_ends_process_priority_windows}.",
+        "translation": ""
+    },
+    {
+        "key": "step_run_ends_bad_publicity",
+        "original": "6.9.6.b. The Runner loses any unspent bad publicity credits.",
+        "translation": ""
+    },
+    {
+        "key": "step_run_declared_unsuccessful",
+        "original": "6.9.6.c. If the Success Phase was not reached during this run and the attacked server still exists, the run becomes unsuccessful.",
+        "translation": ""
+    },
+    {
+        "key": "step_run_complete",
+        "original": "6.9.6.d. The Run Ends Phase and the run as a whole are both complete.",
+        "translation": ""
+    }
+]

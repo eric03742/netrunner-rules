@@ -1,0 +1,2202 @@
+[
+    {
+        "key": "chpt_abilities",
+        "original": "9. Abilities",
+        "translation": ""
+    },
+    {
+        "key": "sec_abilities_general",
+        "original": "9.1. General",
+        "translation": ""
+    },
+    {
+        "key": "rule_ability",
+        "original": "9.1.1. An {term:ability} is an independent unit of text on a card or counter, a basic action, or the basic trash ability.",
+        "translation": ""
+    },
+    {
+        "key": "rule_all_text_is_an_ability",
+        "original": "9.1.1.a. All rules text on a card or counter is part of an ability.",
+        "translation": ""
+    },
+    {
+        "key": "rule_basic_action_link",
+        "original": "9.1.1.b. The basic actions are defined in {ref:rule_corp_actions} and {ref:rule_runner_actions}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_trash_ability_link",
+        "original": "9.1.1.c. The basic trash ability is defined in {ref:rule_basic_trash_ability}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_lingering_effects_link",
+        "original": "9.1.1.d. An ability's text can include other abilities that it could grant to cards or counters or introduce directly to the game state. See also {ref:sec_lingering_effects}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ability_categories",
+        "original": "9.1.1.e. Each ability is categorized as either a static ability ({ref:sec_static_abilities}), a paid ability ({ref:sec_paid_abilities}), a conditional ability ({ref:sec_conditional_abilities}), a play ability ({ref:sec_play_abilities}), or a subroutine ({ref:sec_subroutines}).",
+        "translation": ""
+    },
+    {
+        "key": "rule_interrupt_link",
+        "original": "9.1.1.f. Abilities marked with [interrupt] or that include the word \"would\" in their instructions have special timing rules that differ from other abilities. See {ref:sec_interrupts_replacements}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_instruction_link",
+        "original": "9.1.1.g. Each non-static ability contains one or more {term:instructions} that make up the ability's component steps. {ref:Rule_instruction} describes the nature and function of instructions in an ability's text. An instruction that the game is presently concerned with can be either {term:imminent} or {term:resolving}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_resolve_ability",
+        "original": "9.1.2. To {term:resolve an ability} means to resolve each of that ability's instructions in the order they appear. If an ability contains more than one instruction, a checkpoint occurs between each consecutive instruction. To {term:resolve an instruction} means to carry out that instruction.",
+        "translation": ""
+    },
+    {
+        "key": "rule_chain_reaction",
+        "original": "9.1.2.a. While resolving an ability, other abilities can meet their conditions. When this happens, a \"chain reaction\" is created. The current instruction finishes resolving, then more recent abilities fully resolve before the next instruction of the original ability. If any other abilities meet their conditions while resolving the \"chained\" abilities, then another \"chain\" is created before continuing to resolve the previous chained abilities. Resolve each set of chained abilities one at a time, from the most recently met condition to the oldest, before continuing with the original ability that started the chain reaction.",
+        "translation": ""
+    },
+    {
+        "key": "rule_chain_reaction-1-example",
+        "original": "The Runner's identity is {card:Armand \"Geist\" Walker}. They access a {card:Snare!} from R&D with only 2 cards in their grip. Before taking a tag or suffering any net damage, the Runner triggers {card:Decoy}'s ability in order to avoid the tag. Using the {card:Decoy} meets the trigger condition of {card:Armand \"Geist\" Walker}'s ability. As this is the most recent ability to meet its trigger condition, {card:Armand \"Geist\" Walker}'s ability must resolve first, before {card:Decoy} avoids the tag and before {card:Snare!} finishes resolving. The Runner draws a card from {card:Armand \"Geist\" Walker}, avoids the tag from {card:Snare!} with {card:Decoy}, and then finally suffers (and survives) the 3 net damage from {card:Snare!}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_is_resolving",
+        "original": "9.1.2.b. An ability \"is resolving\" from when its first instruction becomes imminent until its last instruction has finished resolving. See also {ref:sec_interrupts_replacements}. An event or operation \"is resolving\" throughout {ref:rule_steps_playing_resolve_play_abilities} of playing that event or operation.",
+        "translation": ""
+    },
+    {
+        "key": "rule_is_resolving-1-example",
+        "original": "The Corp resolves a subroutine on {card:Attini} while its first ability is active. The subroutine is resolving during the interrupt window for its instruction, so the Runner cannot spend credits during that window and will not be able to use {card:Caldera}'s ability to prevent net damage.",
+        "translation": ""
+    },
+    {
+        "key": "rule_is_resolving-2-example",
+        "original": "The Runner is playing {card:Zahya Sadeghi: Versatile Smuggler} and plays {card:Direct Access} to run HQ. The static ability on {card:Direct Access} removes {card:Zahya Sadeghi}'s ability while it is resolving. Normally, that ability would meet its trigger condition and resolve immediately after the \"Run any server.\" instruction. This reaction window is outside of the run, but it is still part of {card:Direct Access} resolving, so the ability is not present at the needed time and cannot be triggered or resolved.",
+        "translation": ""
+    },
+    {
+        "key": "rule_source",
+        "original": "9.1.3. The {term:source} of an ability is the card, counter, or game rule that originated it.",
+        "translation": ""
+    },
+    {
+        "key": "rule_source_printed_abilities",
+        "original": "9.1.3.a. Each card is the source of its own printed abilities.",
+        "translation": ""
+    },
+    {
+        "key": "rule_source_granted_abilities",
+        "original": "9.1.3.b. If something grants an ability to an object (see {ref:rule_gaining_losing_abilities}), the source of the granted ability is that object, not whatever granted the ability.",
+        "translation": ""
+    },
+    {
+        "key": "rule_source_lingering_effect",
+        "original": "9.1.3.c. The source of an ability that is being maintained by a lingering effect is the object that created that lingering effect. See {ref:sec_lingering_effects}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_abilities_resolution_independent",
+        "original": "9.1.4. Each paid ability, conditional ability, and subroutine becomes independent of its source at a certain point before it resolves, as described in {ref:rule_paid_ability_independent,rule_conditional_ability_independent,rule_subroutine_independent}, respectively. If the source changes zones after that point, the ability cannot act on the source.",
+        "translation": ""
+    },
+    {
+        "key": "rule_abilities_resolution_independent-1-example",
+        "original": "The runner plays {card:Compile}, uses it to install {card:Mayfly} during the resulting run, and breaks subroutines with {card:Mayfly} during that run. When the run ends, delayed conditional abilities from both {card:Mayfly} and {card:Compile} become pending. The Runner decides to resolve {card:Compile} first, adding {card:Mayfly} to the bottom of their stack. The Runner then resolves the ability from {card:Mayfly}, which instructs them to trash its source program. Because {card:Mayfly} has changed zones, the copy of it on the bottom of the stack is a new object. With nothing to trash, the ability from {card:Mayfly} does nothing.",
+        "translation": ""
+    },
+    {
+        "key": "rule_effect",
+        "original": "9.1.5. Whereas an ability, instruction, or declaration is made up of text, an {term:effect} is what happens in the game because of that text.",
+        "translation": ""
+    },
+    {
+        "key": "rule_effect_beyond_resolution",
+        "original": "9.1.5.a. Any of a non-static ability's effects that apply beyond the duration of that ability's resolution become independent of that ability and its source. The game engine takes responsibility for managing these {term:lingering effects} directly, and deletes them from the game state as their durations expire. See {ref:sec_lingering_effects}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_using",
+        "original": "9.1.6. Any time a player chooses to resolve an optional ability or an optional part of an ability, the player is considered to be {term:using} that ability and the source card of that ability. Players do not \"use\" abilities that are entirely mandatory.",
+        "translation": ""
+    },
+    {
+        "key": "rule_paid_ability_used_condition",
+        "original": "9.1.6.a. A paid ability is considered used once the trigger cost has been paid. See {ref:sec_steps_of_using_a_paid_ability} for the steps of using a paid ability.",
+        "translation": ""
+    },
+    {
+        "key": "rule_conditional_ability_used_condition",
+        "original": "9.1.6.b. A conditional ability is considered used once the relevant optional effects of the ability have been resolved by the controller of the ability. See {ref:sec_steps_of_triggering_and_resolving_a_conditional_ability} for the steps of triggering and resolving conditional abilities.",
+        "translation": ""
+    },
+    {
+        "key": "rule_hosted_counter_used_condition",
+        "original": "9.1.6.c. If an ability allows a player to spend or move counters, that ability's source card is considered used at the time the player pays a cost by spending or moving those counters, even if the counters are spent or moved from cards other than the card that is the source of that ability.",
+        "translation": ""
+    },
+    {
+        "key": "rule_hosted_counter_used_condition-1-example",
+        "original": "The Runner spends the credit hosted on {card:Cyberfeeder} to pay the trigger cost of {card:Mimic}'s ability. Because the Runner triggered {card:Mimic}'s paid ability and {card:Cyberfeeder}'s ability allowed the credit to be spent, both {card:Mimic} and {card:Cyberfeeder} have been used.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ability_active",
+        "original": "9.1.7. Abilities are {term:active} if they are eligible to be resolved or apply to the current game state, and {term:inactive} otherwise. By default, a card's abilities are active if and only if that card is active (see {ref:rule_active_cards}). Abilities of counters are active for as long as the counter exists.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ability_active_inactive_source_card",
+        "original": "9.1.8. Some types of abilities are active even while their source card is inactive.",
+        "translation": ""
+    },
+    {
+        "key": "rule_active_exception_access",
+        "original": "9.1.8.a. Conditional abilities that meet their conditions when their source card is accessed are active even while that card is inactive.",
+        "translation": ""
+    },
+    {
+        "key": "rule_active_exception_catchall",
+        "original": "9.1.8.b. Abilities stating that they are active in a particular zone are active in that zone. Abilities that can only ever meet their conditions in a particular zone are active in that zone. Abilities that can only affect the game state from a particular zone are active in that zone. When determining whether these stipulations apply, refer only to the game rules, not to any other effects that may be changing how cards move between zones.",
+        "translation": ""
+    },
+    {
+        "key": "rule_active_exception_catchall-1-example",
+        "original": "{card:I've Had Worse} has an ability that meets its trigger condition when it is trashed due to damage. Normally, this can only occur by moving {card:I've Had Worse} from the grip to the heap. Therefore, this ability is active in the heap. However, if {card:I've Had Worse} is trashed, but the Corp uses {card:Skorpios Defense Systems} to remove it from the game instead of adding it to the heap, the ability is not active.",
+        "translation": ""
+    },
+    {
+        "key": "rule_active_exception_modify_play_install_rez",
+        "original": "9.1.8.c. Abilities that modify when or if their source card can be played, installed, or rezzed are active even while that card is inactive.",
+        "translation": ""
+    },
+    {
+        "key": "rule_active_exception_modify_cost",
+        "original": "9.1.8.d. Abilities that modify the cost to install, rez, or play their source card are active even while that card is inactive.",
+        "translation": ""
+    },
+    {
+        "key": "rule_active_exception_advancement_requirement",
+        "original": "9.1.8.e. Abilities that define or modify the advancement requirement of their source card or create an additional cost to steal their source card are active even while that card is inactive.",
+        "translation": ""
+    },
+    {
+        "key": "rule_active_exception_can_be_advanced",
+        "original": "9.1.8.f. Abilities allowing a card to be advanced are active even while that card is unrezzed.",
+        "translation": ""
+    },
+    {
+        "key": "rule_active_exception_conditional_move_to_inactive_zone",
+        "original": "9.1.8.g. If an active card moves to a zone where it is inactive, an ability of that card with a trigger condition that is met by this zone change remains active in the card's new location until any corresponding instances of the ability resolve. See {ref:rule_pending_instances} for information about instances of conditional abilities.",
+        "translation": ""
+    },
+    {
+        "key": "rule_active_exception_conditional_move_to_inactive_zone-1-example",
+        "original": "The Runner uses {card:Singularity} to simultaneously trash a rezzed {card:Hostile Infrastructure} and 2 upgrades. Those cards are moved to Archives and become inactive, but {card:Hostile Infrastructure}'s ability remains active, and 3 instances will become pending, each doing 1 net damage when it resolves. Once all those instances are resolved, {card:Hostile Infrastructure}'s ability stops being active.",
+        "translation": ""
+    },
+    {
+        "key": "rule_active_exception_conditional_move_to_inactive_zone-2-example",
+        "original": "The Runner plays {card:Test Run} to install {card:Nanuq}. When their turn ends, {card:Test Run}'s delayed conditional ability adds {card:Nanuq} to the top of the Runner's stack. This meets the trigger condition of {card:Nanuq}'s first ability, which remains active until it resolves even though {card:Nanuq} itself is inactive in the stack. The ability will move {card:Nanuq} from the top of the stack to the removed-from-game zone.",
+        "translation": ""
+    },
+    {
+        "key": "rule_active_exception_encounter_not_installed",
+        "original": "9.1.8.h. If a piece of ice is encountered while it is not installed, its subroutines are active during that encounter.",
+        "translation": ""
+    },
+    {
+        "key": "rule_active_exception_encounter_not_installed-1-example",
+        "original": "The Runner accesses {card:Archangel} from HQ, and the Corp uses its ability to force the Runner to encounter it. {card:Archangel}'s subroutine is active and can resolve during that encounter.",
+        "translation": ""
+    },
+    {
+        "key": "rule_active_exception_persistent",
+        "original": "9.1.8.i. Persistent abilities can sometimes remain active after their source card is trashed. See {ref:subsec_persistent}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_gaining_losing_abilities",
+        "original": "9.1.9. Static abilities and lingering effects can make objects gain or lose abilities.",
+        "translation": ""
+    },
+    {
+        "key": "rule_lose_ability",
+        "original": "9.1.9.a. If an object loses an ability, that ability is completely ignored. If the lost ability is a subroutine, it is not considered by any effect that counts subroutines on that object.",
+        "translation": ""
+    },
+    {
+        "key": "rule_determine_actual_abilities",
+        "original": "9.1.9.b. To determine the actual abilities present on an object (as well as its other characteristics), follow the procedure described in {ref:rule_dependent_effects} and {ref:rule_independent_effects}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_abilities_no_inherent_order",
+        "original": "9.1.9.c. Abilities on an object have no particular order, except for play abilities and subroutines. Play abilities cannot be added to or removed from an event or operation, and their order is the order they appear on their source card. To determine the order of subroutines on an object, refer to {ref:rule_subroutines_ordered} and {ref:rule_subroutines_static_ability}.",
+        "translation": ""
+    },
+    {
+        "key": "sec_timing_and_priority",
+        "original": "9.2. Timing and Priority",
+        "translation": ""
+    },
+    {
+        "key": "rule_active_player",
+        "original": "9.2.1. The {term:active player} is the player whose turn it is. The other player is the {term:inactive player}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_timing_structure",
+        "original": "9.2.2. A {term:timing structure} is a unit of the game in which a prescribed sequence of steps progress the game forward.",
+        "translation": ""
+    },
+    {
+        "key": "rule_turn_timing_structure",
+        "original": "9.2.2.a. The Corp's turn and the Runner's turn are timing structures, as are each of the 3 phases of the turns. See {ref:chpt_turns}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_run_timing_structure",
+        "original": "9.2.2.b. A run is a timing structure, as are each of the 6 phases of a run. See {ref:chpt_runs}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_breaching_timing_structure",
+        "original": "9.2.2.c. Breaching a server is a timing structure. See {ref:sec_breaching_servers,sec_breaching_steps}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_accessing_timing_structure",
+        "original": "9.2.2.d. Accessing a card is a timing structure. See {ref:sec_accessing_cards,sec_steps_accessing_card}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_not_timing_structures",
+        "original": "9.2.2.e. Other procedures with prescribed steps, such as installing a card or resolving a trace attempt, are not timing structures.",
+        "translation": ""
+    },
+    {
+        "key": "rule_priority",
+        "original": "9.2.3. {term:Priority} is a player's opportunity to act and make certain game choices. No more than one player can have priority at any given time.",
+        "translation": ""
+    },
+    {
+        "key": "rule_priority_window",
+        "original": "9.2.4. A {term:priority window} is a general term for a timing step in which one or both players receive priority. Priority windows {term:open} for different purposes throughout the game. When a priority window {term:closes}, the game continues to the next timing step.",
+        "translation": ""
+    },
+    {
+        "key": "rule_triggering",
+        "original": "9.2.4.a. All priority windows give the player with priority the option to choose a relevant ability they control (if there are any) as the next ability for the game to resolve. This is often referred to as {term:triggering} the chosen ability. Some priority windows also give players other options.",
+        "translation": ""
+    },
+    {
+        "key": "rule_pass",
+        "original": "9.2.4.b. Except during action windows, the player with priority has the option to {term:pass} in addition to the available options defined by that priority window. When a player passes, the game progresses to the next step, either by giving priority to the other player or by closing the priority window. Each type of priority window defines the method and resolution of passing.",
+        "translation": ""
+    },
+    {
+        "key": "rule_keep_priority_until_pass",
+        "original": "9.2.4.c. Unless otherwise noted, the player with priority receives priority again after resolving one of their available options. That player will continue to receive priority until they pass.",
+        "translation": ""
+    },
+    {
+        "key": "rule_nested_priority_window",
+        "original": "9.2.4.d. While a priority window is open, another nested priority window can open as well. This nesting allows the game to resolve \"chain reactions,\" as discussed in {ref:rule_chain_reaction}. The most recently opened priority window is always resolved before returning to an earlier priority window.",
+        "translation": ""
+    },
+    {
+        "key": "rule_checkpoint_before_receiving_priority",
+        "original": "9.2.4.e. Whenever a player receives priority during a priority window, a checkpoint occurs immediately before that player may act. See {ref:sec_checkpoints}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_priority_window_types",
+        "original": "9.2.5. The types of priority windows are action windows, paid ability windows, reaction windows, interrupt windows, and mid-access ability windows.",
+        "translation": ""
+    },
+    {
+        "key": "rule_action_window",
+        "original": "9.2.6. An {term:action window} is a priority window that opens during a player's action phase if they have unspent clicks.",
+        "translation": ""
+    },
+    {
+        "key": "rule_action_window_priority",
+        "original": "9.2.6.a. An action window gives only the active player priority.",
+        "translation": ""
+    },
+    {
+        "key": "rule_action_window_options",
+        "original": "9.2.6.b. During an action window, the active player must take an action. {ref:Sec_actions} discusses actions. This type of window does not give the option to pass.",
+        "translation": ""
+    },
+    {
+        "key": "rule_action_window_closes_after_action",
+        "original": "9.2.6.c. After the active player takes an action, the action window closes and the game moves to the next timing step. The player does not receive priority again.",
+        "translation": ""
+    },
+    {
+        "key": "rule_action_window_occurrence",
+        "original": "9.2.6.d. There are two timing steps during which an action window may open. The Corp has an action window in {ref:step_corp_turn_action} of their action phase. The Runner has an action window in {ref:step_runner_turn_action} of their action phase.",
+        "translation": ""
+    },
+    {
+        "key": "rule_paid_ability_window",
+        "original": "9.2.7. A {term:paid ability window} is a priority window that opens throughout the game's timing structures to allow players to trigger paid abilities, rez cards, or score agendas.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ability_window_priority",
+        "original": "9.2.7.a. Paid ability windows give both players priority, starting with the active player. When a player passes, the other player receives priority. Players continue to exchange priority until a player who receives priority from their opponent passes without resolving any other option available to them. Once this happens, the paid ability window closes.",
+        "translation": ""
+    },
+    {
+        "key": "rule_paid_ability_window_options",
+        "original": "9.2.7.b. During every paid ability window, the player with priority has the option to trigger an active paid ability they control. Players cannot trigger actions, interrupts, or mid-access abilities in a paid ability window. See {ref:sec_paid_abilities}. Within this document, paid ability windows are marked with the symbol (P) to denote the option to trigger a regular paid ability.",
+        "translation": ""
+    },
+    {
+        "key": "rule_paid_ability_window_corp_rez",
+        "original": "9.2.7.c. During some paid ability windows, the Corp has the option to rez an asset or upgrade while they have priority. Within this document, the symbol (R) denotes a paid ability window in which cards can be rezzed. See {ref:sec_faceup_facedown_status}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_paid_ability_window_corp_score",
+        "original": "9.2.7.d. During some paid ability windows, the Corp has the option to score an agenda while they have priority. Within this document, the symbol (S) denotes a paid ability window in which agendas can be scored. See {ref:sec_score_scoring_steal}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_paid_ability_window_corp_rez_ice",
+        "original": "9.2.7.e. During the paid ability window at {ref:step_approach_paw} of the Approach Ice Phase of a run, the Corp has the option to rez the piece of ice the Runner is approaching while they have priority.",
+        "translation": ""
+    },
+    {
+        "key": "rule_paid_ability_window_multiple_options",
+        "original": "9.2.7.f. The player with priority during a paid ability window may use any of the options available to them any number of times in any combination and order until they decide to pass, so long as they are allowed and the player pays any and all costs to use each option. Each option must be fully resolved before another is chosen. A player is not obligated to resolve any of the options available to them, except they must pass.",
+        "translation": ""
+    },
+    {
+        "key": "rule_paid_ability_window_occurrence",
+        "original": "9.2.7.g. Paid ability windows occur throughout the timing steps of turns and runs. {ref:Sec_steps_corp_turn,sec_steps_runner_turn,sec_steps_of_a_run} detail those steps and indicate which options are available in which windows. {ref:Chpt_appendix_timing_structures} also contains a summarized version of these steps.",
+        "translation": ""
+    },
+    {
+        "key": "rule_reaction_window",
+        "original": "9.2.8. A {term:reaction window} is a priority window that opens whenever one or more active conditional abilities become pending by meeting their conditions. {ref:Sec_conditional_abilities} discusses conditional abilities.",
+        "translation": ""
+    },
+    {
+        "key": "rule_reaction_window_linked_to_pending_conditional_abilities",
+        "original": "9.2.8.a. Each reaction window is associated with the fixed set of conditional abilities that met their conditions just before the window opened. If other abilities become pending during a reaction window, a separate reaction window opens to handle the new abilities. See {ref:rule_chain_reaction}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_reaction_window_priority",
+        "original": "9.2.8.b. Reaction windows give both players priority, starting with the active player. When the active player passes, the inactive player receives priority. When the inactive player passes, the reaction window closes.",
+        "translation": ""
+    },
+    {
+        "key": "rule_reaction_window_options",
+        "original": "9.2.8.c. During a reaction window, the player with priority has the option to trigger a pending conditional ability they control that is associated with that window.",
+        "translation": ""
+    },
+    {
+        "key": "rule_reaction_window_pending_abilities_unordered",
+        "original": "9.2.8.d. The player with priority during a reaction window may trigger their pending abilities in any order until they decide to pass; they do not need to trigger mandatory abilities before optional ones. Each ability they trigger must be fully resolved before another is chosen.",
+        "translation": ""
+    },
+    {
+        "key": "rule_reaction_window_must_resolve_mandatory_abilities",
+        "original": "9.2.8.e. The player with priority cannot pass if they control any pending mandatory abilities. They may pass with optional conditional abilities still pending, in which case those abilities lose their pending status without being triggered. {ref:Rule_optional_conditional_ability} describes the differences between mandatory and optional conditional abilities.",
+        "translation": ""
+    },
+    {
+        "key": "rule_reaction_window_closing_timing_structure",
+        "original": "9.2.8.f. If a reaction window opens due to a timing structure beginning, and during that reaction window the timing structure ends (e.g. by an effect moving the game to another timing point past the end of the structure), then the reaction window immediately closes. All remaining abilities associated with the window lose their pending status without being triggered, even if they are mandatory abilities.",
+        "translation": ""
+    },
+    {
+        "key": "rule_reaction_window_closing_timing_structure-1-example",
+        "original": "The Runner has a {card:Femme Fatale} installed and chose a {card:Tollbooth} with its \"when installed\" ability. When the Runner encounters the {card:Tollbooth}, they pay 1[c] to bypass the {card:Tollbooth} with {card:Femme Fatale}. Because the resolution of {card:Femme Fatale}'s ability causes the encounter to end, the pending ability from {card:Tollbooth} cannot be triggered. The Runner does not pay 3[c], and the run does not end.",
+        "translation": ""
+    },
+    {
+        "key": "rule_interrupt_window",
+        "original": "9.2.9. An {term:interrupt window} is a priority window that opens just before an instruction would resolve when one or more players have abilities that could modify that imminent instruction. See {ref:sec_interrupts_replacements} for rules about interrupt abilities.",
+        "translation": ""
+    },
+    {
+        "key": "rule_interrupt_window_linked_to_imminent_instruction",
+        "original": "9.2.9.a. Each interrupt window is associated with the single imminent instruction being modified by the abilities triggered during the window, and with a fixed set of conditional ability interrupts determined as the window opens.",
+        "translation": ""
+    },
+    {
+        "key": "rule_interrupt_window_opening",
+        "original": "9.2.9.b. As an interrupt window opens, before players receive priority, the expected effects of the imminent instruction are determined, any applicable replacement effects are applied, and then relevant conditional abilities become pending. See {ref:sec_interrupt_window_for_imminent_instruction}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_interrupt_window_priority",
+        "original": "9.2.9.c. Interrupt windows give both players priority, starting with the active player. When a player passes, the other player receives priority. Players continue to exchange priority until a player who receives priority from their opponent passes without resolving any other option available to them. Once this happens, the interrupt window closes.",
+        "translation": ""
+    },
+    {
+        "key": "rule_interrupt_window_options",
+        "original": "9.2.9.d. During an interrupt window, the player with priority has the option to trigger an interrupt ability they control that is relevant to the imminent effect. See {ref:sec_relevant_interrupts}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_interrupt_window_abilities_unordered",
+        "original": "9.2.9.e. The player with priority during an interrupt window may trigger their abilities in any order until they decide to pass. They do not need to trigger mandatory abilities before optional abilities or trigger conditional abilities before paid abilities. Each ability they trigger must be fully resolved before another is chosen.",
+        "translation": ""
+    },
+    {
+        "key": "rule_interrupt_window_must_resolve_mandatory_abilities",
+        "original": "9.2.9.f. The player with priority cannot pass if they control any pending mandatory abilities that are still relevant to the imminent effect. They may pass with optional conditional abilities still pending. ({ref:Rule_optional_conditional_ability} describes the differences between mandatory and optional conditional abilities.) Once a player has passed, if they receive priority again, they may continue to trigger paid abilities and pending conditional abilities that are relevant. As the interrupt window closes, any remaining pending conditional abilities lose their pending status.",
+        "translation": ""
+    },
+    {
+        "key": "rule_mid_access_window",
+        "original": "9.2.10. A {term:mid-access ability window} is a priority window that opens while the Runner is accessing a card.",
+        "translation": ""
+    },
+    {
+        "key": "rule_mid_access_window_priority",
+        "original": "9.2.10.a. A mid-access ability window gives only the Runner priority.",
+        "translation": ""
+    },
+    {
+        "key": "rule_mid_access_window_options",
+        "original": "9.2.10.b. During a mid-access ability window, the Runner may use a mid-access ability or may pass. In addition to any mid-access abilities available from cards, the Runner may use the basic trash ability (see {ref:rule_basic_trash_ability}).",
+        "translation": ""
+    },
+    {
+        "key": "rule_mid_access_window_one_ability",
+        "original": "9.2.10.c. After the Runner uses a mid-access ability or passes, the mid-access ability window closes and the game moves to the next timing step. The Runner does not receive priority again.",
+        "translation": ""
+    },
+    {
+        "key": "rule_mid_access_window_occurrence",
+        "original": "9.2.10.d. The only point at which a mid-access ability window occurs is at {ref:step_mid_access_ability} of accessing a card.",
+        "translation": ""
+    },
+    {
+        "key": "sec_interpreting_card_text",
+        "original": "9.3. Interpreting Card Text",
+        "translation": ""
+    },
+    {
+        "key": "rule_text_classification",
+        "original": "9.3.1. Text is classified into conditions, restrictions, instructions, declarations, and ability flags. The rules text of an ability can contain text in any combination of these classes, except that no ability contains both instructions and declarations.",
+        "translation": ""
+    },
+    {
+        "key": "rule_condition",
+        "original": "9.3.2. A {term:condition} is a unit of text that stipulates a requirement for when an ability's effects are allowed to apply.",
+        "translation": ""
+    },
+    {
+        "key": "rule_cost_condition",
+        "original": "9.3.2.a. A {term:cost condition} describes a cost (either a nested cost or a trigger cost) that a player must pay to apply an effect. Costs are discussed in detail in {ref:sec_costs}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_trigger_condition",
+        "original": "9.3.2.b. A {term:trigger condition} describes a change in game state that must occur for an effect to apply. Trigger conditions often begin with words such as \"if\", \"when\", \"whenever\", or \"after\", or with ordinal phrases such as \"the first time\".",
+        "translation": ""
+    },
+    {
+        "key": "rule_static_condition",
+        "original": "9.3.2.c. A {term:static condition} describes a property of the game state that must be true for an effect to apply. Static conditions often begin with words such as \"if\", \"during\", or \"while\".",
+        "translation": ""
+    },
+    {
+        "key": "rule_restriction",
+        "original": "9.3.3. A {term:restriction} is a unit of text that applies one of a specific set of constraints for a card to be played or an ability to be used. If a restriction appears in an ability, it applies to the entire ability regardless of whether it is written before, after, or in the middle of the ability's other text. Many restrictions fall under {ref:rule_ability_active_inactive_source_card}, meaning they are active even while their source is inactive.",
+        "translation": ""
+    },
+    {
+        "key": "rule_modify_cost_restriction",
+        "original": "9.3.3.a. Text modifying the cost to play, install, rez, or steal the card it appears on is a restriction, including text that adds an additional cost.",
+        "translation": ""
+    },
+    {
+        "key": "rule_act_restriction",
+        "original": "9.3.3.b. Constraints on when or where a card can be installed, rezzed, played, or scored are restrictions.",
+        "translation": ""
+    },
+    {
+        "key": "rule_use_restriction",
+        "original": "9.3.3.c. Limits on when, where, or how often an ability can be used are restrictions.",
+        "translation": ""
+    },
+    {
+        "key": "rule_pay_cost_restriction",
+        "original": "9.3.3.d. Constraints on how a cost can be paid are restrictions.",
+        "translation": ""
+    },
+    {
+        "key": "rule_host_restriction",
+        "original": "9.3.3.e. If a card's text limits what cards it can host, the text describing that limit is a restriction. See also {ref:rule_host_via_ability}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_variable_restriction",
+        "original": "9.3.3.f. Definitions for or constraints on a variable are restrictions.",
+        "translation": ""
+    },
+    {
+        "key": "rule_variable_restriction-1-example",
+        "original": "Some abilities dictate a value for X, such as \"X is the number of rezzed NEXT ice.\" Some abilities with X in their cost constrain the value that can be chosen for X, such as \"X must be equal to or less than the number of tags the Runner has.\" These statements are restrictions.",
+        "translation": ""
+    },
+    {
+        "key": "rule_cannot_be_prevented_restriction",
+        "original": "9.3.3.g. Stipulations that an effect or part of an effect cannot be prevented are restrictions.",
+        "translation": ""
+    },
+    {
+        "key": "rule_no_restriction",
+        "original": "9.3.3.h. Any text not falling under one of the above categories is not a restriction.",
+        "translation": ""
+    },
+    {
+        "key": "rule_instruction",
+        "original": "9.3.4. An {term:instruction} is a statement or command that is resolved at a specific time and applies immediate effects to the game state. (This can include creating new lingering abilities or effects that will continue to apply over time; see {ref:sec_lingering_effects}.)",
+        "translation": ""
+    },
+    {
+        "key": "rule_instruction_source",
+        "original": "9.3.4.a. Instructions can originate from a game rule or from the text of an ability. An instruction in an ability resolves when that ability resolves (see {ref:rule_resolve_ability}). An instruction in the game rules resolves during the timing step(s) when it appears. {ref:Sec_identifying_instructions} explains how to determine the boundaries between consecutive instructions.",
+        "translation": ""
+    },
+    {
+        "key": "rule_instruction_target",
+        "original": "9.3.4.b. If an instruction requires any targets, players announce those targets before that instruction becomes imminent. See {ref:sec_targets}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_instruction_atomic",
+        "original": "9.3.4.c. Each instruction is carried out as an atomic unit and cannot be interrupted once it begins to resolve. The procedure for carrying out an instruction can be altered by other effects such as interrupts, but only before the instruction begins to resolve. See {ref:sec_interrupts_replacements}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_resolve_instruction_in_order",
+        "original": "9.3.4.d. Other than choosing targets, carry out the steps of a single instruction in the order they are written.",
+        "translation": ""
+    },
+    {
+        "key": "rule_instruction_lingering_effect",
+        "original": "9.3.4.e. Instructions in an ability can create effects that last beyond the resolution of the ability. See {ref:sec_lingering_effects}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_declaration",
+        "original": "9.3.5. A {term:declaration} is a statement describing an effect on components or game rules that is applied continuously. A declaration applies its effects as long as it is active.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ability_flag",
+        "original": "9.3.6. An {term:ability flag} is a keyword or symbol that appears at the beginning of an ability. Ability flags are separated from the main text of the ability by an arrow (→). Each ability flag changes the rules for how the flagged ability functions.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ability_flag_types",
+        "original": "9.3.6.a. There are six ability flags: access, interface, [interrupt], persistent, threat N, and once per turn.",
+        "translation": ""
+    },
+    {
+        "key": "rule_access_flag",
+        "original": "9.3.6.b. The \"access\" flag appears on Runner card paid abilities and affects the timing for triggering those abilities. The Runner can use abilities with this flag only during the mid-access ability window at {ref:step_mid_access_ability} of accessing a card. See {ref:rule_mid_access_window}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_interface_flag",
+        "original": "9.3.6.c. The \"interface\" flag appears on icebreaker paid abilities and affects the timing for triggering those abilities. The Runner can use abilities with this flag only during an encounter, and only if the ability's source is an icebreaker with strength that equals or exceeds the strength of the encountered ice. See {ref:subsec_icebreakers}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_interrupt_flag",
+        "original": "9.3.6.d. The interrupt flag ([interrupt]) appears on paid and conditional abilities and affects the timing for triggering those abilities. Players can use abilities with this flag only during interrupt windows, and only if the ability is relevant to the imminent instruction. See {ref:sec_interrupts_replacements}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_persistent_flag",
+        "original": "9.3.6.e. The \"persistent\" flag appears on Corp card abilities and changes the rules about when those abilities are active. An ability with this flag can persist until the end of the run after its source card is trashed. See {ref:subsec_persistent}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_threat_flag",
+        "original": "9.3.6.f. The \"threat N\" flag can appear on any type of ability. Abilities with this flag are only active if the threat level is greater than or equal to N, regardless of {ref:rule_ability_active_inactive_source_card}. See {ref:rule_threat_level}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_once_per_turn_flag",
+        "original": "9.3.6.g. The \"once per turn\" flag appears on paid and conditional abilities. An ability with this flag can only be used once per turn. {ref:rule_using} explains what it means to \"use\" an ability.",
+        "translation": ""
+    },
+    {
+        "key": "rule_once_per_turn_flag-1-example",
+        "original": "The Runner is playing as {card:Zahya Sadeghi} and finishes a run on HQ, having accessed 1 card. They choose not to gain 1{c} with Zahya's ability. The ability was not \"used\", so its \"once per turn\" restriction has not been expended, even though the ability was able to resolve. The Runner can make another run later in the turn and gain credits with the ability.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ability_classification",
+        "original": "9.3.7. The five types of abilities can be identified by the types of text they are made of.",
+        "translation": ""
+    },
+    {
+        "key": "rule_static_abilities_link",
+        "original": "9.3.7.a. Static abilities ({ref:sec_static_abilities}) can contain declarations, restrictions, and conditions, but never instructions. Static abilities are the only ability type that can contain declarations.",
+        "translation": ""
+    },
+    {
+        "key": "rule_paid_abilities_link",
+        "original": "9.3.7.b. Paid abilities ({ref:sec_paid_abilities}) can always be identified by their formatting: a cost condition in bold text, a colon (:), then the remainder of the ability. The text after the colon can contain conditions, restrictions, and/or instructions.",
+        "translation": ""
+    },
+    {
+        "key": "rule_conditional_abilities_link",
+        "original": "9.3.7.c. Conditional abilities ({ref:sec_conditional_abilities}) always contain a trigger condition or static condition and at least one instruction. They can also contain restrictions, other instructions, or nested conditions. The primary condition is often written with a timing-related word or phrase like \"when\", \"after\", \"the first time\", and so on, and is usually the first part of the ability's text. Some older cards write the condition at the end of the ability or use \"if\" to indicate the condition.",
+        "translation": ""
+    },
+    {
+        "key": "rule_play_abilities_link",
+        "original": "9.3.7.d. Play abilities ({ref:sec_play_abilities}) are the abilities on events and operations that are not paid, conditional, or static abilities. They can contain conditions, restrictions, and/or instructions.",
+        "translation": ""
+    },
+    {
+        "key": "rule_subroutines_link",
+        "original": "9.3.7.e. Subroutines ({ref:sec_subroutines}) always begin with the [sub] symbol, and can contain conditions, restrictions, and/or instructions.",
+        "translation": ""
+    },
+    {
+        "key": "sec_static_abilities",
+        "original": "9.4. Static Abilities",
+        "translation": ""
+    },
+    {
+        "key": "rule_static_ability",
+        "original": "9.4.1. A {term:static ability} is an ability that continuously affects the game as long as it is active. Static abilities are the only type of ability that can contain declarations, and they do not resolve or have associated priority windows.",
+        "translation": ""
+    },
+    {
+        "key": "rule_static_ability_with_condition",
+        "original": "9.4.2. If a static ability contains a static condition, then the constrained parts of the ability apply to the game state only if that condition is met.",
+        "translation": ""
+    },
+    {
+        "key": "rule_static_ability_with_restriction",
+        "original": "9.4.3. Static abilities can include restrictions that apply to their source card. These restrictions are often active even while the card is inactive. See {ref:rule_ability_active_inactive_source_card}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_static_no_lingering_effects",
+        "original": "9.4.4. The effects of static abilities do not have durations and cannot directly create lingering effects (see {ref:sec_lingering_effects}).",
+        "translation": ""
+    },
+    {
+        "key": "rule_static_no_lingering_effects-1-example",
+        "original": "The runner controls {card:Puffer} with a hosted {card:Gebrselassie}. {card:Gebrselassie} changes the durations of abilities affecting its host's strength, so if the Runner uses {card:Puffer}'s paid ability to give it +1 strength, that increase will last for the remainder of the turn. {card:Gebrselassie} does not affect {card:Puffer}'s static ability that increases its strength for each hosted power counter, so if the Runner spends [click] to remove a power counter, then the increase in strength from {card:Puffer}'s static ability will immediately be lost.",
+        "translation": ""
+    },
+    {
+        "key": "rule_static_modification_keep_restrictions",
+        "original": "9.4.5. Static abilities that modify a value maintain the same restrictions and specifications that were present on the original value.",
+        "translation": ""
+    },
+    {
+        "key": "rule_static_modification_keep_restrictions-1-example",
+        "original": "{card:The Cleaners} has a static ability that gives every instance of meat damage done by the Corp +1 to the amount of the damage. Part of {card:Flare}'s effect does 2 meat damage that can't be prevented. If this effect resolves while {card:The Cleaners} is active, then all 3 points of meat damage are unpreventable.",
+        "translation": ""
+    },
+    {
+        "key": "sec_paid_abilities",
+        "original": "9.5. Paid Abilities",
+        "translation": ""
+    },
+    {
+        "key": "rule_paid_ability",
+        "original": "9.5.1. A {term:paid ability} is an ability players trigger at-will, during appropriate priority windows. In order to use a paid ability, the controller of that ability must pay its {term:trigger cost}. Paid abilities are always written with the trigger cost first, followed by a colon (:), followed by the remainder of the ability's text.",
+        "translation": ""
+    },
+    {
+        "key": "rule_trigger_paid_abilities",
+        "original": "9.5.2. A player can trigger paid abilities they control while they have priority in an appropriate priority window.",
+        "translation": ""
+    },
+    {
+        "key": "rule_action",
+        "original": "9.5.2.a. If the trigger cost of a paid ability begins with a [click] symbol, the ability is an {term:action}. A player can use one action paid ability during each action window on their turn. See {ref:rule_action_window} and {ref:sec_actions}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_interrupt",
+        "original": "9.5.2.b. If the [interrupt] flag appears before a paid ability's trigger cost, that ability is an interrupt. A player can use interrupt paid abilities during appropriate interrupt windows. Each such ability can be used as many times as its effects could apply to the imminent instruction. See {ref:sec_interrupts_replacements}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_mid_access_ability",
+        "original": "9.5.2.c. If the \"access\" flag appears before a paid ability's trigger cost, that ability is a mid-access ability. The Runner can use up to 1 mid-access ability during the mid-access ability window at {ref:step_mid_access_ability} of accessing a card.",
+        "translation": ""
+    },
+    {
+        "key": "rule_interface_ability",
+        "original": "9.5.2.d. If the \"interface\" flag appears before a paid ability's trigger cost, that ability is an Interface ability and is subject to the restrictions of icebreakers discussed in {ref:subsec_icebreakers}. Interface abilities do not have a special priority window type.",
+        "translation": ""
+    },
+    {
+        "key": "rule_paid_ability_timing_restriction_reference",
+        "original": "9.5.2.e. Certain paid abilities can only be used at times appropriate to their effects, as detailed in {ref:rule_paid_ability_effect_based_timing_restrictions}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_other_paid_abilities",
+        "original": "9.5.2.f. A paid ability that is not an action, interrupt, or mid-access ability can be used during a paid ability window. Each such ability can be used an unlimited number of times as long as its cost is paid each time and any restrictions specified in its text or by other abilities are observed.",
+        "translation": ""
+    },
+    {
+        "key": "rule_paid_ability_optional",
+        "original": "9.5.3. Paid abilities are always optional. A paid ability and its source are considered used when the ability's trigger cost is paid.",
+        "translation": ""
+    },
+    {
+        "key": "rule_forced_mid_access_ability_optional",
+        "original": "9.5.3.a. Mid-access abilities the Runner is forced to trigger still count as optional abilities. See also {ref:rule_access_installed_must_trash_if_able} and {ref:rule_access_reveal_trash_if_able}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_forced_mid_access_ability_optional-1-example",
+        "original": "The Corp resolves the subroutine on {card:Wendigo}, prohibiting the Runner from using their installed {card:Imp} for the remainder of the run. Later, the Runner accesses an installed {card:Mumbad Virtual Tour}. Even though {card:Mumbad Virtual Tour} forces the Runner to trash it if able, {card:Imp}'s ability is still optional for purposes of {card:Wendigo}'s prohibition. Since {card:Imp}'s ability cannot be used at all this run, {card:Mumbad Virtual Tour} cannot compel the Runner to spend one of its hosted virus counters. If the Runner can pay the cost of another mid-access ability, such as the basic trash ability, the Runner must use that ability. If not, the Runner will not be able to trash {card:Mumbad Virtual Tour} at all.",
+        "translation": ""
+    },
+    {
+        "key": "rule_paid_ability_independent",
+        "original": "9.5.4. Once a player pays the trigger cost of a paid ability, that ability becomes independent of its source and {ref:rule_abilities_resolution_independent} applies to it.",
+        "translation": ""
+    },
+    {
+        "key": "rule_trash_ability_keeps_track_of_hosted_objects",
+        "original": "9.5.5. If the trigger cost of a paid ability uninstalls or forfeits the source of that paid ability, and the effects of that paid ability refer to or act on cards or counters hosted on that source, set aside any hosted cards and counters as the trigger cost is paid. The set-aside cards or counters are still considered \"hosted\" for purposes of this ability, but they are not trashed due to not having a host for as long as the ability is resolving. When the ability finishes resolving, if any of those cards or counters are still set aside, they are trashed during {ref:step_checkpoint_hosted_on_agenda} or {ref:step_checkpoint_hosted_on_installed_cards} of the next checkpoint, as appropriate. Other abilities cannot interact with these cards or counters while they are set aside (see {ref:rule_set_aside_zone_passthrough}).",
+        "translation": ""
+    },
+    {
+        "key": "rule_trash_ability_keeps_track_of_hosted_objects-1-example",
+        "original": "The Runner has {card:Fermenter} installed with 4 hosted virus counters. They use its paid ability, which has a cost that includes trashing {card:Fermenter}. As the Runner pays this cost, they set aside the 4 counters. When the ability resolves and refers to the number of hosted virus counters, it includes the counters that were set aside, so the Runner gains 8 credits. When the ability is finished resolving, the counters are returned to the bank.",
+        "translation": ""
+    },
+    {
+        "key": "rule_trash_ability_keeps_track_of_hosted_objects-2-example",
+        "original": "The Runner uses the [trash] ability on {card:Street Peddler}. They pay the trigger cost and set the 3 hosted cards aside. When the ability resolves, the Runner installs one of the set-aside cards. Since the other two cards are still set aside, the next checkpoint trashes them just as in any other case of cards that were hosted on a card that is no longer installed. No other abilities are able to tell that the cards were set aside: they are treated as having been installed or trashed from their previous location in the play area.",
+        "translation": ""
+    },
+    {
+        "key": "rule_trash_ability_keeps_track_of_hosted_objects-3-example",
+        "original": "This example describes a situation similar to the previous examples, but covers the sequence of steps the game carries out in a higher level of detail. The Corp has priority in a paid ability window, and chooses to trigger the [trash] ability on {card:Reconstruction Contract}. As they pay the trigger cost, moving {card:Reconstruction Contract} to Archives, they set aside the advancement counters hosted on {card:Reconstruction Contract}. Next, a checkpoint occurs following the cost having been paid. After that checkpoint and any corresponding reaction window, the [trash] ability's instruction is ready to become imminent. The Corp chooses a card they can advance to be the instruction's target, and an interrupt window opens. After the interrupt window (assuming the effects of the instruction are not prevented), the Corp moves the set-aside counters to the target card.",
+        "translation": ""
+    },
+    {
+        "key": "rule_paid_ability_effect_based_timing_restrictions",
+        "original": "9.5.6. Paid abilities with certain effects can only be triggered in specific situations.",
+        "translation": ""
+    },
+    {
+        "key": "rule_paid_ability_breaks_subroutines",
+        "original": "9.5.6.a. A paid ability that contains an instruction that could break 1 or more subroutines can only be used during an encounter.",
+        "translation": ""
+    },
+    {
+        "key": "rule_paid_ability_refers_to_approached_ice",
+        "original": "9.5.6.b. A paid ability that refers to ice the Runner is approaching can only be used during the Approach Ice Phase of a run, and only if the ice being approached meets all stipulations used in referring to it.",
+        "translation": ""
+    },
+    {
+        "key": "rule_paid_ability_refers_to_approached_ice-1-example",
+        "original": "The Corp can only use the paid ability on {card:Project Wotan} while the Runner is approaching a rezzed piece of {subtype:bioroid} ice.",
+        "translation": ""
+    },
+    {
+        "key": "rule_paid_ability_refers_to_encountered_ice",
+        "original": "9.5.6.c. A paid ability that refers to ice the Runner is encountering can only be used during an encounter with a piece of ice that meets all stipulations used in referring to it.",
+        "translation": ""
+    },
+    {
+        "key": "rule_paid_ability_refers_to_encountered_ice-1-example",
+        "original": "The Runner cannot trigger the first ability on {card:Arruaceiras Crew} at an arbitrary time to give themself a tag. They can only use this ability during an encounter.",
+        "translation": ""
+    },
+    {
+        "key": "rule_paid_ability_refers_to_encountered_ice-2-example",
+        "original": "The Runner can use the [trash] ability on {card:Abagnale} during an encounter with a {subtype:code gate}. They can only use the interface ability on {card:Abagnale} during an encounter with a {subtype:code gate} that {card:Abagnale} has sufficient strength to interface with.",
+        "translation": ""
+    },
+    {
+        "key": "sec_steps_of_using_a_paid_ability",
+        "original": "9.5.7. Steps of Using a Paid Ability",
+        "translation": ""
+    },
+    {
+        "key": "step_paid_ability_announce",
+        "original": "9.5.7.a. Announce the intent to trigger the paid ability.",
+        "translation": ""
+    },
+    {
+        "key": "step_paid_ability_condition",
+        "original": "9.5.7.b. Pay the trigger cost. The ability and its source are considered used. \"When used\" abilities meet their trigger conditions. (The cost-paid checkpoint then occurs.)",
+        "translation": ""
+    },
+    {
+        "key": "step_paid_ability_target_first_instruction",
+        "original": "9.5.7.c. Announce any targets for the ability's first instruction. That instruction then becomes imminent.",
+        "translation": ""
+    },
+    {
+        "key": "step_paid_ability_interrupt_window",
+        "original": "9.5.7.d. An interrupt window occurs, during which abilities can modify, prevent, or avoid the imminent effects.",
+        "translation": ""
+    },
+    {
+        "key": "step_paid_ability_resolution",
+        "original": "9.5.7.e. Resolve the instruction, applying any changes to its effects from interrupts that were resolved.",
+        "translation": ""
+    },
+    {
+        "key": "step_paid_ability_checkpoint",
+        "original": "9.5.7.f. A checkpoint occurs.",
+        "translation": ""
+    },
+    {
+        "key": "step_paid_ability_loop",
+        "original": "9.5.7.g. If there are more instructions to resolve, announce any targets for the next instruction. That instruction then becomes imminent. Return to (d).",
+        "translation": ""
+    },
+    {
+        "key": "step_paid_ability_complete",
+        "original": "9.5.7.h. Resolution of the paid ability is complete.",
+        "translation": ""
+    },
+    {
+        "key": "sec_conditional_abilities",
+        "original": "9.6. Conditional Abilities",
+        "translation": ""
+    },
+    {
+        "key": "rule_conditional_ability",
+        "original": "9.6.1. A {term:conditional ability} is an ability that a player can or must trigger at a specific point in the game. Conditional abilities always include a primary condition and one or more instructions, but they have no special syntax requirements.",
+        "translation": ""
+    },
+    {
+        "key": "rule_primary_condition",
+        "original": "9.6.1.a. The primary condition of a conditional ability is usually a trigger condition, but can also be a static condition.",
+        "translation": ""
+    },
+    {
+        "key": "rule_primary_condition_front",
+        "original": "9.6.1.b. The primary condition of a conditional ability is often, but not always, written at the front of the ability. See {ref:rule_conditional_abilities_link} for details about conditional ability syntax.",
+        "translation": ""
+    },
+    {
+        "key": "rule_pending_instances",
+        "original": "9.6.2. When a conditional ability has met its condition, one or more {term:instances} of that conditional ability is created {term:pending} in the next reaction window that opens. Each instance of a conditional ability is a separate copy of that ability that resolves independently of the others. An instance of an ability with the pending status is waiting for its controller to trigger it.",
+        "translation": ""
+    },
+    {
+        "key": "rule_static_condition_one_instance",
+        "original": "9.6.3. A conditional ability with a static condition can only have one instance at a time.",
+        "translation": ""
+    },
+    {
+        "key": "rule_trigger_condition_multiple_instances",
+        "original": "9.6.4. A conditional ability with a trigger condition can have multiple instances.",
+        "translation": ""
+    },
+    {
+        "key": "rule_condition_met_with_pending_instances",
+        "original": "9.6.4.a. If a trigger condition is met again while an instance of the corresponding ability is already pending, imminent, or resolving, a new instance can still become pending in the next reaction window.",
+        "translation": ""
+    },
+    {
+        "key": "rule_condition_met_multiple_times",
+        "original": "9.6.4.b. If the trigger condition of an ability is met more than once between consecutive checkpoints, multiple instances of that ability become pending in the next reaction window.",
+        "translation": ""
+    },
+    {
+        "key": "rule_condition_met_multiple_times-1-example",
+        "original": "The Runner plays {card:Singularity}, trashing 3 Corp cards simultaneously. Since {card:Hostile Infrastructure}'s trigger condition is met separately for each card trashed, the next checkpoint handles all of those occurrences, and 3 instances of the ability become pending in the same reaction window.",
+        "translation": ""
+    },
+    {
+        "key": "rule_condition_met_multiple_times-2-example",
+        "original": "The Runner controls {card:Blackguard} and plays {card:Satellite Uplink}, exposing 2 cards in a single instruction. In the next checkpoint, two instances of {card:Blackguard}'s ability become pending, one corresponding to each card that was exposed.",
+        "translation": ""
+    },
+    {
+        "key": "rule_trigger_description",
+        "original": "9.6.5. The trigger condition of most conditional abilities describes an occurrence that allows it to become pending. These rules about trigger conditions also apply to conditional abilities with static conditions, except as described in {ref:rule_conditional_ability_with_static_condition}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_condition_checked_in_checkpoints",
+        "original": "9.6.5.a. During each checkpoint, the game checks whether any conditional abilities have met their trigger conditions. If any have, a reaction window opens to resolve those abilities (See {ref:sec_checkpoints}). This reaction window is fully resolved and closed before the game proceeds to the next instruction of the original effect or game rule.",
+        "translation": ""
+    },
+    {
+        "key": "rule_condition_only_met_while_active",
+        "original": "9.6.5.b. A conditional ability can only recognize its trigger condition occurring if the ability is active at the time the effect or game state that meets its trigger condition is processed by {ref:step_checkpoint_conditional_abilities} of a checkpoint. If a conditional ability becomes active after its trigger condition was met and a checkpoint has occurred, that ability does not become pending, even if a reaction window associated with that condition is open.",
+        "translation": ""
+    },
+    {
+        "key": "rule_condition_only_met_while_active-1-example",
+        "original": "The Corp is resolving their \"turn begins\" abilities, and they trash {card:Reaper Function} to do 2 net damage. This trashing allows the Corp to use the ability on {card:Ob Superheavy Logistics} to install and rez {card:Nico Campaign}. The Corp cannot take credits from {card:Nico Campaign} this turn because the \"turn begins\" trigger condition has already been processed.",
+        "translation": ""
+    },
+    {
+        "key": "rule_condition_only_met_while_active-2-example",
+        "original": "The Corp uses {card:Architect Deployment Test} to install and rez a copy of {card:Tranquility Home Grid}, which is the first card installed this turn. After completing the installation from this effect, the Corp pays the rez cost of {card:Tranquility Home Grid}. Since {card:Architect Deployment Test} specified that all costs are ignored, the rez cost is reduced to 0 (see {ref:rule_ignore_all_costs}), but this step still happens and is still followed by a checkpoint (see {ref:rule_cost_checkpoint_cost_zero}). This is the checkpoint that processes that a card was installed, but {card:Tranquility Home Grid} is not yet active and an instance of its ability cannot be created. After the checkpoint and any corresponding reaction window, the Corp finishes rezzing {card:Tranquility Home Grid} and it becomes active.",
+        "translation": ""
+    },
+    {
+        "key": "rule_condition_requirements_part_of_condition",
+        "original": "9.6.5.c. A conditional ability can only recognize its trigger condition occurring if all the stipulations and requirements listed in the trigger condition are met at the moment that the trigger condition would occur.",
+        "translation": ""
+    },
+    {
+        "key": "rule_condition_requirements_part_of_condition-1-example",
+        "original": "The entire trigger condition on {card:Quantum Predictive Model} is \"If the Runner is tagged when {card:Quantum Predictive Model} is accessed\". {card:Quantum Predictive Model} can only meet its trigger condition if the Runner is tagged at the time the access occurs. Even if {card:Casting Call} is hosted on {card:Quantum Predictive Model}, the tag will be given after the access begins, and no ordering of the abilities will allow {card:Quantum Predictive Model} to meet its trigger condition.",
+        "translation": ""
+    },
+    {
+        "key": "rule_condition_requirements_part_of_effect",
+        "original": "9.6.5.d. Additional stipulations and requirements listed in the instructions of a conditional ability are checked as part of the ability's effects and are not part of the ability's trigger condition. For the effects under the scope of this kind of condition to resolve, the condition only needs to be met when the relevant instructions resolve. This can occur even if some or all of those conditions were not met at the time the ability met its trigger condition.",
+        "translation": ""
+    },
+    {
+        "key": "rule_condition_requirements_part_of_effect-1-example",
+        "original": "If a Runner with 1 link has both {card:Underworld Contact} installed and {card:The Supplier} installed hosting a {card:Dyson Mem Chip}, both {card:Underworld Contact} and {card:The Supplier} meet their trigger conditions at the same time. The Runner can trigger {card:The Supplier} first, installing the Dyson Mem Chip, thus allowing {card:Underworld Contact} to recognize that the Runner has 2 link and give them 1 credit, even though the Runner did not have 2 link at the time the {card:Underworld Contact} became pending.",
+        "translation": ""
+    },
+    {
+        "key": "rule_condition_if_successful",
+        "original": "9.6.5.e. The phrase \"If successful\" in reference to a run is a trigger condition with specific rules. See {ref:rule_if_successful}. The phrases \"If successful\" and \"If unsuccessful\" are also frequently used as trigger conditions relating to the results of a trace. See {ref:sec_traces}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_trigger_condition_checked",
+        "original": "9.6.6. Trigger conditions look for an instantaneous change in the game state. The next checkpoint after that change takes place marks an instance of the ability as pending for each occurrence of the change that was looked for.",
+        "translation": ""
+    },
+    {
+        "key": "rule_instruction_requirements_past_state",
+        "original": "9.6.6.a. Some conditional abilities refer to the game state before the trigger condition was met, using the word \"had\". The previous game state referred to is the game state at the time of {ref:step_checkpoint_conditional_abilities} of the checkpoint immediately preceding the checkpoint in which the ability became pending.",
+        "translation": ""
+    },
+    {
+        "key": "rule_instruction_requirements_past_state-1-example",
+        "original": "The ability of {card:Weyland Consortium: Built to Last} only causes the Corp to gain 2{c} when they advance a card that \"had no advancement counters\". This ability becomes pending immediately after an instruction resolves in which the Corp advances a card, and the requirement is checked against the state of the game at the previous checkpoint, before that advancement took place.",
+        "translation": ""
+    },
+    {
+        "key": "rule_conditional_ability_with_static_condition",
+        "original": "9.6.7. Conditional abilities with a static condition instead of a trigger condition describe an effect that must be performed repeatedly, if possible, while the condition is true. Such abilities usually attempt to end their own repetition by uninstalling their source.",
+        "translation": ""
+    },
+    {
+        "key": "rule_conditional_ability_check_to_become_pending",
+        "original": "9.6.7.a. During each checkpoint, the game checks whether any conditional abilities with static conditions should become pending, alongside conditional abilities with trigger conditions. However, there are further requirements for this kind of ability to be marked pending.",
+        "translation": ""
+    },
+    {
+        "key": "rule_conditional_ability_check_start_of_checkpoint",
+        "original": "9.6.7.b. A conditional ability with a static condition can only be marked pending during a checkpoint if the condition is true at the beginning of that checkpoint.",
+        "translation": ""
+    },
+    {
+        "key": "rule_conditional_ability_static_one_instance",
+        "original": "9.6.7.c. A conditional ability with a static condition can only be marked pending if no other instance of the same ability from the same source is already pending, imminent, or resolving.",
+        "translation": ""
+    },
+    {
+        "key": "rule_conditional_ability_static_condition_no_effect",
+        "original": "9.6.7.d. If a conditional ability with a static condition resolves and no instruction in that ability had any expected effects at the time that instruction's interrupt window opened, that ability cannot be marked pending again until a timing structure step is completed.",
+        "translation": ""
+    },
+    {
+        "key": "rule_conditional_ability_static_condition_no_effect-1-example",
+        "original": "{card:Parasite} is hosted on a piece of ice with 0 strength. {card:Parasite}'s ability tries to trash that ice. If the effect of an interrupt ability prevents the ice from being trashed without increasing its strength, the condition is still true, so the ability will become pending again. But this does not occur while the previous instance of the ability is still pending or resolving. Conversely, if a static ability (such as the one on {card:Architect}) prohibits {card:Parasite} from trashing the ice, there are no effects {card:Parasite}'s ability can perform, and therefore the ability resolves only once per timing structure step.",
+        "translation": ""
+    },
+    {
+        "key": "rule_trigger_conditional_ability",
+        "original": "9.6.8. A player can trigger a conditional ability while they have priority in a reaction window in which the ability is pending.",
+        "translation": ""
+    },
+    {
+        "key": "rule_triggered_ability_loses_pending",
+        "original": "9.6.8.a. Once a player triggers a conditional ability, that instance of the ability loses its pending status. Other pending instances of the ability are unaffected and can still be triggered later, regardless of whether those instances are associated with the same reaction window.",
+        "translation": ""
+    },
+    {
+        "key": "rule_conditional_ability_interrupt",
+        "original": "9.6.8.b. If the [interrupt] symbol appears before a conditional ability's text, that ability is an interrupt. These abilities will become pending in interrupt windows rather than reaction windows, but are otherwise resolved in the same way as non-interrupt conditional abilities. See {ref:sec_interrupts_replacements}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_optional_conditional_ability",
+        "original": "9.6.9. If a conditional ability gives its controller a choice of whether to apply its effects, such that the ability could potentially have no effects at all, it is considered an {term:optional conditional ability}. These abilities can usually be recognized by the presence of permissive words such as \"may\" or \"allows\", or by a restriction such as \"Use this ability only once per turn.\" If the ability is not optional, then it is a {term:mandatory conditional ability}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_pass_with_optional_conditional_abilities_pending",
+        "original": "9.6.9.a. Instances of optional conditional abilities can still be pending when their controller passes in the corresponding priority window. Players are not required to trigger optional conditional abilities.",
+        "translation": ""
+    },
+    {
+        "key": "rule_cannot_pass_with_mandatory_conditional_abilities_pending",
+        "original": "9.6.9.b. Players must trigger all instances of pending mandatory conditional abilities they control in a given priority window before they can pass in that window. See {ref:rule_reaction_window}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_mandatory_conditional_ability_with_optional_effects",
+        "original": "9.6.9.c. Both optional and mandatory conditional abilities may have optional parts to their effects. Even if triggering the ability is mandatory, its controller may still decline any optional constituent effects that arise during its resolution.",
+        "translation": ""
+    },
+    {
+        "key": "rule_optional_conditional_ability_use",
+        "original": "9.6.9.d. A conditional ability and its source are considered used when any optional component of the ability's effects is carried out.",
+        "translation": ""
+    },
+    {
+        "key": "rule_conditional_ability_lose_pending_when_ability_becomes_inactive",
+        "original": "9.6.10. If any instances of a conditional ability are pending and the conditional ability itself becomes inactive, those instances lose their pending status and will not resolve.",
+        "translation": ""
+    },
+    {
+        "key": "rule_conditional_ability_lose_pending_when_ability_becomes_inactive-1-example",
+        "original": "The Runner has both {card:Aesop's Pawnshop} and {card:Drug Dealer} installed. Both cards have abilities that meet their trigger conditions when the Runner's turn begins. If the Runner chooses to trigger {card:Aesop's Pawnshop} first, and then uses it to trash {card:Drug Dealer}, {card:Drug Dealer}'s pending ability can never be triggered, so the Runner does not lose a credit.",
+        "translation": ""
+    },
+    {
+        "key": "rule_conditional_ability_lose_pending_when_priority_window_closes",
+        "original": "9.6.11. If a priority window closes while any abilities still have pending instances associated with that window, the remaining instances lose their pending status and cannot be triggered or resolved. See {ref:rule_reaction_window_closing_timing_structure}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_conditional_ability_independent",
+        "original": "9.6.12. Once a player triggers a conditional ability and its instructions become imminent, the ability becomes independent of its source and {ref:rule_abilities_resolution_independent} applies to it.",
+        "translation": ""
+    },
+    {
+        "key": "rule_delayed_conditional_ability",
+        "original": "9.6.13. A {term:delayed conditional ability} is a conditional ability maintained by a lingering effect (see {ref:sec_lingering_effects}). Unlike other lingering effects, some delayed conditional abilities are created without an explicitly stated duration.",
+        "translation": ""
+    },
+    {
+        "key": "rule_delayed_conditional_ability_if_successful_duration",
+        "original": "9.6.13.a. If an \"if successful\" ability contains a nested delayed conditional ability referring to breaching the attacked server, that ability applies to the breach at {ref:step_breach} of the run the \"if successful\" ability is associated with. Its duration expires at the end of the run. See {ref:rule_if_successful_lingering_effect}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_delayed_conditional_ability_specified_duration",
+        "original": "9.6.13.b. If an instruction creates a delayed conditional ability and specifies a duration, the delayed conditional ability is active until that duration expires.",
+        "translation": ""
+    },
+    {
+        "key": "rule_delayed_conditional_ability_specified_duration-1-example",
+        "original": "{card:In the Groove} creates a delayed conditional ability that specifies a duration of \"this turn\". Since a duration is specified, it is not limited to only being triggered once. The ability becomes pending and can resolve every time its trigger condition is met, and its existence only expires at the end of the turn.",
+        "translation": ""
+    },
+    {
+        "key": "rule_delayed_conditional_ability_relevant_once",
+        "original": "9.6.13.c. Any other delayed conditional ability exists until the next time it resolves, after which it expires.",
+        "translation": ""
+    },
+    {
+        "key": "rule_delayed_conditional_ability_relevant_once-1-example",
+        "original": "{card:Joshua B.}'s ability allows the Runner to gain [click]. If they do, it creates a delayed conditional ability that is independent of {card:Joshua B.} itself, which will meet its trigger condition only once, when that turn ends. After that ability resolves, the game no longer maintains the lingering effect creating the ability.",
+        "translation": ""
+    },
+    {
+        "key": "rule_references_to_trigger_conditions",
+        "original": "9.6.14. Some cards refer to a class of conditional abilities according to their trigger condition.",
+        "translation": ""
+    },
+    {
+        "key": "rule_when_encountered",
+        "original": "9.6.14.a. A \"when encountered\" ability is any ability that could meet its trigger condition at {ref:step_encounter_begins} of an encounter with its source.",
+        "translation": ""
+    },
+    {
+        "key": "rule_when_installed",
+        "original": "9.6.14.b. A \"when installed\" ability is any ability that could meet its trigger condition at {ref:rule_steps_installing_installed_condition} of the process of installing its source.",
+        "translation": ""
+    },
+    {
+        "key": "rule_when_scored",
+        "original": "9.6.14.c. A \"when scored\" ability is any ability on an agenda that could meet its trigger condition as a result of the Corp choosing the option to score that agenda during a paid ability window (see {ref:rule_paid_ability_window_corp_score}).",
+        "translation": ""
+    },
+    {
+        "key": "rule_instructed_to_resolve_conditional_ability",
+        "original": "9.6.14.d. If an effect attempts to resolve a conditional ability according to one of the classes identified in {ref:rule_references_to_trigger_conditions}, the ability is marked pending as though the stipulation of that class had occurred. Any additional requirements of the trigger condition in question must still be met by the game state.",
+        "translation": ""
+    },
+    {
+        "key": "rule_instructed_to_resolve_conditional_ability-1-example",
+        "original": "The Corp has scored {card:AstroScript Pilot Program} and {card:Market Research}. They forfeit one of those agendas to play {card:24/7 News Cycle} and resolve the \"when scored\" ability of the other agenda, even though neither agenda was actually scored at this time. The Corp can forfeit {card:Market Research} to resolve {card:AstroScript Pilot Program}'s ability and put an agenda counter on it, with no other stipulations. If the Runner is tagged, the Corp could instead forfeit {card:AstroScript Pilot Program} to put an agenda counter on {card:Market Research}. However, if the Runner is not tagged, the additional requirement of {card:Market Research}'s trigger condition will not be met, so its \"when scored\" ability cannot become pending or resolve.",
+        "translation": ""
+    },
+    {
+        "key": "sec_steps_of_triggering_and_resolving_a_conditional_ability",
+        "original": "9.6.15. Steps of Triggering and Resolving a Conditional Ability",
+        "translation": ""
+    },
+    {
+        "key": "step_conditional_ability_announce",
+        "original": "9.6.15.a. Announce that you will trigger one of the pending abilities associated with the reaction window that gave you priority.",
+        "translation": ""
+    },
+    {
+        "key": "step_conditional_ability_target_first_instruction",
+        "original": "9.6.15.b. Announce any targets for the ability's first instruction. That instruction then becomes imminent.",
+        "translation": ""
+    },
+    {
+        "key": "step_conditional_ability_interrupt_window",
+        "original": "9.6.15.c. An interrupt window occurs, during which abilities can modify, prevent, or avoid the imminent effects.",
+        "translation": ""
+    },
+    {
+        "key": "step_conditional_ability_resolution",
+        "original": "9.6.15.d. Resolve the instruction, applying any changes to its effects from interrupts that were resolved. If the controller of the ability chooses to resolve an optional effect contained in this instruction, and this is the first instruction for which that player has done so, \"when used\" conditionals meet their trigger conditions.",
+        "translation": ""
+    },
+    {
+        "key": "step_conditional_ability_checkpoint",
+        "original": "9.6.15.e. A checkpoint occurs.",
+        "translation": ""
+    },
+    {
+        "key": "step_conditional_ability_loop",
+        "original": "9.6.15.f. If there are more instructions to resolve, announce any targets for the next instruction. That instruction then becomes imminent. Return to (c).",
+        "translation": ""
+    },
+    {
+        "key": "step_conditional_ability_complete",
+        "original": "9.6.15.g. Resolution of the conditional ability is complete.",
+        "translation": ""
+    },
+    {
+        "key": "sec_play_abilities",
+        "original": "9.7. Play Abilities",
+        "translation": ""
+    },
+    {
+        "key": "rule_play_ability",
+        "original": "9.7.1. Any ability on an event or operation that is not a paid, conditional, or static ability is a {term:play ability}. Play abilities are the abilities that resolve as part of playing that event or operation during {ref:rule_steps_playing_resolve_play_abilities}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_play_ability-1-example",
+        "original": "The operation card {card:Oppo Research} has several abilities of different types. The first ability reads \"Play only if the Runner stole or trashed a Corp card during their last turn.\" This is a static ability that contains a restriction and no declarations. The second ability (\"After you resolve this operation, your action phase ends.\") is a conditional ability that meets its trigger condition and resolves after the Corp finishes playing and resolving {card:Oppo Research}. The third and fourth abilities contain instructions with no trigger conditions or paid ability trigger costs, so they are both play abilities. They resolve in sequence while {card:Oppo Research} is being played.",
+        "translation": ""
+    },
+    {
+        "key": "sec_steps_of_resolving_a_play_ability",
+        "original": "9.7.2. Steps of Resolving a Play Ability",
+        "translation": ""
+    },
+    {
+        "key": "step_play_ability_target_first_instruction",
+        "original": "9.7.2.a. Announce any targets for the ability's first instruction. That instruction then becomes imminent.",
+        "translation": ""
+    },
+    {
+        "key": "step_play_ability_interrupt_window",
+        "original": "9.7.2.b. An interrupt window occurs, during which abilities can modify, prevent, or avoid the imminent effects.",
+        "translation": ""
+    },
+    {
+        "key": "step_play_ability_interrupt_resolution",
+        "original": "9.7.2.c. Resolve the instruction, applying any changes to its effects from interrupts that were resolved.",
+        "translation": ""
+    },
+    {
+        "key": "step_play_ability_checkpoint",
+        "original": "9.7.2.d. A checkpoint occurs.",
+        "translation": ""
+    },
+    {
+        "key": "step_play_ability_loop",
+        "original": "9.7.2.e. If there are more instructions to resolve, announce any targets for the next instruction. That instruction then becomes imminent. Return to (b).",
+        "translation": ""
+    },
+    {
+        "key": "step_play_ability_complete",
+        "original": "9.7.2.f. Resolution of the play ability is complete.",
+        "translation": ""
+    },
+    {
+        "key": "sec_subroutines",
+        "original": "9.8. Subroutines",
+        "translation": ""
+    },
+    {
+        "key": "rule_subroutine",
+        "original": "9.8.1. A {term:subroutine} is an ability beginning with the [sub] symbol. Only ice can have subroutines.",
+        "translation": ""
+    },
+    {
+        "key": "rule_subroutines_ordered",
+        "original": "9.8.2. Subroutines always have a specified order.",
+        "translation": ""
+    },
+    {
+        "key": "rule_printed_subroutines_order",
+        "original": "9.8.2.a. The order of the subroutines printed on a piece of ice is the order in which they appear on that ice.",
+        "translation": ""
+    },
+    {
+        "key": "rule_subroutines_added_to_end_default",
+        "original": "9.8.2.b. Unless otherwise specified, subroutines a piece of ice gains from an ability are added after all other subroutines the ice has at the time that ability begins to apply to that ice.",
+        "translation": ""
+    },
+    {
+        "key": "rule_subroutines_added_to_end_default-1-example",
+        "original": "The Runner encounters {card:Marker}, and its subroutine resolves. The next ice the Runner encounters is {card:Brainstorm}. When the encounter begins, the lingering effect from {card:Marker} gives {card:Brainstorm} an \"[sub] End the run.\" subroutine. Then, {card:Brainstorm}'s conditional ability resolves, giving it the appropriate number of \"[sub] Do 1 core damage.\" subroutines. The \"[sub] Do 1 core damage.\" subroutines are all ordered after the \"[sub] End the run.\" subroutine.",
+        "translation": ""
+    },
+    {
+        "key": "rule_corp_decides_unspecified_order",
+        "original": "9.8.2.c. If multiple subroutines are added to a piece of ice at the same time in an unspecified order, the Corp declares the relative order of those subroutines at the time the ice gains them.",
+        "translation": ""
+    },
+    {
+        "key": "rule_subroutines_static_ability",
+        "original": "9.8.3. Some ice have static abilities that grant that piece of ice a variable number of subroutines. Subroutines from such an ability are always ordered before any other subroutines on that ice.",
+        "translation": ""
+    },
+    {
+        "key": "rule_subroutines_static_ability_increase",
+        "original": "9.8.3.a. If the number of subroutines granted to a piece of ice by its own static ability increases, the additional subroutines are added immediately after the previously-existing subroutines from the same ability.",
+        "translation": ""
+    },
+    {
+        "key": "rule_subroutines_static_ability_increase-1-example",
+        "original": "The Corp has no bad publicity and controls a rezzed copy of Ireress hosting a condition counter from {card:Sub Boost}. If the Corp takes bad publicity, the corresponding subroutines from {card:Ireress}'s ability are added before the \"[sub] End the run.\" from the condition counter.",
+        "translation": ""
+    },
+    {
+        "key": "rule_subroutines_static_ability_increase-2-example",
+        "original": "The Corp has 3 cards in HQ while the Runner is encountering {card:Ashigaru}. After the Runner breaks {card:Ashigaru}'s 3 subroutines, the Corp uses {card:Panic Button} to draw another card. The new subroutine is added after the previous 3, so the Runner can use {card:Gbahali} to break it.",
+        "translation": ""
+    },
+    {
+        "key": "rule_subroutines_static_ability_decrease",
+        "original": "9.8.3.b. If the number of subroutines granted to a piece of ice by its own static ability decreases, subroutines are lost beginning with the last subroutine the ice previously had from the same ability and working backwards.",
+        "translation": ""
+    },
+    {
+        "key": "rule_subroutines_static_ability_decrease-1-example",
+        "original": "The Corp has 3 cards in HQ while the Runner is encountering {card:Ashigaru}. The Runner breaks the first subroutine, then uses {card:Utopia Shard} to force the Corp to discard 2 cards. {card:Ashigaru} correspondingly loses its last 2 subroutines, leaving behind the subroutine that was already broken.",
+        "translation": ""
+    },
+    {
+        "key": "rule_subroutines_static_ability_remove_subroutines",
+        "original": "9.8.4. One card, {card:Hive}, has a static ability that removes its own printed subroutines. Subroutines are lost to this ability beginning with the last printed subroutine and working backwards.",
+        "translation": ""
+    },
+    {
+        "key": "rule_subroutines_status",
+        "original": "9.8.5. For each encounter, the subroutines on the encountered ice have a status of {term:broken} or {term:unbroken} with respect to that encounter.",
+        "translation": ""
+    },
+    {
+        "key": "rule_subroutines_initial_status_in_encounter",
+        "original": "9.8.5.a. When an encounter begins, each of the encountered ice's subroutines becomes unbroken with respect to that encounter.",
+        "translation": ""
+    },
+    {
+        "key": "rule_new_subroutines_during_encounter",
+        "original": "9.8.5.b. When a piece of ice gains 1 or more new subroutines during an encounter with it, those subroutines come into existence unbroken with respect to that encounter.",
+        "translation": ""
+    },
+    {
+        "key": "rule_subroutine_status_lifetime",
+        "original": "9.8.5.c. When an encounter ends, card abilities can still check whether subroutines were broken or unbroken during that encounter.",
+        "translation": ""
+    },
+    {
+        "key": "rule_break_subroutine",
+        "original": "9.8.6. To {term:break} a subroutine is to change its status with respect to the active encounter from unbroken to broken. Many cards that can allow a player to break subroutines are icebreakers (see {ref:subsec_icebreakers}). If the Runner breaks all the subroutines on the encountered ice, they fully break that ice (see {ref:subsec_fully_break}).",
+        "translation": ""
+    },
+    {
+        "key": "rule_unbroken_subroutines_target_for_break_abilities",
+        "original": "9.8.7. Only unbroken subroutines can be chosen as targets for abilities that would break them.",
+        "translation": ""
+    },
+    {
+        "key": "rule_break_all_subroutines_no_targets",
+        "original": "9.8.7.a. An ability that breaks \"all subroutines\" does not target any subroutines, and can be used as long as the encountered ice has at least 1 unbroken subroutine.",
+        "translation": ""
+    },
+    {
+        "key": "rule_break_all_but_x_subroutines_targets",
+        "original": "9.8.7.b. One card, {card:Grappling Hook}, has the ability to break \"all but 1 subroutine\" on the encountered ice. To trigger this ability, its controller chooses as its target the 1 subroutine that will not be broken. When the ability resolves, it breaks all unbroken subroutines except the chosen subroutine.",
+        "translation": ""
+    },
+    {
+        "key": "rule_break_all_but_x_subroutines_targets-1-example",
+        "original": "The Runner uses two copies of {card:Grappling Hook} to break all of the subroutines on {card:Heimdall 1.0}. For the first {card:Grappling Hook}, the Runner chooses the unbroken \"[sub] Do 1 core damage.\" subroutine as the target, and {card:Grappling Hook} breaks both \"[sub] End the run.\" subroutines. For the second {card:Grappling Hook}, the Runner chooses one of the already-broken \"[sub] End the run.\" subroutines as the target. They can choose the broken subroutine as {card:Grappling Hook}'s target because {card:Grappling Hook} will not attempt to break the chosen subroutine. When the ability resolves, {card:Grappling Hook} breaks the \"[sub] Do 1 core damage.\" subroutine, but does nothing to the other \"[sub] End the run.\" subroutine, because it is already broken.",
+        "translation": ""
+    },
+    {
+        "key": "rule_resolve_unbroken_subroutines",
+        "original": "9.8.8. At {ref:step_resolve_subroutine} of an encounter, the Corp resolves subroutines that are unbroken with respect to that encounter.",
+        "translation": ""
+    },
+    {
+        "key": "rule_resolve_subroutines_mandatory",
+        "original": "9.8.8.a. Resolving subroutines is mandatory and does not open a priority window.",
+        "translation": ""
+    },
+    {
+        "key": "rule_resolve_subroutines_in_order",
+        "original": "9.8.8.b. The Corp resolves the unbroken subroutines 1 at a time in order. The order of subroutines is discussed in {ref:rule_subroutines_ordered}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_resolve_subroutines_run_ends",
+        "original": "9.8.8.c. If the encounter ends during this process, no more subroutines are resolved.",
+        "translation": ""
+    },
+    {
+        "key": "rule_resolve_subroutines_run_ends-1-example",
+        "original": "The Runner encounters {card:Little Engine} and does not break any subroutines. {card:Little Engine}'s first subroutine resolves and ends the run. Since the run and therefore the encounter have ended, no more subroutines resolve. The Runner will not gain 5[c].",
+        "translation": ""
+    },
+    {
+        "key": "rule_resolve_subroutines_runner_choice",
+        "original": "9.8.8.d. One card, {card:Street Magic}, allows the Runner to set the order in which subroutines are resolved. If this ability is active when {ref:step_resolve_subroutine} is reached for the first time in an encounter, the Runner declares an order for the unbroken subroutines, and the Corp must resolve them in this order instead of their normal order. The new order is determined before any subroutines are resolved.",
+        "translation": ""
+    },
+    {
+        "key": "rule_subroutine_independent",
+        "original": "9.8.9. Once a subroutine's first instruction becomes imminent, the subroutine becomes independent of its source and {ref:rule_abilities_resolution_independent} applies to it.",
+        "translation": ""
+    },
+    {
+        "key": "rule_replace_subroutine_resolution",
+        "original": "9.8.10. One card, {card:Tsakhia \"Bankhar\" Gantulga}, can apply a replacement effect while a subroutine is imminent in order to resolve a different subroutine instead. The replaced subroutine is treated as having the same source as the original imminent subroutine.",
+        "translation": ""
+    },
+    {
+        "key": "rule_replace_subroutine_resolution-1-example",
+        "original": "The Runner encounters {card:Bloop} while {card:Tsakhia \"Bankhar\" Gantulga}'s replacement effect applies. All 3 of {card:Bloop}'s subroutines would resolve, but are replaced by \"[sub] Do 1 net damage.\" by the replacement effect. These subroutines count as resolving from {card:Bloop}, so when the Runner passes {card:Bloop} after the encounter, the Runner can use {card:Persephone} to trash the top card of their stack and the top 3 cards of R&D.",
+        "translation": ""
+    },
+    {
+        "key": "sec_steps_of_resolving_a_subroutine",
+        "original": "9.8.11. Steps of Resolving a Subroutine",
+        "translation": ""
+    },
+    {
+        "key": "step_subroutine_becomes_imminent",
+        "original": "9.8.11.a. The subroutine itself becomes imminent.",
+        "translation": ""
+    },
+    {
+        "key": "step_subroutine_interrupt_subroutine_resolution",
+        "original": "9.8.11.b. An interrupt window occurs, during which abilities can prevent the subroutine from resolving. If this happens, the remaining steps are not carried out.",
+        "translation": ""
+    },
+    {
+        "key": "step_subroutine_target_first_instruction",
+        "original": "9.8.11.c. Announce any targets for the subroutine's first instruction. That instruction then becomes imminent.",
+        "translation": ""
+    },
+    {
+        "key": "step_subroutine_interrupt_subroutine_effect",
+        "original": "9.8.11.d. An interrupt window occurs, during which abilities can modify, prevent, or avoid the imminent effects.",
+        "translation": ""
+    },
+    {
+        "key": "step_subroutine_resolution",
+        "original": "9.8.11.e. Resolve the instruction, applying any changes to its effects from interrupts that were resolved.",
+        "translation": ""
+    },
+    {
+        "key": "step_subroutine_checkpoint",
+        "original": "9.8.11.f. A checkpoint occurs.",
+        "translation": ""
+    },
+    {
+        "key": "step_subroutine_loop",
+        "original": "9.8.11.g. If there are more instructions to resolve, announce any targets for the next instruction. That instruction then becomes imminent. Return to (d).",
+        "translation": ""
+    },
+    {
+        "key": "step_subroutine_complete",
+        "original": "9.8.11.h. Resolution of the subroutine is complete.",
+        "translation": ""
+    },
+    {
+        "key": "sec_interrupts_replacements",
+        "original": "9.9. Interrupts and Replacement Effects",
+        "translation": ""
+    },
+    {
+        "key": "rule_interrupt_definition",
+        "original": "9.9.1. An {term:interrupt} is an ability that modifies either the effects of another instruction or the context in which that instruction will be resolved. Interrupts can be written in the form of a paid ability or a conditional ability.",
+        "translation": ""
+    },
+    {
+        "key": "rule_interrupt_symbol",
+        "original": "9.9.1.a. Interrupt abilities are denoted by the [interrupt] symbol appearing at the beginning of the ability, or by certain keywords in the ability's text.",
+        "translation": ""
+    },
+    {
+        "key": "rule_interrupt_keywords",
+        "original": "9.9.1.b. Any paid or conditional ability that uses the word \"prevent\", \"avoid\", or \"would\" is an interrupt ability.",
+        "translation": ""
+    },
+    {
+        "key": "rule_expected_effects",
+        "original": "9.9.2. The {term:expected effects} of an imminent instruction are the effects described by the instruction's text, modified by any static abilities that affect it and any replacement effects or interrupt effects that have been applied. The expected effects of an instruction are continually updated throughout the interrupt window.",
+        "translation": ""
+    },
+    {
+        "key": "rule_expected_effects-1-example",
+        "original": "The Runner plays {card:Process Automation} and the instruction \"Gain 2[c] and draw 1 card.\" becomes imminent. The expected effects of this instruction are that the Runner will gain 2[c] and draw 1 card.",
+        "translation": ""
+    },
+    {
+        "key": "rule_expected_effects-2-example",
+        "original": "The Runner plays {card:Process Automation} after {card:Lockdown}'s subroutine resolves. The instruction \"Gain 2[c] and draw 1 card.\" becomes imminent, but the Runner cannot draw cards. The expected effect of this instruction is that the Runner will gain 2[c].",
+        "translation": ""
+    },
+    {
+        "key": "rule_expected_effects_resolve",
+        "original": "9.9.2.a. When an instruction resolves, its expected effects correspond to the effects that occur, except for situations where {ref:rule_negative_values_resolution} applies.",
+        "translation": ""
+    },
+    {
+        "key": "sec_relevant_interrupts",
+        "original": "9.9.3. In order to trigger an interrupt, it must be {term:relevant} to an imminent instruction. An interrupt is relevant to an instruction if at least one of the following is true:",
+        "translation": ""
+    },
+    {
+        "key": "rule_prevent_relevant",
+        "original": "9.9.3.a. Its effects could prevent or avoid part or all of the imminent instruction's expected effects. See {ref:sec_prevent_avoid}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_modify_value_relevant",
+        "original": "9.9.3.b. Its effects could modify a value associated with the imminent instruction's expected effects. See {ref:sec_modifiable_values} and {ref:sec_calculating_expected_effect_values}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_replacement_effect_relevant",
+        "original": "9.9.3.c. Its effects could create a replacement effect that applies to the imminent instruction's expected effects. See {ref:rule_replace_imminent_effects}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_would_relevant",
+        "original": "9.9.3.d. It has a trigger condition using the word \"would\" that is met by the imminent instruction's expected effects.",
+        "translation": ""
+    },
+    {
+        "key": "rule_would_relevant-1-example",
+        "original": "The trigger condition on {card:The Class Act}'s second ability is \"The first time each turn you would draw any number of cards\". Even though this ability's effects do not directly modify the imminent instruction's effects, the ability is relevant to an instruction that is expected to draw cards.",
+        "translation": ""
+    },
+    {
+        "key": "sec_interrupt_window_for_imminent_instruction",
+        "original": "9.9.4. Whenever an instruction becomes imminent, an interrupt window opens to allow players to modify the effects of that instruction. {ref:Rule_interrupt_window} contains the rules for handling priority during interrupt windows.",
+        "translation": ""
+    },
+    {
+        "key": "rule_apply_replacement_effects_on_opening_interrupt_window",
+        "original": "9.9.4.a. As the window opens, the initial expected effects of the instruction are determined, then any active replacement effects that replace all or part of the expected effects are applied. If multiple replacement effects could apply, the order in which they are applied follows the rules in {ref:rule_order_of_replacement_effects}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_pending_status_for_interrupt_windows",
+        "original": "9.9.4.b. After replacement effects have been applied, but before players receive priority, active conditional ability interrupts that are relevant to the imminent instruction are marked pending and are associated with the window. If a conditional ability interrupt becomes active after the interrupt window opens, it does not become pending.",
+        "translation": ""
+    },
+    {
+        "key": "rule_trigger_conditional_ability_interrupt",
+        "original": "9.9.4.c. While a player has priority in an interrupt window, they can trigger a conditional ability interrupt they control only if it is pending in that window and still relevant to the imminent instruction.",
+        "translation": ""
+    },
+    {
+        "key": "rule_trigger_conditional_ability_interrupt-1-example",
+        "original": "An instruction is imminent that would trash an installed copy of {card:Harbinger}. The Runner uses {card:Sacrificial Construct} to prevent {card:Harbinger} from being trashed. The Runner can no longer trigger {card:Harbinger}'s interrupt ability, even though it is still pending, because the expected effects of the instruction no longer include {card:Harbinger} being trashed and therefore the ability is no longer relevant.",
+        "translation": ""
+    },
+    {
+        "key": "rule_trigger_conditional_ability_interrupt-2-example",
+        "original": "An instruction is imminent that would give the Runner 2 tags. The Runner trashes {card:Decoy} to use its ability to avoid 1 of the tags, which meets the trigger condition for {card:Thunder Art Gallery}'s ability. The latter resolves as a chain reaction (see {ref:rule_chain_reaction}) while the interrupt window is still open, allowing the Runner to install {card:No One Home}, which has a conditional ability interrupt that is relevant since the instruction is still expected to give the Runner 1 tag. However, {card:No One Home} was not active when the interrupt window opened, so its ability is not pending and cannot be triggered.",
+        "translation": ""
+    },
+    {
+        "key": "rule_trigger_paid_ability_interrupt",
+        "original": "9.9.4.d. While a player has priority in an interrupt window, they can use a paid ability interrupt that is relevant to the imminent instruction. The ability does not have to have been active when the interrupt window opened, nor does a paid ability window need to be open at this time.",
+        "translation": ""
+    },
+    {
+        "key": "rule_trigger_paid_ability_interrupt-1-example",
+        "original": "An instruction is imminent that would give the Runner 2 tags. The Runner trashes {card:Decoy} to use its ability to avoid 1 of the tags, which meets the trigger condition for {card:Thunder Art Gallery}'s ability. The latter resolves as a chain reaction (see {ref:rule_chain_reaction}) while the interrupt window is still open, allowing the Runner to install another copy of {card:Decoy}. The Runner receives priority again in the original interrupt window and uses the second {card:Decoy}'s ability to avoid the other imminent tag.",
+        "translation": ""
+    },
+    {
+        "key": "sec_prevent_avoid",
+        "original": "9.9.5. To {term:prevent} or {term:avoid} an effect is to stop that effect from happening. The terms \"prevent\" and \"avoid\" are synonymous.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ordinal_would",
+        "original": "9.9.5.a. Some abilities look for an ordinal instance of an effect that \"would\" take place within a specified time period. These abilities look for the appropriate number of times that effect becomes imminent, not whether the effect actually resolves. Preventing or replacing an effect does not allow these abilities to meet their trigger conditions again in the same time period.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ordinal_would-1-example",
+        "original": "{card:Tori Hanzō}'s interrupt can only be used \"the first time you would do net damage\" during a run. If the first net damage that becomes imminent is prevented by the Runner using {card:Feedback Filter}, {card:Tori Hanzō} cannot be used on any other instances of net damage for the remainder of the run, as the next imminent net damage is the second time the Corp \"would\" deal net damage, not the first time.",
+        "translation": ""
+    },
+    {
+        "key": "rule_ordinal_prevented",
+        "original": "9.9.5.b. Abilities that do not use \"would\" do not see effects that are prevented, as those effects did not occur.",
+        "translation": ""
+    },
+    {
+        "key": "sec_modifiable_values",
+        "original": "9.9.6. Some instructions make use of an associated value. These values can be changed by interrupts and replacement effects.",
+        "translation": ""
+    },
+    {
+        "key": "rule_modifiable_value_tags",
+        "original": "9.9.6.a. A number of tags the Runner would take from an effect is a value. Avoiding a number of those tags decreases that value. The value for a number of tags the Runner takes must be greater than 0 for the effect giving tags to occur.",
+        "translation": ""
+    },
+    {
+        "key": "rule_modifiable_value_damage",
+        "original": "9.9.6.b. An amount of damage the Runner would take from an effect is a value. Preventing an amount of that damage decreases that value. The value for an amount of damage the Runner takes must be greater than 0 for the damage effect to occur.",
+        "translation": ""
+    },
+    {
+        "key": "rule_modifiable_value_cost",
+        "original": "9.9.6.c. A cost that would be paid while resolving an effect is a value. {ref:Rule_cost_calculation} applies to the final value at the time the cost is paid. See also {ref:rule_cost_zero}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_modifiable_value_cost-1-example",
+        "original": "{card:Patchwork}'s interrupt modifies a play cost or install cost, so it is relevant to any instruction where a card will be played or installed and the corresponding cost paid.",
+        "translation": ""
+    },
+    {
+        "key": "rule_modifiable_value_base_trace_strength",
+        "original": "9.9.6.d. The base trace strength of a trace attempt is a value. See {ref:sec_traces} for rules about trace attempts. A base trace strength value does not need to be greater than 0 for the trace attempt to occur.",
+        "translation": ""
+    },
+    {
+        "key": "sec_calculating_expected_effect_values",
+        "original": "9.9.7. Values associated with an imminent instruction are calculated continuously as part of the instruction's expected effects.",
+        "translation": ""
+    },
+    {
+        "key": "rule_negative_values_imminent",
+        "original": "9.9.7.a. While an instruction is imminent, values associated with that instruction can be reduced below 0. Values 0 or lower can still be modified by other interrupt abilities while the instruction remains imminent.",
+        "translation": ""
+    },
+    {
+        "key": "rule_negative_values_imminent-1-example",
+        "original": "The Runner takes a tag on their turn, allowing the Corp to trigger {card:Mr. Stone}. While the 1 meat damage from {card:Mr. Stone}'s ability is imminent, both players can trigger interrupts to modify the damage effect. Since it is the Runner's turn, they receive priority first and use {card:Biometric Spoofing} to prevent 2 damage. The imminent effect is now expected to do -1 damage. When the Corp receives priority, they trigger two copies of {card:The Cleaners} that each add 1 to the expected damage, increasing the total to 0 and then to 1. The ability will resolve with 1 damage even though the amount of damage was temporarily 0 or less while the effect was imminent.",
+        "translation": ""
+    },
+    {
+        "key": "rule_prevent_all",
+        "original": "9.9.7.b. If an effect prevents \"all damage\" or \"any amount of damage\" while an instruction is imminent, the damage is removed from the expected effects entirely, and there is no longer a value to be modified. If an effect avoids \"all tags\" or \"any number of tags\" while an instruction is imminent, taking tags is removed from the expected effects entirely, and there is no longer a value to be modified.",
+        "translation": ""
+    },
+    {
+        "key": "rule_prevent_all-1-example",
+        "original": "The Runner installs {card:Net-Ready Eyes} and uses {card:Chrome Parlor} to prevent all of the damage from its first ability. There is no longer an imminent damage effect, so the Corp cannot use {card:The Cleaners}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_prevent_all_but_one",
+        "original": "9.9.7.c. One card, {card:Bio-Modeled Network}, has an instruction that prevents \"all but 1 net damage.\" This ability is relevant when the imminent instruction's expected effects include doing net damage and the amount of the damage is 2 or more. The effect of this ability is to set the value for the amount of damage to 1. Previously-applied modifiers to the value are ignored. The value can still be modified by other interrupts after being set to 1 this way.",
+        "translation": ""
+    },
+    {
+        "key": "rule_negative_values_resolution",
+        "original": "9.9.7.d. Some types of values must be greater than 0 for the associated effect to occur. See {ref:sec_modifiable_values}. At the time an instruction resolves, if any value of one of those types is 0 or less, as much of that ability resolves as possible without applying the part of the effect making use of that value, following {ref:rule_if_able,rule_do_as_much_as_you_can} of the Golden Rules.",
+        "translation": ""
+    },
+    {
+        "key": "rule_negative_values_resolution-1-example",
+        "original": "The Runner accesses {card:Breached Dome}. While the instruction from its \"when accessed\" ability is imminent, the Runner uses {card:Biometric Spoofing} to prevent 2 damage. When the ability resolves, the value for the amount of damage is -1, which is less than or equal to 0, so the damage effect cannot occur and the Corp only trashes the top card of the stack.",
+        "translation": ""
+    },
+    {
+        "key": "rule_modified_values_retain_properties",
+        "original": "9.9.7.e. Any effects making use of modified values maintain their restrictions and specifications with the new values.",
+        "translation": ""
+    },
+    {
+        "key": "rule_modified_values_retain_properties-1-example",
+        "original": "While the result of a successful trace from {card:Flare} is imminent, the Corp triggers {card:The Cleaners} to increase the imminent meat damage by 1. Even though the damage from {card:Flare} has been increased from 2 to 3, none of that meat damage can be prevented.",
+        "translation": ""
+    },
+    {
+        "key": "rule_prevent_as_trigger_condition",
+        "original": "9.9.7.f. One card, {card:Guru Davinder}, has a non-interrupt conditional ability with the trigger condition \"Whenever this resource prevents 1 or more damage\". The trigger condition is met when the following occurs: the expected effects of an imminent instruction include a damage effect with a value greater than 0 for the amount of the damage; an interrupt ability resolves from the same source object as the conditional ability; and the interrupt decreases the value for the damage amount or removes the damage effect entirely.",
+        "translation": ""
+    },
+    {
+        "key": "rule_prevent_as_trigger_condition-1-example",
+        "original": "The Runner {n}accesses {card:Angelique Garza Correa} and the Corp pays 2[c], making the \"Do 2 meat damage\" instruction imminent. The Runner uses {card:Plascrete Carapace} to prevent 2 meat damage{/n}, leaving the imminent instruction with the expected effect \"Do 0 meat damage.\". At this point, the 0 value for the damage can still be modified by abilities like {card:The Cleaners}. But then the Runner resolves the interrupt ability on {card:Guru Davinder}, which removes the damage effect altogether. Since the value for the damage was 0, {card:Guru Davinder}'s second ability does not meet its trigger condition and the Runner does not have to trash {card:Guru Davinder} or pay 4[c]. There is no longer an imminent damage effect, so the Corp cannot use {card:The Cleaners}.",
+        "translation": ""
+    },
+    {
+        "key": "sec_replacement_effects",
+        "original": "9.9.8. A {term:replacement effect} modifies another effect by replacing some or all of the original effect's behavior with different behavior. Replacement effects are indicated by the word \"instead\" in their text. Once created, replacement effects apply automatically and do not require players to explicitly trigger them.",
+        "translation": ""
+    },
+    {
+        "key": "rule_replacement_effect_from_interrupt",
+        "original": "9.9.8.a. Interrupts can introduce replacement effects that apply to the currently imminent instruction. See {ref:rule_replace_imminent_effects}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_replacement_effect_from_static_ability",
+        "original": "9.9.8.b. Static abilities can stipulate replacement effects that apply whenever appropriate while the static ability is active.",
+        "translation": ""
+    },
+    {
+        "key": "rule_replacement_effect_from_lingering_effect",
+        "original": "9.9.8.c. Other abilities can create replacement effects ahead of time, which apply to effects that could happen later. This is a type of lingering effect (see {ref:sec_lingering_effects}).",
+        "translation": ""
+    },
+    {
+        "key": "rule_applying_replacement_effects",
+        "original": "9.9.9. Replacement effects most commonly apply to the effects of an instruction, but some apply to static abilities or alter the durations of lingering effects.",
+        "translation": ""
+    },
+    {
+        "key": "rule_replacement_on_static_ability_must_remain_active",
+        "original": "9.9.9.a. If a replacement effect modifies the effects of a static ability or the duration of a lingering effect, this modification applies continuously for as long as the replacement effect itself is active, and no longer applies once the replacement effect or the original effect being modified becomes inactive.",
+        "translation": ""
+    },
+    {
+        "key": "rule_replacement_on_static_ability_must_remain_active-1-example",
+        "original": "{card:Gebrselassie}'s static ability replaces the durations of certain lingering effects affecting its host with a duration of \"for the remainder of the turn.\" If {card:Gebrselassie} is uninstalled or moved to a different host, its replacement effect no longer applies to those lingering effects, so they revert to their normal durations. If any of those durations have already expired, the corresponding effects will end at the next checkpoint.",
+        "translation": ""
+    },
+    {
+        "key": "rule_replacement_effects_apply_as_interrupt_window_opens",
+        "original": "9.9.9.b. If an active replacement effect can apply to the expected effects of an imminent instruction, it is applied as the interrupt window opens, and the expected effects of the instruction are updated accordingly. This happens before the expected effects are checked for relevant active abilities that could become pending. Replacement effects created by interrupts will not yet be active at this time and are applied according to {ref:rule_replace_imminent_effects} instead.",
+        "translation": ""
+    },
+    {
+        "key": "rule_replacement_effect_only_applies_once_per_effect",
+        "original": "9.9.9.c. Each replacement effect can only apply once to any single effect. Once a replacement effect has been applied, even if the new effect it creates (or a new effect created by a later replacement effect) still includes an occurrence of the effect that gets replaced, the same replacement effect cannot be applied to that effect again.",
+        "translation": ""
+    },
+    {
+        "key": "rule_replacement_effect_only_applies_once_per_effect-1-example",
+        "original": "The Runner accesses {card:Project Vacheron} and its interrupt ability resolves. The interrupt creates a replacement effect that will override adding the agenda to the Runner's score area. The Runner will still steal {card:Project Vacheron}, but they will do so by adding it to their score area with hosted agenda counters. Even though the modified effect still includes adding {card:Project Vacheron} to the Runner's score area, there is no way for the replacement effect to apply again to its own results.",
+        "translation": ""
+    },
+    {
+        "key": "rule_replace_imminent_effects",
+        "original": "9.9.10. Some interrupts create replacement effects to modify an instruction that is already imminent. When the interrupt resolves, if the replacement effect can apply to the expected effects of the imminent instruction, it is applied immediately.",
+        "translation": ""
+    },
+    {
+        "key": "rule_replace_imminent_effects-1-example",
+        "original": "An instruction is imminent with an expected effect of the Corp doing net damage to the Runner. The Corp uses {card:Tori Hanzō}'s ability, creating a replacement effect replacing net damage with core damage. The replacement effect applies immediately, so after {card:Tori Hanzō}'s ability resolves, the expected effect is now to do 1 core damage. When players get priority again, their interrupts are relevant or not based on the new expected effects.",
+        "translation": ""
+    },
+    {
+        "key": "rule_order_of_replacement_effects",
+        "original": "9.9.11. If multiple replacement effects would apply to an effect acting on a targeted card, that card's controller chooses the order in which the replacement effects apply. If multiple replacement effects would apply to any other effect, the controller of the base effect chooses the order in which the replacement effects apply.",
+        "translation": ""
+    },
+    {
+        "key": "rule_replacement_effect_must_have_something_to_replace",
+        "original": "9.9.11.a. After applying one replacement effect, a subsequent replacement effect can only be applied if the effect it was to replace is still expected. A replacement effect cannot apply without something to replace.",
+        "translation": ""
+    },
+    {
+        "key": "rule_replacement_effect_must_have_something_to_replace-1-example",
+        "original": "The Runner chooses HQ with {card:Security Testing} when their turn begins, then plays {card:Account Siphon}. When the run becomes successful, both {card:Security Testing} and {card:Account Siphon} create replacement effects. When {ref:step_breach} of the run becomes imminent, the Runner must choose to apply either the replacement effect from {card:Security Testing} or the one from {card:Account Siphon}. Since neither effect creates a new instance of breaching the server, the effect not chosen to apply first has nothing to replace and does not apply.",
+        "translation": ""
+    },
+    {
+        "key": "rule_replacement_effect_must_have_something_to_replace-2-example",
+        "original": "The Runner chooses R&D with {card:Security Testing} when their turn begins, then plays {card:Showing Off}. When a run on R&D becomes successful, both {card:Security Testing} and {card:Showing Off} create replacement effects. When {ref:step_breach} of the run becomes imminent, the Runner must choose to apply either the replacement effect from {card:Security Testing} or the one from {card:Showing Off}. If they choose to apply {card:Security Testing} first, {card:Showing Off}'s effect has nothing to replace and does not apply. If they choose to apply {card:Showing Off} first, the expected effects still include breaching R&D, albeit not in the usual way. {card:Security Testing} can still replace this breach, so it applies next. Either way, the Runner will gain 2[c] and will not breach the server.",
+        "translation": ""
+    },
+    {
+        "key": "sec_lingering_effects",
+        "original": "9.10. Lingering Effects",
+        "translation": ""
+    },
+    {
+        "key": "rule_lingering_effect",
+        "original": "9.10.1. Instructions can create {term:lingering effects} that exist beyond their resolution. Once a lingering effect is created, it exists independently of its source even if the source becomes inactive. Lingering effects remain active only for the duration specified in the instruction that created them. Lingering effects with durations that have expired are removed from the game state at {ref:step_checkpoint_duration_abilities} of each checkpoint.",
+        "translation": ""
+    },
+    {
+        "key": "rule_lingering_effect_maintain_existence_ability",
+        "original": "9.10.2. Some lingering effects exist only to maintain the existence of another ability. Delayed conditional abilities are maintained this way and may have an implicit duration. See {ref:rule_delayed_conditional_ability}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_lingering_effect_maintain_choice",
+        "original": "9.10.3. Some lingering effects maintain a choice that a player made while resolving an ability in order for another ability or effect with the same source object to make use of that choice.",
+        "translation": ""
+    },
+    {
+        "key": "rule_lingering_effect_maintaining_choice_default_duration",
+        "original": "9.10.3.a. If the choice is only referred to by another lingering effect, the lingering effect maintaining the choice has the same duration as the other lingering effect.",
+        "translation": ""
+    },
+    {
+        "key": "rule_lingering_effect_maintaining_choice_default_duration-1-example",
+        "original": "The Runner resolves {card:Pelangi}'s paid ability and chooses an ice subtype. The ability then creates a lingering effect adding the chosen subtype to the encountered ice. Both the choice of subtype and the effect adding it to the ice expire at the end of the encounter.",
+        "translation": ""
+    },
+    {
+        "key": "rule_lingering_effect_maintaining_choice_turn_begins_duration",
+        "original": "9.10.3.b. If a conditional ability has a \"when your turn begins\" trigger condition and no effects other than making a choice, the duration of the lingering effect maintaining the choice expires when that turn ends or the source object becomes inactive.",
+        "translation": ""
+    },
+    {
+        "key": "rule_lingering_effect_maintaining_choice_turn_begins_duration-1-example",
+        "original": "{card:Security Testing}'s first ability reads, \"When your turn begins, you may choose a server.\" The choice made when resolving this ability on a particular turn should be maintained only until that turn ends. The trigger condition of {card:Security Testing}'s second ability refers to the chosen server, and it will always look for the server chosen this turn. A successful run on a server that was not chosen this turn will never meet that trigger condition, even if no server was chosen this turn.",
+        "translation": ""
+    },
+    {
+        "key": "rule_lingering_effect_maintaining_choice_duration_other_cases",
+        "original": "9.10.3.c. If the previous cases do not apply, the duration of the lingering effect expires only when the source object becomes inactive.",
+        "translation": ""
+    },
+    {
+        "key": "rule_lingering_effect_maintaining_choice_duration_other_cases-1-example",
+        "original": "{card:Femme Fatale}'s first conditional ability directs the Runner to choose an installed piece of ice. Which ice was chosen is maintained as a lingering effect for as long as {card:Femme Fatale} remains active, and its last ability refers to the object that is being remembered by that lingering effect.",
+        "translation": ""
+    },
+    {
+        "key": "rule_lingering_effect_inapplicable_timing_structure",
+        "original": "9.10.4. If a lingering effect is created with a duration based on a timing structure that is not in progress at the time the lingering effect is created, the duration expires immediately, and the lingering effect persists only until the next checkpoint after it is created.",
+        "translation": ""
+    },
+    {
+        "key": "rule_icebreaker_strength_increase_implicit_link",
+        "original": "9.10.4.a. Abilities on an {subtype:icebreaker} that modify their source's strength have an implicit duration of \"for the remainder of the current encounter\". See {ref:rule_icebreaker_strength_increase_implicit}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_modify_duration_of_lingering_effect",
+        "original": "9.10.5. Only lingering effects have durations. An ability that modifies the durations of other abilities functions by keeping their corresponding lingering effects active until an additional duration expires. This type of ability does not interact with effects from static abilities.",
+        "translation": ""
+    },
+    {
+        "key": "rule_modify_duration_of_lingering_effect-1-example",
+        "original": "The Runner controls {card:Gebrselassie} hosted on {card:Na'Not'K}. They run a server protected by 3 pieces of ice, and use {card:Na'Not'K}'s last ability to raise its strength to a total of 6. When the run ends, {card:Na'Not'K}'s static ability will no longer provide +3 strength, but the lingering effect of +2 strength from its paid ability will be maintained by {card:Gebrselassie} until the turn ends or {card:Gebrselassie} stops being hosted on {card:Na'Not'K}. If the Runner makes another run on a server protected by only 1 piece of ice, {card:Na'Not'K} will have 4 strength when that run begins.",
+        "translation": ""
+    },
+    {
+        "key": "sec_identifying_instructions",
+        "original": "9.11. Identifying Instructions",
+        "translation": ""
+    },
+    {
+        "key": "sec_identifying_instructions-snippet",
+        "original": "To correctly resolve conditional abilities and interrupts that could meet their trigger conditions during the resolution of another ability (see {ref:rule_chain_reaction}), players need to determine where checkpoints occur during the resolution of each ability. This section aids players in making this determination. For clarifications on particular cards, refer to the Rulings section of that card's page on {link:netrunnerdb.com|https://www.netrunnerdb.com}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_instruction_pause",
+        "original": "9.11.1. An instruction normally cannot be paused once it begins to resolve. An instruction can only be paused if a checkpoint opens in the middle of its resolution, which only occurs in the following cases:",
+        "translation": ""
+    },
+    {
+        "key": "rule_cost_paid_checkpoint",
+        "original": "9.11.1.a. Any time a cost is paid, a checkpoint must occur immediately afterward.",
+        "translation": ""
+    },
+    {
+        "key": "rule_checkpoint_timing_structure",
+        "original": "9.11.1.b. When a timing structure is opened, the checkpoints in that timing structure are carried out. See {ref:rule_timing_structure} for a list of timing structures.",
+        "translation": ""
+    },
+    {
+        "key": "rule_draw_checkpoint",
+        "original": "9.11.1.c. When a player draws cards, a checkpoint occurs at {ref:step_draw_checkpoint} of that procedure.",
+        "translation": ""
+    },
+    {
+        "key": "rule_play_checkpoint",
+        "original": "9.11.1.d. When an event or operation is played, a checkpoint occurs at {ref:rule_steps_playing_played_checkpoint} of that procedure.",
+        "translation": ""
+    },
+    {
+        "key": "rule_trace_checkpoint",
+        "original": "9.11.1.e. When a trace is initiated, a checkpoint occurs at {ref:step_trace_checkpoint} of that procedure.",
+        "translation": ""
+    },
+    {
+        "key": "rule_step_in_timing_structure_is_instruction",
+        "original": "9.11.2. Each step in a timing structure forms a single instruction, and is accordingly preceded by an interrupt window and followed by a checkpoint.",
+        "translation": ""
+    },
+    {
+        "key": "rule_step_sequences",
+        "original": "9.11.2.a. Some game procedures that are not timing structures are presented as a sequence of steps. These steps do not indicate instruction boundaries, and checkpoints only occur in these procedures when explicitly called for.",
+        "translation": ""
+    },
+    {
+        "key": "rule_step_sequences-1-example",
+        "original": "The steps of installing a card are not separate instructions. Installing a card usually happens in its entirety as part of a single instruction. The only checkpoint that occurs during the procedure of installing a card is at {ref:rule_steps_installing_pay_install_cost}, immediately after the install cost is paid.",
+        "translation": ""
+    },
+    {
+        "key": "rule_step_sequences-2-example",
+        "original": "The steps of a checkpoint are not instructions. No checkpoints take place in the middle of another checkpoint.",
+        "translation": ""
+    },
+    {
+        "key": "rule_instructions_in_ability_text",
+        "original": "9.11.3. Usually, each sentence in the text of an ability forms a single instruction. After each instruction, an ability pauses its resolution to allow priority windows to open and other abilities to resolve. First, a checkpoint occurs, allowing any appropriate conditional abilities to be marked as pending in a reaction window, then targets are announced for the next instruction. Finally, the next instruction becomes imminent, allowing interrupts relevant to that instruction to resolve in an interrupt window.",
+        "translation": ""
+    },
+    {
+        "key": "rule_instruction_sentence_exceptions",
+        "original": "9.11.4. Some sentences are not instructions, some sentences encompass multiple instructions, and some instructions encompass multiple sentences. These are the cases in which sentences do not correspond one-to-one with instructions:",
+        "translation": ""
+    },
+    {
+        "key": "rule_use_restrictions",
+        "original": "9.11.4.a. A sentence is not part of any instruction if it only provides clarification, restrictions or conditions on when or how the ability it appears in can be triggered, or otherwise does not give directions to the players or the game state that would be carried out as the ability resolves.",
+        "translation": ""
+    },
+    {
+        "key": "rule_use_restrictions-1-example",
+        "original": "A sentence reading \"Use this ability only by spending credits from a {subtype:stealth} card.\" is not an instruction or part of any instruction. It is a restriction that applies to the entire ability.",
+        "translation": ""
+    },
+    {
+        "key": "rule_split_up_instruction",
+        "original": "9.11.4.b. If a sentence directs a player to play, install, or access more than one card, each such card is handled as a separate instruction. The instruction ends and a new one begins immediately before each play, install, or access after the first.",
+        "translation": ""
+    },
+    {
+        "key": "rule_split_up_instruction-1-example",
+        "original": "The Corp plays {card:Shipment from MirrorMorph}, which has a single sentence directing them to install up to 3 cards from HQ. This is treated as though it said, \"You may install a card from HQ. You may install a card from HQ. You may install a card from HQ.\", or equivalently, \"You may install a card from HQ. Repeat this process 2 more times.\"",
+        "translation": ""
+    },
+    {
+        "key": "rule_choose_instruction",
+        "original": "9.11.4.c. If a sentence directs a player to choose 1 or more targets, but does not act on that choice or describe any other effects, that sentence and the following sentence form a single instruction.",
+        "translation": ""
+    },
+    {
+        "key": "rule_choose_instruction-1-example",
+        "original": "{card:Tinkering}'s play ability reads, \"Choose a piece of ice. That ice gains {subtype:sentry}, {subtype:code gate}, and {subtype:barrier} until the end of the turn.\" The first sentence does nothing except direct the Runner to select a target, so it forms a single instruction with the second sentence. The target is chosen as the instruction becomes imminent, and the card gains the subtypes when the instruction resolves.",
+        "translation": ""
+    },
+    {
+        "key": "rule_search_instruction",
+        "original": "9.11.4.d. Some older cards have search effects written in the same sentence as the effects that will be performed upon any found cards. Treat these sentences as if ending the search and performing any necessary shuffling is the end of an instruction. A checkpoint occurs while cards found by the search are in the set-aside zone, then the remainder of the sentence is treated as the next instruction.",
+        "translation": ""
+    },
+    {
+        "key": "rule_search_instruction-1-example",
+        "original": "The Runner uses {card:Djinn} to search for a program while the Corp has {card:Personality Profiles} in their score area. The Runner finds and sets aside a copy of {card:Datasucker} and shuffles the stack. This ends an instruction, and since the search has occurred, {card:Personality Profiles}'s ability meets its trigger condition. The Corp resolves the ability during a reaction window before the next instruction becomes imminent, forcing the Runner to trash a random card from their grip. Finally, the second instruction resolves and the Runner adds the set-aside {card:Datasucker} to their grip.",
+        "translation": ""
+    },
+    {
+        "key": "rule_look_reveal_instruction",
+        "original": "9.11.4.e. Some older cards direct a player to look at or reveal a set of cards in the same sentence as the effects that will be performed upon those cards. Treat these sentences as if making the cards visible to the relevant player(s) is the end of an instruction. A checkpoint occurs once the cards are visible to the relevant player(s), then the remainder of the sentence is treated as the next instruction.",
+        "translation": ""
+    },
+    {
+        "key": "rule_look_reveal_instruction-1-example",
+        "original": "The Corp is resolving the first subroutine on {card:Architect}, which, in one sentence, allows the Corp to look at cards in R&D and install one of them. Looking at the top 5 cards of R&D ends the ability's first instruction. Once the Corp is able to see those cards, they can choose a target for the second instruction, which will install it. Since the install is optional, the Corp can also decline to choose a target, and the second instruction will have no effect. After the second instruction resolves, the ability is complete, and the Corp's permission to look at cards in R&D ends.",
+        "translation": ""
+    },
+    {
+        "key": "rule_nested_cost_instruction",
+        "original": "9.11.4.f. If an ability contains a nested cost, the choice of whether or not to pay that cost ends an instruction. If the cost is paid (or not paid) such that the corresponding effect will be carried out, that part of the ability becomes the next instruction. See also {ref:rule_nested_cost}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_choice_instruction",
+        "original": "9.11.4.g. If an effect directs a player to choose between a set of options that would create different effects, that choice ends an instruction. Each option begins its own instruction or set of instructions, and the one chosen will resolve next.",
+        "translation": ""
+    },
+    {
+        "key": "rule_choice_instruction-1-example",
+        "original": "The Runner encounters {card:Data Raven} and is forced by its first ability to resolve either \"take 1 tag\" or \"end the run.\" Making this choice ends the first instruction, and the option the Runner chooses will become imminent after a checkpoint.",
+        "translation": ""
+    },
+    {
+        "key": "rule_linked_abilities_during_timing_structure",
+        "original": "9.11.5. If an ability initiates a timing structure, its source may have linked abilities that apply during that timing structure. These are frequently written directly after the instruction that creates the timing structure, but they are not instructions in the same ability.",
+        "translation": ""
+    },
+    {
+        "key": "sec_other_rules_and_terminology",
+        "original": "9.12. Other Rules and Terminology",
+        "translation": ""
+    },
+    {
+        "key": "subsec_simultaneous_effects",
+        "original": "9.12.1. Simultaneous Effects",
+        "translation": ""
+    },
+    {
+        "key": "rule_modify_value",
+        "original": "9.12.1.a. If more than one effect attempts to modify the same value, determine its final value from its default value by first applying any effect that sets it to a specific value, then applying each effect that increases the value, and finally applying each effect that lowers the value.",
+        "translation": ""
+    },
+    {
+        "key": "rule_modify_subtypes",
+        "original": "9.12.1.b. If more than one effect attempts to add or remove the same subtype from a card, count the number of times the subtype is added (including from the card's printed text) and the number of times the subtype is removed. As long as the number of times added is greater, the card has that subtype. As long as the number of times removed is greater or the numbers are equal, the card does not have that subtype.",
+        "translation": ""
+    },
+    {
+        "key": "rule_modify_ability_with_choice",
+        "original": "9.12.1.c. If more than one effect gives a player a choice of how to resolve an ability or game rule such that both players are instructed to make a choice that can only be made once, the active player makes that choice. The effects that granted the players the choice otherwise resolve as normal.",
+        "translation": ""
+    },
+    {
+        "key": "rule_modify_ability_with_choice-1-example",
+        "original": "If {card:Chronos Protocol} and {card:Titanium Ribs} are both active, both players are instructed to choose the card trashed by the first net damage each turn. Since this is impossible, only the active player chooses that card. Since {card:Chronos Protocol} also instructs the Corp to look at the Runner's grip and this is not prevented or contradicted by any other ability, this part of the effect happens on either player's turn.",
+        "translation": ""
+    },
+    {
+        "key": "rule_dependent_effects",
+        "original": "9.12.1.d. If a static or lingering effect changes whether a second effect is active, what objects it applies to, or what it does to those objects, the second effect {term: depends on} the first effect. To determine the characteristics of each object in a game state where dependencies exist, use the following process: begin with each object's printed characteristics. Then, apply effects that modify objects to the game state in the order specified by {ref:rule_independent_effects}. Do not apply an effect if it originates from a static ability that is no longer present or no longer active due to a previously-applied effect. When all active effects are applied, this process is complete and each object has its correct characteristics.",
+        "translation": ""
+    },
+    {
+        "key": "rule_independent_effects",
+        "original": "9.12.1.e. When applying effects as indicated by {ref:rule_dependent_effects}, an effect that is waiting to be applied is {term:independent} if it does not depend on any other effects waiting to be applied. Always choose an independent effect as the next effect to apply, if possible. If there are multiple independent effects at once, those effects can be applied in any order relative to each other. (The order chosen should have no impact on the ultimate result.) If there are no independent effects (because each remaining effect depends on another, forming a \"loop\"), check the source of each of those effects, and treat effects from hosted objects as if they did not depend on effects from the objects they are hosted on.",
+        "translation": ""
+    },
+    {
+        "key": "rule_independent_effects-1-example",
+        "original": "{card:Mother Goddess}, {card:Ansel 1.0}, and {card:Warden Fatuma} are rezzed, and {card:Hush} is hosted on {card:Mother Goddess}. {card:Mother Goddess}, {card:Warden Fatuma}, and {card:Hush} all produce effects that could modify the characteristics of {card:Mother Goddess}, so in order to determine {card:Mother Goddess}'s true characteristics, we must examine how those effects depend on each other. {card:Mother Goddess}'s effect grants it the subtypes of {card:Ansel 1.0}, including the {subtype:bioroid} subtype, which affects whether {card:Warden Fatuma}'s ability applies to {card:Mother Goddess}, so {card:Warden Fatuma}'s effect depends on {card:Mother Goddess}'s effect. {card:Hush}'s effect removes {card:Mother Goddess}'s ability, so {card:Mother Goddess}'s effect depends on {card:Hush}'s effect. No other effects change how {card:Hush}'s effect behaves. Since {card:Hush}'s effect is independent, it must be applied first. When it is applied, {card:Mother Goddess}'s ability no longer exists, so {card:Warden Fatuma}'s effect is now independent. It is applied next and grants a subroutine to {card:Ansel 1.0}, but not to {card:Mother Goddess}, which does not have the {subtype:bioroid} subtype.",
+        "translation": ""
+    },
+    {
+        "key": "rule_independent_effects-2-example",
+        "original": "{card:Hush} is hosted on {card:Magnet}. {card:Hush}'s ability creates an effect that removes abilities from {card:Magnet}, and {card:Magnet}'s ability creates an effect that removes an ability from {card:Hush}. The dependencies of these effects form a loop, so the hosting relationship of their source objects is considered, and the effect from {card:Hush}'s ability ignores its dependence on the effect from {card:Magnet}'s ability. {card:Hush}'s effect is therefore treated as independent and applied first. {card:Magnet}'s ability and the resulting effect no longer exist, so they are never applied.",
+        "translation": ""
+    },
+    {
+        "key": "subsec_quantities_and_sets",
+        "original": "9.12.2. Quantities and Sets",
+        "translation": ""
+    },
+    {
+        "key": "rule_act_on_multiple_cards",
+        "original": "9.12.2.a. If an effect acts on a set of cards for a single purpose, then the effect acts on all of those cards together simultaneously rather than one at a time.",
+        "translation": ""
+    },
+    {
+        "key": "rule_act_on_multiple_cards-1-example",
+        "original": "The Runner uses {card:Singularity} to simultaneously trash a rezzed {card:Warroid Tracker} and a rezzed {card:Hostile Infrastructure}. {card:Hostile Infrastructure} has a trigger condition of \"Whenever the Runner trashes a Corp card\", so it sees both trashed cards and becomes pending twice. By contrast, {card:Warroid Tracker} has a trigger condition of \"Whenever the Runner trashes at least 1 card…\", so it sees only a single event that trashed multiple cards. {card:Warroid Tracker}'s ability becomes pending only once.",
+        "translation": ""
+    },
+    {
+        "key": "rule_calculated_quantity",
+        "original": "9.12.2.b. Some abilities calculate a quantity using phrases like \"for each\", \"for every\", or \"plus\". When a quantity is calculated this way for any of the purposes listed in {ref:rule_aggregated_instructions}, the resulting effect is aggregated to the value that was calculated. Only a single instance of that effect takes place. If the calculated value is less than or equal to 0, the effect does not take place at all.",
+        "translation": ""
+    },
+    {
+        "key": "rule_aggregated_instructions",
+        "original": "9.12.2.c. The following effects are aggregated when performed in a single instruction, as described in {ref:rule_calculated_quantity}: gaining, losing, or spending a number of credits; gaining, losing, or spending a number of clicks; taking, removing, or preventing a number of tags; taking, removing, or preventing a number of bad publicity; looking at or revealing a number of cards from a specified location; drawing a number of cards; trashing a number of cards from specified locations (including by damage); and shuffling a number of cards from a player's discard pile into their deck.",
+        "translation": ""
+    },
+    {
+        "key": "rule_aggregated_instructions-1-example",
+        "original": "The Runner encounters a {card:Cortex Lock} and does not break the subroutine. If the Runner has 2 unused MU, both of the net damage can be prevented with {card:Biometric Spoofing} because {card:Cortex Lock} does a single instance of 2 net damage, not 2 instances of 1 net damage each. If the Runner has no unused MU, then no net damage is dealt because there is no MU to count.",
+        "translation": ""
+    },
+    {
+        "key": "rule_aggregated_instructions-2-example",
+        "original": "The Runner controls {card:Obelus} and {card:The Class Act}, and they play {card:Legwork} to run HQ and access 3 cards. When the run ends, the ability on {card:Obelus} becomes pending. The expected effect of its instruction is 1 instance of the Runner drawing cards, where the number of cards they will draw is 3. When the Runner resolves {card:The Class Act}'s interrupt ability, they will look at the top 4 cards of their stack and add 1 to the bottom.",
+        "translation": ""
+    },
+    {
+        "key": "rule_vacuous_truth",
+        "original": "9.12.2.d. If a condition refers to \"all\" items in a set and that set contains zero items, the condition is automatically satisfied as soon as it could be satisfied for 1 or more of that item.",
+        "translation": ""
+    },
+    {
+        "key": "rule_vacuous_truth-1-example",
+        "original": "The Runner plays {card:Forked}, initiating a run on a server. The first piece of ice that the Runner encounters is {card:Troll}. If {card:Troll}'s \"when encountered\" ability does not end the run, the Runner is automatically considered to have broken all of the zero subroutines on {card:Troll} as soon as {ref:step_encounter_paw} of the encounter begins, and {card:Troll} is trashed by Forked.",
+        "translation": ""
+    },
+    {
+        "key": "rule_values_defined_by_x",
+        "original": "9.12.2.e. Some values are defined with a variable \"X\". If the ability defining X is inactive or if the value of X cannot be evaluated, treat X as equal to 0.",
+        "translation": ""
+    },
+    {
+        "key": "rule_values_defined_by_x-1-example",
+        "original": "The Corp uses the ability granted by {card:ZATO City Grid} to trash {card:Surveyor} and resolve one of its subroutines. Since {card:Surveyor} is in Archives when the trace on the subroutine initiates, the ability defining X is inactive, so the base trace strength is 0.",
+        "translation": ""
+    },
+    {
+        "key": "rule_values_defined_by_x-2-example",
+        "original": "{card:Hush} is hosted on {card:Surveyor}. The ability defining X is lost, so {card:Surveyor}'s strength is 0.",
+        "translation": ""
+    },
+    {
+        "key": "subsec_must",
+        "original": "9.12.3. Must",
+        "translation": ""
+    },
+    {
+        "key": "rule_must_with_choice",
+        "original": "9.12.3.a. If a card ability states that a player \"must\" do something without stipulating how that player must do so, then that player is forced to make any decisions necessary to satisfy the requirement, even if it requires the use of other card abilities.",
+        "translation": ""
+    },
+    {
+        "key": "rule_must_with_choice-1-example",
+        "original": "The Runner has an {card:Imp} and a {card:Scrubber} installed and accesses {card:Mumbad Virtual Tour}. If the Runner only has 4[c], they must still choose to either spend a counter from {card:Imp} to trash {card:Mumbad Virtual Tour} if they are able to do so or spend recurring credits on {card:Scrubber} to help pay the trash cost of the {card:Mumbad Virtual Tour}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_must_without_choice",
+        "original": "9.12.3.b. If a card ability states that a player \"must\" do something and specifies the means by which that player must do so, then that player is not required to carry out the effect except by the means specified, even if it would be possible through the use of other card abilities.",
+        "translation": ""
+    },
+    {
+        "key": "rule_must_without_choice-1-example",
+        "original": "The Runner has {card:Imp} and {card:Neutralize All Threats} installed when they access a card with a trash cost greater than the number of credits they have available to spend. Because they are unable to trash the card by paying its trash cost, they are not required to spend a counter from {card:Imp} in order to trash it.",
+        "translation": ""
+    },
+    {
+        "key": "rule_mandatory_choice",
+        "original": "9.12.3.c. If the \"must\" ability presents a player with a choice between two or more effects, that player must choose an effect that can be fully resolved. If none of the choices can be fully resolved, then the \"must\" ability does nothing.",
+        "translation": ""
+    },
+    {
+        "key": "rule_mandatory_choice-1-example",
+        "original": "If the first subroutine on {card:Fairchild 2.0} resolves while the Runner has no installed cards but 3[c], then the Runner must choose to pay 2[c]. When the second subroutine on {card:Fairchild 2.0} resolves, the Runner can neither pay 2[c] nor trash an installed card, so nothing happens.",
+        "translation": ""
+    },
+    {
+        "key": "rule_mandatory_choice_effects_can_be_modified",
+        "original": "9.12.3.d. Making a choice between effects is always a separate instruction from resolving the chosen effect (see {ref:rule_choice_instruction}). The previous rule only requires the player to choose an effect that is possible to resolve; it does not require the chosen effect to actually resolve as expected. Once an effect has been chosen, the player can apply interrupts to modify, prevent, or replace that effect as normal.",
+        "translation": ""
+    },
+    {
+        "key": "rule_mandatory_choice_effects_can_be_modified-1-example",
+        "original": "If the Runner encounters {card:Data Raven}, they must choose to either take a tag or end the run. The Runner can choose to take the tag, then avoid the tag with {card:Decoy}. This does not cause the run to end, as the decision to take the tag has already been made.",
+        "translation": ""
+    },
+    {
+        "key": "rule_must_cannot_force_additional_cost",
+        "original": "9.12.3.e. A singular \"must\" ability cannot force a player to pay an additional cost they wish to decline, but a player cannot avoid choosing a fully resolvable effect from among multiple options in a \"must\" ability by declining to pay the additional cost for one of those choices.",
+        "translation": ""
+    },
+    {
+        "key": "rule_must_cannot_force_additional_cost-1-example",
+        "original": "If {card:Service Outage} is active and the Runner has {card:Always Be Running} installed, the Runner can decline to pay the additional 1[c] to make a run with their first [click], thus satisfying the \"must\" of {card:Always Be Running} and allowing them to spend their first click on a different action. However, if a Runner has a {card:False Echo} installed and passes an unrezzed Archer, the Corporation cannot choose to rez the Archer but decline to forfeit an agenda; the Corp must either pay 4[c] and forfeit an agenda to rez the Archer or add the Archer to HQ.",
+        "translation": ""
+    },
+    {
+        "key": "subsec_repeat_this_process",
+        "original": "9.12.4. Repeat this process",
+        "translation": ""
+    },
+    {
+        "key": "rule_repeat_this_process",
+        "original": "9.12.4.a. If an ability instructs a player to \"repeat this process\" without specifying how many times to do so, then that player resolves the ability again, including the instruction to \"repeat this process\" if it is still applicable.",
+        "translation": ""
+    },
+    {
+        "key": "rule_repeat_this_process_x_times",
+        "original": "9.12.4.b. If an ability instructs a player to \"repeat this process\" a specified number of times, then that player resolves the entire ability, except for the repetition instruction, that many times in a row. The number of repetitions is determined after the first full resolution but before the first repetition, and once the number of repetitions is determined it cannot be changed.",
+        "translation": ""
+    },
+    {
+        "key": "rule_checkpoint_after_repetition",
+        "original": "9.12.4.c. Regardless of the number of times an ability is repeated, a checkpoint occurs after each full resolution of the ability's instructions, before another repetition begins.",
+        "translation": ""
+    },
+    {
+        "key": "rule_repetition_resolve_independently",
+        "original": "9.12.4.d. Each repetition of the ability is resolved independently of the others. If the ability provides the player with any choices, they may choose differently each time.",
+        "translation": ""
+    },
+    {
+        "key": "subsec_persistent",
+        "original": "9.12.5. Persistent",
+        "translation": ""
+    },
+    {
+        "key": "rule_persistent",
+        "original": "9.12.5.a. A {term:persistent} ability is an ability on a Corp card marked with the \"persistent\" ability flag before its other text. When the Runner trashes a rezzed card they are accessing, its persistent abilities {term:persist} through a lingering effect that is created as the source card is trashed. See also {ref:sec_lingering_effects}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_persistent_continuous",
+        "original": "9.12.5.b. A persistent ability begins to persist simultaneously with the trashing of its source card. The ability never becomes inactive, nor is it considered a new ability.",
+        "translation": ""
+    },
+    {
+        "key": "rule_persistent_expiration",
+        "original": "9.12.5.c. An ability only persists until just after the end of the run during which it began to persist. When the reaction window immediately following {ref:step_run_complete} of that run closes, the lingering effect allowing the ability to persist expires, and the ability ceases to persist.",
+        "translation": ""
+    },
+    {
+        "key": "rule_persistent_applicability",
+        "original": "9.12.5.d. A persisting ability is only applicable to the run during which it began to persist. After the checkpoint following {ref:step_run_complete} of the run, no more instances of the ability can be created. Even if another run initiates during the reaction window following that checkpoint, new instances of any abilities persisting from the first run cannot become pending during the second run, even if their trigger conditions would normally be met during that second run.",
+        "translation": ""
+    },
+    {
+        "key": "rule_persistent_applicability-1-example",
+        "original": "The Runner trashes {card:AMAZE Amusements}, causing its \"Whenever a run on this server ends\" ability to persist. When the run ends, the Runner uses {card:Doppelgänger} to make another run while the persisting ability is still pending. The ability remains active so that its existing pending instance can resolve, but another instance cannot be created even if the Runner steals an agenda during the second run.",
+        "translation": ""
+    },
+    {
+        "key": "subsec_modal_abilities",
+        "original": "9.12.6. Modal Abilities",
+        "translation": ""
+    },
+    {
+        "key": "rule_mode_definition",
+        "original": "9.12.6.a. Some abilities contain text organized into bulleted lists. These are called {term:modal abilities}, and each list item is called a {term:mode}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_choose_next_mode",
+        "original": "9.12.6.b. Each modal ability contains an instruction directing its controller to resolve 1 or more of its modes. The effect of this instruction is for the relevant player to choose the next mode to resolve. The first instruction of the chosen mode will be the next instruction to become imminent. The player does not need to choose modes in the order they are written. If the description of the number of modes to resolve contains \"up to\", the player may also choose not to resolve any more modes.",
+        "translation": ""
+    },
+    {
+        "key": "rule_after_resolving_mode",
+        "original": "9.12.6.c. After the instructions of a mode are complete, the game returns to the instruction to resolve 1 or more modes. If the maximum allowed number of modes have not yet been resolved, the player will choose another mode to resolve, as if resolving that initial instruction again. If the maximum number of allowed modes have been resolved, the game proceeds to the next instruction or ability following the list of modes.",
+        "translation": ""
+    },
+    {
+        "key": "rule_cannot_repeat_modes",
+        "original": "9.12.6.d. In a single instance of resolving a modal ability, each mode can be resolved no more than 1 time, unless the ability specifically states that its modes can be chosen more than once.",
+        "translation": ""
+    }
+]
