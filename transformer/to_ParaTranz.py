@@ -86,7 +86,7 @@ def parse_example(collector: list[list[str]], content: dict[str, Any], identifie
 
 def main():
     src_folder = "../data/input/"
-    dst_folder = "./csv/"
+    dst_folder = "./to_Paratranz/"
     filenames = sorted(os.listdir(src_folder))
     for index, filename in enumerate(filenames, start=1):
         collector = list()

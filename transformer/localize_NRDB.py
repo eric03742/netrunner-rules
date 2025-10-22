@@ -5,7 +5,7 @@ import yaml
 def main():
     src_filename = "../generated/nrdb/nrdb.yaml"
     dst_filename = "../generated/nrdb/localize_nrdb.yaml"
-    data_filename = "./data/localization.csv"
+    data_filename = "./nrdb/localization.csv"
     with open(src_filename, "r", encoding="utf-8") as src_file:
         content: dict[str, str] = yaml.safe_load(src_file)
         # print(content)
