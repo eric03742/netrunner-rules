@@ -296,7 +296,7 @@
   {
     "key": "rule_additional_identity",
     "original": "1.5.4. Two cards, {card:Rebirth} and {card:DJ Fenris}, make use of identity cards other than the one selected by the player during deck construction.",
-    "translation": "{card:重生}和{card:DJ 芬里斯}这两张卡牌需要用到与玩家在构筑牌组时所选择的特性不同的其他特性卡牌。",
+    "translation": "{card:重生}和{card:DJ芬里斯}这两张卡牌需要用到与玩家在构筑牌组时所选择的特性不同的其他特性卡牌。",
     "stage": 1
   },
   {

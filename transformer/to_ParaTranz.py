@@ -1,4 +1,3 @@
-from codecs import lookup
 from typing import Any
 
 import json
@@ -81,8 +80,9 @@ def parse_element(collector: list[dict[str, str]], content: dict[str, Any], inde
 
 
 def parse_example(collector: list[dict[str, str]], content: dict[str, Any], identifier: str, order: int):
+    identifier = f"{identifier}-{order}-example"
     text = content["text"]
-    write_line(collector, f"{identifier}-{order}-example", text)
+    write_line(collector, identifier, text)
 
 
 def main():
@@ -110,7 +110,8 @@ def main():
                     if line["key"] in finder:
                         line["translation"] = finder[line["key"]]
 
-        with open(os.path.join(dst_folder, root + ".json"), "w", encoding="utf-8") as file:
+        dst_filename = os.path.join(dst_folder, root + ".json")
+        with open(dst_filename, "w", encoding="utf-8") as file:
             json.dump(collector, file, ensure_ascii=False, indent=4)
 
 

@@ -1,0 +1,741 @@
+chapter: chpt_game_concepts
+text: 游戏概念
+sections:
+- section: sec_concepts_general
+  text: 总则
+  snippet: 本文档中的规则兼容由Fantasy Flight Games发行的游戏{term:《安卓纪元：矩阵潜袭》}中的卡牌。{term:《安卓纪元：矩阵潜袭》}是一款关于巨型公司与被称为“潜袭者”的颠覆分子黑客之间所进行的网络斗争的游戏。
+  rules:
+  - rule: rule_player_definitions
+    text: 本游戏由两位玩家进行。其中一位玩家扮演公司的角色，另一位玩家扮演潜袭者的角色。本规则文档将会频繁地以玩家的游戏角色指代该玩家。
+  - rule: rule_requirements
+    text: 每位玩家都需要一副合法的牌组、一张用于表示其角色的特性卡牌、以及其他的在其牌组之外使用的额外卡牌。玩家还需要依照{ref:sec_counters_and_tokens}所述准备一组指示物。有关定义牌组合法性的限制条件参见{ref:sec_deck_construction}。有关在牌组和特性之外可以使用其他卡牌的情况参见{ref:sec_extra_cards}。
+  - rule: rule_game_numbers
+    text: 游戏中使用的所有数字均为整数。除非另有说明，否则一个给定的值可以是正数、负数或者零。
+- section: sec_golden_rules
+  text: 黄金规则
+  rules:
+  - rule: rule_card_precedence
+    text: 如果一张卡牌上的文本与本规则中的条款互相矛盾，则该卡牌上的文本优先生效。
+  - rule: rule_cannot_precedence
+    text: 如果某项规则或能力指示某个事件发生，但另一个效果规定该事件不能发生，则该“不能”的能力优先生效。
+  - rule: rule_if_able
+    text: 如果一项指示中包含用语“如可能”，则该指示只能全部执行或完全不执行。如果该指示中的任意部分无法被执行，则整项指示都会被忽略。
+  - rule: rule_do_as_much_as_you_can
+    text: 如果一项指示中不包含用语“如可能”，则尽可能执行该指示中能够被执行的部分。该指示中任何不能被执行的部分都会被忽略。
+- section: sec_symbols
+  text: 符号
+  rules:
+  - rule: rule_symbols
+    text: 一些非英文符号会出现在卡牌上及本规则书中。本节是这些符号的基本指南。
+  - rule: rule_symbol_credits
+    text: 符号[c]（纯文本：{curly:c}）表示“信用点”。该符号总是会与一个数量同时出现，例如1[c]表示“一个信用点”、3[c]表示“三个信用点”。有关信用点的规则参见{ref:sec_credits}。
+  - rule: rule_symbol_clicks
+    text: 符号[click]（纯文本：{curly:click}）表示“时点”。表示多个时点时，既可以重复使用多个符号，如[click][click]，也可以使用数字和符号的组合，如2[click]，二者都表示“两个时点”。有关时点的规则参见{ref:sec_clicks}。
+  - rule: rule_symbol_recurring
+    text: 符号[recurring]（纯文本：{curly:recurring}）表示“可再生信用点”。该符号总是会与一个数量同时出现，例如1[recurring]表示“一个可再生信用点”、3[recurring]表示“三个可再生信用点”。有关可再生信用点的规则参见{ref:rule_sec_recurring}。
+  - rule: rule_symbol_link
+    text: 符号[link]（纯文本：{curly:link}）表示“中转”。该符号总是会与一个数量同时使用，例如1[link]表示“1中转”。有关中转的规则参见{ref:sec_link}。
+  - rule: rule_symbol_mu
+    text: 符号[MU]（纯文本：{curly:MU}）表示“内存”，也表示用于度量内存的单位。当与数量同时使用时，该符号应读作“内存单元”。例如，2[MU]表示“2内存单元”。有关内存的规则参见{ref:sec_memory}。
+  - rule: rule_symbol_sub
+    text: 符号[sub]（纯文本：{curly:sub}）表示“子进程”。每个符号标明了一层防火墙上的一条子进程。有关子进程的信息参见{ref:sec_subroutines}。
+  - rule: rule_symbol_trash
+    text: 符号[trash]（纯文本：{curly:trash}）表示“销毁本卡牌”。该符号用于在卡牌文本中指代自身作为费用，例如“[trash]：抽2张卡牌”表示“销毁本卡牌以抽2张卡牌”。有关费用的规则参见{ref:sec_costs}，有关销毁卡牌的规则参见{ref:sec_trashing}。
+  - rule: rule_symbol_interrupt
+    text: 符号[interrupt]（纯文本：{curly:interrupt}）表示“打断时机”。该符号用于指明紧接在其他能力之前结算的能力。有关打断能力的规则参见{ref:sec_interrupts_replacements}。
+- section: sec_deck_construction
+  text: 牌组构筑
+  rules:
+  - subsection: rule_identity
+    text: 每位玩家的牌组都带有一张特性卡牌，其决定了该牌组的派系、张数下限与影响力上限。特性卡牌还可以规定与标准的牌组构筑规则不同的其他变体规则。
+    rules:
+    - rule: rule_gateway_identities
+      text: '{product:《核心网关》起始包}中的特性{card:触媒}和{card:商盟}仅能用于该起始包中所包含的牌组。这两张特性卡牌不适用于在完整的牌组构筑规则下所进行的游戏。'
+  - rule: rule_legal_deck
+    text: 每副牌组都必须满足本节中的全部要求才能被合法地用于游戏中。
+  - subsection: rule_minimum_deck_size
+    text: 牌组中所包含的卡牌张数必须至少等于对应的特性上所标明的牌组张数下限。
+    rules:
+    - rule: rule_outside_the_deck
+      text: 特性卡牌、在游戏开始时位于牌组之外的额外卡牌、以及玩家辅助卡牌，这些卡牌并不是牌组的一部分，也不被计入牌组的卡牌张数之中。
+    - rule: rule_maximum_deck_size
+      text: 牌组没有卡牌张数上限。
+  - rule: rule_disallowed_cards
+    text: 牌组中不能包含特性卡牌、玩家辅助卡牌、来自错误阵营的卡牌（即在潜袭者牌组中放入公司卡牌，或反之）、或没有影响力费用的其他派系的卡牌。
+  - subsection: rule_influence_limit
+    text: 中立卡牌，以及所属派系与对应的特性的派系不同的卡牌，均被视作其他派系卡牌。其他派系卡牌的影响力费用总和不能超过该特性的影响力上限。
+    rules:
+    - rule: rule_influence_by_copy
+      text: 其他派系卡牌的影响力费用总和是以张数相加计算，而非以卡名相加计算。
+      examples:
+      - text: 在一副非塑造者牌组中包含一张{card:迪燃}将令该牌组的影响力总和增加2点，而在一副非塑造者牌组中包含两张{card:迪燃}将令该牌组的影响力总和增加4点。
+  - subsection: rule_agenda_points
+    text: 公司牌组必须包含议案分数总和达到一定数值的议案卡牌，所需数值由牌组中的卡牌总张数所决定。
+    rules:
+    - rule: rule_40_44
+      text: 含有40-44张卡牌的牌组必须包含18或19点议案分数。
+    - rule: rule_45_49
+      text: 含有45-49张卡牌的牌组必须包含20或21点议案分数。
+    - rule: rule_50_54
+      text: 含有50-54张卡牌的牌组必须包含22或23点议案分数。
+    - rule: rule_54+
+      text: 含有超过 54张卡牌的牌组，需要包含的议案分数为在22或23的基础上，牌组中超过50张的卡牌数量每满5张加2点议案分数。
+      examples:
+      - text: 一副含有66张卡牌的牌组需要包含6点额外的议案分数，因为该牌组在超过50张的部分共有3组满5张的卡牌。因此最终的议案分数需求为28或29点。
+  - rule: rule_maximum_copies
+    text: 牌组中不能包含超过3张同名的卡牌。一些卡牌会在其文本中规定与本规则不同的同名卡牌张数限制。
+  - rule: rule_special_tournament_rules
+    text: 在正式比赛中，可以采用其他对于特性及牌组的合法性的限制或要求。
+- section: sec_extra_cards
+  text: 额外卡牌
+  rules:
+  - rule: rule_outside_deck
+    text: 一些能力允许玩家在牌组之外使用额外的卡牌。
+  - subsection: rule_jinteki_biotech
+    text: 公司特性{card:人间生物科技：享你所想}拥有如下的能力：“在你开始第一个回合前，你可以将本卡牌与任意一张人间生物科技互换”。此特性共有三个版本，其反面分别有三个不同的能力。
+    rules:
+    - rule: rule_jinteki_biotech_detail
+      text: 使用{card:人间生物科技}作为其特性的玩家可以在其牌组之外携带任意数量的该特性的同名卡牌。在完成了游戏设置之后，该玩家可以选择其拥有的其中任意一张，作为其整局游戏中的活动特性。除此之外的其他副本则被移出游戏。
+  - subsection: rule_adam
+    text: 潜袭者特性{card:亚当：强迫性黑客}拥有如下的能力：“你在游戏开始时拥有三张已安装的不同的{subtype:指令}卡牌（这些卡牌不视为你牌组的一部分）”。
+    rules:
+    - rule: rule_adam_different_directives
+      text: 使用{card:亚当}作为其特性的玩家必须在其牌组之外携带至少3张卡名不同且具有{subtype:指令}子类型的卡牌。玩家可以在要求的3张的基础上携带任意数量的{subtype:指令}卡牌。
+    - rule: rule_adam_directives_install
+      text: 在玩家展示其特性之后，使用{card:亚当}的玩家从其携带的{subtype:指令}卡牌中选择3张。这些卡牌在游戏开始时安装到游戏区中。玩家以此方式携带的其他所有{subtype:指令}卡牌则留在游戏之外。
+    - rule: rule_adam_directives_deck
+      text: 使用{card:亚当}的玩家也可以在其牌组中包含{subtype:指令}卡牌。在游戏开始时被选择以安装的卡牌既不影响牌组的影响力需求，也不影响这些卡牌在牌组中允许放入的同名卡牌数量。
+    - rule: rule_adam_directives_during_game
+      text: 一旦游戏开始，以此方法安装的卡牌即被视为与其他已安装的卡牌完全相同。将这些卡牌移动到其他区域的能力会正常生效，包括将其洗回存储栈。
+  - subsection: rule_additional_identity
+    text: '{card:重生}和{card:DJ芬里斯}这两张卡牌需要用到与玩家在构筑牌组时所选择的特性不同的其他特性卡牌。'
+    rules:
+    - rule: rule_additional_identities_pile
+      text: 玩家可以在其牌组外携带任意数量的额外的潜袭者特性卡牌。这些卡牌堆放在游戏之外。潜袭者可以在任意时间查看这些卡牌。
+    - rule: rule_additional_identities_reference
+      text: 当一项能力提到潜袭者当前特性以外的其他特性时，其指的是玩家以此方法携带的卡牌。如果一张特性卡牌离开了游戏区，则必须返回游戏外的卡牌堆中。
+    - rule: rule_legal_additional_identities
+      text: 在正式比赛中，以此方法加入游戏的特性必须是玩家在此次比赛中能够合法地实际使用的特性。
+    - rule: rule_additional_identity_double_sided
+      text: 如果玩家使用双面特性交换其当前使用的特性，则双面特性以正面朝上加入游戏。如果潜袭者使用另一个特性与双面特性交换，则不论先前的双面特性此时状态如何，新特性都以正面朝上加入游戏。
+- section: sec_starting_the_game
+  text: 开始游戏
+  rules:
+  - subsection: rule_player_roles
+    text: 玩家决定由谁扮演公司、谁扮演潜袭者。每位玩家将适用于其所扮演阵营的特性卡牌牌面朝上放置于游戏区中，再将对应的牌组牌面朝下放置在游戏区中，最后是其它符合要求的额外卡牌。
+    rules:
+    - rule: rule_setup_identity
+      text: 一些特性卡牌的能力会影响游戏设置。即使在游戏开始前卡牌是不活动的，这些特性依然会根据其文本所述在符合要求的步骤中改变游戏设置。
+    - rule: rule_double_sided_identity
+      text: 一些特性是双面的（参见{ref:sec_identities}）。如果玩家使用的是双面特性，在游戏开始时应将其正面朝上。
+  - rule: rule_setup_abilities
+    text: 如果玩家的特性拥有会影响游戏设置或游戏开局的能力，且该能力并不直接对应本节所概述的某个设置步骤，则该玩家应在此时做出为其特性的特殊游戏设置或游戏开局所必需的任何决定或更改。如果双方玩家此时均有影响游戏设置或游戏开局的能力，则由公司先结算其能力。
+  - rule: rule_start_tokens
+    text: 玩家将{ref:sec_counters_and_tokens}中所描述的所有类型的标记整理成堆，构成银行。
+  - rule: rule_start_credits
+    text: 每位玩家从银行拿取五个信用点，将这些信用点放置在其各自的信用池中。
+  - rule: rule_start_shuffle
+    text: 每位玩家洗混其牌组。
+  - subsection: rule_start_hand
+    text: 每位玩家从其牌组顶端抽取5张卡牌，构成其初始手牌。
+    rules:
+    - rule: rule_mulligan
+      text: 在抽取初始手牌之后，公司可以选择执行一次重新调度；在这之后，潜袭者可以选择执行一次重新调度。在执行重新调度时，玩家将其初始手牌洗回其牌组中，然后抽取新的初始手牌。玩家必须保留第二次抽取的手牌作为其初始手牌。
+  - subsection: rule_start_corp_turn
+    text: 游戏开始，由公司进行其第一个回合。
+    rules:
+    - rule: rule_before_first_turn
+      text: 如果公司的特性拥有包含“在你开始第一个回合前”的指示的能力，则公司在进行其第一个回合前——即在游戏开始之前——立即结算这项能力。
+- section: sec_ending_the_game
+  text: 结束游戏
+  rules:
+  - subsection: rule_game_end
+    text: 游戏在任意一位玩家满足其任意一项胜利条件时结束。
+    rules:
+    - rule: rule_simultaneous_win
+      text: 如果双方玩家同时满足其胜利条件，则游戏以平局结束。
+  - subsection: rule_win_conditions
+    text: 每位玩家均有两种可能的胜利条件。
+    rules:
+    - rule: rule_win_agenda_points
+      text: 任一玩家均可通过在其分数区中取得议案分数而获胜（通常来说，是通过计分或窃取议案实现；参见{ref:sec_score_scoring_steal}）。得到7分或更多分数的玩家赢得游戏胜利。
+    - rule: rule_flatline
+      text: 如果潜袭者{term:死亡}，则公司获胜。如果潜袭者受到的伤害超过其操控器中的卡牌数量，则潜袭者立刻死亡。有关伤害的的信息参见{ref:sec_damage}。如果潜袭者的手牌上限在其弃牌步骤开始时小于0，则潜袭者同样立刻死亡。有关手牌上限与弃牌步骤的信息参见{ref:sec_discard_phase}。
+    - rule: rule_empty_rnd
+      text: 如果公司需要从研发中心抽牌，却因为研发中心为空而未能如此做，则潜袭者获胜。
+- section: sec_cards
+  text: 卡牌
+  rules:
+  - rule: rule_corp_card_types
+    text: 公司有六种类型的卡牌：议案、资产、防火墙、特性、事务与升级。除特性卡牌以外的其他所有卡牌均会在游戏开始时洗入公司的牌组中。
+  - rule: rule_runner_card_types
+    text: 潜袭者有五种类型的卡牌：事件、硬件、特性、程序和资源。除特性卡牌以外的其他所有卡牌均会在游戏开始时洗入潜袭者的牌组当中。
+  - subsection: rule_active_cards
+    text: '{term:活动的}卡牌可以通过其能力影响游戏。'
+    rules:
+    - rule: rule_default_active_card_locations
+      text: 游戏区中已安装且牌面朝上的潜袭者卡牌、已安装且已激活的公司卡牌、游戏区中的事件和事务、公司分数区中的议案、以及双方玩家的特性均为活动的。
+    - rule: rule_runner_become_active
+      text: 除非另有说明，否则潜袭者卡牌在被打出或安装的过程中即变为活动的。
+    - rule: rule_corp_become_active
+      text: 除非另有说明，否则除事务以外的其他公司卡牌在被安装到游戏区时均为未激活的，因此是闲置的。资产、防火墙和升级在被激活时变为活动的，议案在被计分时变为活动的。事务在被打出的过程中即变为活动的。
+    - rule: rule_identity_become_active
+      text: 特性卡牌在游戏开始时变为活动的。
+  - subsection: rule_inactive_cards
+    text: '{term:闲置的}卡牌不能对游戏产生影响，也不能使用其绝大部分能力。'
+    rules:
+    - rule: rule_default_inactive_card_locations
+      text: 位于研发中心、总部、档案库、堆阵、操控器、存储栈、潜袭者分数区中的卡牌，被置于一旁的卡牌，以及被移出游戏的卡牌均为闲置的。游戏区中牌面朝下的卡牌也是闲置的。
+    - rule: rule_inactive_cards_characteristics
+      text: 大部分区域中的闲置卡牌会保留其印刷性质（名称、卡牌类型、派系、费用、子类型、影响力、等等）。已安装但牌面朝下的潜袭者卡牌则没有任何性质。
+  - rule: rule_card_draw
+    text: 玩家{term:抽取}1张或多张卡牌，指的是从其牌组顶端拿取相应数量的卡牌，并将这些卡牌放入其手牌中。有关抽取卡牌的更多详细描述参见{ref:Sec_drawing_cards}。
+  - rule: rule_inactive_ability_exception_link
+    text: 对于绝大部分能力，当且仅当其所在的卡牌是活动的，该能力才是活动的。有关闲置卡牌上的能力仍然是活动的情况会在{ref:Rule_ability_active_inactive_source_card}中详细描述。
+  - rule: rule_card_conversion
+    text: 能力可以将卡牌从一种类型转化为另一种类型，甚至可以将一张卡牌转化为一个指示物。{ref:Rule_add_card_to_score_area,rule_card_to_counter}详细描述了有关卡牌转化的更多细节。
+- section: sec_counters_and_tokens
+  text: 指示物和标记
+  rules:
+  - subsection: rule_counters_cards
+    text: '{term:指示物}和{term:标记}是一类游戏部件（或等效物品），用于记录玩家及其卡牌的各种资源、效果和状态。'
+    rules:
+    - rule: rule_counter_token
+      text: 术语“指示物”和“标记”可互换使用。
+  - subsection: rule_bank
+    text: '{term:银行}提供尚未被使用的指示物。双方玩家可以根据游戏规则和卡牌能力的规定，拿取和使用银行中的指示物。玩家既不操控银行中的指示物、也不能花费这些指示物。银行的供应是无限的，即使用于记录某一类指示物的游戏部件被用尽，也不会因此禁止玩家获取该类型的指示物或将这些指示物放置在卡牌上。'
+    rules:
+    - rule: rule_bank_default
+      text: 如果一项指示要求玩家在一张卡牌上放置指示物，且未指明这些指示物的来源，则玩家从银行拿取这些指示物。
+    - rule: rule_counters_placed_condition
+      text: 如果一个条件或限制需要“指示物被放置在一张卡牌上”，则该指示物既可以是来自银行的指示物，也可以是从其他位置移动过来的指示物。
+  - rule: rule_card_conversion_game_piece
+    text: 一些能力可以将一张卡牌转化为一个指示物。以这种方式加入游戏的指示物使用该卡牌作为游戏部件进行记录。参见{ref:rule_card_to_counter}。
+  - rule: rule_additional_counters
+    text: 一些能力可以在不放置或给予指示物的情况下，导致玩家或卡牌拥有或被“视作拥有”1个或多个指示物或额外的指示物。以此种形式被视作存在的指示物，与其所指定类型的指示物表达同等的信息且具有相同的效果，但是不能被从所属的玩家或卡牌上移动或移除，也不能被花费以支付某个费用。
+  - subsection: rule_counter_types
+    text: 游戏中共有十种指示物：信用点指示物、时点指示物、锁定标记指示物、负面声誉指示物、核心伤害指示物、推进指示物、病毒指示物、能量指示物、议案指示物和状态指示物。
+    rules:
+    - rule: rule_type_credit_counter
+      text: '{term:信用点指示物}用于记录每位玩家在其信用池中所拥有的信用点数量，也可以被放置在卡牌上。有关信用点、信用池及其他相关概念的规则参见{ref:sec_credits}。'
+    - rule: rule_type_click_counter
+      text: '{term:时点指示物}是一种游戏辅助道具，用于记录主动玩家在其回合已花费或尚未花费的时点。有关时点的规则参见{ref:sec_clicks}。'
+    - rule: rule_type_tag_counter
+      text: '{term:锁定标记指示物}用于表示潜袭者获得的锁定标记。有关锁定标记的规则参见{ref:sec_tags}。'
+    - rule: rule_type_bad_pub_counter
+      text: '{term:负面声誉指示物}表示公司获得的负面声誉。有关负面声誉的规则参见{ref:sec_bad_publicity}。'
+    - rule: rule_type_core_damage_counter
+      text: '{term:核心伤害指示物}是一种游戏辅助道具，用于记录潜袭者已受到的核心伤害。潜袭者每受到一点核心伤害就必须拿取一枚核心伤害指示物。参见{ref:sec_damage}。'
+    - rule: rule_type_advancement_counter
+      text: '{term:推进指示物}主要用于放置在已安装的议案上，以记录公司在能够将其计分前的进展情况。'
+    - rule: rule_type_virus_counter
+      text: '{term:病毒指示物}是一种主要用于{subtype:病毒}程序的通用指示物，公司可以通过清除病毒移除这些指示物。参见{ref:rule_purge}。'
+    - rule: rule_type_power_counter
+      text: '{term:Power counters} are a generic counter used by a variety of cards. They have no special rules.'
+    - rule: rule_type_agenda_counter
+      text: '{term:Agenda counters} are a generic counter used primarily on scored agendas. They have no special rules.'
+    - rule: rule_type_condition_counter
+      text: '{term:Condition counters} are counters that have rules text. Their abilities are active as long as they are hosted on a card.'
+- section: sec_credits
+  text: Credits
+  snippet: 'Each of the Runner''s credits represents enough money to upgrade some basic parts for their console, have a meal at a decent restaurant, or buy a ticket and some concessions for a night at the sensies.
+
+    Each of the Corp''s credits represents enough money to manufacture a run of computer parts, buy out a decent restaurant, or film a low-budget sensie.
+
+    '
+  rules:
+  - rule: rule_credit
+    text: A {term:credit} ([c]) is the basic unit of currency. Players spend their credits to pay for various costs, card abilities, traces, etc. Credit counters most commonly represent 1[c] each, but can represent larger denominations if clearly marked.
+  - rule: rule_credit_pool
+    text: Each player has a {term:credit pool} where they keep a supply of credit counters matching the credits they have available to spend. The number of credits in a player's credit pool is open information.
+  - subsection: rule_gain_spend_lose_credits
+    text: Credits enter and leave a player's credit pool as that player gains, loses, or spends credits.
+    rules:
+    - rule: rule_gain_credits
+      text: A player {term:gains} credits whenever credits enter their credit pool from any location.
+    - rule: rule_lose_credits
+      text: If a player is required to {term:lose} credits, that player is forced to move the specified number of credits from their credit pool to the bank. Players cannot lose credits from cards.
+      examples:
+      - text: If a subroutine on {card:DNA Tracker} resolves, the Runner must lose 2[c] from their credit pool, or 1[c] if that is all they have. If the Runner's credit pool is empty, the effect does nothing.
+    - rule: rule_spend_credits
+      text: To {term:spend} or {term:pay} credits, a player puts the specified number of credits back into the bank. By default, the credits must come from the player's credit pool. Abilities can also allow players to spend credits hosted on their cards under certain conditions. If any such abilities apply, the player chooses how to divide the credits they are spending from among the allowed locations. The terms "spend" and "pay" are synonymous.
+      examples:
+      - text: The Runner may use the credit from {card:Cyberfeeder} to pay for {card:Atman}'s first ability.
+      - text: The Runner may use credits from {card:Ghost Runner} when secretly spending credits to resolve a Psi ability (such as {card:The Future Perfect}).
+      - text: The Runner must use credits from {card:Ghost Runner} if this is the only way for them to pay 3[c] when resolving the "when encountered" ability on {card:Tollbooth}.
+  - subsection: rule_hosted_credits
+    text: Abilities can place credits on cards, as discussed in {ref:sec_host}. Credits on a player's card are not in that player's credit pool; the player can only interact with those credits as instructed by card abilities.
+    rules:
+    - rule: rule_take_credits
+      text: If a player is instructed to {term:take} credits from a card, they remove that many credits from that card and gain those credits.
+    - rule: rule_spend_hosted_credits
+      text: If an ability specifies how a player is allowed to spend credits from a card, they can be spent from that card as if they were in the player's credit pool for the specified actions or abilities.
+    - rule: rule_spend_hosted_credits_during
+      text: If an ability specifies a time period during which a player is allowed to spend credits from a card, they can be spent from that card as if they were in the player's credit pool for any purpose (other than losing credits) as long as the specified time period is active or the specified duration has not expired.
+    - rule: rule_hosted_credits_use
+      text: Spending credits from a card is considered "using" the card that allowed those credits to be spent. See {ref:rule_using}.
+  - subsection: rule_sec_recurring
+    toc:
+    text: Recurring Credits
+    rules:
+    - rule: rule_recurring_credits
+      text: '{term:Recurring Credits} ([recurring]) place credits on a card repeatedly. The text "N[recurring]" means "When this card becomes active, place N credits on it. Before abilities meet their trigger conditions for your turn beginning, if there are fewer than N credits on this card, place credits on it until there are N credits on it."'
+    - rule: rule_placing_recurring_credits
+      text: Recurring credits are first placed on a card as soon as it becomes active. This occurs at {ref:rule_steps_installing_become_installed} of installing the card if it is installed active, {ref:rule_steps_playing_active} of playing an event or operation, or as soon as the card is turned faceup or scored, as applicable.
+    - rule: rule_refill_recurring_credits
+      text: Recurring credits are refilled during {ref:step_corp_turn_recurring_credits_refill} of the Corp's turn and {ref:step_runner_turn_recurring_credits_refill} of the Runner's turn, before other abilities that apply at the start of the turn resolve.
+    - rule: rule_recurring_credits_do_not_accumulate
+      text: Recurring credits do not accumulate. They are refilled only up to the indicated number.
+      examples:
+      - text: The Runner installs {card:Spinal Modem}, which has 2[recurring]. 2 credits are placed on {card:Spinal Modem} now. The Runner spends 1 of those credits later in their turn. At the beginning of the Runner's next turn, the credits on {card:Spinal Modem} should be replenished up to 2[c], so 1 more credit is placed on it.
+- section: sec_clicks
+  text: Clicks
+  snippet: 'Working a job, making connections, and especially jacking in—everything you do takes time, and it always goes by faster than you think. A click represents an abstract amount of time spent on a particular activity, either several hours all at once or scattered across the day.
+
+    '
+  rules:
+  - rule: rule_click
+    text: A {term:click} ([click]) is the basic unit of activity. Players spend their clicks to perform actions and trigger abilities. Each click counter represents 1 click.
+  - subsection: rule_allotted_clicks
+    text: As the first step of a player's turn, they gain an allotted number of clicks to spend during the action phase of that turn. See {ref:chpt_turns} for details about the procedures of player turns.
+    rules:
+    - rule: rule_corp_allotted_clicks
+      text: The Corp receives 3[click] on each of their turns.
+    - rule: rule_runner_allotted_clicks
+      text: The Runner receives 4[click] on each of their turns.
+  - subsection: rule_gain_spend_lose_clicks
+    text: Players can gain, lose, or spend clicks.
+    rules:
+    - rule: rule_gain_clicks
+      text: A player {term:gains} clicks whenever the number of clicks they have is increased.
+    - rule: rule_lose_spend_clicks
+      text: If a player {term:loses} or {term:spends} clicks, the number of clicks they have is reduced by that amount. The terms "lose" and "spend" are not synonymous for the purposes of meeting conditions and restrictions of card abilities.
+    - rule: rule_click_actions
+      text: Paid abilities that begin with [click] are actions and have special timing rules (see {ref:sec_actions}). Aside from taking actions, there are no special restrictions to how or when a player can spend their clicks during their turn.
+  - rule: rule_priority_subtype
+    text: Some cards have the subtype {subtype:priority} and the text, "Play only as your first [click]." A player can only play a {subtype:priority} card using the basic action to play an event or operation, and only if they have not spent any other clicks that turn. Losing clicks does not affect a player's ability to play a {subtype:priority} card.
+- section: sec_objects
+  text: Objects
+  rules:
+  - rule: rule_object
+    text: An {term:object} is an occurrence of a card or counter existing in a particular zone. When a card or counter moves from one zone to another, it becomes a new object.
+  - subsection: rule_no_memory
+    text: Restrictions and effects on a card or counter only apply for as long as that card or counter remains the same object. Cards and counters have no memory of the objects they were in the past.
+    examples:
+    - text: The Corp uses the first ability on {card:Vaporframe Fabricator}, which specifies that it can only be used once per turn, and trashes {card:Vaporframe Fabricator} during the installation process. Then the Corp plays Restore, reinstalling the same copy of {card:Vaporframe Fabricator} from Archives. Even though it is the same physical card, the reinstalled {card:Vaporframe Fabricator} is a new object, and its "once per turn" ability is available to be used this turn.
+    rules:
+    - rule: rule_identify_object_after_move
+      text: An ability that moves cards can identify the new objects that those cards become and continue to act on them.
+      examples:
+      - text: The Corp plays {card:Priority Construction}, installing a piece of ice from HQ. That ice is now a new object in the play area, but {card:Priority Construction}'s second instruction can still find it and place advancement counters on it.
+  - rule: rule_object_move_location
+    text: A card that moves from its location to a hidden or secret location becomes a new object, even if the new location is in the same zone.
+    examples:
+    - text: 'The Corp scores {card:Accelerated Beta Test}, looks at the top 3 cards of R&D, and installs and rezzes a piece of ice from among them. As a chain reaction, the Corp then uses {card:The Foundry: Refining the Process} to search R&D, with the result that the other cards currently being looked at by {card:Accelerated Beta Test} are shuffled along with the rest of R&D. Since the cards were moved to an unknown location in R&D, {card:Accelerated Beta Test} can no longer act on them, so those cards can no longer be looked at and will not be installed or trashed.'
+    - text: The top card of R&D in the current game state is an object. So is the 2nd card from the top of R&D, the 3rd card, and so on. If the Corp plays {card:Precognition} and rearranges the top 5 cards of R&D, the Runner will not know which cards correspond to which objects in the previous order, so the cards become new objects under their new order.
+  - rule: rule_object_move_known_location
+    text: A card or counter that moves to a known location in the same zone is still the same object.
+    examples:
+    - text: The Runner has chosen a piece of ice with {card:Femme Fatale}, and the Corp uses {card:Thimblerig}'s ability to move that ice to another location. But the ice has not left the play area, so it is still the same object and the Runner can still use {card:Femme Fatale}'s ability to bypass it.
+  - rule: rule_object_turn_faceup_facedown
+    text: A card that is turned faceup or facedown is still the same object.
+    examples:
+    - text: The Corp uses {card:Vaporframe Fabricator}, installing a piece of ice at no cost, and then plays Divert Power to derez {card:Vaporframe Fabricator} and rez their newly-installed ice at a discount. The Corp can rez {card:Vaporframe Fabricator} again, but since it is still the same object, its "once per turn" ability cannot be used again this turn.
+  - subsection: rule_previous_object
+    text: When a card or counter becomes a new object, its previous object ceases to exist, but can still be remembered by rules or abilities that refer to past game states.
+    examples:
+    - text: The Runner plays {card:Bravado}. During the run, a piece of ice that the Runner has already passed is trashed. When the run ends, {card:Bravado}'s ability must determine how many pieces of ice the Runner passed during that run. It does this by reviewing the game history and counting each distinct ice object that the Runner passed. Even though the object corresponding to the trashed ice no longer exists in the present game state, {card:Bravado} can still count it.
+    - text: The Runner trashes the top card of R&D while accessing it. The object corresponding to that card in its location on top of R&D ceases to exist, but still counts against the number of cards the Runner can access from R&D during this breach.
+    rules:
+    - rule: rule_previous_object_source
+      text: An object that has ceased to exist still counts as the source for any active lingering effects created by that object. See {ref:sec_lingering_effects} for information about lingering effects.
+      examples:
+      - text: The Runner runs a server, steals an agenda, and accesses a rezzed copy of {card:AMAZE Amusements}. The Runner trashes {card:AMAZE Amusements}, and the object they had accessed ceases to exist, while the trashed card becomes a new object in Archives. The source of the persistent ability created by the trashing is the original object in the root of the server, so the reference to "this server" in the persistent ability still refers to the attacked server, and the Runner will take 2 tags when the run ends.
+- section: sec_host
+  text: Host, Hosted, and Hosting
+  rules:
+  - subsection: rule_placed_loaded
+    text: Whenever an object is "placed" or "loaded" onto a card, a host relationship is created between those two objects. The object placed on top of a card is {term:hosted} on that card. The card onto which the other object is placed is the {term:host}.
+    rules:
+    - rule: rule_valid_hosts
+      text: Only cards in score areas and the play area can host objects.
+  - subsection: rule_hosted_installed_state
+    text: The state of being hosted is distinct, but not exclusive from, the state of being installed.
+    rules:
+    - rule: rule_host_without_install
+      text: If an ability instructs a player to host a card that is not installed without reference to installing it, the hosted card does not become installed.
+    - rule: rule_host_corp_card_uninstall
+      text: If an installed Corp card becomes hosted on a Runner card, the Corp card becomes uninstalled.
+    - rule: rule_install_from_hosted
+      text: If a card is installed from a hosted state, it ceases to be hosted. The hosting relationship ends at step {ref:rule_steps_installing_place} of the installation.
+  - rule: rule_hosted_limit
+    text: An object can only be hosted on a single card at any given time.
+  - rule: rule_hosting_limit
+    text: A card can host any number of other objects, except where explicitly restricted by a card ability.
+  - subsection: rule_host_relationship
+    text: Any card in an eligible location can act as a host, but a host relationship can only be created or permitted by a card ability.
+    rules:
+    - rule: rule_host_via_install
+      text: If a card has an ability describing the types and/or numbers of cards it can host, but it does not have an ability that directly hosts cards onto itself, then the card is permitted as an eligible installation destination for the types of cards listed, up to the number specified. A host card is chosen as an installation destination during {ref:rule_steps_installing_destination} of the installation process.
+      examples:
+      - text: '{card:Off-Campus Apartment} has the ability, "{card:Off-Campus Apartment} can host any number of {subtype:connections}." This means that whenever the Runner installs a {subtype:connection} card, they can choose to install that card into the play area hosted on {card:Off-Campus Apartment} or as normal directly into the play area.'
+    - rule: rule_host_via_ability
+      text: If a card has an ability describing cards it can host, but also one or more abilities that can create host relationships onto itself, then it only allows cards to become hosted on it through those abilities. A card cannot be installed directly onto the card through an unrelated install effect.
+      examples:
+      - text: '{card:Glenn Station} reads, "{card:Glenn Station} can host a single card", but also has a paid ability that hosts a card on itself. Therefore, {card:Glenn Station} only lets the Corp host cards through that paid ability, not through an install action.'
+    - rule: rule_host_on_ability
+      text: If a card has an ability stipulating that it can only be installed hosted onto another card, then during the installation process a player that wishes to install that card must choose a valid destination matching the description provided. If no such destination exists before the installation process begins, the card cannot be installed.
+      examples:
+      - text: '{card:Egret} states, "Install only on a rezzed piece of ice." The Runner can only install Egret if there is an installed, rezzed piece of ice available before the installation process begins; otherwise, it is illegal for the Runner to install {card:Egret}.'
+    - rule: rule_condition_counter
+      text: Some operations and events convert themselves into condition counters and install themselves hosted onto other cards. An operation or event can never be installed through an install effect; it can only become an installed counter through its conversion ability. See {ref:rule_card_to_counter}.
+  - subsection: rule_host_faceup_facedown
+    text: Cards can be hosted faceup or facedown.
+    rules:
+    - rule: rule_hosted_when_installed
+      text: Unless otherwise specified, a card that is hosted while it is being installed is hosted onto the destination card in the same faceup or facedown status it would normally be installed in.
+    - rule: rule_hosted_when_not_installed
+      text: Unless otherwise specified, a card that is hosted without being installed is hosted faceup.
+    - rule: rule_hosted_facedown_distinct
+      text: Like other facedown installed cards, installed cards hosted facedown are distinct. The order in which they were installed (or turned facedown) is open information.
+    - rule: rule_hosted_facedown_groups
+      text: Cards hosted facedown without being installed must be kept in distinct groups according to their host. Cards within such a group are not ordered and can be freely arranged by their controller.
+  - rule: rule_change_hosted
+    text: Once a card is installed, hosted or not, a player cannot change that card's hosted status unless a card ability explicitly directs it to be hosted onto a new card.
+  - rule: rule_host_transitivity
+    text: Host relationships are not transitive. If card A is hosted on card B, and card B is hosted on card C, card A is not considered to be hosted on card C.
+    examples:
+    - text: If the Runner installs a {card:Leprechaun} hosted on a {card:Dhegdheer}, programs hosted on {card:Leprechaun} do not have their install costs reduced because they are hosted on {card:Leprechaun} and not on {card:Dhegdheer}.
+  - rule: rule_hosted_word_meaning
+    text: If an ability on a card refers to a "hosted" card or counter, that ability only references objects hosted on that card.
+  - rule: rule_remove_spend_hosted_objects
+    text: Hosted objects can be removed or spent from their host without affecting the host.
+  - rule: rule_trash_hosted_objects_when_host_trashed
+    text: If a host card changes zones, except by moving from a player's score area to another player's score area, all objects hosted on that card (and all objects hosted on those objects, and so on) are trashed during the next checkpoint. This cannot be prevented. See {ref:sec_checkpoints} for details on checkpoints.
+    examples:
+    - text: The Runner has an installed copy of {card:Detente} with Corp cards hosted on it. They play {card:Rejig}, adding {card:Detente} to their grip. The hosted Corp cards are trashed.
+    - text: The Runner has {card:Next Big Thing} in their score area with a hosted agenda counter. The Corp plays {card:IP Enforcement} to install that agenda. The hosted agenda counter will be trashed after {ref:rule_steps_installing_pay_install_cost} of the installation.
+    - text: The Runner has {card:Next Big Thing} in their score area with a hosted agenda counter. The Corp plays {card:Exchange of Information} to swap that agenda to their own score area. The agenda counter remains hosted on {card:Next Big Thing}.
+  - rule: rule_condition_counters_can_host
+    text: Condition counters are the only type of counter that can host other objects. Hosting on condition counters follows the same rules as hosting on cards.
+- section: sec_ownership
+  text: Ownership and Control
+  rules:
+  - subsection: rule_owner
+    text: The {term:owner} of a card is the player who provided that card at the start of the game as their identity, part of their deck, or an extra card along with their deck.
+    rules:
+    - rule: rule_owner_converted_to_counter
+      text: A card that is converted into a counter retains its owner.
+    - rule: rule_owner_counters
+      text: No player owns counters that are not converted cards.
+  - subsection: rule_controller_object
+    text: The {term:controller of an object} is the player responsible for that object.
+    rules:
+    - rule: rule_controller_card_play_area
+      text: The controller of a card in the play area is the player who installed or placed it there.
+    - rule: rule_controller_agenda
+      text: The Corp controls each agenda in the Corp's score area. The Runner controls each agenda in the Runner's score area.
+    - rule: rule_controller_default_owner
+      text: Cards in other zones are controlled by their owner.
+    - rule: rule_controller_credits
+      text: Each player controls the credits in their credit pool.
+    - rule: rule_controller_bad_publicity_tag
+      text: The Corp controls each bad publicity counter. The Runner controls each tag counter. However, see {ref:rule_corp_can_pay_tag_costs} and {ref:rule_runner_can_pay_bad_publicity_costs} regarding paying costs that involve tags and bad publicity, respectively.
+    - rule: rule_controller_hosted_counter
+      text: The controller of a counter hosted on a card is the player who controls the host card.
+    - rule: rule_controller_click_core_damage
+      text: Click counters and core damage counters are gameplay aids only and have no controller.
+  - rule: rule_pay_costs_controlled_objects
+    text: A player can only pay costs using objects they control.
+  - subsection: rule_controller_ability
+    text: The {term:controller of an ability} is the player responsible for that ability. By default, this is the player who controls the ability's source. See also {ref:rule_source}. A player can only use abilities they control.
+    rules:
+    - rule: rule_controller_agenda_abilities
+      text: Unless specifically stated otherwise, abilities on agendas are controlled by the Corp, even for agendas in the Runner's score area.
+    - rule: rule_ability_controller_specified
+      text: Some abilities state that they can only be used by a specific player. The specified player controls each such ability, even if they do not control its source.
+  - subsection: rule_controller_choices
+    text: Unless otherwise noted, the controller of an ability carries out its effects and makes any choices required. If a player is specified to perform all or part of an effect, the specified player carries out that part of the effect and makes any choices required instead.
+    examples:
+    - text: '{card:Rototurret}''s first subroutine reads, "Trash 1 installed program." Since {card:Rototurret} is a Corp card, the Corp chooses which installed program to trash. Conversely, {card:Bulwark}''s first subroutine reads, "The Runner trashes 1 installed program." Since the Runner is specified to be carrying out this effect, they choose which of their installed programs to trash.'
+    rules:
+    - rule: rule_trigger_condition_effect_by_player
+      text: Some trigger conditions care about effects performed by a particular player. These conditions are only met when that player is the one to carry out the relevant effect.
+      examples:
+      - text: The Corp has a rezzed {card:Hostile Infrastructure}. Apocalypse does not specify who trashes the cards, so the Runner is responsible for the trashing and {card:Hostile Infrastructure} meets its trigger condition.
+      - text: '{card:Alice Merchant} states that "the Corp must trash 1 card from HQ", so the Corp carries out this effect even though {card:Alice Merchant} is a Runner card, and therefore {card:Hostile Infrastructure} does not meet its trigger condition.'
+- section: sec_targets
+  text: Targets
+  rules:
+  - subsection: rule_target
+    text: Many abilities require players to choose 1 or more objects or subroutines to affect. Each object and subroutine chosen for an ability is a {term:target} of that ability.
+    examples:
+    - text: '{card:Top Hat} reads in part, "you may choose 1 of the top 5 cards of R&D and access it." The target of this instruction is the card in R&D the Runner chooses.'
+    - text: One of the subroutines on {card:Colossus} reads in part, "Trash 1 installed program and 1 installed resource." The targets of this subroutine are the two cards that will be trashed.
+    - text: '{card:Trick of Light} reads, "Choose 1 installed card you can advance. Move up to 2 advancement counters from 1 other card to the chosen card." The targets of this operation are the advancement counters to be moved and the destination card. If 2 tokens are chosen, they must be hosted on the same card.'
+    - text: The Runner is encountering a {subtype:barrier} and uses {card:Cleaver} to break subroutines. The targets of {card:Cleaver}'s' interface ability are the 1 or 2 subroutines that it will break.
+    rules:
+    - rule: rule_searching_does_not_target
+      text: Cards found during a search are not considered targets of the instruction that performs the search. Players do not need to announce what card(s) they expect to find before the search actually takes place. See {ref:sec_searching_cards} for rules about searching.
+    - rule: rule_object_subroutine_targets
+      text: Only objects and subroutines are announced as targets. If an instruction directs a player to choose (or "name") a number, a card type, a subtype, a card name, a server, or one of a specified set of effects, that choice is not made until the instruction resolves.
+  - subsection: rule_announce_targets
+    text: Immediately before an instruction becomes imminent, the player resolving that instruction must first choose the targets required by that instruction. For each time the instruction requires a player to choose 1 or more objects and/or subroutines, that player {term:announces} appropriate targets. Once players are finished announcing targets for an instruction, the instruction becomes imminent, and players have the opportunity to modify the effects of that instruction with interrupt abilities before it resolves. See {ref:sec_interrupts_replacements}.
+    rules:
+    - rule: rule_target_indicate
+      text: When a player announces a card as a target, they indicate clearly which card is being chosen without changing its facedown/faceup status or location.
+    - rule: rule_targets_must_be_valid
+      text: The player resolving the instruction can only choose targets that are valid for that instruction. A target is valid for an instruction if it meets any specified requirements of that instruction or can otherwise be acted upon by that instruction.
+    - rule: rule_targets_must_be_in_play_area
+      text: Unless an instruction explicitly specifies the zone from which an object must be selected as a target, only counters in the play area and installed cards are valid targets for that instruction.
+      examples:
+      - text: The Corp resolves a subroutine that says "[sub] The Runner trashes 1 program." The Runner must trash 1 of their installed programs and may not trash a program from their grip or stack.
+    - rule: rule_multiple_targets
+      text: Some effects allow a player to choose multiple cards as targets for a single announcement. {ref:Subsec_quantities_and_sets} contains rules about resolving effects involving sets of cards.
+    - rule: rule_distinct_targets
+      text: A player may announce the targets for an instruction in any order, but each object or subroutine can only be chosen as a target once for each announcement. If there are not enough valid targets available, then that player chooses as many distinct targets as possible and the remaining targets are not announced.
+      examples:
+      - text: The Runner accesses an {card:Aggressive Secretary} with three advancement counters on it. The Runner only has two installed programs, so the Corp chooses both of those programs for {card:Aggressive Secretary}. After the programs have been chosen, they are both trashed simultaneously.
+    - rule: rule_targeting_only_once
+      text: Targets cannot be chosen for an instruction at any other time. Even if the game state changes due to interrupt abilities while the instruction is imminent, unannounced targets remain unchosen.
+  - rule: rule_targets_gone
+    text: At the time an instruction resolves, if any of its targets either have become invalid or were not announced, as much of that ability resolves as possible without acting on the unannounced or invalid targets, following {ref:rule_if_able,rule_do_as_much_as_you_can} of the Golden Rules. A target can be invalid because the chosen object or subroutine no longer exists or because the target no longer meets other requirements specified by the targeting ability.
+  - rule: rule_target_beyond_move
+    text: After the resolution of an instruction that chose a particular target, subsequent instructions of the same ability can continue to act on that target without needing to select it again, even if the ability moves the target or changes its properties. See also {ref:rule_no_memory}.
+    examples:
+    - text: '{card:Howler}''s ability targets a card in HQ. Its first instruction installs that card, and its second instruction creates a delayed conditional ability that refers to that card in the play area. The latter ability can find and act on the card as long as it is still installed. '
+- section: sec_costs
+  text: Costs
+  rules:
+  - subsection: rule_cost
+    text: In order to use an ability or apply an effect, a player may be required to pay a cost. A cost can take the form of any card, counter, or other item a player must spend; an effect a player must resolve; or other type of requirement a player must meet. If a player cannot pay the full cost of an action or ability all at once with cards and counters they control, they cannot use the effect associated with that cost.
+    rules:
+    - rule: rule_cost_no_interrupt
+      text: The act of paying a cost cannot be modified or cancelled by optional interrupt abilities.
+      examples:
+      - text: The Runner can trash {card:Clone Chip} to trigger its paid ability, but cannot use {card:LLDS Energy Regulator} to prevent {card:Clone Chip} from being trashed this way.
+    - rule: rule_cost_interrupt_static_mandatory
+      text: If a static ability or a mandatory conditional ability interrupt would prevent the steps of paying a cost from being carried out if they were performed as an effect, that cost cannot be paid.
+      examples:
+      - text: 'The Runner cannot pay the additional cost to steal {card:Obokata Protocol} while {card:Guru Davinder} is installed, because the Runner could not currently take 4 damage if instructed to: {card:Guru Davinder}''s first ability would prevent the damage.'
+      - text: The Runner is playing as {card:Jesminder Sareen} and encounters {card:Funhouse}, without any other tag-related effects resolving earlier in the run. Since {card:Jesminder Sareen}'s ability would prevent taking 1 tag, the Runner cannot take 1 tag to pay the nested cost in {card:Funhouse}'s ability. {card:Funhouse} will end the run.
+    - rule: rule_cost_restrictions
+      text: If triggering an ability or resolving an effect is subject to both costs and other restrictions, the cost cannot be paid unless all such restrictions are met, and cannot be paid in a way that would result in any restriction no longer being met.
+      examples:
+      - text: The Runner controls {card:Zer0} and {card:Clan Vengeance}, and wants to accumulate more power counters on {card:Clan Vengeance}. {card:Zer0}'s ability has the restriction "Use this ability only once per turn." If the Runner has already used the ability this turn, they cannot suffer additional net damage by attempting (even unsuccessfully) to use the ability again.
+      - text: The Corp installs {card:Azef Protocol} in the root of a server with a rezzed {card:SanSan City Grid} and advances {card:Azef Protocol} twice. Since {card:SanSan City Grid} reduces {card:Azef Protocol}'s advancement requirement to 2, the Corp now meets the restriction necessary to score {card:Azef Protocol}, but must also pay its additional cost to score. The Corp cannot trash the {card:SanSan City Grid} to pay this cost, because paying the cost this way would return {card:Azef Protocol}'s advancement requirement to 3, and the restriction to score it would no longer be met.
+    - rule: rule_cost_zero
+      text: A cost of 0 can still be paid by a player, even though no items are paid. Costs of 0 are not paid automatically. A player pays a cost of 0 by explicitly announcing they are paying it.
+      examples:
+      - text: 'The Runner accesses a {card:Beanstalk Royalties} from R&D and announces that they are using the ability of {card:Freedom Khumalo: Crypto-Anarchist} to trash the {card:Beanstalk Royalties}. Even though the Runner does not remove any virus counters from any cards, they have still paid the cost.'
+  - subsection: rule_modified_costs
+    text: The actual contents of a cost can be dependent on the game state. Abilities can modify their own costs, modify costs of a certain type or that meet certain criteria, or include costs that need to be calculated.
+    rules:
+    - rule: rule_cost_calculation
+      text: If a quantity in a cost is subject to effects modifying its value, determine the final value of that quantity by taking its default value, applying each effect that increases the cost, and then applying each effect that lowers the cost. Finally, if the value determined by this process is less than 0, set the value to 0.
+    - rule: rule_cost_quantities
+      text: Some abilities calculate a quantity using phrases like "for each", "for every", or "plus". Any time such a calculation appears in a cost, the result of that calculation is determined at the time the cost is to be paid. The result is taken as an aggregate, so that paying the cost is a single instance of whatever was paid. Note that additional costs ({ref:rule_nested_cost}) are not aggregated with other costs. See also {ref:Subsec_quantities_and_sets} for rules about calculated quantities that appear in other contexts.
+      examples:
+      - text: The Runner approaches a server protected by 3 advanced pieces of ice and with a rezzed {card:Cayambe Grid} in its root. They pay the nested cost in {card:Cayambe Grid}'s ability. This cost is 1 payment of 6[c], not 3 payments of 2[c], so this only meets the trigger condition for 1 instance of {card:GameNET}'s ability.
+    - rule: rule_cost_x
+      text: Some costs contain the variable X. Before a player pays such a cost, they choose and announce a positive integer or 0 to be the value for X. The chosen value must follow any applicable restrictions.
+      examples:
+      - text: '{card:Psychographics} is an operation with a play cost of X. It also has the ability, "X must be equal to or less than the number of tags the Runner has." If the Runner has 3 tags, the Corp can choose 0, 1, 2, or 3 as the value for X when they play {card:Psychographics}.'
+    - rule: rule_cost_x_out_of_context
+      text: If an ability needs to know the value of a cost in a context where that cost is not being paid, treat any X that appears in that cost as 0.
+    - rule: rule_alternate_payment
+      text: Some abilities modify a cost by allowing a player to pay part or all of that cost in an alternate way. This does not change the value of the cost, but gives the player an additional option when deciding how to pay that cost.
+      examples:
+      - text: The Corp rezzes {card:Biawak}, which has the ability "You can forfeit 1 agenda as you rez this ice to pay for 10[c] of its rez cost." and a rez cost of 14[c]. The Corp chooses to pay {card:Biawak}'s rez cost by spending 2[c] from their credit pool, spending 2[c] from a {card:Mahkota Langit Grid}, and forfeiting 1 agenda.
+    - rule: rule_install_and_rez_reducing_total
+      text: An ability that instructs the Corp to install and rez a card can also reduce the "total" cost to do so. This use of "total" indicates that the Corp can divide the modifier between the install cost and the rez cost of the relevant card. When such a modifier applies, the Corp declares a number of credits by which to reduce the install cost and a number of credits by which to reduce the rez cost. This declaration is made at the beginning of {ref:rule_steps_installing_pay_install_cost}, before calculating the value of the install cost, and the numbers declared this way must be nonnegative numbers whose sum is equal to the number of credits specified by the original "total" modifier. The respective costs are then lowered by the declared amounts, following the normal procedure described in {ref:rule_cost_calculation}.
+      examples:
+      - text: The Corp uses the ability on {card:Tucana} to install and rez a copy of {card:Logjam} from R&D, paying a total of 3[c] less. They install the {card:Logjam} protecting a server that already has 1 piece of ice protecting it, meaning that without the "total of 3[c] less" modifier, the install cost would be 1[c] and the rez cost would be 6[c]. The Corp applies 1[c] of the discount to the install cost and 2[c] to the rez cost, leaving a final install cost of 0[c] and a final rez cost of 4[c].
+  - subsection: rule_cost_checkpoint
+    text: After a player pays a cost, a checkpoint occurs. See {ref:sec_checkpoints}.
+    rules:
+    - rule: rule_cost_checkpoint_cost_zero
+      text: This checkpoint occurs even if the cost being paid is 0.
+  - subsection: rule_types_of_costs
+    text: 'There are six main types of costs: install costs (found mainly on hardware, programs, and resources, and incurred when installing ice), play costs (found on operations and events), rez costs (found on assets, upgrades, and ice), paid ability trigger costs, additional costs, and nested costs.'
+    rules:
+    - rule: rule_inherent_cost
+      text: Install costs, rez costs, and play costs are all costs that are inherent properties of cards. These costs are automatically applied to any ability that performs the corresponding effects (installing, rezzing, or playing) unless that ability stipulates otherwise. See also {ref:sec_printed_cost} (for more about these costs as they appear on cards) and {ref:sec_install_cost}, {ref:rule_inherent_rez_cost} and {ref:rule_playing_play_cost} (for more about paying costs to install, rez, and play cards).
+    - rule: rule_inherent_cost_in_ability
+      text: The presence of an install cost, rez cost, or play cost does not change the optional or mandatory status of an ability. If an effect directs a player to install, rez, or play a card, they must pay the associated cost if able. If they cannot, the card is not installed, rezzed, or played.
+    - rule: rule_inherent_and_additional_cost
+      text: If an effect directs a player to install, rez, or play a card, but doing so has an additional cost, the player is not forced to pay the additional cost. If they decline to do so, they do not pay the install, rez, or play cost either, and the card is not installed, rezzed, or played.
+    - rule: rule_inherent_cost_aggregates
+      text: When a player takes an action that plays or installs one or more cards and has no other effects, the play cost or install cost of each of those cards is considered to have been spent to take that action, even though other steps take place between initiating the action and paying that cost.
+      examples:
+      - text: 'The Corp has {card:Jeeves Model Bioroids} rezzed, and uses the basic action "[Click]: Play an operation." to play {card:Blue Level Clearance}. Both the click spent for the cost of the basic action and the click spent for {card:Blue Level Clearance}''s additional cost count as clicks spent to take the "[Click]: Play an operation." action.'
+  - subsection: rule_ignoring_costs
+    text: Some abilities direct a player to ignore certain costs when performing particular effects.
+    rules:
+    - rule: rule_ignore_general_cost
+      text: If a player is directed to ignore 1 or more of the 6 main types of costs, the specified costs are removed from the total cost that must be paid. Any other costs (usually additional costs) that are not specified to be ignored still apply normally.
+    - rule: rule_ignore_credit_cost
+      text: If a player is directed to ignore "credit costs", any credits to be paid from any type of cost are removed from the total cost. Any costs that do not consist of credits still apply normally.
+    - rule: rule_ignore_all_costs
+      text: If a player is directed to ignore "all costs", all elements of the relevant cost are removed, including additional costs, so that the total cost becomes 0.
+  - subsection: rule_install_cost
+    text: The {term:install cost} of a card must be paid to install that card.
+    rules:
+    - rule: rule_install_cost_on_card
+      text: The install cost of a program, resource, or piece of hardware is listed on the card itself.
+    - rule: rule_install_cost_ice
+      text: The install cost of a piece of ice is a number of credits equal to the number of pieces of ice already protecting the server that ice will be installed protecting.
+    - rule: rule_no_install_cost
+      text: There is no cost to install an asset, upgrade, or agenda.
+  - rule: rule_play_cost
+    text: The {term:play cost} of an operation or event must be paid to play that card. It is listed on the card itself.
+  - rule: rule_rez_cost
+    text: The {term:rez cost} of an asset, upgrade, or piece of ice must be paid in order to rez that card. It is listed on the card itself.
+  - rule: rule_trigger_cost
+    text: The {term:trigger cost} of each paid ability is the first part of that ability's text. It is followed by a colon (:) and then the ability's effect. See {ref:sec_paid_abilities} for more details on paid abilities.
+  - subsection: rule_additional_cost
+    text: An {term:additional cost} adds something to the regular cost of initiating a particular game effect. A player must pay all additional costs along with any regular costs in order to initiate an effect.
+    rules:
+    - rule: rule_decline_additional_cost
+      text: If a player would be forced to carry out a game effect, but doing so has an additional cost, that player may decline to pay the additional cost, even if they are able to pay it, thus preventing that effect from occurring.
+      examples:
+      - text: The Runner accesses {card:Obokata Protocol}. Normally the Runner must steal agendas that they access, but because {card:Obokata Protocol} has an additional cost to steal, the Runner can decline to suffer the net damage and not steal the agenda.
+    - rule: rule_additonal_cost_simultaenous
+      text: A player must pay all additional costs simultaneously with the cost that is being added to, even if multiple cards or abilities are adding separate additional costs. A player cannot pay the original cost or any of the additional costs individually. If they cannot pay for all of the costs at once, then they do not pay any of the costs and the corresponding effects cannot occur.
+      examples:
+      - text: The Runner accesses {card:Obokata Protocol} while {card:Ben Musashi} and {card:Predictive Algorithm} are both active. The Runner must be able to pay 2 credits and suffer 6 net damage all at once in order to steal the {card:Obokata Protocol}, even though each of the three costs are from different card abilities. After all costs have been paid, abilities that meet their trigger conditions from the paying of any of those costs, such as {card:I've Had Worse} or {card:Order of Sol}, can then resolve as applicable.
+    - rule: rule_additional_cost_checkpoint
+      text: If an additional cost is required for an effect that does not normally require paying any cost, the additional cost is paid and a checkpoint is resolved before performing the usual procedure to carry out that effect. See also {ref:rule_checkpoint_after_paying_cost}.
+      examples:
+      - text: The Corp is playing {card:Ob Superheavy Logistics} and initiates scoring {card:Azef Protocol}, which has an additional cost to score of "trash one of your other installed cards." If the Corp trashes a rezzed card, meeting the trigger condition for {card:Ob Superheavy Logistics}'s ability, this ability will resolve following the checkpoint associated with paying the cost. This happens before {card:Azef Protocol} is added to the Corp's score area or any trigger conditions related to scoring an agenda are met.
+  - subsection: rule_nested_cost
+    text: A {term:nested cost} is a cost appearing within an ability's instructions that must be paid while the ability is resolving in order for some or all of the rest of the effects of that ability to resolve.
+    rules:
+    - rule: rule_nested_cost_may
+      text: Nested costs are usually written in the format "[player] may [cost] to [instructions]" or "[player] may [cost]. If [you/they] do, [instructions]." If the indicated player pays the indicated cost, the indicated instructions are resolved. Otherwise, that part of the ability is not resolved.
+    - rule: rule_nested_cost_unless
+      text: Nested costs can also be written in the format "[instructions] unless [player] [cost]" or "[player] may [cost]. If [you/they] do not, [instructions]." If the indicated player pays the indicated cost, the indicated instructions are not resolved. Otherwise, that instruction is resolved.
+      examples:
+      - text: A subroutine reading "End the run unless the Runner pays 1[c]." contains a nested cost. If the Runner chooses to pay 1[c], the subroutine will not end the run.
+    - rule: rule_nested_cost_no_may
+      text: An ability that reads "If [you/they] do" or "If [you/they] do not" without a preceding "may" does not indicate a nested cost.
+    - rule: rule_nested_cost_otherwise
+      text: Some abilities use the word "otherwise" to indicate that different instructions should be resolved depending on whether a nested cost was paid or not. In an ability with a nested cost of a form described in {ref:rule_nested_cost_may}, treat "otherwise" as an "if [you/they] do not" clause attached to the same cost. Conversely, in an ability with a nested cost of a form described in {ref:rule_nested_cost_unless}, treat "otherwise" as an "if [you/they] do" clause attached to the same cost. Note that "otherwise" can also appear in the context of other types of conditions, and does not by itself indicate a nested cost.
+- section: sec_score_scoring_steal
+  text: Score, Scoring and Stealing
+  rules:
+  - subsection: rule_score
+    text: The sum of all agenda points on agendas in a player's score area is that player's {term:score}.
+    rules:
+    - rule: rule_threat_level
+      text: The {term:threat level} is equal to the greatest score of any player. The "Threat N" ability flag makes use of the threat level ({ref:rule_threat_flag}).
+      examples:
+      - text: If the Runner's score is 4 agenda points, and the Corp's score is 3 agenda points, the threat level is 4.
+  - rule: rule_game_win
+    text: If at any time a player's score is greater than or equal to 7, they win the game at the next checkpoint. See {ref:sec_ending_the_game} regarding winning the game, and {ref:sec_checkpoints} for details about checkpoints.
+  - subsection: rule_score_steal
+    text: Players add agendas to their score areas by {term:scoring} or {term:stealing} them. The Corp can score an agenda to their score area as an option during certain paid ability windows on their turn. The Runner can steal an agenda to their score area while accessing it.
+    rules:
+    - rule: rule_advancement_requirement
+      text: The {term:advancement requirement} of an agenda restricts when the Corp can score it. The Corp can only score an agenda that has advancement counters on it greater than or equal to its advancement requirement. See {ref:sec_advancing_cards}.
+    - rule: rule_not_required_to_score
+      text: The Corp is not required to score an agenda immediately upon satisfying its advancement requirement.
+    - rule: rule_score_not_an_action
+      text: Scoring an agenda does not cost [click] and is not an action.
+    - rule: rule_decline_to_steal
+      text: The Runner cannot decline to steal an agenda they access, unless there is an additional cost to steal that agenda and the Runner cannot or does not wish to pay it. {ref:Chpt_access_breach} details accessing, and {ref:rule_additional_cost} details additional costs.
+    - rule: rule_add_agenda_to_score_area
+      text: If an effect directly adds an agenda to a score area or otherwise moves an agenda from any zone to a score area, that agenda is not considered scored or stolen.
+    - rule: rule_added_agendas_not_scored_or_stolen
+      text: If an effect causes another card to be added to a score area "as an agenda", the newly converted agenda is not considered scored or stolen. See {ref:rule_add_card_to_score_area}.
+  - rule: rule_score_area_faceup
+    text: Agendas are always added to the score area faceup, regardless of their previous faceup/facedown status.
+  - rule: rule_score_area_uninstalled
+    text: If an installed agenda is scored or stolen, it becomes uninstalled. Any advancement counters on the scored or stolen agenda are returned to the bank. See {ref:rule_trash_hosted_objects_when_host_trashed}.
+  - rule: rule_agenda_scored
+    text: Some agendas and other cards have abilities with a trigger condition related to an agenda being scored. These abilities become pending after the Corp moves the agenda from its current zone to their score area.
+  - rule: rule_agenda_stolen
+    text: Some agendas and other cards have abilities with a trigger condition related to an agenda being stolen. These abilities become pending after the Runner moves the agenda from its current zone to their score area.
+  - rule: rule_advancement_counters_reference
+    text: If an ability meets its trigger condition from an agenda being scored or stolen, the agenda's last known number of advancement counters before being scored or stolen is used for any references to the number of advancement counters in the effects of that ability.
+- section: sec_advancing_cards
+  text: Advancing Cards
+  rules:
+  - rule: rule_advance
+    text: To {term:advance} a card is to place an advancement counter from the bank on it. The Corp typically advances cards with a basic action during their action phase, but card abilities can also advance cards.
+  - rule: rule_placing_advancement_counter
+    text: Resolving an instruction that directly places an advancement counter onto a card is not the same as advancing a card. Likewise, resolving an instruction that moves an advancement counter from one card to another is not the same as advancing a card.
+    examples:
+    - text: The Corp plays {card:Mushin No Shin}, choosing to install an {card:Oaktown Renovation}. Because the three advancement counters were placed on the card directly, the Corp does not gain any credits from the ability on {card:Oaktown Renovation}.
+  - rule: rule_you_can_advance
+    text: The Corp can only advance certain installed cards. Agendas can always be advanced. If a card other than an agenda says that it "can be advanced" or that "you can advance" that card, the card can be advanced even while it is unrezzed. There is no limit to the number of times a card can be advanced.
+  - rule: rule_advanced_card
+    text: An "advanced card" is a card with 1 or more advancement counters hosted on it.
+- section: sec_trashing
+  text: Trashing
+  rules:
+  - rule: rule_trashing
+    text: '{term:Trashing} is the act of moving an object to its owner''s discard pile.'
+  - rule: rule_access_trash
+    text: During access, the Runner has the opportunity to pay the trash cost of the accessed card to trash it. See {ref:rule_basic_trash_ability}.
+  - rule: rule_trashed_vs_discarded
+    text: A trashed card is not considered to have been discarded, and vice versa. Cards that prevent a card from being trashed cannot prevent a card from being discarded.
+  - subsection: rule_trash_symbol
+    text: The symbol [trash] represents trashing the object it appears on. It is used as a cost for certain abilities.
+    examples:
+    - text: '{card:Fall Guy}''s last ability reads "[trash]: Gain 2[c]." The cost to trigger this ability is to trash {card:Fall Guy}.'
+    rules:
+    - rule: rule_trash_ability
+      text: '"A [trash] ability" refers to a paid ability that includes [trash] in its trigger cost.'
+    - rule: rule_use_trash_ability
+      text: Some paid abilities have multiple options for their trigger cost, separated by "or". A player triggering such an ability only "used a [trash] ability" if the actual cost that was paid includes [trash].
+- section: sec_memory
+  text: Memory
+  rules:
+  - rule: rule_memory_unit
+    text: A {term:memory unit} ([MU]) is a space available to the Runner to install programs.
+  - rule: rule_memory_limit
+    text: The Runner's {term:memory limit} is the total amount of [MU] the Runner has. If the Runner's identity card does not specify a starting memory limit, their starting memory limit is 4[MU]. An ability of the form "+N[MU]" increases the Runner's memory limit by N[MU].
+    examples:
+    - text: The Runner is playing an identity with a starting memory limit of 4[MU]. They have an installed copy of {card:T400 Memory Diamond}, which has the ability "+1[MU]". The Runner can therefore have up to 5[MU] worth of programs installed.
+    rules:
+    - rule: rule_memory_unused_mu
+      text: The Runner's {term:unused} [MU] is their memory limit minus the total memory cost of all of their installed programs. The Runner's [MU] is {term:full} if they have 0 unused [MU].
+      new:
+  - rule: rule_memory_cost
+    text: Programs have a {term:memory cost} that is continually applied against the memory limit. {ref:Rule_program_memory_cost} details how the Runner's installed programs are constrained by the memory limit.
+  - subsection: rule_memory_restricted_mu
+    new:
+    text: Some abilities give the Runner [MU] that can only be used for programs that meet a given requirement.
+    rules:
+    - rule: rule_memory_counting_mu_ignores_restrictions
+      new:
+      text: If a calculated value refers directly to the Runner's memory limit or to their unused [MU], that calculation ignores requirements about how that [MU] can be filled.
+    - rule: rule_memory_check_mu_restrictions
+      new:
+      text: To determine if the Runner's installed programs satisfy the restrictions on their [MU], create a mapping that assigns each 1[MU] in the memory cost of each installed program to a specific source (either the Runner's starting memory limit or an ability providing additional [MU]). The total [MU] assigned to each source must not exceed the amount of [MU] it provides, and all programs with [MU] assigned to a given source must meet all restrictions imposed on that [MU]. If it is not possible to create such a mapping, the Runner is considered to have exceeded their memory limit, and they must trash installed programs as described in {ref:rule_program_memory_cost}.
+- section: sec_card_visibility
+  text: Card Visibility
+  rules:
+  - subsection: rule_faceup_facedown
+    text: Cards in the play area and other public zones are either {term:faceup} or {term:facedown}. Faceup cards are freely visible to all players. Facedown cards are oriented so that the face containing the card's information is not visible.
+    rules:
+    - rule: rule_hidden_secret_faceup_facedown
+      text: Cards in hidden or secret zones (see {ref:sec_game_zones_general}) are neither faceup nor facedown.
+    - rule: rule_hosted_cards_treated_as_group
+      text: Some effects host multiple cards on an object at the same time or set aside multiple cards at the same time. Facedown cards that enter a zone at the same time by the same effect are treated as a group. See {ref:rule_host_faceup_facedown} and {ref:rule_facedown_set_aside_distinct_groups}, respectively.
+  - subsection: rule_look
+    text: When a player {term:looks} at a card, they are allowed to see the front face of the card even if the front face would not normally be visible to them. A player should look at that card without showing it to the other player if it is not normally visible to that player.
+    rules:
+    - rule: rule_look_at_controlled_facedown
+      text: A player may look at facedown cards they control at any time.
+  - rule: rule_reveal
+    text: To {term:reveal} a card is to show its front face to all players, then return it to its previous state.
+  - rule: rule_expose
+    text: Some abilities instruct the Runner to {term:expose} one or more cards. To expose a card is to reveal it, except that only installed, unrezzed cards can be exposed.
+  - rule: rule_look_reveal_expose_access_distinct
+    text: Effects that instruct a player to look at, reveal, expose, or access a card are not the same, even if they would be performed similarly at times. See {ref:chpt_access_breach} for more information on accessing.
+  - rule: rule_remain_visible
+    text: If a resolving ability directs one or both players to look at or reveal a card or set of cards, each such card remains visible to the relevant player(s) until the entire ability is finished resolving or the card moves to a different location. {n}See also {ref:rule_visibility_after_access}.{/n}
+  - rule: rule_ambush_text
+    text: The ability "While the Runner is accessing this [type] in R&D, they must reveal it." is a static ability that applies for the entire duration of the access. This is also the case for cards with the older wording, "If [this card] is accessed from R&D, the Runner must reveal it."
