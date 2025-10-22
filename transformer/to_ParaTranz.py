@@ -1,24 +1,25 @@
+from codecs import lookup
 from typing import Any
 
-import csv
+import json
 import os
 import yaml
 
 
-def write_line(collector: list[list[str]], k: str, v: str):
-    line = list()
-    line.append(k)
-    line.append(v)
-    line.append("")
-    line.append("")
-    collector.append(line)
+def write_line(collector: list[dict[str, str]], k: str, v: str):
+    rule = {
+        "key": k,
+        "original": v,
+        "translation": ""
+    }
+    collector.append(rule)
 
 
-def parse_content(collector: list[list[str]], content: dict[str, Any], index: int):
+def parse_content(collector: list[dict[str, str]], content: dict[str, Any], index: int):
     parse_chapter(collector, content, f"{index}.")
 
 
-def parse_chapter(collector: list[list[str]], content: dict[str, Any], index: str):
+def parse_chapter(collector: list[dict[str, str]], content: dict[str, Any], index: str):
     identifier = content["chapter"]
     text = content["text"]
     write_line(collector, identifier, f"{index} {text}")
@@ -27,7 +28,7 @@ def parse_chapter(collector: list[list[str]], content: dict[str, Any], index: st
         parse_section(collector, section, f"{index}{sub_index}.")
 
 
-def parse_section(collector: list[list[str]], content: dict[str, Any], index: str):
+def parse_section(collector: list[dict[str, str]], content: dict[str, Any], index: str):
     identifier = content["section"]
     text = content["text"]
     write_line(collector, identifier, f"{index} {text}")
@@ -40,7 +41,7 @@ def parse_section(collector: list[list[str]], content: dict[str, Any], index: st
         parse_rule(collector, rule, f"{index}{sub_index}.")
 
 
-def parse_rule(collector: list[list[str]], content: dict[str, Any], index: str):
+def parse_rule(collector: list[dict[str, str]], content: dict[str, Any], index: str):
     if "rule" in content:
         identifier = content["rule"]
         text = content["text"]
@@ -67,7 +68,7 @@ def parse_rule(collector: list[list[str]], content: dict[str, Any], index: str):
             parse_element(collector, element, f"{index}{sub_index}.")
 
 
-def parse_element(collector: list[list[str]], content: dict[str, Any], index: str):
+def parse_element(collector: list[dict[str, str]], content: dict[str, Any], index: str):
     identifier = f"{index}-element"
     if "text" in content:
         text = content["text"]
@@ -79,7 +80,7 @@ def parse_element(collector: list[list[str]], content: dict[str, Any], index: st
             parse_element(collector, element, f"{index}{sub_index}.")
 
 
-def parse_example(collector: list[list[str]], content: dict[str, Any], identifier: str, order: int):
+def parse_example(collector: list[dict[str, str]], content: dict[str, Any], identifier: str, order: int):
     text = content["text"]
     write_line(collector, f"{identifier}-{order}-example", text)
 
@@ -87,18 +88,30 @@ def parse_example(collector: list[list[str]], content: dict[str, Any], identifie
 def main():
     src_folder = "../data/input/"
     dst_folder = "./to_Paratranz/"
+    tranz_folder = "./paratranz/"
     filenames = sorted(os.listdir(src_folder))
     for index, filename in enumerate(filenames, start=1):
-        collector = list()
-        with open(os.path.join(src_folder, filename), "r") as file:
+        root, ext = os.path.splitext(filename)
+        collector: list[dict[str, str]] = list()
+        src_filename = os.path.join(src_folder, filename)
+        with open(src_filename, "r", encoding="utf-8") as file:
             content = yaml.safe_load(file)
             parse_content(collector, content, index)
 
-        root, ext = os.path.splitext(filename)
-        with open(os.path.join(dst_folder, root + ".csv"), "w", newline="") as file:
-            writer = csv.writer(file)
-            for line in collector:
-                writer.writerow(line)
+        tranz_filename = os.path.join(tranz_folder, root + ".json")
+        if os.path.isfile(tranz_filename):
+            with open(tranz_filename, "r", encoding="utf-8") as file:
+                translation: list[dict[str, str]] = json.load(file)
+                finder: dict[str, str] = dict()
+                for line in translation:
+                    finder[line["key"]] = line["translation"]
+
+                for line in collector:
+                    if line["key"] in finder:
+                        line["translation"] = finder[line["key"]]
+
+        with open(os.path.join(dst_folder, root + ".json"), "w", encoding="utf-8") as file:
+            json.dump(collector, file, ensure_ascii=False, indent=4)
 
 
 if __name__ == "__main__":

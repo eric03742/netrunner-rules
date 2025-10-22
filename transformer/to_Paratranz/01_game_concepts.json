@@ -2,517 +2,517 @@
     {
         "key": "chpt_game_concepts",
         "original": "1. Game Concepts",
-        "translation": ""
+        "translation": "游戏概念"
     },
     {
         "key": "sec_concepts_general",
         "original": "1.1. General",
-        "translation": ""
+        "translation": "总则"
     },
     {
         "key": "sec_concepts_general-snippet",
         "original": "These rules are compatible with cards from the game {term:android: netrunner} by Fantasy Flight Games. {term:android: netrunner} is a game about the cyber-struggle between massive Corporations and subversive hackers known as Runners.",
-        "translation": ""
+        "translation": "本文档中的规则兼容由Fantasy Flight Games发行的游戏{term:《安卓纪元：矩阵潜袭》}中的卡牌。{term:《安卓纪元：矩阵潜袭》}是一款关于巨型公司与被称为“潜袭者”的颠覆分子黑客之间所进行的网络斗争的游戏。"
     },
     {
         "key": "rule_player_definitions",
         "original": "1.1.1. The game is played between two players. One player takes the role of the Corp (Corporation) and the other takes the role of the Runner. This rules document will frequently refer to a player interchangeably with their game role.",
-        "translation": ""
+        "translation": "本游戏由两位玩家进行。其中一位玩家扮演公司的角色，另一位玩家扮演潜袭者的角色。本规则文档将会频繁地以玩家的游戏角色指代该玩家。"
     },
     {
         "key": "rule_requirements",
         "original": "1.1.2. Each player needs a legal deck, an identity card for their role, and any extra cards used from outside their deck. They also need a supply of tokens as described in {ref:sec_counters_and_tokens}. The constraints that define the legality of a deck are defined in {ref:sec_deck_construction}, and the cases where cards outside the deck and identity can be used are defined in {ref:sec_extra_cards}.",
-        "translation": ""
+        "translation": "每位玩家都需要一副合法的牌组、一张用于表示其角色的特性卡牌、以及其他的在其牌组之外使用的额外卡牌。玩家还需要依照{ref:sec_counters_and_tokens}所述准备一组指示物。有关定义牌组合法性的限制条件参见{ref:sec_deck_construction}。有关在牌组和特性之外可以使用其他卡牌的情况参见{ref:sec_extra_cards}。"
     },
     {
         "key": "rule_game_numbers",
         "original": "1.1.3. All numbers used in the game are integers. Unless otherwise stated, a given value can be positive, negative, or zero.",
-        "translation": ""
+        "translation": "游戏中使用的所有数字均为整数。除非另有说明，否则一个给定的值可以是正数、负数或者零。"
     },
     {
         "key": "sec_golden_rules",
         "original": "1.2. Golden Rules",
-        "translation": ""
+        "translation": "黄金规则"
     },
     {
         "key": "rule_card_precedence",
         "original": "1.2.1. If the text of a card directly contradicts these rules, the text of the card takes precedence.",
-        "translation": ""
+        "translation": "如果一张卡牌上的文本与本规则中的条款互相矛盾，则该卡牌上的文本优先生效。"
     },
     {
         "key": "rule_cannot_precedence",
         "original": "1.2.2. If a rule or ability directs something to happen, but another effect states that it cannot happen, the \"cannot\" ability takes precedence.",
-        "translation": ""
+        "translation": "如果某项规则或能力指示某个事件发生，但另一个效果规定该事件不能发生，则该“不能”的能力优先生效。"
     },
     {
         "key": "rule_if_able",
         "original": "1.2.3. If an instruction includes the words \"if able,\" it can only be carried out fully or not at all. If any part of the instruction is not possible to carry out, the entire instruction is ignored.",
-        "translation": ""
+        "translation": "如果一项指示中包含用语“如可能”，则该指示只能全部执行或完全不执行。如果该指示中的任意部分无法被执行，则整项指示都会被忽略。"
     },
     {
         "key": "rule_do_as_much_as_you_can",
         "original": "1.2.4. If an instruction does not include the words \"if able,\" as much of that instruction as possible is carried out. Any parts of the instruction that are not possible to carry out are ignored.",
-        "translation": ""
+        "translation": "如果一项指示中不包含用语“如可能”，则尽可能执行该指示中能够被执行的部分。该指示中任何不能被执行的部分都会被忽略。"
     },
     {
         "key": "sec_symbols",
         "original": "1.3. Symbols",
-        "translation": ""
+        "translation": "符号"
     },
     {
         "key": "rule_symbols",
         "original": "1.3.1. Several non-English symbols appear on cards and in this rules document. This section serves as a basic guide to those symbols.",
-        "translation": ""
+        "translation": "一些非英文符号会出现在卡牌上及本规则书中。本节是这些符号的基本指南。"
     },
     {
         "key": "rule_symbol_credits",
         "original": "1.3.2. The symbol [c] (plaintext: {curly:c}) stands for \"credit\". It always appears with a quantity, such as 1[c], which means \"one credit,\" or 3[c], which means \"three credits.\" See {ref:sec_credits} for rules about credits.",
-        "translation": ""
+        "translation": "符号[c]（纯文本：{curly:c}）表示“信用点”。该符号总是会与一个数量同时出现，例如1[c]表示“一个信用点”、3[c]表示“三个信用点”。有关信用点的规则参见{ref:sec_credits}。"
     },
     {
         "key": "rule_symbol_clicks",
         "original": "1.3.3. The symbol [click] (plaintext: {curly:click}) stands for \"click\". Multiple clicks can be represented either by multiple symbols, such as [click][click], or by a numeral and symbol, such as 2[click], both meaning \"two clicks.\" See {ref:sec_clicks} for rules about clicks.",
-        "translation": ""
+        "translation": "符号[click]（纯文本：{curly:click}）表示“时点”。表示多个时点时，既可以重复使用多个符号，如[click][click]，也可以使用数字和符号的组合，如2[click]，二者都表示“两个时点”。有关时点的规则参见{ref:sec_clicks}。"
     },
     {
         "key": "rule_symbol_recurring",
         "original": "1.3.4. The symbol [recurring] (plaintext: {curly:recurring}) stands for recurring credit. It always appears with a quantity, such as 1[recurring], which means \"one recurring credit,\" or 3[recurring], which means \"three recurring credits.\" See {ref:rule_sec_recurring} for rules about recurring credits.",
-        "translation": ""
+        "translation": "符号[recurring]（纯文本：{curly:recurring}）表示“可再生信用点”。该符号总是会与一个数量同时出现，例如1[recurring]表示“一个可再生信用点”、3[recurring]表示“三个可再生信用点”。有关可再生信用点的规则参见{ref:rule_sec_recurring}。"
     },
     {
         "key": "rule_symbol_link",
         "original": "1.3.5. The symbol [link] (plaintext: {curly:link}) stands for \"link\". It is always used with a quantity, such as 1[link], which means \"1 link.\" See {ref:sec_link} for rules about link.",
-        "translation": ""
+        "translation": "符号[link]（纯文本：{curly:link}）表示“中转”。该符号总是会与一个数量同时使用，例如1[link]表示“1中转”。有关中转的规则参见{ref:sec_link}。"
     },
     {
         "key": "rule_symbol_mu",
         "original": "1.3.6. The symbol [MU] (plaintext: {curly:MU}) stands for \"memory\" and also represents the unit used to measure memory. When used with a quantity, it should be read as \"memory units\". For example, 2[MU] means \"2 memory units.\" See {ref:sec_memory} for rules about memory.",
-        "translation": ""
+        "translation": "符号[MU]（纯文本：{curly:MU}）表示“内存”，也表示用于度量内存的单位。当与数量同时使用时，该符号应读作“内存单元”。例如，2[MU]表示“2内存单元”。有关内存的规则参见{ref:sec_memory}。"
     },
     {
         "key": "rule_symbol_sub",
         "original": "1.3.7. The symbol [sub] (plaintext: {curly:sub}) stands for \"subroutine\". Each symbol marks a single subroutine on a piece of ice. See {ref:sec_subroutines} for information about subroutines.",
-        "translation": ""
+        "translation": "符号[sub]（纯文本：{curly:sub}）表示“子进程”。每个符号标明了一层防火墙上的一条子进程。有关子进程的信息参见{ref:sec_subroutines}。"
     },
     {
         "key": "rule_symbol_trash",
         "original": "1.3.8. The symbol [trash] (plaintext: {curly:trash}) stands for \"trash this card\". It is used as a self-referential cost in card text, such as \"[trash]: Draw 2 cards,\" which means \"Trash this card to draw 2 cards.\" See {ref:sec_costs} for rules about costs, and {ref:sec_trashing} for rules about trashing cards.",
-        "translation": ""
+        "translation": "符号[trash]（纯文本：{curly:trash}）表示“销毁本卡牌”。该符号用于在卡牌文本中指代自身作为费用，例如“[trash]：抽2张卡牌”表示“销毁本卡牌以抽2张卡牌”。有关费用的规则参见{ref:sec_costs}，有关销毁卡牌的规则参见{ref:sec_trashing}。"
     },
     {
         "key": "rule_symbol_interrupt",
         "original": "1.3.9. The symbol [interrupt] (plaintext: {curly:interrupt}) stands for \"interrupt timing\". It is used to designate abilities that resolve immediately before other abilities. See {ref:sec_interrupts_replacements} for rules about interrupt abilities.",
-        "translation": ""
+        "translation": "符号[interrupt]（纯文本：{curly:interrupt}）表示“打断时机”。该符号用于指明紧接在其他能力之前结算的能力。有关打断能力的规则参见{ref:sec_interrupts_replacements}。"
     },
     {
         "key": "sec_deck_construction",
         "original": "1.4. Deck Construction",
-        "translation": ""
+        "translation": "牌组构筑"
     },
     {
         "key": "rule_identity",
         "original": "1.4.1. Each player's deck is associated with a single identity card that determines the faction, minimum deck size, and influence limit of that deck. The identity card may also stipulate other variances from the standard deckbuilding rules.",
-        "translation": ""
+        "translation": "每位玩家的牌组都带有一张特性卡牌，其决定了该牌组的派系、张数下限与影响力上限。特性卡牌还可以规定与标准的牌组构筑规则不同的其他变体规则。"
     },
     {
         "key": "rule_gateway_identities",
         "original": "1.4.1.a. The identities {card:The Catalyst} and {card:The Syndicate} from the {product:System Gateway Starter Pack} are intended for use only with the decks included in that pack. They are not legal for play under the full deck construction rules.",
-        "translation": ""
+        "translation": "{product:《核心网关》起始包}中的特性{card:触媒}和{card:商盟}仅能用于该起始包中所包含的牌组。这两张特性卡牌不适用于在完整的牌组构筑规则下所进行的游戏。"
     },
     {
         "key": "rule_legal_deck",
         "original": "1.4.2. Each deck must meet all requirements in this section to be legal for play.",
-        "translation": ""
+        "translation": "每副牌组都必须满足本节中的全部要求才能被合法地用于游戏中。"
     },
     {
         "key": "rule_minimum_deck_size",
         "original": "1.4.3. The deck must contain at least as many cards as the minimum deck size indicated on the corresponding identity.",
-        "translation": ""
+        "translation": "牌组中所包含的卡牌张数必须至少等于对应的特性上所标明的牌组张数下限。"
     },
     {
         "key": "rule_outside_the_deck",
         "original": "1.4.3.a. Identity cards, extra cards that begin the game outside the deck, and player aid cards are not part of the deck and are not counted towards the size of the deck.",
-        "translation": ""
+        "translation": "特性卡牌、在游戏开始时位于牌组之外的额外卡牌、以及玩家辅助卡牌，这些卡牌并不是牌组的一部分，也不被计入牌组的卡牌张数之中。"
     },
     {
         "key": "rule_maximum_deck_size",
         "original": "1.4.3.b. There is no maximum deck size.",
-        "translation": ""
+        "translation": "牌组没有卡牌张数上限。"
     },
     {
         "key": "rule_disallowed_cards",
         "original": "1.4.4. Decks cannot contain identity cards, player aid cards, cards from the wrong side (Corp cards in a Runner deck or vice-versa), or out-of-faction cards that lack influence costs.",
-        "translation": ""
+        "translation": "牌组中不能包含特性卡牌、玩家辅助卡牌、来自错误阵营的卡牌（即在潜袭者牌组中放入公司卡牌，或反之）、或没有影响力费用的其他派系的卡牌。"
     },
     {
         "key": "rule_influence_limit",
         "original": "1.4.5. Neutral cards and cards that belong to a faction other than the corresponding identity's faction are all considered out-of-faction. The total influence cost of out-of-faction cards in the deck must not exceed the influence limit of that identity.",
-        "translation": ""
+        "translation": "中立卡牌，以及所属派系与对应的特性的派系不同的卡牌，均被视作其他派系卡牌。其他派系卡牌的影响力费用总和不能超过该特性的影响力上限。"
     },
     {
         "key": "rule_influence_by_copy",
         "original": "1.4.5.a. The total influence cost of out-of-faction cards is counted by copy and not by name.",
-        "translation": ""
+        "translation": "其他派系卡牌的影响力费用总和是以张数相加计算，而非以卡名相加计算。"
     },
     {
         "key": "rule_influence_by_copy-1-example",
         "original": "Including a single copy of {card:Diesel} in a non-Shaper deck adds 2 to the total influence in that deck, while including two copies of {card:Diesel} in a non-Shaper deck adds 4 to the total influence in that deck.",
-        "translation": ""
+        "translation": "在一副非塑造者牌组中包含一张{card:迪燃}将令该牌组的影响力总和增加2点，而在一副非塑造者牌组中包含两张{card:迪燃}将令该牌组的影响力总和增加4点。"
     },
     {
         "key": "rule_agenda_points",
         "original": "1.4.6. A Corp deck must contain agendas totalling a certain number of agenda points, as determined by the total number of cards in the deck.",
-        "translation": ""
+        "translation": "公司牌组必须包含议案分数总和达到一定数值的议案卡牌，所需数值由牌组中的卡牌总张数所决定。"
     },
     {
         "key": "rule_40_44",
         "original": "1.4.6.a. A deck with 40 to 44 cards must contain 18 or 19 agenda points.",
-        "translation": ""
+        "translation": "含有40-44张卡牌的牌组必须包含18或19点议案分数。"
     },
     {
         "key": "rule_45_49",
         "original": "1.4.6.b. A deck with 45 to 49 cards must contain 20 or 21 agenda points.",
-        "translation": ""
+        "translation": "含有45-49张卡牌的牌组必须包含20或21点议案分数。"
     },
     {
         "key": "rule_50_54",
         "original": "1.4.6.c. A deck with 50 to 54 cards must contain 22 or 23 agenda points.",
-        "translation": ""
+        "translation": "含有50-54张卡牌的牌组必须包含22或23点议案分数。"
     },
     {
         "key": "rule_54+",
         "original": "1.4.6.d. A deck with more than 54 cards must contain 22 or 23 agenda points, plus an additional 2 agenda points for every full 5 cards in the deck over 50.",
-        "translation": ""
+        "translation": "含有超过 54张卡牌的牌组，需要包含的议案分数为在22或23的基础上，牌组中超过50张的卡牌数量每满5张加2点议案分数。"
     },
     {
         "key": "rule_54+-1-example",
         "original": "A 66 card deck requires 6 additional agenda points, since it includes 3 sets of 5 cards beyond 50. This gives a final requirement of either 28 or 29 agenda points.",
-        "translation": ""
+        "translation": "一副含有66张卡牌的牌组需要包含6点额外的议案分数，因为该牌组在超过50张的部分共有3组满5张的卡牌。因此最终的议案分数需求为28或29点。"
     },
     {
         "key": "rule_maximum_copies",
         "original": "1.4.7. The deck cannot contain more than 3 copies of any single card, by name. Some cards stipulate alternative copy limits in their card text.",
-        "translation": ""
+        "translation": "牌组中不能包含超过3张同名的卡牌。一些卡牌会在其文本中规定与本规则不同的同名卡牌张数限制。"
     },
     {
         "key": "rule_special_tournament_rules",
         "original": "1.4.8. Tournament play may impose other restrictions or requirements on the legal configurations of identities and decks.",
-        "translation": ""
+        "translation": "在正式比赛中，可以采用其他对于特性及牌组的合法性的限制或要求。"
     },
     {
         "key": "sec_extra_cards",
         "original": "1.5. Extra Cards",
-        "translation": ""
+        "translation": "额外卡牌"
     },
     {
         "key": "rule_outside_deck",
         "original": "1.5.1. Some abilities allow for the use of additional cards from outside the deck.",
-        "translation": ""
+        "translation": "一些能力允许玩家在牌组之外使用额外的卡牌。"
     },
     {
         "key": "rule_jinteki_biotech",
         "original": "1.5.2. One Corp identity, {card:Jinteki Biotech: Life Imagined}, has the ability, \"Before taking your first turn, you may switch this card with any copy of Jinteki Biotech.\" There are 3 versions of this identity, which have different abilities on their reverse side.",
-        "translation": ""
+        "translation": "公司特性{card:人间生物科技：享你所想}拥有如下的能力：“在你开始第一个回合前，你可以将本卡牌与任意一张人间生物科技互换”。此特性共有三个版本，其反面分别有三个不同的能力。"
     },
     {
         "key": "rule_jinteki_biotech_detail",
         "original": "1.5.2.a. A player playing Jinteki Biotech as their identity may bring any number of copies of that identity along with their deck. After completing game setup, that player may choose any copy they own to be their active identity for the duration of the game. All other copies are placed outside the game.",
-        "translation": ""
+        "translation": "使用{card:人间生物科技}作为其特性的玩家可以在其牌组之外携带任意数量的该特性的同名卡牌。在完成了游戏设置之后，该玩家可以选择其拥有的其中任意一张，作为其整局游戏中的活动特性。除此之外的其他副本则被移出游戏。"
     },
     {
         "key": "rule_adam",
         "original": "1.5.3. One Runner identity, {card:Adam: Compulsive Hacker}, has the ability, \"You start the game with 3 different {subtype:directive} cards installed (these cards are not considered part of your deck).\"",
-        "translation": ""
+        "translation": "潜袭者特性{card:亚当：强迫性黑客}拥有如下的能力：“你在游戏开始时拥有三张已安装的不同的{subtype:指令}卡牌（这些卡牌不视为你牌组的一部分）”。"
     },
     {
         "key": "rule_adam_different_directives",
         "original": "1.5.3.a. A player playing Adam as their identity must bring at least 3 differently named cards with the {subtype:directive} subtype along with their deck. The player may bring any number of {subtype:directive} cards over the required 3.",
-        "translation": ""
+        "translation": "使用{card:亚当}作为其特性的玩家必须在其牌组之外携带至少3张卡名不同且具有{subtype:指令}子类型的卡牌。玩家可以在要求的3张的基础上携带任意数量的{subtype:指令}卡牌。"
     },
     {
         "key": "rule_adam_directives_install",
         "original": "1.5.3.b. After players reveal their identities, the player playing Adam selects exactly 3 of their provided {subtype:directive} cards. Those cards begin the game installed in the play area. All other {subtype:directives} the player brought this way remain outside the game.",
-        "translation": ""
+        "translation": "在玩家展示其特性之后，使用{card:亚当}的玩家从其携带的{subtype:指令}卡牌中选择3张。这些卡牌在游戏开始时安装到游戏区中。玩家以此方式携带的其他所有{subtype:指令}卡牌则留在游戏之外。"
     },
     {
         "key": "rule_adam_directives_deck",
         "original": "1.5.3.c. A player playing Adam can also include {subtype:directive} cards in their deck. The cards chosen to be installed at the beginning of the game do not impact the deck's influence requirements or the maximum allowed number of copies of those cards.",
-        "translation": ""
+        "translation": "使用{card:亚当}的玩家也可以在其牌组中包含{subtype:指令}卡牌。在游戏开始时被选择以安装的卡牌既不影响牌组的影响力需求，也不影响这些卡牌在牌组中允许放入的同名卡牌数量。"
     },
     {
         "key": "rule_adam_directives_during_game",
         "original": "1.5.3.d. Once the game has begun, the cards installed this way are treated exactly as any other installed cards. Abilities that move these cards to other zones function normally, including shuffling them into the stack.",
-        "translation": ""
+        "translation": "一旦游戏开始，以此方法安装的卡牌即被视为与其他已安装的卡牌完全相同。将这些卡牌移动到其他区域的能力会正常生效，包括将其洗回存储栈。"
     },
     {
         "key": "rule_additional_identity",
         "original": "1.5.4. Two cards, {card:Rebirth} and {card:DJ Fenris}, make use of identity cards other than the one selected by the player during deck construction.",
-        "translation": ""
+        "translation": "{card:重生}和{card:DJ 芬里斯}这两张卡牌需要用到与玩家在构筑牌组时所选择的特性不同的其他特性卡牌。"
     },
     {
         "key": "rule_additional_identities_pile",
         "original": "1.5.4.a. A player may bring any number of additional Runner identity cards along with their deck. These cards are kept in a pile outside the game. The Runner may look at these cards at any time.",
-        "translation": ""
+        "translation": "玩家可以在其牌组外携带任意数量的额外的潜袭者特性卡牌。这些卡牌堆放在游戏之外。潜袭者可以在任意时间查看这些卡牌。"
     },
     {
         "key": "rule_additional_identities_reference",
         "original": "1.5.4.b. When an ability refers to an identity other than the Runner's current identity, it refers to the cards provided this way. If an identity card leaves the play area, it must be returned to the pile outside the game.",
-        "translation": ""
+        "translation": "当一项能力提到潜袭者当前特性以外的其他特性时，其指的是玩家以此方法携带的卡牌。如果一张特性卡牌离开了游戏区，则必须返回游戏外的卡牌堆中。"
     },
     {
         "key": "rule_legal_additional_identities",
         "original": "1.5.4.c. In a tournament, all identities brought to the game this way must be legal for players to use as their actual identity in that tournament.",
-        "translation": ""
+        "translation": "在正式比赛中，以此方法加入游戏的特性必须是玩家在此次比赛中能够合法地实际使用的特性。"
     },
     {
         "key": "rule_additional_identity_double_sided",
         "original": "1.5.4.d. If the Runner switches their identity with a double-sided identity, it enters play with the front side faceup. If the Runner switches a double-sided identity with another identity, the new identity enters play faceup regardless of the previous identity's current status.",
-        "translation": ""
+        "translation": "如果玩家使用双面特性交换其当前使用的特性，则双面特性以正面朝上加入游戏。如果潜袭者使用另一个特性与双面特性交换，则不论先前的双面特性此时状态如何，新特性都以正面朝上加入游戏。"
     },
     {
         "key": "sec_starting_the_game",
         "original": "1.6. Starting the Game",
-        "translation": ""
+        "translation": "开始游戏"
     },
     {
         "key": "rule_player_roles",
         "original": "1.6.1. The players decide who will play as the Corp and who will play as the Runner. Each player places an appropriate identity card for the side they are to play faceup in the play area, then supplies a corresponding deck, placing it facedown in the play area, and any appropriate extra cards.",
-        "translation": ""
+        "translation": "玩家决定由谁扮演公司、谁扮演潜袭者。每位玩家将适用于其所扮演阵营的特性卡牌牌面朝上放置于游戏区中，再将对应的牌组牌面朝下放置在游戏区中，最后是其它符合要求的额外卡牌。"
     },
     {
         "key": "rule_setup_identity",
         "original": "1.6.1.a. Some identity cards have abilities that affect setup. Even though cards are not active until the game begins, these identities still alter setup at the appropriate step as indicated by their text.",
-        "translation": ""
+        "translation": "一些特性卡牌的能力会影响游戏设置。即使在游戏开始前卡牌是不活动的，这些特性依然会根据其文本所述在符合要求的步骤中改变游戏设置。"
     },
     {
         "key": "rule_double_sided_identity",
         "original": "1.6.1.b. Some identities are double-sided (see {ref:sec_identities}). If a player is playing a double-sided identity, it begins the game with the front side faceup.",
-        "translation": ""
+        "translation": "一些特性是双面的（参见{ref:sec_identities}）。如果玩家使用的是双面特性，在游戏开始时应将其正面朝上。"
     },
     {
         "key": "rule_setup_abilities",
         "original": "1.6.2. If a player's identity has an ability that affects setup or the start of the game, and that ability does not directly correspond to a setup step outlined in this section of the rules, that player makes any necessary decisions and changes for their identity's special setup or start of game abilities at this time. If both players have setup or start of game abilities at this time, the Corp resolves theirs first.",
-        "translation": ""
+        "translation": "如果玩家的特性拥有会影响游戏设置或游戏开局的能力，且该能力并不直接对应本节所概述的某个设置步骤，则该玩家应在此时做出为其特性的特殊游戏设置或游戏开局所必需的任何决定或更改。如果双方玩家此时均有影响游戏设置或游戏开局的能力，则由公司先结算其能力。"
     },
     {
         "key": "rule_start_tokens",
         "original": "1.6.3. The players create the bank by gathering all types of tokens described in {ref:sec_counters_and_tokens}.",
-        "translation": ""
+        "translation": "玩家将{ref:sec_counters_and_tokens}中所描述的所有类型的标记整理成堆，构成银行。"
     },
     {
         "key": "rule_start_credits",
         "original": "1.6.4. Each player takes five credits from the bank, placing the credits in their credit pool.",
-        "translation": ""
+        "translation": "每位玩家从银行拿取五个信用点，将这些信用点放置在其各自的信用池中。"
     },
     {
         "key": "rule_start_shuffle",
         "original": "1.6.5. Each player shuffles their deck.",
-        "translation": ""
+        "translation": "每位玩家洗混其牌组。"
     },
     {
         "key": "rule_start_hand",
         "original": "1.6.6. Each player draws 5 cards from the top of their deck to form their starting hand.",
-        "translation": ""
+        "translation": "每位玩家从其牌组顶端抽取5张卡牌，构成其初始手牌。"
     },
     {
         "key": "rule_mulligan",
         "original": "1.6.6.a. After drawing starting hands, the Corp may choose to take a mulligan; then, the Runner may choose to take a mulligan. To take a mulligan, the player shuffles their starting hand back into their deck, then draws a new starting hand. They must keep the second hand as their starting hand.",
-        "translation": ""
+        "translation": "在抽取初始手牌之后，公司可以选择执行一次重新调度；在这之后，潜袭者可以选择执行一次重新调度。在执行重新调度时，玩家将其初始手牌洗回其牌组中，然后抽取新的初始手牌。玩家必须保留第二次抽取的手牌作为其初始手牌。"
     },
     {
         "key": "rule_start_corp_turn",
         "original": "1.6.7. The game begins and the Corp takes their first turn.",
-        "translation": ""
+        "translation": "游戏开始，由公司进行其第一个回合。"
     },
     {
         "key": "rule_before_first_turn",
         "original": "1.6.7.a. If the Corp's identity has an ability with instructions for \"before taking your first turn,\" the Corp resolves that ability immediately before taking their first turn, and thus before the game starts.",
-        "translation": ""
+        "translation": "如果公司的特性拥有包含“在你开始第一个回合前”的指示的能力，则公司在进行其第一个回合前——即在游戏开始之前——立即结算这项能力。"
     },
     {
         "key": "sec_ending_the_game",
         "original": "1.7. Ending the Game",
-        "translation": ""
+        "translation": "结束游戏"
     },
     {
         "key": "rule_game_end",
         "original": "1.7.1. The game ends when a player meets one of their win conditions.",
-        "translation": ""
+        "translation": "游戏在任意一位玩家满足其任意一项胜利条件时结束。"
     },
     {
         "key": "rule_simultaneous_win",
         "original": "1.7.1.a. If both players would simultaneously satisfy their win conditions, the game ends in a draw.",
-        "translation": ""
+        "translation": "如果双方玩家同时满足其胜利条件，则游戏以平局结束。"
     },
     {
         "key": "rule_win_conditions",
         "original": "1.7.2. Each player has two possible win conditions available.",
-        "translation": ""
+        "translation": "每位玩家均有两种可能的胜利条件。"
     },
     {
         "key": "rule_win_agenda_points",
         "original": "1.7.2.a. Either player can win by collecting agenda points in their score area (usually done by scoring or stealing agendas; see {ref:sec_score_scoring_steal}). A player with a score of 7 or more wins the game.",
-        "translation": ""
+        "translation": "任一玩家均可通过在其分数区中取得议案分数而获胜（通常来说，是通过计分或窃取议案实现；参见{ref:sec_score_scoring_steal}）。得到7分或更多分数的玩家赢得游戏胜利。"
     },
     {
         "key": "rule_flatline",
         "original": "1.7.2.b. The Corp wins if the Runner is {term:flatlined}. The Runner is flatlined immediately if they suffer more damage than they have cards in their grip. See {ref:sec_damage} for information about damage. The Runner is also flatlined if, at the beginning of their discard step, their maximum hand size is less than 0. See {ref:sec_discard_phase} for information about maximum hand size and the discard step.",
-        "translation": ""
+        "translation": "如果潜袭者{term:死亡}，则公司获胜。如果潜袭者受到的伤害超过其操控器中的卡牌数量，则潜袭者立刻死亡。有关伤害的的信息参见{ref:sec_damage}。如果潜袭者的手牌上限在其弃牌步骤开始时小于0，则潜袭者同样立刻死亡。有关手牌上限与弃牌步骤的信息参见{ref:sec_discard_phase}。"
     },
     {
         "key": "rule_empty_rnd",
         "original": "1.7.2.c. The Runner wins if the Corp is required to draw a card from R&D but cannot because R&D is empty.",
-        "translation": ""
+        "translation": "如果公司需要从研发中心抽牌，却因为研发中心为空而未能如此做，则潜袭者获胜。"
     },
     {
         "key": "sec_cards",
         "original": "1.8. Cards",
-        "translation": ""
+        "translation": "卡牌"
     },
     {
         "key": "rule_corp_card_types",
         "original": "1.8.1. There are six types of Corp cards: agendas, assets, ice, identities, operations, and upgrades. All cards except the identity card are shuffled into the Corp's deck at the beginning of the game.",
-        "translation": ""
+        "translation": "公司有六种类型的卡牌：议案、资产、防火墙、特性、事务与升级。除特性卡牌以外的其他所有卡牌均会在游戏开始时洗入公司的牌组中。"
     },
     {
         "key": "rule_runner_card_types",
         "original": "1.8.2. There are five types of Runner cards: events, hardware, identities, programs, and resources. All cards except the identity card are shuffled into the Runner's deck at the beginning of the game.",
-        "translation": ""
+        "translation": "潜袭者有五种类型的卡牌：事件、硬件、特性、程序和资源。除特性卡牌以外的其他所有卡牌均会在游戏开始时洗入潜袭者的牌组当中。"
     },
     {
         "key": "rule_active_cards",
         "original": "1.8.3. Cards that are {term:active} are able to affect the game through their abilities.",
-        "translation": ""
+        "translation": "{term:活动的}卡牌可以通过其能力影响游戏。"
     },
     {
         "key": "rule_default_active_card_locations",
         "original": "1.8.3.a. Runner cards that are installed and faceup in the play area, Corp cards that are installed and rezzed, events and operations in the play area, agendas in the Corp's score area, and both players' identities are active.",
-        "translation": ""
+        "translation": "游戏区中已安装且牌面朝上的潜袭者卡牌、已安装且已激活的公司卡牌、游戏区中的事件和事务、公司分数区中的议案、以及双方玩家的特性均为活动的。"
     },
     {
         "key": "rule_runner_become_active",
         "original": "1.8.3.b. Unless otherwise stated, Runner cards become active as part of the process of playing or installing them.",
-        "translation": ""
+        "translation": "除非另有说明，否则潜袭者卡牌在被打出或安装的过程中即变为活动的。"
     },
     {
         "key": "rule_corp_become_active",
         "original": "1.8.3.c. Unless otherwise stated, Corp cards other than operations are installed unrezzed, and thus inactive, into the play area. Assets, ice, and upgrades become active when they are rezzed; agendas become active when they are scored. Operations become active as part of the process of playing them.",
-        "translation": ""
+        "translation": "除非另有说明，否则除事务以外的其他公司卡牌在被安装到游戏区时均为未激活的，因此是闲置的。资产、防火墙和升级在被激活时变为活动的，议案在被计分时变为活动的。事务在被打出的过程中即变为活动的。"
     },
     {
         "key": "rule_identity_become_active",
         "original": "1.8.3.d. Identity cards become active when the game begins.",
-        "translation": ""
+        "translation": "特性卡牌在游戏开始时变为活动的。"
     },
     {
         "key": "rule_inactive_cards",
         "original": "1.8.4. Cards that are {term:inactive} are unable to affect the game or have most of their abilities used.",
-        "translation": ""
+        "translation": "{term:闲置的}卡牌不能对游戏产生影响，也不能使用其绝大部分能力。"
     },
     {
         "key": "rule_default_inactive_card_locations",
         "original": "1.8.4.a. Cards are inactive in R&D, HQ, Archives, the heap, the grip, the stack, the Runner's score area, while set aside, and while removed from the game. Facedown cards in the play area are also inactive.",
-        "translation": ""
+        "translation": "位于研发中心、总部、档案库、堆阵、操控器、存储栈、潜袭者分数区中的卡牌，被置于一旁的卡牌，以及被移出游戏的卡牌均为闲置的。游戏区中牌面朝下的卡牌也是闲置的。"
     },
     {
         "key": "rule_inactive_cards_characteristics",
         "original": "1.8.4.b. Inactive cards in most zones retain their printed characteristics (name, card type, faction, cost, subtypes, influence, etc). Facedown installed Runner cards have no characteristics.",
-        "translation": ""
+        "translation": "大部分区域中的闲置卡牌会保留其印刷性质（名称、卡牌类型、派系、费用、子类型、影响力、等等）。已安装但牌面朝下的潜袭者卡牌则没有任何性质。"
     },
     {
         "key": "rule_card_draw",
         "original": "1.8.5. For a player to {term:draw} 1 or more cards is to take that many cards from the top of their deck and put them into their hand. {ref:Sec_drawing_cards} provides more details about drawing cards.",
-        "translation": ""
+        "translation": "玩家{term:抽取}1张或多张卡牌，指的是从其牌组顶端拿取相应数量的卡牌，并将这些卡牌放入其手牌中。有关抽取卡牌的更多详细描述参见{ref:Sec_drawing_cards}。"
     },
     {
         "key": "rule_inactive_ability_exception_link",
         "original": "1.8.6. Most abilities are active if and only if the card they appear on is active. {ref:Rule_ability_active_inactive_source_card} details the cases where abilities on inactive cards are still active.",
-        "translation": ""
+        "translation": "对于绝大部分能力，当且仅当其所在的卡牌是活动的，该能力才是活动的。有关闲置卡牌上的能力仍然是活动的情况会在{ref:Rule_ability_active_inactive_source_card}中详细描述。"
     },
     {
         "key": "rule_card_conversion",
         "original": "1.8.7. Abilities can convert cards from one type into another type, or even from a card into a counter. {ref:Rule_add_card_to_score_area,rule_card_to_counter} explain the details of card conversion.",
-        "translation": ""
+        "translation": "能力可以将卡牌从一种类型转化为另一种类型，甚至可以将一张卡牌转化为一个指示物。{ref:Rule_add_card_to_score_area,rule_card_to_counter}详细描述了有关卡牌转化的更多细节。"
     },
     {
         "key": "sec_counters_and_tokens",
         "original": "1.9. Counters and Tokens",
-        "translation": ""
+        "translation": "指示物和标记"
     },
     {
         "key": "rule_counters_cards",
         "original": "1.9.1. {term:Counters} and {term:tokens} are game pieces (or equivalent) that track various resources, effects, and statuses of players and their cards.",
-        "translation": ""
+        "translation": "{term:指示物}和{term:标记}是一类游戏部件（或等效物品），用于记录玩家及其卡牌的各种资源、效果和状态。"
     },
     {
         "key": "rule_counter_token",
         "original": "1.9.1.a. The terms \"counter\" and \"token\" are interchangeable.",
-        "translation": ""
+        "translation": "术语“指示物”和“标记”可互换使用。"
     },
     {
         "key": "rule_bank",
         "original": "1.9.2. The {term:bank} is the supply of counters not yet in play. Counters in the bank are available to both players to take and use as dictated by the game rules and card abilities. Players do not control counters in the bank and cannot spend them. The bank is an unlimited supply; running out of game pieces to track a type of counter does not prohibit a player from gaining counters of that type or placing them on cards.",
-        "translation": ""
+        "translation": "{term:银行}提供尚未被使用的指示物。双方玩家可以根据游戏规则和卡牌能力的规定，拿取和使用银行中的指示物。玩家既不操控银行中的指示物、也不能花费这些指示物。银行的供应是无限的，即使用于记录某一类指示物的游戏部件被用尽，也不会因此禁止玩家获取该类型的指示物或将这些指示物放置在卡牌上。"
     },
     {
         "key": "rule_bank_default",
         "original": "1.9.2.a. If an instruction directs players to place counters on a card without designating where those counters come from, take those counters from the bank.",
-        "translation": ""
+        "translation": "如果一项指示要求玩家在一张卡牌上放置指示物，且未指明这些指示物的来源，则玩家从银行拿取这些指示物。"
     },
     {
         "key": "rule_counters_placed_condition",
         "original": "1.9.2.b. A condition or restriction that looks for counters being placed on a card can be met by either counters from the bank or counters moved from another location.",
-        "translation": ""
+        "translation": "如果一个条件或限制需要“指示物被放置在一张卡牌上”，则该指示物既可以是来自银行的指示物，也可以是从其他位置移动过来的指示物。"
     },
     {
         "key": "rule_card_conversion_game_piece",
         "original": "1.9.3. Some abilities can convert a card into a counter. A counter put into play in this way is tracked with the card acting as a game piece. See {ref:rule_card_to_counter}.",
-        "translation": ""
+        "translation": "一些能力可以将一张卡牌转化为一个指示物。以这种方式加入游戏的指示物使用该卡牌作为游戏部件进行记录。参见{ref:rule_card_to_counter}。"
     },
     {
         "key": "rule_additional_counters",
         "original": "1.9.4. Some abilities can cause a player or card to have or be \"considered to have\" 1 or more counters or additional counters without placing or giving those counters. A counter considered to exist in this way conveys all the same information and effects as a counter of the specified type would, except that it cannot be moved or removed from the card or player it belongs to, nor can it be spent to pay a cost.",
-        "translation": ""
+        "translation": "一些能力可以在不放置或给予指示物的情况下，导致玩家或卡牌拥有或被“视作拥有”1个或多个指示物或额外的指示物。以此种形式被视作存在的指示物，与其所指定类型的指示物表达同等的信息且具有相同的效果，但是不能被从所属的玩家或卡牌上移动或移除，也不能被花费以支付某个费用。"
     },
     {
         "key": "rule_counter_types",
         "original": "1.9.5. There are ten types of counters: credit counters, click counters, tag counters, bad publicity counters, core damage counters, advancement counters, virus counters, power counters, agenda counters, and condition counters.",
-        "translation": ""
+        "translation": "游戏中共有十种指示物：信用点指示物、时点指示物、锁定标记指示物、负面声誉指示物、核心伤害指示物、推进指示物、病毒指示物、能量指示物、议案指示物和状态指示物。"
     },
     {
         "key": "rule_type_credit_counter",
         "original": "1.9.5.a. {term:Credit counters} are used to track the number of credits each player has in their credit pool; they can also be placed on cards. Rules for credits, the credit pool, and other related concepts are in {ref:sec_credits}.",
-        "translation": ""
+        "translation": "{term:信用点指示物}用于记录每位玩家在其信用池中所拥有的信用点数量，也可以被放置在卡牌上。有关信用点、信用池及其他相关概念的规则参见{ref:sec_credits}。"
     },
     {
         "key": "rule_type_click_counter",
         "original": "1.9.5.b. {term:Click counters} are a gameplay aid used to track the clicks the active player has spent or has left to spend during their turn. Rules for clicks are in {ref:sec_clicks}.",
-        "translation": ""
+        "translation": "{term:时点指示物}是一种游戏辅助道具，用于记录主动玩家在其回合已花费或尚未花费的时点。有关时点的规则参见{ref:sec_clicks}。"
     },
     {
         "key": "rule_type_tag_counter",
         "original": "1.9.5.c. {term:Tag counters} are used to represent tags on the Runner. Rules for tags are given in {ref:sec_tags}.",
-        "translation": ""
+        "translation": "{term:锁定标记指示物}用于表示潜袭者获得的锁定标记。有关锁定标记的规则参见{ref:sec_tags}。"
     },
     {
         "key": "rule_type_bad_pub_counter",
         "original": "1.9.5.d. {term:Bad publicity counters} represent bad publicity the Corp has earned. Rules for bad publicity are in {ref:sec_bad_publicity}.",
-        "translation": ""
+        "translation": "{term:负面声誉指示物}表示公司获得的负面声誉。有关负面声誉的规则参见{ref:sec_bad_publicity}。"
     },
     {
         "key": "rule_type_core_damage_counter",
         "original": "1.9.5.e. {term:Core damage counters} are a gameplay aid used to track core damage the Runner has suffered. Each point of core damage the Runner suffers forces them to take a core damage counter. See {ref:sec_damage}.",
-        "translation": ""
+        "translation": "{term:核心伤害指示物}是一种游戏辅助道具，用于记录潜袭者已受到的核心伤害。潜袭者每受到一点核心伤害就必须拿取一枚核心伤害指示物。参见{ref:sec_damage}。"
     },
     {
         "key": "rule_type_advancement_counter",
         "original": "1.9.5.f. {term:Advancement counters} are a counter used primarily on installed agendas to track the Corp's progress toward being able to score them.",
-        "translation": ""
+        "translation": "{term:推进指示物}主要用于放置在已安装的议案上，以记录公司在能够将其计分前的进展情况。"
     },
     {
         "key": "rule_type_virus_counter",
         "original": "1.9.5.g. {term:Virus counters} are a generic counter, used primarily by {subtype:virus} programs, that can be removed by the Corp purging them. See {ref:rule_purge}.",
-        "translation": ""
+        "translation": "{term:病毒指示物}是一种主要用于{subtype:病毒}程序的通用指示物，公司可以通过清除病毒移除这些指示物。参见{ref:rule_purge}。"
     },
     {
         "key": "rule_type_power_counter",
