@@ -196,7 +196,7 @@ def read_changelog_from_file(config: Config) -> list[FormatText]:
 
 def read_chapter_from_file(section_file: str) -> Chapter:
   print(f"Parsing {section_file}")
-  with open(f'data/input/{section_file}.yaml', "r", encoding="utf8") as stream:
+  with open(f'transformer/from_Paratranz/{section_file}.yaml', "r", encoding="utf8") as stream:
     yaml_input = load_yaml(stream)
     return parse_chapter(yaml_input)
 

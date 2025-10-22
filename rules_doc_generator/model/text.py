@@ -132,7 +132,7 @@ class Card:
       id = model_data.nrdb_info[self.text]
       return f'<a class="Thumbnail Card" href="https://netrunnerdb.com/en/card/{id}">{self.text}<span><img src="preview_placeholder.jpg" data-src="https://card-images.netrunnerdb.com/v2/large/{id}.jpg" /></span></a>'
     else:
-      raise Exception('Unknown card title: {self.text}')
+      raise Exception(f'Unknown card title: {self.text}')
 
   def to_latex(self, config: Config, model_data: ModelData) -> str:
     return f'\\textit{{{self.text}}}'
