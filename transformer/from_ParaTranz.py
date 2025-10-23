@@ -9,21 +9,21 @@ def represent_none(self, _):
     return self.represent_scalar('tag:yaml.org,2002:null', '')
 
 
-def translate_content(translator: dict[str, str], content: dict[str, Any]):
-    translate_chapter(translator, content)
+def translate_content(translator: dict[str, str], content: dict[str, Any], index: int):
+    translate_chapter(translator, content, f"{index}.")
 
 
-def translate_chapter(translator: dict[str, str], content: dict[str, Any]):
+def translate_chapter(translator: dict[str, str], content: dict[str, Any], index: str):
     identifier = content["chapter"]
     if identifier in translator:
         content["text"] = translator[identifier]
 
     sections = content["sections"]
-    for section in sections:
-        translate_section(translator, section)
+    for sub_index, section in enumerate(sections, start=1):
+        translate_section(translator, section, f"{index}{sub_index}.")
 
 
-def translate_section(translator: dict[str, str], content: dict[str, Any]):
+def translate_section(translator: dict[str, str], content: dict[str, Any], index: str):
     identifier = content["section"]
     if identifier in translator:
         content["text"] = translator[identifier]
@@ -33,12 +33,17 @@ def translate_section(translator: dict[str, str], content: dict[str, Any]):
         if snippet_identifier in translator:
             content["snippet"] = translator[snippet_identifier]
 
+    if "toc_entry" in content:
+        toc_identifier = f"{identifier}-toc"
+        if toc_identifier in translator:
+            content["toc_entry"] = translator[toc_identifier]
+
     rules = content["rules"]
-    for rule in rules:
-        translate_rule(translator, rule)
+    for sub_index, rule in enumerate(rules, start=1):
+        translate_rule(translator, rule, f"{index}{sub_index}.")
 
 
-def translate_rule(translator: dict[str, str], content: dict[str, Any]):
+def translate_rule(translator: dict[str, str], content: dict[str, Any], index: str):
     if "rule" in content:
         identifier = content["rule"]
         if identifier in translator:
@@ -59,24 +64,24 @@ def translate_rule(translator: dict[str, str], content: dict[str, Any]):
                 translate_example(translator, example, identifier, order)
 
         rules = content["rules"]
-        for rule in rules:
-            translate_rule(translator, rule)
-    # elif "timing_structure" in content:
-    #     elements = content["elements"]
-    #     for sub_index, element in enumerate(elements, start=1):
-    #         parse_element(collector, element, f"{index}{sub_index}.")
+        for sub_index, rule in enumerate(rules, start=1):
+            translate_rule(translator, rule, f"{index}{chr(ord('a') + sub_index - 1)}.")
+    elif "timing_structure" in content:
+        elements = content["elements"]
+        for sub_index, element in enumerate(elements, start=1):
+            translate_element(translator, element, f"{index}{sub_index}.")
 
 
-# def parse_element(collector: list[dict[str, str]], content: dict[str, Any], index: str):
-#     identifier = f"{index}-element"
-#     if "text" in content:
-#         text = content["text"]
-#         write_line(collector, identifier, f"{index} {text}")
-#
-#     if "elements" in content:
-#         elements = content["elements"]
-#         for sub_index, element in enumerate(elements, start=1):
-#             parse_element(collector, element, f"{index}{sub_index}.")
+def translate_element(translator: dict[str, str], content: dict[str, Any], index: str):
+    identifier = f"{index}-element"
+    if "text" in content:
+        if identifier in translator:
+            content["text"] = translator[identifier]
+
+    if "elements" in content:
+        elements = content["elements"]
+        for sub_index, element in enumerate(elements, start=1):
+            translate_element(translator, element, f"{index}{sub_index}.")
 
 
 def translate_example(translator: dict[str, str], content: dict[str, Any], identifier: str, order: int):
@@ -91,7 +96,7 @@ def main():
     dst_folder = "./from_Paratranz/"
     tranz_folder = "./paratranz/"
     filenames = sorted(os.listdir(src_folder))
-    for filename in filenames:
+    for index, filename in enumerate(filenames, start=1):
         root, ext = os.path.splitext(filename)
         translator: dict[str, str] = dict()
         tranz_filename = os.path.join(tranz_folder, root + ".json")
@@ -105,7 +110,7 @@ def main():
         src_filename = os.path.join(src_folder, filename)
         with open(src_filename, "r", encoding="utf-8") as file:
             content = yaml.safe_load(file)
-            translate_content(translator, content)
+            translate_content(translator, content, index)
 
         dst_filename = os.path.join(dst_folder, root + ".yaml")
         with open(dst_filename, "w", encoding="utf-8") as file:
