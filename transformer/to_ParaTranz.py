@@ -35,6 +35,10 @@ def parse_section(collector: list[dict[str, str]], content: dict[str, Any], inde
         snippet = content["snippet"]
         write_line(collector, f"{identifier}-snippet", snippet)
 
+    if "toc_entry" in content:
+        toc = content["toc_entry"]
+        write_line(collector, f"{identifier}-toc", toc)
+
     rules = content["rules"]
     for sub_index, rule in enumerate(rules, start=1):
         parse_rule(collector, rule, f"{index}{sub_index}.")
