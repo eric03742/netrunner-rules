@@ -105,14 +105,16 @@ def main():
         tranz_filename = os.path.join(tranz_folder, root + ".json")
         if os.path.isfile(tranz_filename):
             with open(tranz_filename, "r", encoding="utf-8") as file:
-                translation: list[dict[str, str]] = json.load(file)
-                finder: dict[str, str] = dict()
-                for line in translation:
-                    finder[line["key"]] = line["translation"]
+                entries: list[dict[str, str]] = json.load(file)
+                oracle: dict[str, str] = dict()
+                locale: dict[str, str] = dict()
+                for line in entries:
+                    oracle[line["key"]] = line["original"]
+                    locale[line["key"]] = line["translation"]
 
                 for line in collector:
-                    if line["key"] in finder:
-                        line["translation"] = finder[line["key"]]
+                    if (line["key"] in oracle) and (line["original"] == oracle[line["key"]]):
+                        line["translation"] = locale[line["key"]]
 
         dst_filename = os.path.join(dst_folder, root + ".json")
         with open(dst_filename, "w", encoding="utf-8") as file:

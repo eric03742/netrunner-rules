@@ -27,7 +27,7 @@
     {
         "key": "sec_appendix_timing_structure_corps_turn-toc",
         "original": "Timing Structure of The Corp's Turn",
-        "translation": ""
+        "translation": "公司回合时序"
     },
     {
         "key": "11.2.1.1.-element",
@@ -132,7 +132,7 @@
     {
         "key": "sec_appendix_timing_structure_runners_turn-toc",
         "original": "Timing Structure of The Runner's Turn",
-        "translation": ""
+        "translation": "潜袭者回合时序"
     },
     {
         "key": "11.3.1.1.-element",
@@ -227,7 +227,7 @@
     {
         "key": "sec_appendix_timing_structure_of_a_run-toc",
         "original": "Timing Structure of a Run",
-        "translation": ""
+        "translation": "潜袭时序"
     },
     {
         "key": "11.4.1.1.-element",
@@ -452,7 +452,7 @@
     {
         "key": "sec_appendix_timing_structure_of_breaching_a_server-toc",
         "original": "Timing Structure of Breaching a Server",
-        "translation": ""
+        "translation": "侵入服务器时序"
     },
     {
         "key": "11.5.1.1.-element",
@@ -507,7 +507,7 @@
     {
         "key": "sec_appendix_timing_structure_of_accessing_a_card-toc",
         "original": "Timing Structure of Accessing a Card",
-        "translation": ""
+        "translation": "读取卡牌时序"
     },
     {
         "key": "11.6.1.1.-element",
