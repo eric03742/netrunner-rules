@@ -91,7 +91,7 @@ def parse_example(collector: list[dict[str, str]], content: dict[str, Any], iden
 
 def main():
     src_folder = "../data/input/"
-    dst_folder = "./to_Paratranz/"
+    dst_folder = "./yaml2json/"
     tranz_folder = "./paratranz/"
     filenames = sorted(os.listdir(src_folder))
     for index, filename in enumerate(filenames, start=1):

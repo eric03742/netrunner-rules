@@ -93,7 +93,7 @@ def translate_example(translator: dict[str, str], content: dict[str, Any], ident
 def main():
     yaml.add_representer(type(None), represent_none)
     src_folder = "../data/input/"
-    dst_folder = "./from_Paratranz/"
+    dst_folder = "./json2yaml/"
     tranz_folder = "./paratranz/"
     filenames = sorted(os.listdir(src_folder))
     for index, filename in enumerate(filenames, start=1):
