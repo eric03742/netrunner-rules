@@ -5,18 +5,18 @@ import os
 
 short_month_to_full = {
   'XX': 'XX',
-  '01': 'January',
-  '02': 'February',
-  '03': 'March',
-  '04': 'April',
-  '05': 'May',
-  '06': 'June',
-  '07': 'July',
-  '08': 'August',
-  '09': 'September',
-  '10': 'October',
-  '11': 'November',
-  '12': 'December',
+  '01': '1',
+  '02': '2',
+  '03': '3',
+  '04': '4',
+  '05': '5',
+  '06': '6',
+  '07': '7',
+  '08': '8',
+  '09': '9',
+  '10': '10',
+  '11': '11',
+  '12': '12',
 }
 
 @dataclass
@@ -36,7 +36,7 @@ class Config:
   def effective_date_str(self):
     if not self.effective_month in short_month_to_full:
       raise Exception(f'Not a valid month string: {self.effective_month}')
-    return f'{self.effective_day} {short_month_to_full[self.effective_month]} {self.effective_year}'
+    return f'{self.effective_year}年{self.effective_month}月{self.effective_day}日'
   
 def parse_output_types(arguments: list[str]):
   lowercase_arguments = list(map(lambda x: x.lower(), arguments))
