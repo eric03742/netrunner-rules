@@ -14,7 +14,7 @@ def parseTextElement(str: str) -> TextElement:
     text = str[4:].lower()
     capitalize = str[4].isupper()
     ids = text.split(',')
-    return Ref(ids, capitalize, 'and')
+    return Ref(ids, capitalize, '与')
   if str.startswith('ref/'):
     text = str[4:].lower()
     combiner_and_ids = re.split(':|,', text)

@@ -79,12 +79,17 @@ class Ref:
         return mk_link(ref_info.id, f'第{spacer}{ref_info.reference}{spacer}{ref_text}')
       elif len(self.referenced_ids) > 1:
         latex_refs = list(map(lambda ref_id: mk_link(ref_id, lookup_ref(model_data, ref_id).reference), self.referenced_ids))
-        joined = f' {self.combiner} '.join([', '.join(latex_refs[:-1]), latex_refs[-1]])
+        # joined = f' {self.combiner} '.join([', '.join(latex_refs[:-1]), latex_refs[-1]])
         ref_info = model_data.id_map[self.referenced_ids[0]]
         ref_text = ref_info.type
         if self.capitalize:
           ref_text = ref_text.capitalize()
-        return f'{ref_text}s {joined}'
+        entries = list()
+        for r in self.referenced_ids:
+          ref_info = lookup_ref(model_data, r)
+          entries.append(mk_link(ref_info.id, f'第{spacer}{ref_info.reference}{spacer}{ref_text}'))
+        joined = f'{self.combiner}'.join([', '.join(entries[:-1]), entries[-1]])
+        return joined
       else:
         raise Exception('No referenced ids')
     except Exception as e:
