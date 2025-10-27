@@ -240,7 +240,7 @@ class Example:
   new: bool
 
   def to_html(self, config: Config, model_data: ModelData) -> str:
-    return f'<li class="Example">Example: {self.text.to_html(config, model_data)}</li>'
+    return f'<li class="Example">示例：{self.text.to_html(config, model_data)}</li>'
 
   def to_latex(self, config: Config, model_data: ModelData) -> str:
     result = r'\emph{'
