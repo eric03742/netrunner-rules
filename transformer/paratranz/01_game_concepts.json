@@ -512,7 +512,7 @@
   {
     "key": "rule_inactive_ability_exception_link",
     "original": "1.8.6. Most abilities are active if and only if the card they appear on is active. {ref:Rule_ability_active_inactive_source_card} details the cases where abilities on inactive cards are still active.",
-    "translation": "对于绝大部分能力，当且仅当其所在的卡牌是活动的，该能力才是活动的。有关闲置卡牌上的能力仍然是活动的情况会在{ref:Rule_ability_active_inactive_source_card}中详细描述。",
+    "translation": "对于绝大部分能力，当且仅当其所在的卡牌是活动的，该能力才会生效。有关闲置卡牌上的能力仍然生效的情况，在{ref:Rule_ability_active_inactive_source_card}中有详细描述。",
     "stage": 1
   },
   {
@@ -632,7 +632,7 @@
   {
     "key": "rule_type_condition_counter",
     "original": "1.9.5.j. {term:Condition counters} are counters that have rules text. Their abilities are active as long as they are hosted on a card.",
-    "translation": "{term:状态指示物}是一种带有规则文本的指示物。状态指示物只要附载于一张卡牌上，其效果便是活动的。",
+    "translation": "{term:状态指示物}是一种带有规则文本的指示物。状态指示物只要附载于一张卡牌上，其能力便生效。",
     "stage": 1
   },
   {
@@ -938,7 +938,7 @@
   {
     "key": "rule_previous_object_source",
     "original": "1.12.6.a. An object that has ceased to exist still counts as the source for any active lingering effects created by that object. See {ref:sec_lingering_effects} for information about lingering effects.",
-    "translation": "已经消失的物件仍然被视作任何由该物件创建且活动的存留效果的来源。有关存留效果的信息参见{ref:sec_lingering_effects}。",
+    "translation": "已经消失的物件仍然被视作任何由该物件创建且生效的存留效果的来源。有关存留效果的信息参见{ref:sec_lingering_effects}。",
     "stage": 1
   },
   {

@@ -191,7 +191,7 @@ sections:
   - rule: rule_card_draw
     text: 玩家{term:抽取}1张或多张卡牌，指的是从其牌组顶端拿取相应数量的卡牌，并将这些卡牌放入其手牌中。有关抽取卡牌的更多详细描述参见{ref:Sec_drawing_cards}。
   - rule: rule_inactive_ability_exception_link
-    text: 对于绝大部分能力，当且仅当其所在的卡牌是活动的，该能力才是活动的。有关闲置卡牌上的能力仍然是活动的情况会在{ref:Rule_ability_active_inactive_source_card}中详细描述。
+    text: 对于绝大部分能力，当且仅当其所在的卡牌是活动的，该能力才会生效。有关闲置卡牌上的能力仍然生效的情况，在{ref:Rule_ability_active_inactive_source_card}中有详细描述。
   - rule: rule_card_conversion
     text: 能力可以将卡牌从一种类型转化为另一种类型，甚至可以将一张卡牌转化为一个指示物。{ref:Rule_add_card_to_score_area,rule_card_to_counter}详细描述了有关卡牌转化的更多细节。
 - section: sec_counters_and_tokens
@@ -235,7 +235,7 @@ sections:
     - rule: rule_type_agenda_counter
       text: '{term:议案指示物}是一种主要用于已计分的议案的通用指示物。议案指示物没有特殊规则。'
     - rule: rule_type_condition_counter
-      text: '{term:状态指示物}是一种带有规则文本的指示物。状态指示物只要附载于一张卡牌上，其效果便是活动的。'
+      text: '{term:状态指示物}是一种带有规则文本的指示物。状态指示物只要附载于一张卡牌上，其能力便生效。'
 - section: sec_credits
   text: 信用点
   snippet: 对潜袭者而言，信用点是用来升级控制台部件、在豪华餐厅中大快朵颐、亦或是为在复感中度过一夜购买门票和各种优惠的金钱。对公司而言，信用点是用于制造计算机部件、买下豪华餐厅、以及拍摄低成本复感电影的资金。
@@ -342,7 +342,7 @@ sections:
     - text: 潜袭者在读取研发中心顶端的卡牌期间将其销毁。对应于这张卡牌、位于研发中心顶端的物件消失，但是仍然会被计入潜袭者在本次侵入中可以读取的卡牌的数量。
     rules:
     - rule: rule_previous_object_source
-      text: 已经消失的物件仍然被视作任何由该物件创建且活动的存留效果的来源。有关存留效果的信息参见{ref:sec_lingering_effects}。
+      text: 已经消失的物件仍然被视作任何由该物件创建且生效的存留效果的来源。有关存留效果的信息参见{ref:sec_lingering_effects}。
       examples:
       - text: 潜袭者潜袭一台服务器，窃取一个议案，并读取一张已激活的{card:惊奇迷乐园}。潜袭者销毁{card:惊奇迷乐园}，其所读取的物件消失，被销毁的卡牌变为档案库中新的物件。对于因销毁而被创建的持久能力，其来源是位于服务器根目录中的原物件，因此持久能力中所涉及的“本服务器”仍然指向被攻击的服务器，且当本次潜袭结束时，潜袭者会拿取2枚锁定标记。
 - section: sec_host

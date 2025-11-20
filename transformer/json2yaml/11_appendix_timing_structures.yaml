@@ -17,7 +17,7 @@ sections:
     elements:
     - text: 抽牌阶段
       elements:
-      - text: 公司获得可用的时点。
+      - text: 公司获得起始时点。
       - text: 付费能力窗口：(P) (R) (S)。
       - text: 公司补充可再生信用点。
       - text: 公司的回合开始。
@@ -48,7 +48,7 @@ sections:
     elements:
     - text: 行动阶段
       elements:
-      - text: 潜袭者获得可用的时点。
+      - text: 潜袭者获得起始时点。
       - text: 付费能力窗口：(P) (R)。
       - text: '潜袭者补充可再生信用点。 '
       - text: '潜袭者的回合开始。 '

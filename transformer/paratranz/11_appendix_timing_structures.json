@@ -38,7 +38,7 @@
   {
     "key": "11.2.1.1.1.-element",
     "original": "11.2.1.1.1. The Corp gains allotted clicks.",
-    "translation": "公司获得可用的时点。",
+    "translation": "公司获得起始时点。",
     "stage": 1
   },
   {
@@ -158,7 +158,7 @@
   {
     "key": "11.3.1.1.1.-element",
     "original": "11.3.1.1.1. The Runner gains allotted clicks.",
-    "translation": "潜袭者获得可用的时点。",
+    "translation": "潜袭者获得起始时点。",
     "stage": 1
   },
   {
