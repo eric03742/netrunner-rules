@@ -1,0 +1,9 @@
+[project]
+name = "netrunner-rules"
+version = "0.1.0"
+description = "《矩阵潜袭》规则文档仓库"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pyyaml>=6.0.3",
+]
