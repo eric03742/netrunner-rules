@@ -6,14 +6,14 @@
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
       <link rel="stylesheet" href="rules.css">
       <link rel="stylesheet" href="extended.css">
-      <title>Netrunner Comprehensive Rules (<!--VERSION_STRING-->v24.03<!--END_VERSION_STRING-->)</title>
+      <title>矩阵潜袭完整规则书 Netrunner Comprehensive Rules (<!--VERSION_STRING-->v24.03<!--END_VERSION_STRING-->)</title>
       <script src="rules.js" defer></script><script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
    </head>
    <body>
       <div id="RulesParent">
          <div id="RulesToc" class="RulesToc">
             <div id="TocHeader">
-               <div id="TocTitle">Table of Contents</div>
+               <div id="TocTitle">目录</div>
                <div id="TocClose" class="TocClose" onClick="closeToc()">×</div>
             </div>
             <nav>
@@ -25,14 +25,16 @@
               </ul>
             </nav>
          </div>
-         <div id="TocOpen" class="TocOpen noprint" onClick="openToc()"><b>☰ Table of Contents</b></div>
+         <div id="TocOpen" class="TocOpen noprint" onClick="openToc()"><b>☰ 目录</b></div>
          <div id="RulesContent" class="RulesContent">
             <div>
-               <p class="Title">Netrunner Comprehensive Rules</p>
+               <p class="Title">矩阵潜袭完整规则书 Netrunner Comprehensive Rules</p>
                <p class="SubTitle">Null Signal Games</p>
+               <p>本规则文档可作为参考资料使用，不建议直接全文阅读。如果您在查阅此文档后仍有疑问，请通过<a href="mailto:rules@nullsignal.games">电子邮件</a>在线咨询我们。此版本的《完整规则书》自<b><!--EFFECTIVE_DATE-->30 March 2024<!--END_EFFECTIVE_DATE--></b>起生效。</p>
                <p>This rules document is to be used as reference material. It is not intended to be read straight through. If you still have questions after consulting this document, please ask us online via <a href="mailto:rules@nullsignal.games">email</a>. This version of the Comprehensive Rules document is effective <b><!--EFFECTIVE_DATE-->30 March 2024<!--END_EFFECTIVE_DATE--></b>.</p>
+               <p>本规则文档的中文版由Eric03742翻译，如译文中有任何错误或您对翻译有任何建议可通过<a href="mailto:eric03742@foxmail.com">电子邮件</a>批评指正。</p>
                <details>
-                  <summary class="Clickable"><b>Summary of Changes (<!--VERSION_STRING-->v24.03<!--END_VERSION_STRING-->)</b></summary>
+                  <summary class="Clickable"><b>修改摘要（<!--VERSION_STRING-->v24.03<!--END_VERSION_STRING-->）</b></summary>
                   <ul>
                     <!--CHANGELOG_ENTRIES-->
                     <li>Sample changelog entry</li>
@@ -40,29 +42,38 @@
                   </ul>
                </details>
                <details>
-                  <summary class="Clickable"><b>Acknowledgements</b></summary>
+                  <summary class="Clickable"><b>致谢</b></summary>
                   <ul>
-                     <li>Netrunner Original Game Design: Richard Garfield</li>
+                     <li>矩阵潜袭初版游戏设计：Richard Garfield</li>
                      <li>
-                        Android: Netrunner
+                        安卓纪元：矩阵潜袭
                         <ul>
-                           <li>Game Development: Lukas Litzsinger</li>
-                           <li>Expansion Development: Lukas Litzsinger, Damon Stone, and Michael Boggs</li>
-                           <li>Rules by: Adam Baker, Michael Boggs, and Erik Dahlman</li>
-                           <li>Android Universe created by: Kevin Wilson with Daniel Lovat Clark</li>
+                           <li>游戏开发：Lukas Litzsinger</li>
+                           <li>扩展包开发：Lukas Litzsinger、Damon Stone、Michael Boggs</li>
+                           <li>规则编写：Adam Baker、Michael Boggs、Erik Dahlman</li>
+                           <li>安卓纪元世界观设定：Kevin Wilson 与 Daniel Lovat Clark</li>
                         </ul>
                      </li>
                      <li>
                         Null Signal Games
                         <ul>
-                           <li>Rules Manager: Jamie Perconti</li>
-                           <li>Rules Associates: Ruben P. Pieters and Justin Prentice</li>
-                           <li>Rules Editors: Jonny Foster</li>
-                           <li>Additional Contributions: Kayli Ammen, Noah Bogart, Pat Chapman, Tim Vaduva, and Olive Wesley</li>
+                           <li>规则总负责：Jamie Perconti</li>
+                           <li>规则协助负责：Ruben P. Pieters、Justin Prentice</li>
+                           <li>规则编辑：Jonny Foster</li>
+                           <li>协助贡献：Kayli Ammen、Noah Bogart、Pat Chapman、Tim Vaduva、Olive Wesley</li>
                         </ul>
                      </li>
-                     <li>Github Repository Contributions: lostgeek, plural, and qwitwa</li>
+                     <li>Github 仓库贡献：lostgeek、plural、qwitwa</li>
+                     <li>
+                        中文规则
+                        <ul>
+                           <li>翻译：Eric03742</li>
+                           <li>审核：Eric03742、螺旋的风筝</li>
+                           <li>校对：全体《矩阵潜袭》中文玩家（也包括正在浏览这篇文档的你）</li>
+                        </ul>
+                     </li>
                   </ul>
+                  <p>《矩阵潜袭》是 R. Talsorian Games, Inc 的商标。《安卓纪元》是 Fantasy Flight Games 的商标且归属其版权所有。虽然本文档中的规则被设计为与《安卓纪元：矩阵潜袭》中的卡牌兼容，但本文档与 Fantasy Flight Games、R. Talsorian Games 及 Wizards of the Coast 并无任何关联，也未获得上述任何一家公司的认可。</p>
                   <p>Netrunner is a ™ of R. Talsorian Games, Inc. Android is ™ & © Fantasy Flight Games. Although these rules are made to be compatible with cards from Android: Netrunner, they are not in any way associated with or endorsed by Fantasy Flight Games, R. Talsorian Games, or Wizards of the Coast.</p>
                </details>
             </div>
