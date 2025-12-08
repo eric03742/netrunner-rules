@@ -1,0 +1,747 @@
+[
+    {
+        "key": "chpt_additional_rules",
+        "original": "10. Additional Rules",
+        "translation": "附加规则"
+    },
+    {
+        "key": "sec_additional_general",
+        "original": "10.1. General",
+        "translation": "概述"
+    },
+    {
+        "key": "rule_uniqueness",
+        "original": "10.1.1. Some cards are {term:unique}, and have a unique symbol (◆) before their name to designate this. There can be only one unique card of the same name active at a time. If a unique card becomes active, any other card that shares its name is trashed during the next checkpoint. Trashing a card this way cannot be prevented. See {ref:sec_checkpoints}.",
+        "translation": "一些卡牌是{term:独有}的，这些卡牌会在其名称前使用独有符号（◆）注明。同名的独有卡牌在同一时间只能有一张是活动的。如果一张独有卡牌变为活动的，则其他所有与其同名的卡牌会在下一个检查点中被销毁。以此法销毁一张卡牌不能被防止。参见{ref:sec_checkpoints}。"
+    },
+    {
+        "key": "rule_purge",
+        "original": "10.1.2. To {term:purge virus counters} is to remove all virus counters hosted on cards and return them to the bank. The Corp can purge virus counters as a basic action or with a card ability.",
+        "translation": "{term:清除病毒指示物}指的是移除所有卡牌上所负载的的病毒指示物并将其返回银行。公司可以通过基础行动或使用卡牌能力清除病毒指示物。"
+    },
+    {
+        "key": "rule_add_card_to_score_area",
+        "original": "10.1.3. Some abilities add a card to a player's score area \"as an agenda\". When this happens, the card loses all its previous properties and gains only those properties specified in the effect converting it. This conversion lasts until the card moves to a zone that is not a score area, at which point it returns to being its original printed card. If this happens in any way other than by agenda forfeit, the card is immediately trashed. See {ref:movement_forfeit}.",
+        "translation": "一些能力会将一张卡牌“作为一个议案”加入一位玩家的分数区。当此效果发生时，该卡牌失去其先前的所有属性，并获得且只获得由将该卡牌转化为议案的效果所指定的属性。此转化效果会一直持续，直到该卡牌转移到分数区以外的区域，此时该卡牌重新成为其原本的印刷卡牌。如果这是以废除议案以外的方式发生的，则该卡牌会被立即销毁。参见{ref:movement_forfeit}。"
+    },
+    {
+        "key": "rule_card_to_counter",
+        "original": "10.1.4. Some abilities can convert a card into a counter. When this happens, the card loses all its previous properties and gains only those properties specified in the effect converting it. This conversion lasts until the counter moves to another zone, at which point it reverts to being a card, regains its original printed characteristics, and is trashed.",
+        "translation": "一些能力会将一张卡牌转化为一个指示物。当此效果发生时，该卡牌失去其先前的所有属性，并获得且只获得由转化该卡牌的效果所指定的属性。此转化效果会一直持续，直到该指示物转移到另一个区域，此时其重新成为一张卡牌、重新获得其原本的印刷特征、并且被销毁。"
+    },
+    {
+        "key": "sec_old_self_reference_rules",
+        "original": "10.1.5. Some cards are written with self-referential language. If a card references its own name without using the word \"copy\", treat that name as if it said \"this object\".",
+        "translation": "一些卡牌会以指代自身的语言书写文本。如果一张卡牌引用其自身的名称而没有使用用语“名称为……”，则该名称视作等同于“本物件”。"
+    },
+    {
+        "key": "sec_old_self_reference_rules-1-example",
+        "original": "The subroutine on the original printing of {card:Kitsune} includes the phrase \"trash Kitsune.\" This phrase means \"trash this ice.\".",
+        "translation": "{card:狐女}的子进程包含用语“销毁狐女”。此用语表示“销毁本防火墙”。"
+    },
+    {
+        "key": "sec_old_self_reference_rules-2-example",
+        "original": "{card:Boomerang}'s text refers to \"a copy of Boomerang\". This is not self-referential language and refers to any card named {card:Boomerang}.",
+        "translation": "{card:回力镖}的文本中提到“1张名称为回力镖的卡牌”。这并不是指代其自身，而是指任意名称为{card:回力镖}的卡牌。"
+    },
+    {
+        "key": "sec_infinite_loops",
+        "original": "10.1.6. Infinite Loops",
+        "translation": ""
+    },
+    {
+        "key": "rule_mandatory_infinite_loop",
+        "original": "10.1.6.a. If a mandatory infinite loop is created (a player cannot choose to stop resolving the loop) then the player who is resolving the loop chooses a number. The loop instantaneously resolves that many times, and then ends.",
+        "translation": ""
+    },
+    {
+        "key": "rule_mandatory_infinite_loop-1-example",
+        "original": "The Runner runs into a rezzed {card:Wormhole}. The only other piece of ice that is rezzed is a {card:Wormhole}, and so a mandatory infinite loop is created where each of the {card:Wormhole}s' subroutines resolves the other. The Corp chooses how many times this loop occurs, say 2,157 times, and then the Runner continues the run.",
+        "translation": ""
+    },
+    {
+        "key": "rule_optional_infinite_loop",
+        "original": "10.1.6.b. If an optional infinite loop is created (a player can choose to stop resolving the loop) during a run, then the Runner must jack out unless another card ability prevents them from doing so. If the Runner cannot jack out, then it is the Corp's responsibility to end the loop by letting the Runner continue the run.",
+        "translation": ""
+    },
+    {
+        "key": "sec_information",
+        "original": "10.2. Information",
+        "translation": ""
+    },
+    {
+        "key": "sec_information-snippet",
+        "original": "The game, at its core, is about information. Much of the game revolves around deducing information about the opponent's cards and strategy.",
+        "translation": ""
+    },
+    {
+        "key": "rule_hidden_or_open_information",
+        "original": "10.2.1. Information in the game is classified as {term:hidden information} or {term:open information}.",
+        "translation": ""
+    },
+    {
+        "key": "subsec_hidden_information",
+        "original": "10.2.2. Hidden Information",
+        "translation": ""
+    },
+    {
+        "key": "rule_hidden_information",
+        "original": "10.2.2.a. {term:hidden information} is any information about the game, game state, or cards unavailable to one or more players. This includes facedown cards in play or in Archives, cards in HQ or R&D, cards in the Runner's grip or stack, etc.",
+        "translation": ""
+    },
+    {
+        "key": "rule_bluffing",
+        "original": "10.2.2.b. A player cannot learn hidden information without the aid of a game effect, rule, or another player verbally communicating the information. However, if a player that has access to information about the game or a card chooses to verbally share it with their opponent, that player is not required to tell the truth. Bluffing is allowed.",
+        "translation": ""
+    },
+    {
+        "key": "rule_bluffing-1-example",
+        "original": "The Runner uses {card:Indexing}. While rearranging cards, the Runner places {card:Braintrust} on top of R&D, followed by {card:Snare!}. The Corp draws at the beginning of their next turn, then spends their first click to draw a card. For their second click, the Corp installs a card in an empty remote server, telling the Runner that they should run it because it is a {card:Braintrust}.",
+        "translation": ""
+    },
+    {
+        "key": "subsec_open_information",
+        "original": "10.2.3. Open Information",
+        "translation": ""
+    },
+    {
+        "key": "rule_open_information",
+        "original": "10.2.3.a. {term:open information} is any information about the game, game state, cards, or abilities that is available to both players. This includes faceup cards in Archives and the heap, the number of cards in HQ, R&D, the stack, and the grip, the number of credits in a credit pool, and any other information continuously available to both players.",
+        "translation": ""
+    },
+    {
+        "key": "rule_cannot_hide_open_info",
+        "original": "10.2.3.b. Open information cannot be hidden from an opponent. A player must allow their opponent to discover the information themselves if they attempt to do so.",
+        "translation": ""
+    },
+    {
+        "key": "rule_cannot_hide_open_info-1-example",
+        "original": "The Runner installs {card:Femme Fatale}, choosing a piece of ice protecting HQ with Femme's ability. The Runner must explicitly state to the Corp which ice has been chosen and must continue to do so if the Corp asks for {card:Femme Fatale}'s target during a later turn.",
+        "translation": ""
+    },
+    {
+        "key": "sec_checkpoints",
+        "original": "10.3. Checkpoints",
+        "translation": ""
+    },
+    {
+        "key": "rule_checkpoints",
+        "original": "10.3.1. A {term:checkpoint} is a process wherein objects that have entered an illegal state are corrected, expired effects are removed, and other important conditions are checked. This procedure is automatically performed at several timing points during the game, and entails the following steps, which are performed in order:",
+        "translation": ""
+    },
+    {
+        "key": "step_checkpoint_conditional_abilities",
+        "original": "10.3.1.a. Each active conditional ability looks at the changes to the game state since the beginning of the last checkpoint to see if its condition has been met. Any ability that has met its condition creates the appropriate instances of itself and marks them as pending, as described in {ref:sec_conditional_abilities}.",
+        "translation": ""
+    },
+    {
+        "key": "step_checkpoint_duration_abilities",
+        "original": "10.3.1.b. Any ability with a duration that has passed is removed from the game state.",
+        "translation": ""
+    },
+    {
+        "key": "step_checkpoint_duration_abilities-1-example",
+        "original": "During the checkpoint that follows the end of an encounter, abilities that increased the strength of an {subtype:icebreaker} during that encounter expire and the {subtype:icebreaker}'s strength is correspondingly lowered.",
+        "translation": ""
+    },
+    {
+        "key": "step_checkpoint_duration_abilities-2-example",
+        "original": "The Corp has {card:Targeted Marketing} in the play area when the Runner steals an agenda. In the next checkpoint, the game recognizes that the ability on {card:Targeted Marketing} that was preventing the operation from being trashed no longer applies, and so the Corp trashes {card:Targeted Marketing} as if it were completing its resolution.",
+        "translation": ""
+    },
+    {
+        "key": "step_checkpoint_agenda_points",
+        "original": "10.3.1.c. If the agendas in either player's score area total 7 or more agenda points, that player wins the game. If both players would win this way simultaneously, the game ends in a draw.",
+        "translation": ""
+    },
+    {
+        "key": "step_checkpoint_uniqueness",
+        "original": "10.3.1.d. If 2 or more unique (◆) cards with the same name are active, for each such name, all of those cards except the one that became active most recently are trashed. If 2 or more {subtype:console} cards are installed under the control of the same player, for each such player, all of those cards except the one that became active most recently are trashed.",
+        "translation": ""
+    },
+    {
+        "key": "step_checkpoint_card_restrictions",
+        "original": "10.3.1.e. If any objects break any restrictions of card abilities or the game rules (such as the Runner's memory limit) or are installed or hosted in an illegal location, an appropriate set of those objects are trashed. A set is appropriate for this purpose if trashing the objects in the set would leave all remaining installed or hosted objects in legal locations and if no object can be removed from the set while maintaining that property. If there are multiple distinct appropriate sets, and one player controls all the objects in each of those sets, that player chooses which set to trash. If the sets contain objects controlled by both players, the active player chooses which set is trashed.",
+        "translation": ""
+    },
+    {
+        "key": "step_checkpoint_card_restrictions-1-example",
+        "original": "The Runner controls a {card:Chisel} hosted on an unrezzed piece of ice. The Corp rezzes that ice, revealing it to be {card:Tithonium}. Since {card:Tithonium} has an ability prohibiting cards from being hosted on it, {card:Chisel} is now installed in an illegal location and must be trashed.",
+        "translation": ""
+    },
+    {
+        "key": "step_checkpoint_card_restrictions-2-example",
+        "original": "The Runner has installed programs with total memory cost equal to their memory limit when the Corp plays {card:Bad Times}, reducing the memory limit by 2[MU]. The Runner can trash any two programs with a memory cost of 1[MU] each, or any one program with a memory cost of 2[MU] or greater. They cannot trash any 0[MU] programs, nor can they trash any set of more than one program with a greater total memory cost than 2[MU], since those objects can be removed from the trashed set while maintaining that the result will be a legal game state.",
+        "translation": ""
+    },
+    {
+        "key": "step_checkpoint_hosted_on_agenda",
+        "original": "10.3.1.f. Any objects that were hosted on an agenda that moved from a score area to any zone other than a score area are trashed.",
+        "translation": ""
+    },
+    {
+        "key": "step_checkpoint_hosted_on_installed_cards",
+        "original": "10.3.1.g. Any objects that were hosted on an installed card that was uninstalled are trashed, except for cards or counters that are temporarily in the set-aside zone because of {ref:rule_trash_ability_keeps_track_of_hosted_objects}. This step is repeated until no more cards or counters are trashed.",
+        "translation": ""
+    },
+    {
+        "key": "step_checkpoint_remote_server",
+        "original": "10.3.1.h. Any remote server with no cards protecting it, in its root, or in the process of being installed with a destination protecting it or in its root ceases to exist.",
+        "translation": ""
+    },
+    {
+        "key": "step_checkpoint_vacant_position",
+        "original": "10.3.1.i. Any position protecting a server that is not occupied by a piece of ice ceases to exist, except if it is the Runner's current position or if there is a piece of ice in the process of being installed protecting that server. See also {ref:rule_destroy_position}.",
+        "translation": ""
+    },
+    {
+        "key": "step_checkpoint_card_entering_root_during_breach",
+        "original": "10.3.1.j. If a server is being breached and 1 or more cards entered the root of that server since the previous checkpoint, for each such card, the Runner declares whether or not it becomes a candidate for access in this breach. See also {ref:sec_determining_candidates}.",
+        "translation": ""
+    },
+    {
+        "key": "step_checkpoint_card_entering_root_during_breach-1-example",
+        "original": "The Runner accesses {card:Ganked!} and encounters {card:Drafter} in the middle of breaching a server. The second subroutine on {card:Drafter} resolves, and the Corp uses its effect to install a card in the root of the server being breached. When the installation is completed, the Runner declares whether or not the installed card becomes a candidate. If it does become a candidate, the Runner will select it for access later in the breach.",
+        "translation": ""
+    },
+    {
+        "key": "step_checkpoint_discard_pile_cards",
+        "original": "10.3.1.k. Any cards in discard piles that had been converted into counters or agendas return to their printed characteristics.",
+        "translation": ""
+    },
+    {
+        "key": "step_checkpoint_discard_pile_counters",
+        "original": "10.3.1.l. Any counters in a discard pile are returned to the bank.",
+        "translation": ""
+    },
+    {
+        "key": "rule_after_checkpoint_reaction_window",
+        "original": "10.3.2. After a checkpoint is completed, if it marked any instances of conditional abilities as pending, a new reaction window immediately opens to handle those abilities, even if this takes place during another reaction window. After a reaction window closes, the game proceeds to whatever was due to occur after the checkpoint that caused it to open.",
+        "translation": ""
+    },
+    {
+        "key": "rule_checkpoint_before_priority",
+        "original": "10.3.3. Whenever a player would receive priority, first a checkpoint occurs. See also {ref:rule_priority_window}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_checkpoint_after_paying_cost",
+        "original": "10.3.4. Whenever a player pays a cost, a checkpoint occurs immediately afterward, before continuing with the effect or timing structure in which the cost was paid. See also {ref:sec_costs}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_checkpoint_after_instruction_resolution",
+        "original": "10.3.5. Whenever an instruction finishes resolving, a checkpoint occurs immediately afterward, before the next instruction becomes imminent. See also {ref:sec_identifying_instructions}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_checkpoint_after_timing_structure",
+        "original": "10.3.6. The checkpoint following the last step of a timing structure takes place outside of that timing structure, as does any associated reaction window.",
+        "translation": ""
+    },
+    {
+        "key": "rule_checkpoint_after_timing_structure-1-example",
+        "original": "The Runner, playing as {card:Jesminder Sareen: Girl Behind the Curtain}, steals an agenda during a run on a server with {card:AMAZE Amusements} rezzed in its root. Since {card:AMAZE Amusements}'s ability meets its trigger condition when the run ends, it will become pending in the reaction window following {ref:step_run_complete} and attempt to give the Runner 2 tags. During this window, the run timing structure has closed, and Jesminder's interrupt ability cannot apply to those tags.",
+        "translation": ""
+    },
+    {
+        "key": "sec_damage",
+        "original": "10.4. Damage",
+        "translation": ""
+    },
+    {
+        "key": "rule_suffer_or_take_damage",
+        "original": "10.4.1. Many cards and ice subroutines inflict damage on the Runner. The Runner {term:suffers} (sometimes referred to as \"{term:takes}\") damage according to the rules for the type of damage specified. If a Corp card \"does\" damage to the Runner, they suffer that much damage, with the additional provision that the Corp and the source card are responsible for that damage. If a card directs or allows the Runner to \"suffer\" damage, then the Runner and the source card are responsible for that damage.",
+        "translation": ""
+    },
+    {
+        "key": "rule_suffer_or_take_damage-1-example",
+        "original": "The Corp, playing as {card:Argus Security: Protection Guaranteed}, has scored {card:The Cleaners}. The Runner makes a run on R&D and steals {card:Hostile Takeover}. Argus Security's ability triggers and the Runner chooses to suffer 2 meat damage. As {card:The Cleaners} only adds additional damage to damage done by the Corp, its ability does not apply. When the Corp plays {card:Punitive Counterstrike} on their next turn, {card:The Cleaners} does increase the amount of damage done by {card:Punitive Counterstrike}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_damage_types",
+        "original": "10.4.2. The three types of damage the Runner can suffer are meat, net, and core damage",
+        "translation": ""
+    },
+    {
+        "key": "rule_meat_net_damage",
+        "original": "10.4.2.a. {term:meat damage} and {term:net damage} are resolved the same way. For each point of damage suffered, 1 card is randomly trashed from the grip.",
+        "translation": ""
+    },
+    {
+        "key": "rule_core_damage",
+        "original": "10.4.2.b. For each point of {term:core damage} suffered, 1 card is randomly trashed from the grip, and the Runner's maximum hand size is permanently reduced by 1. The Runner takes a core damage counter for each core damage suffered to track the reduction in hand size.",
+        "translation": ""
+    },
+    {
+        "key": "rule_brain_damage",
+        "original": "10.4.2.c. Some cards refer to \"brain damage\". This is an older term for core damage. The two terms are interchangeable.",
+        "translation": ""
+    },
+    {
+        "key": "rule_multiple_damage_taken_simultaneously",
+        "original": "10.4.3. If the Runner suffers more than 1 damage of any type, the cards are randomly trashed simultaneously.",
+        "translation": ""
+    },
+    {
+        "key": "rule_multiple_damage_taken_simultaneously-1-example",
+        "original": "The Runner has 2 tags and four cards in their grip, one of which is {card:I've Had Worse}. The Corp plays {card:BOOM!}, dealing 7 meat damage to the Runner. If the Runner cannot or does not prevent at least 3 of the incoming damage, they immediately flatline as they have suffered more damage than they have cards in grip, and {card:I've Had Worse} does not have the opportunity to resolve. If the Runner does prevent enough of the damage to survive, the Runner randomly trashes as many cards as the remaining amount of damage. After all the cards have been randomly selected and placed in the heap, {card:I've Had Worse} meets its trigger condition if it is among those cards trashed by the damage.",
+        "translation": ""
+    },
+    {
+        "key": "rule_multiple_damage_selected_sequentially",
+        "original": "10.4.3.a. If an effect modifies the procedure for dealing damage such that the cards trashed cannot be selected simultaneously, then the cards are selected sequentially but are still trashed simultaneously.",
+        "translation": ""
+    },
+    {
+        "key": "rule_multiple_damage_selected_sequentially-1-example",
+        "original": "The Corp is playing as {card:Chronos Protocol: Selective Mind-mapping} when the Runner accesses a {card:Snare!} before taking any other damage during this turn. The Corp looks at the grip and selects a card to be trashed as the first point of net damage for the turn, then two other cards are randomly selected. All 3 cards are trashed simultaneously.",
+        "translation": ""
+    },
+    {
+        "key": "rule_flatline_damage_reference",
+        "original": "10.4.4. If the Runner takes more damage than the number of cards in their grip, they are flatlined. See {ref:rule_flatline}.",
+        "translation": ""
+    },
+    {
+        "key": "sec_tags",
+        "original": "10.5. Tags",
+        "translation": ""
+    },
+    {
+        "key": "sec_tags-snippet",
+        "original": "Tags represent the Corp's possession of valuable information about the Runner, such as a data trail they've left behind or the physical location they are jacked in from.",
+        "translation": ""
+    },
+    {
+        "key": "rule_tag",
+        "original": "10.5.1. A {term:tag} refers to a tag counter placed on the Runner. Tags are used in card abilities and basic actions.",
+        "translation": ""
+    },
+    {
+        "key": "rule_tagged",
+        "original": "10.5.2. The Runner is {term:tagged} if there are one or more tags on them.",
+        "translation": ""
+    },
+    {
+        "key": "rule_tagged_trash_resource",
+        "original": "10.5.3. While the Runner is tagged, the Corp can, as an action, spend [click] and 2[c] to trash one of the Runner's resource cards.",
+        "translation": ""
+    },
+    {
+        "key": "rule_tagged_remove_tag",
+        "original": "10.5.4. While the Runner is tagged, they can, as an action, spend [click] and 2[c] to remove one tag, returning it to the bank.",
+        "translation": ""
+    },
+    {
+        "key": "rule_corp_can_pay_tag_costs",
+        "original": "10.5.5. The Runner controls each tag on them, but the Corp can pay costs involving tags as if they controlled the Runner's tags.",
+        "translation": ""
+    },
+    {
+        "key": "rule_corp_can_pay_tag_costs-1-example",
+        "original": "The Runner has a tag, and makes a run on a server with {card:Keegan Lane} installed. Even though the tag token is controlled by the Runner, the Corp can remove it to pay the cost of {card:Keegan Lane}'s ability to trash one of the Runner's programs.    ",
+        "translation": ""
+    },
+    {
+        "key": "sec_bad_publicity",
+        "original": "10.6. Bad Publicity",
+        "translation": ""
+    },
+    {
+        "key": "sec_bad_publicity-snippet",
+        "original": "Nobody likes corrupt Corps, or at least, most people say they don't. If a Corp has a bad reputation, the Runner has an easier time finding help to attack that Corp's servers. This extra help is abstracted as extra credits the Runner gets to use during runs.",
+        "translation": ""
+    },
+    {
+        "key": "rule_bad_publicity",
+        "original": "10.6.1. {term:bad publicity} refers to a bad publicity counter placed on the Corp. Bad publicity is used by card abilities and during runs.",
+        "translation": ""
+    },
+    {
+        "key": "rule_bad_publicity_beginning_run",
+        "original": "10.6.2. For each bad publicity the Corp has, the Runner gains 1[c] at the beginning of each run, during {ref:step_initiation_bad_publicity}. Any unspent bad publicity credits return to the bank at the end of the run, during {ref:step_run_ends_bad_publicity}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_bad_publicity_during_run",
+        "original": "10.6.2.a. If the Corp takes bad publicity while a run is already underway, the Runner does not gain additional bad publicity credits for that run.",
+        "translation": ""
+    },
+    {
+        "key": "rule_runner_can_pay_bad_publicity_costs",
+        "original": "10.6.3. The Corp controls each bad publicity on them, but the Runner can pay costs involving bad publicity as if they controlled the Corp's bad publicity.",
+        "translation": ""
+    },
+    {
+        "key": "sec_link",
+        "original": "10.7. Link",
+        "translation": ""
+    },
+    {
+        "key": "sec_link-snippet",
+        "original": "The Runner's link is the number of points their path through the Net traverses between their rig and the Corp's server. The more proxies, redirects, and other intermediary connecting points between the Corp and the Runner, the harder it is for sysops to track down the Runner's virtual location.",
+        "translation": ""
+    },
+    {
+        "key": "rule_link_value",
+        "original": "10.7.1. The Runner's {term:link value} is calculated by adding the base link on their identity card to the link ([link]) produced by their installed cards.",
+        "translation": ""
+    },
+    {
+        "key": "rule_link_contests_traces",
+        "original": "10.7.2. Link is primarily used to contest traces, as described in {ref:sec_traces}, but other abilities can also refer to the Runner's link value.",
+        "translation": ""
+    },
+    {
+        "key": "sec_traces",
+        "original": "10.8. Traces",
+        "translation": ""
+    },
+    {
+        "key": "sec_traces-snippet",
+        "original": "A trace is the Corp's attempt to connect from their servers back to the Runner. Many traces can allow the Corp to gain information about the Runner, tagging them, but traces can also produce a wide variety of other effects. Traces most commonly originate from ice subroutines, but Corporate operations can produce some of the nastiest trace effects.",
+        "translation": ""
+    },
+    {
+        "key": "rule_trace_attempt_and_base_trace_strength",
+        "original": "10.8.1. Some card abilities initiate a {term:trace attempt} (sometimes simply called a {term:trace}) on the Runner. Traces are marked by the language \"Trace [N]\" on a card, where the given value N is the {term:base trace strength} of the trace. A trace pits the Corp's trace strength against the Runner's link strength, both of which can be increased by spending credits.",
+        "translation": ""
+    },
+    {
+        "key": "rule_trace_strength",
+        "original": "10.8.2. The Corp acts first during a trace attempt, openly spending any number of credits. This sets the {term:trace strength}, which is the base trace strength plus the number of credits spent.",
+        "translation": ""
+    },
+    {
+        "key": "rule_link_strength",
+        "original": "10.8.3. After the Corp spends their credits, the Runner has the opportunity to spend credits to establish their link strength. The Runner's {term:link strength} is equal to their link value plus the number of credits spent.",
+        "translation": ""
+    },
+    {
+        "key": "rule_compare_trace_and_link_strength",
+        "original": "10.8.4. After the Runner's link strength is established, it is compared to the Corp's trace strength. If the trace strength exceeds the link strength, the trace attempt is successful and any \"if successful\" abilities associated with the trace meet their trigger conditions. If the link strength is equal to or greater than the trace strength, then the trace attempt is unsuccessful, and any \"if unsuccessful\" abilities associated with the trace meet their trigger conditions.",
+        "translation": ""
+    },
+    {
+        "key": "rule_trace_conditional_abilities",
+        "original": "10.8.5. \"If successful\" and \"if unsuccessful\" effects following the \"Trace [N]\" indicator are conditional abilities tied to the results of the trace. Any instructions in the body of the trace without an \"if successful\" or \"if unsuccessful\" are conditional abilities with the implicit trigger condition, \"when the trace is determined to be successful or unsuccessful.\"",
+        "translation": ""
+    },
+    {
+        "key": "rule_trace_conditional_abilities-1-example",
+        "original": "{card:Gemini}'s subroutine initiates a trace attempt with two associated conditional abilities. The first is \"If successful, do 1 net damage.\" and the second is \"When the trace is determined to be successful or unsuccessful, if your trace strength is 5 or greater, do 1 net damage.\" Both of these will become pending (if appropriate) after {ref:step_trace_determine_success} below.",
+        "translation": ""
+    },
+    {
+        "key": "rule_steps_of_resolving_trace_attempt",
+        "original": "10.8.6. Steps of Resolving a Trace Attempt",
+        "translation": ""
+    },
+    {
+        "key": "step_trace_initiated",
+        "original": "10.8.6.a. The trace initiates. At this time, any \"when a trace is initiated\" abilities meet their trigger conditions.",
+        "translation": ""
+    },
+    {
+        "key": "step_trace_checkpoint",
+        "original": "10.8.6.b. A checkpoint occurs.",
+        "translation": ""
+    },
+    {
+        "key": "step_trace_corp_spend_credits",
+        "original": "10.8.6.c. The Corp may spend credits to increase the trace strength.",
+        "translation": ""
+    },
+    {
+        "key": "step_trace_runner_spend_credits",
+        "original": "10.8.6.d. The Runner may spend credits to increase their link strength.",
+        "translation": ""
+    },
+    {
+        "key": "step_trace_determine_success",
+        "original": "10.8.6.e. The trace is determined to be successful or unsuccessful.",
+        "translation": ""
+    },
+    {
+        "key": "step_trace_complete",
+        "original": "10.8.6.f. The trace is complete.",
+        "translation": ""
+    },
+    {
+        "key": "sec_load_and_empty",
+        "original": "10.9. Load and Empty",
+        "translation": ""
+    },
+    {
+        "key": "rule_load_and_empty",
+        "original": "10.9.1. To {term:load} a card with counters is to place those counters on that card. A card is {term:empty} when it is no longer hosting any counters of a type that were previously loaded onto it.",
+        "translation": ""
+    },
+    {
+        "key": "rule_empty_requires_loading",
+        "original": "10.9.2. An ability on a card that refers to that card becoming empty is always linked to a preceding ability on that same card that loaded it with counters.",
+        "translation": ""
+    },
+    {
+        "key": "rule_empty_requires_loading-1-example",
+        "original": "The Runner installs {card:Crowdfunding}, and its first ability becomes pending. Even though there are no credits hosted on {card:Crowdfunding} until that ability resolves, the following \"When it is empty, ...\" ability does not meet its trigger condition because the card has not yet been loaded.",
+        "translation": ""
+    },
+    {
+        "key": "rule_meeting_empty_condition",
+        "original": "10.9.3. If any other types of counters are placed on that card without having been loaded, and those counters are subsequently removed, then empty abilities on that card do not meet their condition.",
+        "translation": ""
+    },
+    {
+        "key": "rule_loading_does_not_restrict_counters",
+        "original": "10.9.4. Loading a card with counters does not impose any further restrictions upon those counters for that card. Other abilities can still issue instructions to act upon counters of that type, including but not limited to placing more of them or removing some of them.",
+        "translation": ""
+    },
+    {
+        "key": "sec_charge",
+        "original": "10.10. Charge",
+        "translation": ""
+    },
+    {
+        "key": "sec_charge-snippet",
+        "original": "A Runner's life is one of fluidity and adaptation; their rig is in a constant state of repair of upgrade, hideouts change, and belongings come and go. With creativity and skill, a Runner can apply their personal touch to get more out of their tools and resources than anyone else would think possible.",
+        "translation": ""
+    },
+    {
+        "key": "rule_charge",
+        "original": "10.10.1. To {term:charge} is to place 1 power counter on a card that already has at least 1 hosted power counter. Cards with no hosted power counters cannot be charged.",
+        "translation": ""
+    },
+    {
+        "key": "rule_charge_targets",
+        "original": "10.10.2. If an instruction directs a player to charge 1 or more cards from among a set of cards, the particular cards to be charged are chosen as targets of that instruction. Only cards in the indicated set with at least 1 hosted power counter are valid targets. See {ref:sec_targets}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_charge_requires_hosted_counter",
+        "original": "10.10.3. If an instruction directs you to charge a particular card, that part of the instruction can only be resolved if the card has at least 1 hosted power counter at the time the instruction becomes imminent.",
+        "translation": ""
+    },
+    {
+        "key": "sec_mark",
+        "original": "10.11. Mark",
+        "translation": ""
+    },
+    {
+        "key": "sec_mark-snippet",
+        "original": "A savvy Runner is always ready to take advantage of an unexpected windfall or moment of vulnerability: an unguarded shipment, sudden tip-off from a trusted friend, an inattentive guard or merely an unsecured PAD. Many Runners refer to these opportunities as \"marks\", and pursue them for access and profit.",
+        "translation": ""
+    },
+    {
+        "key": "rule_mark",
+        "original": "10.11.1. The {term:mark} is a designation that can be applied to a particular server. It has no inherent effect, but abilities can refer to it.",
+        "translation": ""
+    },
+    {
+        "key": "rule_only_one_mark",
+        "original": "10.11.1.a. There is only ever a single server designated as the mark, and all cards that refer to a player's mark share the same designated server.",
+        "translation": ""
+    },
+    {
+        "key": "rule_mark_identification",
+        "original": "10.11.2. If a player is instructed to \"identify your mark\", determine if any server is currently designated as the mark. If there is no mark, a random central server becomes the mark for the remainder of the turn.",
+        "translation": ""
+    },
+    {
+        "key": "rule_mark_identification_method",
+        "original": "10.11.2.a. The random central server can be selected by any method, as long as there is an equal probability to select each of the 3 central servers (HQ, R&D, and Archives). Recommended methods include designating 1 card from outside the game to represent each server, shuffling those 3 cards, and drawing 1, or designating an equal number of faces of a die to represent each server and rolling that die.",
+        "translation": ""
+    },
+    {
+        "key": "rule_mark_already_identified",
+        "original": "10.11.3. If a server is already designated as the mark, an instruction to \"identify your mark\" does nothing. The mark is immutable for the remainder of the turn.",
+        "translation": ""
+    },
+    {
+        "key": "rule_mark_designation_lingering_effect",
+        "original": "10.11.4. The designation of a server as the mark is treated as a lingering effect that expires at the end of the turn. When the effect expires, there is no mark until another instruction to \"identify your mark\" resolves.",
+        "translation": ""
+    },
+    {
+        "key": "rule_mark_designated_condition_check",
+        "original": "10.11.5. When a condition checks a game property related to a player's mark, it only checks from the moment that server was designated as the mark.",
+        "translation": ""
+    },
+    {
+        "key": "rule_mark_designated_condition_check-1-example",
+        "original": "The Runner has no mark and plays {card:Jailbreak} to make a run on HQ. When the run is successful, they draw {card:Virtuoso} with {card:Jailbreak}'s ability. The Runner continues their turn by installing {card:Virtuoso} and playing {card:Carpe Diem}. If {card:Carpe Diem}'s instruction to \"identify your mark\" results in HQ becoming the mark, the subsequent run it allows will meet the trigger condition for {card:Virtuoso}'s third ability if it is successful. Even though there was a successful run on HQ earlier in the turn, HQ was not designated as the mark at that time, so the run made with {card:Carpe Diem} is the first time the Runner makes a successful run on their mark this turn. The Runner will access 1 additional card when they breach HQ.",
+        "translation": ""
+    },
+    {
+        "key": "sec_sabotage",
+        "original": "10.12. Sabotage",
+        "translation": ""
+    },
+    {
+        "key": "sec_sabotage-snippet",
+        "original": "Sabotage can be quietly working to undermine a Corp from the inside, organizing protest action, sinking a transport ship, or simply inspiring others to spread the actions further. An act of sabotage at just the right moment can severely limit the Corp's options and force them into making difficult decisions.",
+        "translation": ""
+    },
+    {
+        "key": "rule_sabotage",
+        "original": "10.12.1. Some Runner card abilities {term:sabotage} the Corp. An instruction to \"sabotage N\" directs the Corp to trash N cards collectively from HQ and the top of R&D.",
+        "translation": ""
+    },
+    {
+        "key": "rule_sabotage_resolution",
+        "original": "10.12.2. To resolve a sabotage effect, the Corp chooses which cards to trash from HQ and determines the remaining number of cards to be trashed from the top of R&D. Then, all of those cards are trashed simultaneously",
+        "translation": ""
+    },
+    {
+        "key": "rule_sabotage_facedown",
+        "original": "10.12.2.a. Cards trashed by a sabotage effect enter Archives facedown.",
+        "translation": ""
+    },
+    {
+        "key": "rule_sabotage_when_corp_can_look_facedown",
+        "original": "10.12.2.b. The Corp cannot look at cards trashed from R&D by a sabotage effect until after making all decisions for the resolution of that effect.",
+        "translation": ""
+    },
+    {
+        "key": "rule_sabotage_with_not_enough_cards",
+        "original": "10.12.3. In resolving a \"sabotage N\" effect, the Corp may be required to trash cards from a certain zone if there are not enough cards in the other zone.",
+        "translation": ""
+    },
+    {
+        "key": "rule_sabotage_hq_first",
+        "original": "10.12.3.a. If there are fewer than N cards in R&D, but at least N cards total in HQ and R&D combined, the Corp must choose enough cards to trash from HQ such that the remaining number of cards to be trashed from the top of R&D is equal to or less than the actual number of cards in R&D.",
+        "translation": ""
+    },
+    {
+        "key": "rule_sabotage_all_remaining_cards",
+        "original": "10.12.3.b. If there are fewer than N cards in HQ and R&D combined, the Corp trashes all cards from HQ and all cards from R&D.",
+        "translation": ""
+    },
+    {
+        "key": "rule_sabotage_all_remaining_cards-1-example",
+        "original": "The Runner uses {card:Esâ Afontov: Eco-Insurrectionist}'s ability to sabotage 2. The Corp has 2 cards in HQ and 30 cards in R&D. The Corp can choose not to trash any cards from HQ and trash 2 cards from the top of R&D; choose 1 of the 2 cards in HQ and trash that card and the top card of R&D; or choose and trash both cards from HQ.",
+        "translation": ""
+    },
+    {
+        "key": "rule_sabotage_all_remaining_cards-2-example",
+        "original": "The Runner uses {card:Chastushka}'s ability to sabotage 4. The Corp has 5 cards in HQ and 2 cards in R&D. The Corp must choose at least 2 cards in HQ to be trashed, so that the total number of cards trashed is 4.",
+        "translation": ""
+    },
+    {
+        "key": "rule_sabotage_all_remaining_cards-3-example",
+        "original": "The Runner uses {card:Chastushka}'s ability to sabotage 4. The Corp has 2 cards in HQ and 1 card in R&D. The Corp must trash all cards from HQ and R&D.",
+        "translation": ""
+    },
+    {
+        "key": "sec_dividends",
+        "original": "10.13. Dividends",
+        "translation": ""
+    },
+    {
+        "key": "sec_dividends-snippet",
+        "original": "Dividends are rewards the Corp receives for over-investing in their agendas. Dividends might represent a bumper harvest of construction biomaterials, investigative journalists uncovering (or fabricating) a particularly effective story, or simply reaping record-setting profits after an especially risky investment.",
+        "translation": ""
+    },
+    {
+        "key": "rule_dividends",
+        "original": "10.13.1. {term:Dividends} is a keyword that represents a conditional ability. \"Dividends N\" means \"When you score this agenda, place N agenda counters on it for each hosted advancement counter past its advancement requirement.\".",
+        "translation": ""
+    },
+    {
+        "key": "rule_dividends-1-example",
+        "original": "The Corp scores {card:Embedded Reporting} with 5 advancement counters on it. The Corp will put 4 agenda counters on the agenda in their score area, 2 agenda counters for each of the 2 excess advancement counters.",
+        "translation": ""
+    },
+    {
+        "key": "rule_dividends_timing",
+        "original": "10.13.2. A dividends ability checks its source agenda's advancement requirement and number of hosted advancement counters at the time that agenda began to be scored, before it moved to the Corp's score area.",
+        "translation": ""
+    },
+    {
+        "key": "rule_dividends_timing-1-example",
+        "original": "The Corp has {card:Project Ingatan} and a rezzed {card:SanSan City Grid} in the root of a server. The Corp advances {card:Project Ingatan} 3 times and scores it. Once {card:Project Ingatan} moves to the Corp's score area, its hosted advancement counters are all removed, and the modifier from {card:SanSan City Grid} no longer applies. But it did have 3 hosted advancement counters and an advancement requirement of 2 at the time it was scored, so the Corp places 1 agenda counter on it with its dividends 1 ability.",
+        "translation": ""
+    },
+    {
+        "key": "sec_bidding",
+        "original": "10.14. Bidding",
+        "translation": ""
+    },
+    {
+        "key": "rule_bidding",
+        "original": "10.14.1. A {term:bid} is a number of credits that a player secretly chooses to spend as part of resolving an ability. Some effects instruct only a single player to bid, while other effects require both players to bid simultaneously.",
+        "translation": ""
+    },
+    {
+        "key": "rule_bid_secret",
+        "original": "10.14.2. Players select their bids in secret. This can be accomplished by writing down a number, by hiding a number of credit counters in a closed fist, or by any other unambiguous method.",
+        "translation": ""
+    },
+    {
+        "key": "rule_bid_possible",
+        "original": "10.14.3. A player cannot bid a number of credits they are unable to spend. Players can always bid 0[c].",
+        "translation": ""
+    },
+    {
+        "key": "rule_bid_possible-1-example",
+        "original": "The Runner has no credits in their credit pool and 1 credit hosted on {card:Fencer Fueno} when they make a successful run on a server with {card:Adrian Seis} rezzed in its root. When the ability on {card:Adrian Seis} resolves, the players play a Psi Game, which requires them both to bid 0, 1, or 2[c]. In this case, the Runner cannot bid 2[c], as they are not able to spend that number of credits. They can, however, bid 1[c], as they will be able to spend the credit from {card:Fencer Fueno} to pay for that bid.",
+        "translation": ""
+    },
+    {
+        "key": "rule_bid_possible-2-example",
+        "original": "The Runner encounters {card:RSVP} and its subroutine resolves. Later in that run, they are required to bid credits by another ability. Since the effect of {card:RSVP}'s subroutine prohibits the Runner from spending credits, they must bid 0[c].",
+        "translation": ""
+    },
+    {
+        "key": "rule_bid_reveal_spend",
+        "original": "10.14.4. After all bids are selected, the ability that called for the bids continues resolving. Players will later be instructed to reveal their bids. Each player must spend a number of credits equal to their bid as soon as the bid is revealed.",
+        "translation": ""
+    },
+    {
+        "key": "rule_bid_spent_immediately",
+        "original": "10.14.4.a. Spending credits for a revealed bid is not a conditional ability and does not wait for a checkpoint or priority window after revealing the number of credits bid.",
+        "translation": ""
+    },
+    {
+        "key": "rule_bid_is_cost",
+        "original": "10.14.4.b. Spending credits for a bid counts as paying a nested cost. See {ref:sec_costs}.",
+        "translation": ""
+    },
+    {
+        "key": "rule_bid_payment_choices",
+        "original": "10.14.4.c. If both players are bidding and a player has multiple sources of credits available from which to pay for their bid (see {ref:rule_spend_credits}), that player chooses how to pay after learning the number of credits their opponent bid. If both players have multiple ways to pay for their bids, first the active player chooses how to pay, then the inactive player chooses how to pay. In either circumstance, the credits are spent simultaneously.",
+        "translation": ""
+    },
+    {
+        "key": "rule_bid_secretly_spend",
+        "original": "10.14.5. Some older cards direct players to \"secretly spend credits\" without reference to bidding. These abilities still follow the rules for bidding. Trigger conditions based on players \"secretly spending credits\" or \"revealing secretly spent credits\" are met at the next checkpoint after bids are revealed and paid for.",
+        "translation": ""
+    },
+    {
+        "key": "sec_psi_games",
+        "original": "10.14.6. Psi Games",
+        "translation": ""
+    },
+    {
+        "key": "rule_psi_game",
+        "original": "10.14.6.a. A {term:Psi Game} is a bidding contest in which the outcome depends on whether the number of credits each player bid was the same or different. The instruction \"Play a Psi Game.\" encompasses both bidding and revealing bids.",
+        "translation": ""
+    },
+    {
+        "key": "rule_psi_bid_options",
+        "original": "10.14.6.b. When playing a Psi Game, each player can bid 0[c], 1[c], or 2[c].",
+        "translation": ""
+    },
+    {
+        "key": "rule_psi_bid_reveal",
+        "original": "10.14.6.c. Playing a Psi Game is handled as a single instruction. After both players have selected a bid for a Psi Game, they immediately proceed to reveal and spend their bids. There are no checkpoints during this process until after both players have paid for their bids.",
+        "translation": ""
+    },
+    {
+        "key": "rule_psi_outcome",
+        "original": "10.14.6.d. In an ability that calls for a Psi Game, subsequent instructions will depend on the outcome of the Psi Game. The condition \"if the bids match\" is satisfied if the Corp and Runner bid the same number of credits. The condition \"if the bids differ\" is satisfied if the Corp and Runner did not bid the same number of credits.",
+        "translation": ""
+    }
+]

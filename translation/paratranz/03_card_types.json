@@ -1,0 +1,620 @@
+[
+  {
+    "key": "chpt_card_types",
+    "original": "3. Card Types",
+    "translation": "卡牌类型",
+    "stage": 1
+  },
+  {
+    "key": "sec_identities",
+    "original": "3.1. Identities",
+    "translation": "特性",
+    "stage": 1
+  },
+  {
+    "key": "rule_identity_play_area",
+    "original": "3.1.1. Each player starts the game with a single identity active in the play area. See {ref:sec_starting_the_game}.",
+    "translation": "在游戏开始时，每位玩家的游戏区中都有一个活动的特性。参见{ref:sec_starting_the_game}。",
+    "stage": 1
+  },
+  {
+    "key": "rule_identity_double_sided",
+    "original": "3.1.1.a. Some identities are double-sided. Only the front side of a double-sided identity will have values for its minimum deck size and influence limit. Only the side of a double-sided identity that is currently faceup is active at any given time.",
+    "translation": "一些特性是双面的。对于双面特性，只有其正面写有其牌组张数下限和影响力上限值。对于双面特性，任何时候只有其当前朝上的那一面是活动的。",
+    "stage": 1
+  },
+  {
+    "key": "rule_identity_not_installed",
+    "original": "3.1.1.b. Identities are not installed.",
+    "translation": "特性不会被安装。",
+    "stage": 1
+  },
+  {
+    "key": "rule_identity_deck_size_influence",
+    "original": "3.1.2. Only identity cards have minimum deck sizes and influence limits. These values do not apply during the game; instead, they determine deckbuilding constraints for decks associated with that identity. See {ref:sec_deck_construction}.",
+    "translation": "只有特性卡牌具有牌组张数下限和影响力上限。这些数值并不会作用于游戏过程当中，而是确定与该特性相关的牌组的构筑限制。参见{ref:sec_deck_construction}。",
+    "stage": 1
+  },
+  {
+    "key": "rule_identity_base_link",
+    "original": "3.1.3. Only Runner identities have a base link. This value is used in calculating the Runner's link value. See {ref:sec_link}.",
+    "translation": "只有潜袭者特性具有基础中转。这一数值用于计算潜袭者的中转值。参见{ref:sec_link}。",
+    "stage": 1
+  },
+  {
+    "key": "rule_identity_HQ",
+    "original": "3.1.4. The Corp's identity card is used to mark the location of HQ. See {ref:subsec_hq}.",
+    "translation": "公司的特性卡牌用于标明总部的位置。参见{ref:subsec_hq}。",
+    "stage": 1
+  },
+  {
+    "key": "sec_agendas",
+    "original": "3.2. Agendas",
+    "translation": "议案",
+    "stage": 1
+  },
+  {
+    "key": "sec_agendas-snippet",
+    "original": "Agendas represent valuable pieces of Corporate data. When the Corp advances and scores agendas, it represents completion of critical Corporate projects. When the Runner steals agendas, it represents their acquisition of secret Corporate data.",
+    "translation": "议案代表公司的重要数据。当公司推进议案并将之计分时，便代表着其关键项目的完成。当潜袭者窃取议案时，便意味着其获取了公司的机密数据。",
+    "stage": 1
+  },
+  {
+    "key": "rule_agendas_in_roots",
+    "original": "3.2.1. The Corp may install agendas only in the roots of remote servers. There can be only one agenda or one asset installed in the root of any given remote server at a time. See {ref:subsec_remote_servers}.",
+    "translation": "公司只能在远程服务器的根目录中安装议案。在任意一台远程服务器的根目录中，同一时间只能有一个已安装的议案或一个已安装的资产。参见{ref:subsec_remote_servers}。",
+    "stage": 1
+  },
+  {
+    "key": "rule_agenda_advancement_requirement_agenda_points",
+    "original": "3.2.2. Only agendas have advancement requirements and agenda points. See {ref:sec_score_scoring_steal}.",
+    "translation": "只有议案具有推进需求和议案分数。参见{ref:sec_score_scoring_steal}。",
+    "stage": 1
+  },
+  {
+    "key": "rule_agenda_advancement_requirement",
+    "original": "3.2.2.a. An agenda's advancement requirement is the minimum number of advancement counters that must be on that agenda for the Corp to score it.",
+    "translation": "议案的推进需求是公司在将其计分前，该议案上必须具有的推进指示物的最低数量。",
+    "stage": 1
+  },
+  {
+    "key": "rule_score_from_score_area",
+    "original": "3.2.2.b. The agenda points on an agenda contribute to a player's score while the agenda is in their score area.",
+    "translation": "一张议案上的议案分数会在该议案位于某一名玩家的分数区期间添加到该玩家的分数中。",
+    "stage": 1
+  },
+  {
+    "key": "rule_agendas_not_rezzed",
+    "original": "3.2.3. Agendas cannot be rezzed and are inactive while installed. Agendas are active in the Corp's score area. Agendas are inactive in the Runner's score area unless the agenda's card text specifies otherwise. See {ref:sec_score_area}.",
+    "translation": "议案不能被激活，且在被安装期间是闲置的。公司分数区中的议案是活动的。潜袭者分数区中的议案是闲置的，除非在议案的卡牌文本中另有说明。参见{ref:sec_score_area}。",
+    "stage": 1
+  },
+  {
+    "key": "rule_agendas_faceup",
+    "original": "3.2.3.a. Some agendas may be installed faceup or turned faceup through card abilities. Faceup agendas are neither rezzed nor unrezzed. If an agenda's printed text directs the Corp to install it faceup, that agenda's abilities are active while it is installed.",
+    "translation": "一些议案可以被牌面朝上安装，或通过卡牌能力翻转至牌面朝上。牌面朝上的议案既不是已激活的，也不是未激活的。如果一个议案的印刷文本指示公司将其正面朝上安装，则在该议案被安装期间，其能力是生效的。",
+    "stage": 1
+  },
+  {
+    "key": "rule_advancemenet_requirements_modification",
+    "original": "3.2.3.b. Some agendas modify the requirements for stealing or scoring them. These abilities are always active, according to any restrictions or requirements specified. See {ref:rule_ability_active_inactive_source_card}.",
+    "translation": "一些议案会修改窃取或计分该议案的需求。在满足指定的限制或要求的前提下，这些能力总是生效的。参见{ref:rule_ability_active_inactive_source_card}。",
+    "stage": 1
+  },
+  {
+    "key": "rule_agendas_advanced",
+    "original": "3.2.4. Agendas can always be advanced. See {ref:sec_advancing_cards}.",
+    "translation": "议案总是可以被推进。参见{ref:sec_advancing_cards}。",
+    "stage": 1
+  },
+  {
+    "key": "sec_assets",
+    "original": "3.3. Assets",
+    "translation": "资产",
+    "stage": 1
+  },
+  {
+    "key": "sec_assets-snippet",
+    "original": "Assets represent various resources and connections at the Corp's disposal.",
+    "translation": "资产表示公司所掌握的各种资源与人脉。",
+    "stage": 1
+  },
+  {
+    "key": "rule_asset_root_remote",
+    "original": "3.3.1. The Corp may install assets only in the roots of remote servers. There can be only one agenda or one asset installed in the root of any given remote server at a time. See {ref:subsec_remote_servers}.",
+    "translation": "公司只能在远程服务器的根目录中安装资产。在任意一台远程服务器的根目录中，同一时间只能有一个已安装的议案或一个已安装的资产。参见{ref:subsec_remote_servers}。 ",
+    "stage": 1
+  },
+  {
+    "key": "rule_asset_rez_cost",
+    "original": "3.3.2. Assets are among the card types that have rez costs. They are installed unrezzed and remain inactive until the Corp rezzes them by paying their rez costs during a paid ability window. See {ref:sec_faceup_facedown_status}.",
+    "translation": "资产是具有激活费用的卡牌类型之一。资产在被安装时是未激活的，直到公司在一个付费能力窗口中通过支付其激活费用将其激活之前，资产都保持闲置。参见{ref:sec_faceup_facedown_status}。",
+    "stage": 1
+  },
+  {
+    "key": "rule_asset_trash_cost",
+    "original": "3.3.3. Assets are among the card types that have trash costs. If the Runner accesses an asset, they may pay the trash cost to trash that asset. See {ref:rule_basic_trash_ability}.",
+    "translation": "资产是具有销毁费用的卡牌类型之一。如果潜袭者读取一个资产，则其可以支付此销毁费用以销毁该资产。参见{ref:rule_basic_trash_ability}。",
+    "stage": 1
+  },
+  {
+    "key": "rule_asset_lady_liberty",
+    "original": "3.3.4. One asset, {card:Lady Liberty}, has the subtype {subtype:region} and the text \"Limit 1 {subtype:region} per server.\" See {ref:subsec_regions} for rules governing {subtype:region} cards.",
+    "translation": "资产{card:自由女神}具有子类型{subtype:区域}与文本”每台服务器限制1个{subtype:区域}“。有关{subtype:区域}卡牌的规则参见{ref:subsec_regions}。",
+    "stage": 1
+  },
+  {
+    "key": "sec_ice",
+    "original": "3.4. Ice",
+    "translation": "防火墙",
+    "stage": 1
+  },
+  {
+    "key": "sec_ice-snippet",
+    "original": "Ice are sophisticated security systems that protect Corporate servers through a variety of means. \"Ice\" has been suggested to stand for a variety of expressions, but is most commonly expanded as \"Intrusion Countermeasures Electronics\".",
+    "translation": "防火墙是通过各种方式保护公司服务器的复杂安全系统。关于防火墙这一名称（Ice）所代表的含义有各种猜测，但最常见的说法是”入侵对抗电子系统（Intrusion Countermeasures Electronics）\"。",
+    "stage": 1
+  },
+  {
+    "key": "rule_ice_piece_of_ice",
+    "original": "3.4.1. \"Ice\" and \"piece of ice\" are synonymous.",
+    "translation": "”防火墙“和”一层防火墙“的含义相同。",
+    "stage": 1
+  },
+  {
+    "key": "rule_ice_install",
+    "original": "3.4.2. Ice are the only type of card installed protecting servers. Ice are not installed in the roots of servers. See {ref:subsec_protecting_a_server}.",
+    "translation": "防火墙是唯一被安装以保护服务器的卡牌类型。防火墙不能被安装在服务器的根目录。参见{ref:subsec_protecting_a_server}。",
+    "stage": 1
+  },
+  {
+    "key": "rule_ice_layout",
+    "original": "3.4.2.a. Ice protecting a server are laid out horizontally in front of that server, with the outermost piece of ice furthest from the server.",
+    "translation": "保护一台服务器的防火墙会被横置在该服务器前方，且最外层的防火墙离服务器最远。",
+    "stage": 1
+  },
+  {
+    "key": "rule_ice_instal_outermost",
+    "original": "3.4.2.b. When the Corp installs a piece of ice, they must install it in the outermost position protecting a server. See {ref:sec_install_uninstall}.",
+    "translation": "当公司安装一层防火墙时，其必须将该防火墙安装到保护一台服务器的最外层位置。参见{ref:sec_install_uninstall}。",
+    "stage": 1
+  },
+  {
+    "key": "rule_ice_rez_cost",
+    "original": "3.4.3. Ice are among the card types that have rez costs. They are installed unrezzed and remain inactive until the Corp rezzes them by paying their rez costs. See {ref:sec_faceup_facedown_status}.",
+    "translation": "防火墙是具有激活费用的卡牌类型之一。防火墙在被安装时是未激活的，直到公司通过支付其激活费用将其激活之前，防火墙都保持闲置。参见{ref:sec_faceup_facedown_status}。",
+    "stage": 1
+  },
+  {
+    "key": "rule_ice_rez_window",
+    "original": "3.4.3.a. Unlike assets and upgrades, ice can normally only be rezzed while being approached during a run. See {ref:sec_approach_ice_phase}.",
+    "translation": "与资产和升级不同，通常情况下防火墙只有在潜袭中被接驳的期间才能够被激活。参见{ref:sec_approach_ice_phase}。",
+    "stage": 1
+  },
+  {
+    "key": "rule_ice_strength_value",
+    "original": "3.4.4. Ice are among the card types that have strength. An ice's strength determines which icebreakers are allowed to interface with it. See {ref:subsec_icebreakers}.",
+    "translation": "防火墙是具有强度的卡牌类型之一。防火墙的强度决定了哪些破解器能够与之对接。参见{ref:subsec_icebreakers}。",
+    "stage": 1
+  },
+  {
+    "key": "rule_ice_strength_modification_duration",
+    "original": "3.4.4.a. If an ability modifies the strength of a piece of ice for the remainder of a run, and that ability resolves during an encounter outside of a run, the modification instead lasts for the remainder of that encounter.",
+    "translation": "如果一项能力会在一次潜袭的剩余时间内修改一层防火墙的强度，但该能力在潜袭之外的一次遭遇中结算，则这一修改效果变为持续至该次遭遇结束。",
+    "stage": 1
+  },
+  {
+    "key": "rule_ice_strength_modification_duration-1-example",
+    "original": "The Runner accesses and encounters an {card:Archangel} in HQ with {card:Gang Sign}. The Runner uses {card:Devil Charm} to lower the strength of {card:Archangel}. That strength reduction would normally last for the remainder of the current run, but since no run is in progress, it instead lasts for the remainder of the encounter.",
+    "translation": "潜袭者使用{card:帮派标志}读取并遭遇总部中的{card:大天使}。潜袭者使用{card:恶魔护符}降低{card:大天使}的强度。通常情况下，该强度减少效果应持续至本次潜袭的剩余时间结束，但由于当前没有正在进行的潜袭，因此变为持续至本次遭遇的剩余时间结束。",
+    "stage": 1
+  },
+  {
+    "key": "rule_ice_trash_cost",
+    "original": "3.4.5. Some ice have trash costs. If the Runner accesses an ice with a trash cost, they may pay the trash cost to trash that ice. See {ref:rule_basic_trash_ability}.",
+    "translation": "一些防火墙具有销毁费用。如果潜袭者读取一层具有销毁费用的防火墙，则其可以支付此销毁费用以销毁该防火墙。参见{ref:rule_basic_trash_ability}。",
+    "stage": 1
+  },
+  {
+    "key": "rule_ice_access",
+    "original": "3.4.5.a. Unlike assets, upgrades, and agendas, ice are not normally accessed while installed. Encountering a piece of ice does not entail accessing that ice and does not give the Runner an opportunity to pay its trash cost.",
+    "translation": "与资产、升级和议案不同，已安装的防火墙通常情况下是不会被读取的。遭遇一层防火墙并不会导致读取该防火墙，也不会给予潜袭者支付其销毁费用的机会。",
+    "stage": 1
+  },
+  {
+    "key": "rule_ice_install_cost",
+    "original": "3.4.6. Ice are the only Corp cards with install costs. The install cost of a piece of ice is not a printed value but instead a calculated value based on the number of other ice already protecting the relevant server. See {ref:rule_install_cost}.",
+    "translation": "防火墙是唯一具有安装费用的公司卡牌。一层防火墙的安装费用并不是一个印刷数值，而是根据其他已安装用于保护相关服务器的防火墙数量，计算得出的一个数值。参见{ref:rule_install_cost}。",
+    "stage": 1
+  },
+  {
+    "key": "rule_ice_subroutine",
+    "original": "3.4.7. Ice are the only cards with subroutines. See {ref:sec_subroutines}.",
+    "translation": "防火墙是唯一具有子进程的卡牌。参见{ref:sec_subroutines}。",
+    "stage": 1
+  },
+  {
+    "key": "sec_operations",
+    "original": "3.5. Operations",
+    "translation": "事务",
+    "stage": 1
+  },
+  {
+    "key": "rule_operation_play",
+    "original": "3.5.1. Operations are the only Corp cards that are played. Operations are never installed. Playing an operation causes its abilities to become active, and once those abilities are fully resolved the operation is trashed. See {ref:sec_playing_events_and_operations}.",
+    "translation": "事务是唯一会被打出的公司卡牌。事务不能被安装。打出一个事务会使其能力生效，且一旦这些能力被完全结算，该事务即被销毁。参见{ref:sec_playing_events_and_operations}。",
+    "stage": 1
+  },
+  {
+    "key": "rule_operation_condition",
+    "original": "3.5.1.a. Some operations have the subtype {subtype:condition}. As part of their abilities, {subtype:condition} operations convert themselves into {subtype:condition} counters and install themselves. A {subtype:condition} operation cannot be installed by an install effect; it can only be installed through its own conversion ability. See {ref:rule_card_to_counter}.",
+    "translation": "一些事务具有子类型{subtype:状态}。作为其能力的一部分，{subtype:状态}事务会将其自身转化为{subtype:状态}指示物，并安装其自身。{subtype:状态}事务不能被安装效果所安装，只能通过其自身的转化能力来安装。参见{ref:rule_card_to_counter}。",
+    "stage": 1
+  },
+  {
+    "key": "rule_operation_current",
+    "original": "3.5.1.b. Some operations have the subtype {subtype:current}. As part of their abilities, {subtype:current} operations prevent themselves from being trashed until another {subtype:current} operation or event is played or the Runner steals an agenda. When one of these occurs, the active {subtype:current} is trashed during the next checkpoint. See {ref:rule_play_not_trashed_until}.",
+    "translation": "一些事务具有子类型{subtype:局势}。作为其能力的一部分，{subtype:局势}事务会防止其自身被销毁，直到另一个{subtype:局势}事务或事件被打出，抑或是潜袭者窃取了一个议案。当上述的其中之一发生时，当前活动的{subtype:局势}会在下一个检查点中被销毁。参见{ref:rule_play_not_trashed_until}。",
+    "stage": 1
+  },
+  {
+    "key": "rule_operation_lockdown",
+    "original": "3.5.1.c. Some operations have the subtype {subtype:lockdown}. As part of their abilities, {subtype:lockdown} operations prevent themselves from being trashed until the start of the Corp's next turn after the operation is played. Once the Corp's turn begins, this effect expires and the operation is trashed during the next checkpoint, before any conditional abilities marked pending at that time can be triggered. See {ref:rule_play_not_trashed_until}.",
+    "translation": "一些事务具有子类型{subtype:封锁}。作为其能力的一部分，{subtype:封锁}事务会防止其自身被销毁，直到该事务被打出后公司的下个回合开始。一旦公司的回合开始，此效果便会结束，且该事务会在下一个检查点中、任意被标记为待定的能力能够被触发之前被销毁。参见{ref:rule_play_not_trashed_until}。",
+    "stage": 1
+  },
+  {
+    "key": "rule_operation_play_cost",
+    "original": "3.5.2. Operations are the only Corp cards with play costs. An operation's play cost is the number of credits the Corp must spend to play the operation. See {ref:sec_playing_events_and_operations}.",
+    "translation": "事务是唯一具有打出费用的公司卡牌。事务的打出费用指的是公司为打出该事务所必须支付的信用点数量。参见{ref:sec_playing_events_and_operations}。",
+    "stage": 1
+  },
+  {
+    "key": "rule_operation_trash_cost",
+    "original": "3.5.3. Some operations have trash costs. If the Runner accesses an operation with a trash cost, they may pay the trash cost to trash that operation. See {ref:rule_basic_trash_ability}.",
+    "translation": "一些事务具有销毁费用。如果潜袭者读取一个具有销毁费用的事务，则其可以支付此销毁费用以销毁该事务。参见{ref:rule_basic_trash_ability}。",
+    "stage": 1
+  },
+  {
+    "key": "sec_upgrades",
+    "original": "3.6. Upgrades",
+    "translation": "升级",
+    "stage": 1
+  },
+  {
+    "key": "rule_upgrade_install",
+    "original": "3.6.1. The Corp may install upgrades in the root of any server. Upgrades are the only card type that can be installed in the root of a central server.",
+    "translation": "公司可以将升级安装在任意服务器的根目录中。升级是唯一可以被安装在中央服务器根目录中的卡牌类型。",
+    "stage": 1
+  },
+  {
+    "key": "rule_upgrade_no_limit",
+    "original": "3.6.2. There is no limit to the number of upgrades that can be installed in the root of a single server.",
+    "translation": "一台服务器的根目录中可以安装任意数量的升级。",
+    "stage": 1
+  },
+  {
+    "key": "rule_upgrade_rez_cost",
+    "original": "3.6.3. Upgrades are among the card types that have rez costs. They are installed unrezzed and remain inactive until the Corp rezzes them by paying their rez costs during a paid ability window. See {ref:sec_faceup_facedown_status}.",
+    "translation": "升级是具有激活费用的卡牌类型之一。升级在被安装时是未激活的，直到公司在一个付费能力窗口中通过支付其激活费用将其激活之前，升级都保持闲置。参见{ref:sec_faceup_facedown_status}。",
+    "stage": 1
+  },
+  {
+    "key": "rule_upgrade_trash_cost",
+    "original": "3.6.4. Upgrades are among the card types that have trash costs. If the Runner accesses an upgrade, they may pay the trash cost to trash that upgrade. See {ref:rule_basic_trash_ability}.",
+    "translation": "升级是具有销毁费用的卡牌类型之一。如果潜袭者读取一个升级，则其可以支付此销毁费用以销毁该升级。参见{ref:rule_basic_trash_ability}。",
+    "stage": 1
+  },
+  {
+    "key": "subsec_regions",
+    "original": "3.6.5. Regions",
+    "translation": "区域",
+    "stage": 1
+  },
+  {
+    "key": "rule_upgrade_region",
+    "original": "3.6.5.a. Some upgrades have the subtype {subtype:region}. All {subtype:regions} have the text \"Limit 1 {subtype:region} per server.\"",
+    "translation": "一些升级具有子类型{subtype:区域}。所有{subtype:区域}都具有文本“每台服务器限制1个{subtype:区域}”。",
+    "stage": 1
+  },
+  {
+    "key": "rule_region_one_root",
+    "original": "3.6.5.b. The {subtype:region} limitation applies only to cards with the subtype {subtype:region} that are installed or in the process of being installed in the root of a server. It does not apply to cards in central servers, and it does not apply to ice.",
+    "translation": "{subtype:区域}的限制只对已被安装或正在被安装到服务器根目录且具有{subtype:区域}子类型的卡牌生效。这一限制既不适用于中央服务器中的卡牌，也不适用于防火墙。",
+    "stage": 1
+  },
+  {
+    "key": "rule_region_active_inactive",
+    "original": "3.6.5.c. The {subtype:region} limitation applies to all cards as specified in {ref:rule_region_one_root}, regardless of the active or inactive state of those cards.",
+    "translation": "{subtype:区域}的限制适用于{ref:rule_region_one_root}中指定的所有卡牌，无论这些卡牌是活动的还是闲置的。",
+    "stage": 1
+  },
+  {
+    "key": "rule_region_install",
+    "original": "3.6.5.d. When the Corp installs a card with the subtype {subtype:region} into the root of a server that already has a {subtype:region}, they must trash the already-installed {subtype:region}. See {ref:sec_install_uninstall}.",
+    "translation": "当公司将一张具有{subtype:区域}子类型的卡牌安装到一台服务器的根目录，且其中已安装有一个{subtype:区域}时，公司必须销毁这个已安装的{subtype:区域}。参见{ref:sec_install_uninstall}。",
+    "stage": 1
+  },
+  {
+    "key": "rule_region_swap",
+    "original": "3.6.5.e. The Corp cannot swap a {subtype:region} card with a non-{subtype:region} card in another location if there is another {subtype:region} card already installed in the destination location.",
+    "translation": "如果在目的地位置中已经安装有一张{subtype:区域}卡牌，则公司不能将另一张{subtype:区域}卡牌与该位置的一张非{subtype:区域}卡牌互换。",
+    "stage": 1
+  },
+  {
+    "key": "sec_events",
+    "original": "3.7. Events",
+    "translation": "事件",
+    "stage": 1
+  },
+  {
+    "key": "rule_event_play",
+    "original": "3.7.1. Events are the only Runner cards that are played. Events are never installed. Playing an event causes its abilities to become active, and once those abilities are fully resolved the event is trashed. See {ref:sec_playing_events_and_operations}.",
+    "translation": "事件是唯一会被打出的潜袭者卡牌。事件不能被安装。打出一个事件会使其能力生效，且一旦这些能力被完全结算，该事件即被销毁。参见{ref:sec_playing_events_and_operations}。",
+    "stage": 1
+  },
+  {
+    "key": "rule_event_condition",
+    "original": "3.7.1.a. One event, {card:On the Lam}, has the subtype {subtype:condition}. As part of its abilities, it converts itself into a condition counter and installs itself. This event cannot be installed by an install effect; it can only be installed through its own conversion ability. See {ref:rule_card_to_counter}.",
+    "translation": "事件{card:潜逃}具有子类型{subtype:状态}。作为其能力的一部分，{card:潜逃}会将其自身转化为一个状态指示物，并安装其自身。此事件不能被安装效果所安装，只能通过其自身的转化能力来安装。参见{ref:rule_card_to_counter}。",
+    "stage": 1
+  },
+  {
+    "key": "rule_event_current",
+    "original": "3.7.1.b. Some events have the subtype {subtype:current}. As part of their abilities, {subtype:current} events prevent themselves from being trashed until another {subtype:current} operation or event is played or the Corp scores an agenda. When one of these occurs, the active {subtype:current} is trashed during the next checkpoint. See {ref:rule_play_not_trashed_until}.",
+    "translation": "一些事件具有子类型{subtype:局势}。作为其能力的一部分，{subtype:局势}事件会防止其自身被销毁，直到另一个{subtype:局势}事务或事件被打出，抑或是公司将一个议案计分。当上述的其中之一发生时，当前活动的{subtype:局势}会在下一个检查点中被销毁。参见{ref:rule_play_not_trashed_until}。",
+    "stage": 1
+  },
+  {
+    "key": "rule_event_play_cost",
+    "original": "3.7.2. Events are the only Runner cards with play costs. An event's play cost is the number of credits the Runner must spend to play the event. See {ref:sec_playing_events_and_operations}.",
+    "translation": "事件是唯一具有打出费用的潜袭者卡牌。事件的打出费用指的是潜袭者为打出该事件所必须支付的信用点数量。参见{ref:sec_playing_events_and_operations}。",
+    "stage": 1
+  },
+  {
+    "key": "sec_hardware",
+    "original": "3.8. Hardware",
+    "translation": "硬件",
+    "stage": 1
+  },
+  {
+    "key": "sec_hardware-snippet",
+    "original": "The Runner's hardware are the physical tools at their disposal: the computers, chips, and other machinery that make up their rig.",
+    "translation": "潜袭者的硬件是其所能使用的各种实体工具：计算机、芯片、以及其他各种机械装置，这些工具构成了潜袭者的装备。",
+    "stage": 1
+  },
+  {
+    "key": "rule_hardware_piece_of_hardware",
+    "original": "3.8.1. \"Hardware\" and \"piece of hardware\" are synonymous.",
+    "translation": "“硬件”和“一个硬件”的含义相同。",
+    "stage": 1
+  },
+  {
+    "key": "rule_hardware_install",
+    "original": "3.8.2. The Runner installs hardware into the play area.",
+    "translation": "潜袭者将硬件安装到游戏区中。",
+    "stage": 1
+  },
+  {
+    "key": "rule_hardware_install_cost",
+    "original": "3.8.3. Hardware are among the types of cards with install costs. The Runner installs a hardware faceup and active by paying its install cost. See {ref:sec_install_uninstall}.",
+    "translation": "硬件是具有安装费用的卡牌类型之一。潜袭者通过支付一个硬件的安装费用将其以牌面朝上且活动的状态安装。参见{ref:sec_install_uninstall}。",
+    "stage": 1
+  },
+  {
+    "key": "rule_hardware_no_limit",
+    "original": "3.8.4. There is no limit to the number of hardware the Runner can have installed.",
+    "translation": "潜袭者可以安装任意数量的硬件。",
+    "stage": 1
+  },
+  {
+    "key": "subsec_consoles",
+    "original": "3.8.5. Consoles",
+    "translation": "控制台",
+    "stage": 1
+  },
+  {
+    "key": "rule_hardware_console",
+    "original": "3.8.5.a. Some hardware have the subtype {subtype:console}. All {subtype:consoles} have the text \"Limit 1 {subtype:console} per player.\"",
+    "translation": "一些硬件具有子类型{subtype:控制台}。所有{subtype:控制台}都具有文本“每位玩家限制1个{subtype:控制台}”。",
+    "stage": 1
+  },
+  {
+    "key": "rule_install_console",
+    "original": "3.8.5.b. If a player ever controls more than one installed {subtype:console}, all but the most recently active {subtype:console} are trashed. Trashing cards this way cannot be prevented.",
+    "translation": "如果一位玩家在任何时间操控超过一个已安装的{subtype:控制台}，则除了最后一个变为活动的{subtype:控制台}，其他所有{subtype:控制台}都被销毁。以这种方式销毁卡牌不能被防止。",
+    "stage": 1
+  },
+  {
+    "key": "rule_console_limitation",
+    "original": "3.8.5.c. This limitation applies only to hardware with the subtype {subtype:console}.",
+    "translation": "此限制只对具有{subtype:控制台}子类型的硬件生效。",
+    "stage": 1
+  },
+  {
+    "key": "rule_console_limitation_active",
+    "original": "3.8.5.d. This limitation applies only to active {subtype:console}. A player can have multiple copies of a {subtype:console}, and even different {subtype:consoles}, in their deck.",
+    "translation": "此限制只对活动的{subtype:控制台}生效。玩家可以在其牌组中包含多张同名的{subtype:控制台}，甚至也可以包含不同的{subtype:控制台}。",
+    "stage": 1
+  },
+  {
+    "key": "sec_programs",
+    "original": "3.9. Programs",
+    "translation": "程序",
+    "stage": 1
+  },
+  {
+    "key": "sec_programs-snippet",
+    "original": "Programs are digital tools at the Runner's disposal, primarily used as a means of intrusion.",
+    "translation": "程序是潜袭者所使用的数字工具，主要被用作入侵的手段。",
+    "stage": 1
+  },
+  {
+    "key": "rule_program_install",
+    "original": "3.9.1. The Runner installs programs into the play area.",
+    "translation": "潜袭者将程序安装到游戏区中。",
+    "stage": 1
+  },
+  {
+    "key": "rule_program_install_cost",
+    "original": "3.9.2. Programs are among the types of cards with install costs. The Runner installs a program faceup and active by paying its install cost. See {ref:sec_install_uninstall}.",
+    "translation": "程序是具有安装费用的卡牌类型之一。潜袭者通过支付一个程序的安装费用将其以牌面朝上且活动的状态安装。参见{ref:sec_install_uninstall}。",
+    "stage": 1
+  },
+  {
+    "key": "rule_program_memory_cost",
+    "original": "3.9.3. Programs are the only card type that have a memory cost. A program's memory cost is the number of memory units that program requires while it is installed.",
+    "translation": "程序是唯一具有内存费用的卡牌类型。程序的内存费用指的是该程序在被安装期间所需的内存单元数量。",
+    "stage": 1
+  },
+  {
+    "key": "rule_program_memory",
+    "original": "3.9.3.a. Installing a program does not permanently consume memory. The program claims its designated quantity of memory units until it becomes uninstalled, at which point those memory units become available for use by other programs.",
+    "translation": "安装一个程序并不会永久地消耗内存。程序会占用其所指定数量的内存单元，直至该程序被卸载，此时这些内存单元便可被其他程序使用。",
+    "stage": 1
+  },
+  {
+    "key": "rule_program_install_exceed_memory_limit",
+    "original": "3.9.3.b. When the Runner installs a program that would increase the total memory cost of installed programs over their memory limit, they must trash one or more installed programs such that the total memory cost of installed programs including the new program will not exceed their memory limit. See {ref:sec_install_uninstall}.",
+    "translation": "当潜袭者安装一个程序，使得已安装程序的内存费用总和会超过潜袭者的内存上限时，其必须销毁一个或多个已安装的程序，直至剩余的已安装程序连同新程序的内存费用总和不再超过潜袭者的内存上限。参见{ref:sec_install_uninstall}。",
+    "stage": 1
+  },
+  {
+    "key": "rule_program_other_exceed_memory_limit",
+    "original": "3.9.3.c. If the Runner's memory limit decreases below the total memory cost of installed programs, or if the total memory cost of installed programs increases above the memory limit for any reason other than installing another program, the Runner must trash one or more installed programs such that the total memory cost of the remaining programs does not exceed their memory limit. This occurs during the next checkpoint after the memory limit is exceeded. See {ref:sec_checkpoints}.",
+    "translation": "如果潜袭者的内存上限减少至低于已安装程序的内存费用总和，或者已安装程序的内存费用总和由于安装新程序以外的原因增加至超过内存上限，则潜袭者必须销毁一个或多个已安装的程序，直至剩余程序的内存费用总和不超过潜袭者的内存上限。此过程会发生在内存费用超过内存上限之后的下一个检查点当中。参见{ref:sec_checkpoints}。",
+    "stage": 1
+  },
+  {
+    "key": "rule_program_memory_not_a_cost",
+    "original": "3.9.3.d. A program's memory cost is not a cost. It cannot be increased, lowered, ignored, or otherwise modified by abilities that affect costs to install programs.",
+    "translation": "程序的内存费用并不是一个费用。内存费用不能被增加、减少、忽略，或者被能够对安装程序的费用造成影响的能力以其他的方式修改。",
+    "stage": 1
+  },
+  {
+    "key": "rule_program_strength_value",
+    "original": "3.9.4. Programs are among the card types that have strength.",
+    "translation": "程序是具有强度的卡牌类型之一。",
+    "stage": 1
+  },
+  {
+    "key": "rule_icebreakers_strength_value",
+    "original": "3.9.4.a. Programs with the subtype {subtype:icebreaker} have a printed numerical strength value. An {subtype:icebreaker}'s strength determines which ice it is allowed to interface with. See {ref:subsec_icebreakers}.",
+    "translation": "具有{subtype:破解器}子类型的程序拥有印刷强度值。{subtype:破解器}的强度决定了其能够与哪些防火墙对接。参见{ref:subsec_icebreakers}。",
+    "stage": 1
+  },
+  {
+    "key": "rule_programs_without_strength_value",
+    "original": "3.9.4.b. Programs without the subtype {subtype:icebreaker} do not have a strength value. A dash (–) is printed on non-{subtype:icebreaker} program cards in the place where strength is printed on {subtype:icebreaker} program cards.",
+    "translation": "没有{subtype:破解器}子类型的程序不具有强度值。在{subtype:破解器}程序卡牌印刷其强度的位置，非{subtype:破解器}程序的卡牌会代之以一个破折号（–）。",
+    "stage": 1
+  },
+  {
+    "key": "subsec_icebreakers",
+    "original": "3.9.5. Icebreakers",
+    "translation": "破解器",
+    "stage": 1
+  },
+  {
+    "key": "rule_program_icebreaker",
+    "original": "3.9.5.a. Some programs have the subtype {subtype:icebreaker}. {subtype:Icebreaker} programs have strength and abilities that interface with ice.",
+    "translation": "一些程序具有子类型{subtype:破解器}。{subtype:破解器}程序拥有强度以及对接防火墙的能力。",
+    "stage": 1
+  },
+  {
+    "key": "rule_icebreaker_strength_increase_implicit",
+    "original": "3.9.5.b. Paid abilities on an {subtype:icebreaker} that modify that {subtype:icebreaker}'s strength implicitly have a duration of \"for the remainder of the current encounter\".",
+    "translation": "{subtype:破解器}上修改该{subtype:破解器}强度的付费能力默认具有持续时间“在本次遭遇的剩余时间内”。",
+    "stage": 1
+  },
+  {
+    "key": "rule_icebreaker_strength_increase_implicit-1-example",
+    "original": "{card:Corroder} has the ability \"1[c]: +1 strength.\"\" Since no duration is specified, this strength increase applies until the end of the current encounter.",
+    "translation": "{card:腐蚀者}具有能力“1[c]：强度+1”。由于其并未指定持续时间，因此该强度增加效果会持续至本次遭遇结束。",
+    "stage": 1
+  },
+  {
+    "key": "rule_icebreaker_strength_increase_specified",
+    "original": "3.9.5.c. If an {subtype:icebreaker}'s paid ability specifies another duration for modifying its strength, that modification lasts until both the stated duration and the implicit encounter duration have expired.",
+    "translation": "如果{subtype:破解器}的付费能力为修改其强度的效果指定了另一个持续时间，则该修改效果会持续至指定的持续时间和遭遇的持续时间都结束。",
+    "stage": 1
+  },
+  {
+    "key": "rule_icebreaker_strength_increase_specified-1-example",
+    "original": "{card:Gordian Blade} has the ability \"1[c]: +1 strength for the remainder of this run.\" This ability applies until the end of the current run, whether it is triggered during an encounter or another step of the run. If the ability is triggered during an encounter that takes place outside of a run, the strength increase applies for the duration of that encounter.",
+    "translation": "{card:戈尔迪之刃}具有能力“1[c]：本次潜袭的剩余时间内强度+1”。此能力会持续生效，直至本次潜袭结束，无论其是在一次遭遇中被触发的，还是在这次潜袭的其它步骤中被触发的。如果这项能力在潜袭以外发生的一次遭遇中被触发，则其强度增加效果会持续至该次遭遇结束。",
+    "stage": 1
+  },
+  {
+    "key": "rule_icebreaker_strength_increase_outside_of_encounter",
+    "original": "3.9.5.d. If an {subtype:icebreaker}'s paid ability modifies its strength outside of an encounter and does not specify another applicable duration, the modification expires during the next checkpoint.",
+    "translation": "如果{subtype:破解器}的付费能力在一次遭遇之外修改其强度，且并未指定其他适用的持续时间，则该修改效果会在下一个检查点中结束。",
+    "stage": 1
+  },
+  {
+    "key": "rule_icebreaker_strength_increase_outside_of_encounter-1-example",
+    "original": "If the Runner uses {card:Corroder}'s ability to increase its strength outside of an encounter, it applies only until the next checkpoint.",
+    "translation": "如果潜袭者在一次遭遇之外使用{card:腐蚀者}的能力增加其强度，则此效果只能持续到下一个检查点。",
+    "stage": 1
+  },
+  {
+    "key": "rule_icebreaker_interface",
+    "original": "3.9.5.e. All {subtype:icebreakers} have abilities that {term:interface} with ice, sometimes referred to as \"interface abilities\". These abilities are indicated by the \"interface\" flag preceding the ability's text.",
+    "translation": "所有的{subtype:破解器}都具有{term:对接}防火墙的能力，有时会将其称为“对接能力”。这些能力会由能力文本前的“对接”标记注明。",
+    "stage": 1
+  },
+  {
+    "key": "rule_icebreaker_interface_during_encounter",
+    "original": "3.9.5.f. The Runner can only use an interface ability during {ref:step_encounter_paw} of an encounter, and can only choose the encountered piece of ice and its subroutines as targets for the ability's effects. See {ref:sec_targets} for more information about targeting.",
+    "translation": "潜袭者只能在遭遇的{ref:step_encounter_paw}中使用对接能力，且只能选择遭遇的防火墙及其子进程作为该能力效果的目标。有关目标的更多信息参见{ref:sec_targets}。",
+    "stage": 1
+  },
+  {
+    "key": "rule_icebreaker_interface_strength",
+    "original": "3.9.5.g. The Runner can only use an interface ability on an {subtype:icebreaker} if the {subtype:icebreaker} has strength greater than or equal to the strength of the encountered ice.",
+    "translation": "只有当一个{subtype:破解器}的强度大于或等于遭遇的防火墙的强度时，潜袭者才能使用该{subtype:破解器}上的对接能力。",
+    "stage": 1
+  },
+  {
+    "key": "rule_icebreaker_interface_subtype",
+    "original": "3.9.5.h. If an interface ability specifies that it affects a particular subtype of ice, then that ability can only be used on a piece of ice that has the specified subtype. If an ability on an {subtype:icebreaker} does not specify a subtype of ice that it affects, that ability can be used on any piece of ice.",
+    "translation": "如果一个对接能力指定其只能影响某个特定子类型的防火墙，则该能力只能被用于一层具有指定的子类型的防火墙。如果一个{subtype:破解器}上的一项能力并未指定其影响的防火墙的子类型，则该能力可以被用于任意一层防火墙。",
+    "stage": 1
+  },
+  {
+    "key": "sec_resources",
+    "original": "3.10. Resources",
+    "translation": "资源",
+    "stage": 1
+  },
+  {
+    "key": "sec_resources-snippet",
+    "original": "Resources are a wide variety of connections and skills that aid the Runner.",
+    "translation": "资源是为潜袭者提供帮助的各种人脉与技能。",
+    "stage": 1
+  },
+  {
+    "key": "rule_resource_install",
+    "original": "3.10.1. The Runner installs resources into the play area.",
+    "translation": "潜袭者将资源安装到游戏区中。",
+    "stage": 1
+  },
+  {
+    "key": "rule_resource_install_cost",
+    "original": "3.10.2. Resources are among the types of cards with install costs. The Runner installs a resource faceup and active by paying its install cost. See {ref:sec_install_uninstall}.",
+    "translation": "资源是具有安装费用的卡牌类型之一。潜袭者通过支付一个资源的安装费用将其以牌面朝上且活动的状态安装。参见{ref:sec_install_uninstall}。",
+    "stage": 1
+  },
+  {
+    "key": "rule_resource_no_limit",
+    "original": "3.10.3. There is no limit to the number of resources the Runner can have installed.",
+    "translation": "潜袭者可以安装任意数量的资源。",
+    "stage": 1
+  },
+  {
+    "key": "rule_resource_trash_action",
+    "original": "3.10.4. While the Runner is tagged, the Corp may spend [click] and 2[c] to trash an installed resource as a basic action. See {ref:sec_tags}.",
+    "translation": "在潜袭者被锁定期间，作为一项基础行动，公司可以花费[click]与2[c]以销毁一个已安装的资源。参见{ref:sec_tags}。",
+    "stage": 1
+  }
+]

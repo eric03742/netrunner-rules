@@ -1,0 +1,638 @@
+[
+  {
+    "key": "chpt_appendix_timing_structures",
+    "original": "11. Appendix: Timing Structure Reference",
+    "translation": "附录：时序参考",
+    "stage": 1
+  },
+  {
+    "key": "sec_timing_structure_overview",
+    "original": "11.1. Overview",
+    "translation": "概述",
+    "stage": 1
+  },
+  {
+    "key": "rule_timing_structure_quick_ref",
+    "original": "11.1.1. The following pages contain quick reference guides for the main timing structures in the game. When initiating a new timing structure, begin at the first numbered step and proceed through the structure sequentially, unless instructed to move to a different phase or step.",
+    "translation": "下文包含了游戏中主要时序的速查指南。当玩家发起一个新的时序时，应从第一个标有序号的步骤开始，并根据顺序依次进行，除非依照指示移动到了另一个阶段或步骤。",
+    "stage": 1
+  },
+  {
+    "key": "rule_timing_structure_reference_only",
+    "original": "11.1.2. These guides are intended to serve as shorthand references only; for comprehensive rules relating to each timing structure, see the accompanying rules sections.",
+    "translation": "这些指南内容仅供快速查阅；有关各个时序的完整规则，可参见附在括号中的规则章节。下文中的 (P) 表示“可以使用付费能力 (Paid Abilities)”、(R) 表示“可以激活非防火墙卡牌 (Rez)”、(S) 表示“可以计分议案 (Score)”。",
+    "stage": 1
+  },
+  {
+    "key": "sec_appendix_timing_structure_corps_turn",
+    "original": "11.2. Timing Structure of The Corp's Turn ({ref:Sec_steps_corp_turn})",
+    "translation": "公司回合时序（{ref:Sec_steps_corp_turn}）",
+    "stage": 1
+  },
+  {
+    "key": "11.2.1.1.-element",
+    "original": "11.2.1.1. Draw Phase",
+    "translation": "抽牌阶段",
+    "stage": 1
+  },
+  {
+    "key": "11.2.1.1.1.-element",
+    "original": "11.2.1.1.1. The Corp gains allotted clicks.",
+    "translation": "公司获得起始时点。",
+    "stage": 1
+  },
+  {
+    "key": "11.2.1.1.2.-element",
+    "original": "11.2.1.1.2. Paid ability window: (P) (R) (S).",
+    "translation": "付费能力窗口：(P) (R) (S)。",
+    "stage": 1
+  },
+  {
+    "key": "11.2.1.1.3.-element",
+    "original": "11.2.1.1.3. The Corp's recurring credits refill.",
+    "translation": "公司补充可再生信用点。",
+    "stage": 1
+  },
+  {
+    "key": "11.2.1.1.4.-element",
+    "original": "11.2.1.1.4. The Corp's turn begins.",
+    "translation": "公司的回合开始。",
+    "stage": 1
+  },
+  {
+    "key": "11.2.1.1.5.-element",
+    "original": "11.2.1.1.5. The Corp draws 1 card.",
+    "translation": "公司抽1张牌。",
+    "stage": 1
+  },
+  {
+    "key": "11.2.1.2.-element",
+    "original": "11.2.1.2. Action Phase",
+    "translation": "行动阶段",
+    "stage": 1
+  },
+  {
+    "key": "11.2.1.2.1.-element",
+    "original": "11.2.1.2.1. Paid ability window: (P) (R) (S).",
+    "translation": "付费能力窗口：(P) (R) (S)。",
+    "stage": 1
+  },
+  {
+    "key": "11.2.1.2.2.-element",
+    "original": "11.2.1.2.2. Does the Corp have unspent clicks?",
+    "translation": "公司是否有未使用的时点？",
+    "stage": 1
+  },
+  {
+    "key": "11.2.1.2.2.1.-element",
+    "original": "11.2.1.2.2.1. If no, go to {n}(d){/n}.",
+    "translation": "如果否，前往{n}(d){/n}。",
+    "stage": 1
+  },
+  {
+    "key": "11.2.1.2.2.2.-element",
+    "original": "11.2.1.2.2.2. If yes, the Corp takes an action.",
+    "translation": "如果是，公司执行一个行动。",
+    "stage": 1
+  },
+  {
+    "key": "11.2.1.2.3.-element",
+    "original": "11.2.1.2.3. Return to (a).",
+    "translation": "返回 (a)。",
+    "stage": 1
+  },
+  {
+    "key": "11.2.1.2.4.-element",
+    "original": "11.2.1.2.4. The Corp's action phase ends.",
+    "translation": "公司的行动阶段结束。",
+    "stage": 1
+  },
+  {
+    "key": "11.2.1.3.-element",
+    "original": "11.2.1.3. Discard Phase",
+    "translation": "弃牌阶段",
+    "stage": 1
+  },
+  {
+    "key": "11.2.1.3.1.-element",
+    "original": "11.2.1.3.1. The Corp discards cards.",
+    "translation": "公司弃除卡牌。",
+    "stage": 1
+  },
+  {
+    "key": "11.2.1.3.2.-element",
+    "original": "11.2.1.3.2. Paid ability window: (P) (R).",
+    "translation": "付费能力窗口：(P) (R)。",
+    "stage": 1
+  },
+  {
+    "key": "11.2.1.3.3.-element",
+    "original": "11.2.1.3.3. The Corp loses unspent [click].",
+    "translation": "公司失去未使用的[click]。",
+    "stage": 1
+  },
+  {
+    "key": "11.2.1.3.4.-element",
+    "original": "11.2.1.3.4. The Corp's turn ends.",
+    "translation": "公司的回合结束。",
+    "stage": 1
+  },
+  {
+    "key": "11.2.1.3.5.-element",
+    "original": "11.2.1.3.5. The Corp's turn is complete, and the game moves to the Runner's turn.",
+    "translation": "公司的回合完成，游戏进行至潜袭者的回合。",
+    "stage": 1
+  },
+  {
+    "key": "sec_appendix_timing_structure_runners_turn",
+    "original": "11.3. Timing Structure of The Runner's Turn ({ref:Sec_steps_runner_turn})",
+    "translation": "潜袭者回合时序（{ref:Sec_steps_runner_turn}）",
+    "stage": 1
+  },
+  {
+    "key": "11.3.1.1.-element",
+    "original": "11.3.1.1. Action Phase",
+    "translation": "行动阶段",
+    "stage": 1
+  },
+  {
+    "key": "11.3.1.1.1.-element",
+    "original": "11.3.1.1.1. The Runner gains allotted clicks.",
+    "translation": "潜袭者获得起始时点。",
+    "stage": 1
+  },
+  {
+    "key": "11.3.1.1.2.-element",
+    "original": "11.3.1.1.2. Paid ability window: (P) (R).",
+    "translation": "付费能力窗口：(P) (R)。",
+    "stage": 1
+  },
+  {
+    "key": "11.3.1.1.3.-element",
+    "original": "11.3.1.1.3. The Runner's recurring credits refill.",
+    "translation": "潜袭者补充可再生信用点。 ",
+    "stage": 1
+  },
+  {
+    "key": "11.3.1.1.4.-element",
+    "original": "11.3.1.1.4. The Runner's turn begins.",
+    "translation": "潜袭者的回合开始。 ",
+    "stage": 1
+  },
+  {
+    "key": "11.3.1.1.5.-element",
+    "original": "11.3.1.1.5. Paid ability window: (P) (R).",
+    "translation": "付费能力窗口：(P) (R)。",
+    "stage": 1
+  },
+  {
+    "key": "11.3.1.1.6.-element",
+    "original": "11.3.1.1.6. Does the Runner have unspent clicks?",
+    "translation": "潜袭者是否有未使用的时点？ ",
+    "stage": 1
+  },
+  {
+    "key": "11.3.1.1.6.1.-element",
+    "original": "11.3.1.1.6.1. If no, go to {n}(h){/n}.",
+    "translation": "如果否，前往{n}(h){/n}。",
+    "stage": 1
+  },
+  {
+    "key": "11.3.1.1.6.2.-element",
+    "original": "11.3.1.1.6.2. If yes, the Runner takes an action.",
+    "translation": "如果是，潜袭者执行一个行动。",
+    "stage": 1
+  },
+  {
+    "key": "11.3.1.1.7.-element",
+    "original": "11.3.1.1.7. Return to (e).",
+    "translation": "返回 (e)。",
+    "stage": 1
+  },
+  {
+    "key": "11.3.1.1.8.-element",
+    "original": "11.3.1.1.8. The Runner's action phase ends.",
+    "translation": "潜袭者的行动阶段结束。",
+    "stage": 1
+  },
+  {
+    "key": "11.3.1.2.-element",
+    "original": "11.3.1.2. Discard Phase",
+    "translation": "弃牌阶段",
+    "stage": 1
+  },
+  {
+    "key": "11.3.1.2.1.-element",
+    "original": "11.3.1.2.1. The Runner discards cards.",
+    "translation": "潜袭者弃除卡牌。",
+    "stage": 1
+  },
+  {
+    "key": "11.3.1.2.2.-element",
+    "original": "11.3.1.2.2. Paid ability window: (P) (R).",
+    "translation": "付费能力窗口：(P) (R)。",
+    "stage": 1
+  },
+  {
+    "key": "11.3.1.2.3.-element",
+    "original": "11.3.1.2.3. The Runner loses unspent [click].",
+    "translation": "潜袭者失去未使用的[click]。",
+    "stage": 1
+  },
+  {
+    "key": "11.3.1.2.4.-element",
+    "original": "11.3.1.2.4. The Runner's turn ends.",
+    "translation": "潜袭者的回合结束。",
+    "stage": 1
+  },
+  {
+    "key": "11.3.1.2.5.-element",
+    "original": "11.3.1.2.5. The Runner's turn is complete, and the game moves to the Corp's turn.",
+    "translation": "潜袭者的回合完成，游戏进行至公司的回合。",
+    "stage": 1
+  },
+  {
+    "key": "sec_appendix_timing_structure_of_a_run",
+    "original": "11.4. Timing Structure of a Run ({ref:Sec_steps_of_a_run})",
+    "translation": "潜袭时序（{ref:Sec_steps_of_a_run}）",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.1.-element",
+    "original": "11.4.1.1. Initiation Phase",
+    "translation": "发起阶段",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.1.1.-element",
+    "original": "11.4.1.1.1. The Runner announces the attacked server.",
+    "translation": "潜袭者宣告攻击的服务器。",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.1.2.-element",
+    "original": "11.4.1.1.2. The Runner gains bad publicity credits.",
+    "translation": "潜袭者获得负面声誉信用点。",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.1.3.-element",
+    "original": "11.4.1.1.3. The run begins.",
+    "translation": "潜袭开始。",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.1.4.-element",
+    "original": "11.4.1.1.4. The Runner's position is set to the outermost ice, if any.",
+    "translation": "如果有防火墙保护被攻击的服务器，则潜袭者的位置被设定为与最外层的防火墙对应。",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.1.5.-element",
+    "original": "11.4.1.1.5. Paid ability window: (P) (R).",
+    "translation": "付费能力窗口：(P) (R)。",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.1.6.-element",
+    "original": "11.4.1.1.6. Does the Runner have a position corresponding to a piece of ice?",
+    "translation": "潜袭者的位置是否对应一层防火墙？",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.1.6.1.-element",
+    "original": "11.4.1.1.6.1. If yes, go to (2).",
+    "translation": "如果是，前往 (2)。",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.1.6.2.-element",
+    "original": "11.4.1.1.6.2. If no, go to (4).",
+    "translation": "如果否，前往 (4)。",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.2.-element",
+    "original": "11.4.1.2. Approach Ice Phase",
+    "translation": "接驳防火墙阶段",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.2.1.-element",
+    "original": "11.4.1.2.1. The Runner approaches ice.",
+    "translation": "潜袭者接驳防火墙。",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.2.2.-element",
+    "original": "11.4.1.2.2. Paid ability window: (P) (R) and ice can be rezzed.",
+    "translation": "付费能力窗口：(P) (R)，且防火墙可以被激活。",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.2.3.-element",
+    "original": "11.4.1.2.3. Is the approached ice rezzed?",
+    "translation": "被接驳的防火墙是否已激活？",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.2.3.1.-element",
+    "original": "11.4.1.2.3.1. If yes, go to (3).",
+    "translation": "如果是，前往 (3)。",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.2.3.2.-element",
+    "original": "11.4.1.2.3.2. If no, go to (4).",
+    "translation": "如果否，前往 (4)。",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.3.-element",
+    "original": "11.4.1.3. Encounter Ice Phase",
+    "translation": "遭遇防火墙阶段",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.3.1.-element",
+    "original": "11.4.1.3.1. The Runner encounters ice.",
+    "translation": "潜袭者遭遇防火墙。",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.3.2.-element",
+    "original": "11.4.1.3.2. Paid ability window: (P) and subroutines can be broken.",
+    "translation": "付费能力窗口：(P)，且子进程可以被破解。",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.3.3.-element",
+    "original": "11.4.1.3.3. Are there unbroken subroutines to resolve?",
+    "translation": "是否有未破解的子进程待结算？",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.3.3.1.-element",
+    "original": "11.4.1.3.3.1. If yes, the Corp resolves the next one.",
+    "translation": "如果是，公司结算下一条。",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.3.3.2.-element",
+    "original": "11.4.1.3.3.2. If no, go to (e).",
+    "translation": "如果否，前往 (e)。",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.3.4.-element",
+    "original": "11.4.1.3.4. Return to (c).",
+    "translation": "返回 (c)。",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.3.5.-element",
+    "original": "11.4.1.3.5. Go to (4).",
+    "translation": "前往 (4)。",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.4.-element",
+    "original": "11.4.1.4. Movement Phase",
+    "translation": "移动阶段",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.4.1.-element",
+    "original": "11.4.1.4.1. If the run got here from (2) or (3), the Runner passes ice.",
+    "translation": "如果潜袭从 (2) 或 (3) 到达此阶段，则潜袭者通过防火墙。",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.4.2.-element",
+    "original": "11.4.1.4.2. Paid ability window: (P).",
+    "translation": "付费能力窗口：(P)。",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.4.3.-element",
+    "original": "11.4.1.4.3. The Runner may jack out.",
+    "translation": "潜袭者可以退出。",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.4.4.-element",
+    "original": "11.4.1.4.4. The Runner moves 1 position inward, if possible.",
+    "translation": "如可能，潜袭者向内移动1位置。",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.4.5.-element",
+    "original": "11.4.1.4.5. Paid ability window: (P) (R).",
+    "translation": "付费能力窗口：(P) (R)。",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.4.6.-element",
+    "original": "11.4.1.4.6. Did the Runner move to a new position?",
+    "translation": "潜袭者是否移动到了新的位置？",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.4.6.1.-element",
+    "original": "11.4.1.4.6.1. If yes, go to (2).",
+    "translation": "如果是，前往 (2)。",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.4.6.2.-element",
+    "original": "11.4.1.4.6.2. If no, go to (g).",
+    "translation": "如果否，前往 (g)。",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.4.7.-element",
+    "original": "11.4.1.4.7. The Runner approaches the server.",
+    "translation": "潜袭者接驳服务器。",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.4.8.-element",
+    "original": "11.4.1.4.8. Go to (5).",
+    "translation": "前往 (5)。",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.5.-element",
+    "original": "11.4.1.5. Success Phase",
+    "translation": "成功阶段",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.5.1.-element",
+    "original": "11.4.1.5.1. The run is declared successful.",
+    "translation": "潜袭宣告为成功。",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.5.2.-element",
+    "original": "11.4.1.5.2. The Runner breaches the attacked server.",
+    "translation": "潜袭者侵入攻击的服务器。",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.5.3.-element",
+    "original": "11.4.1.5.3. Go to (6).",
+    "translation": "前往 (6)。",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.6.-element",
+    "original": "11.4.1.6. Run Ends Phase",
+    "translation": "潜袭结束阶段",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.6.1.-element",
+    "original": "11.4.1.6.1. Close or resolve priority windows from before \"end the run\".",
+    "translation": "关闭或结算在“终止本次潜袭”之前开放的优先权窗口。",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.6.2.-element",
+    "original": "11.4.1.6.2. The Runner loses unspent bad publicity credits.",
+    "translation": "潜袭者失去未花费的负面声誉信用点。",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.6.3.-element",
+    "original": "11.4.1.6.3. If applicable, the run is declared unsuccessful.",
+    "translation": "如适用，潜袭宣告为失败。",
+    "stage": 1
+  },
+  {
+    "key": "11.4.1.6.4.-element",
+    "original": "11.4.1.6.4. The run is complete.",
+    "translation": "潜袭完成。",
+    "stage": 1
+  },
+  {
+    "key": "sec_appendix_timing_structure_of_breaching_a_server",
+    "original": "11.5. Timing Structure of Breaching a Server ({ref:Sec_breaching_steps})",
+    "translation": "侵入服务器时序（{ref:Sec_breaching_steps}）",
+    "stage": 1
+  },
+  {
+    "key": "11.5.1.1.-element",
+    "original": "11.5.1.1. The breach begins.",
+    "translation": "侵入开始。",
+    "stage": 1
+  },
+  {
+    "key": "11.5.1.2.-element",
+    "original": "11.5.1.2. If breaching Archives, facedown cards in Archives are turned faceup.",
+    "translation": "如果侵入档案库，则档案库中牌面朝下的卡牌翻至牌面朝上。",
+    "stage": 1
+  },
+  {
+    "key": "11.5.1.3.-element",
+    "original": "11.5.1.3. If breaching HQ or R&D, determine how many accesses from Corp's hand or deck.",
+    "translation": "如果侵入总部或研发中心，则决定从公司的手牌或牌组中读取的卡牌数量。",
+    "stage": 1
+  },
+  {
+    "key": "11.5.1.4.-element",
+    "original": "11.5.1.4. Are there candidate cards remaining to access?",
+    "translation": "是否有剩余待读取的可读取卡牌？",
+    "stage": 1
+  },
+  {
+    "key": "11.5.1.4.1.-element",
+    "original": "11.5.1.4.1. If yes, the Runner chooses a candidate.",
+    "translation": "如果是，潜袭者选择一张可读取卡牌。",
+    "stage": 1
+  },
+  {
+    "key": "11.5.1.4.2.-element",
+    "original": "11.5.1.4.2. If no, go to (7).",
+    "translation": "如果否，前往 (7)。",
+    "stage": 1
+  },
+  {
+    "key": "11.5.1.5.-element",
+    "original": "11.5.1.5. The Runner accesses the chosen card.",
+    "translation": "潜袭者读取所选择的卡牌。",
+    "stage": 1
+  },
+  {
+    "key": "11.5.1.6.-element",
+    "original": "11.5.1.6. Return to (4).",
+    "translation": "返回 (4)。",
+    "stage": 1
+  },
+  {
+    "key": "11.5.1.7.-element",
+    "original": "11.5.1.7. Breaching the server is complete.",
+    "translation": "侵入服务器完成。",
+    "stage": 1
+  },
+  {
+    "key": "sec_appendix_timing_structure_of_accessing_a_card",
+    "original": "11.6. Timing Structure of Accessing a Card ({ref:Sec_steps_accessing_card})",
+    "translation": "读取卡牌时序（{ref:Sec_steps_accessing_card}）",
+    "stage": 1
+  },
+  {
+    "key": "11.6.1.1.-element",
+    "original": "11.6.1.1. The card is accessed.",
+    "translation": "卡牌被读取。",
+    "stage": 1
+  },
+  {
+    "key": "11.6.1.2.-element",
+    "original": "11.6.1.2. The Runner may trash the card or use another mid-access ability.",
+    "translation": "潜袭者可以销毁此卡牌，或使用另一个读取时能力。",
+    "stage": 1
+  },
+  {
+    "key": "11.6.1.3.-element",
+    "original": "11.6.1.3. If the card is an agenda, the Runner steals it.",
+    "translation": "如果该卡牌是一个议案，则潜袭者窃取之。",
+    "stage": 1
+  },
+  {
+    "key": "11.6.1.4.-element",
+    "original": "11.6.1.4. Access is complete.",
+    "translation": "读取完成。",
+    "stage": 1
+  },
+  {
+    "key": "sec_appendix_timing_structure_corps_turn-toc",
+    "original": "Timing Structure of The Corp's Turn",
+    "translation": "公司回合时序",
+    "stage": 1
+  },
+  {
+    "key": "sec_appendix_timing_structure_runners_turn-toc",
+    "original": "Timing Structure of The Runner's Turn",
+    "translation": "潜袭者回合时序",
+    "stage": 1
+  },
+  {
+    "key": "sec_appendix_timing_structure_of_a_run-toc",
+    "original": "Timing Structure of a Run",
+    "translation": "潜袭时序",
+    "stage": 1
+  },
+  {
+    "key": "sec_appendix_timing_structure_of_breaching_a_server-toc",
+    "original": "Timing Structure of Breaching a Server",
+    "translation": "侵入服务器时序",
+    "stage": 1
+  },
+  {
+    "key": "sec_appendix_timing_structure_of_accessing_a_card-toc",
+    "original": "Timing Structure of Accessing a Card",
+    "translation": "读取卡牌时序",
+    "stage": 1
+  }
+]
