@@ -1,0 +1,264 @@
+chapter: chpt_appendix_timing_structures
+text: 'Appendix: Timing Structure Reference'
+sections:
+- section: sec_timing_structure_overview
+  text: Overview
+  rules:
+  - rule: rule_timing_structure_quick_ref
+    text: The following pages contain quick reference guides for the main timing structures in the game. When initiating a new timing structure, begin at the first numbered step and proceed through the structure sequentially, unless instructed to move to a different phase or step.
+    local_text: 下文包含了游戏中主要时序的速查指南。当玩家发起一个新的时序时，应从第一个标有序号的步骤开始，并根据顺序依次进行，除非依照指示移动到了另一个阶段或步骤。
+  - rule: rule_timing_structure_reference_only
+    text: These guides are intended to serve as shorthand references only; for comprehensive rules relating to each timing structure, see the accompanying rules sections.
+    local_text: 这些指南内容仅供快速查阅；有关各个时序的完整规则，可参见附在括号中的规则章节。下文中的 (P) 表示“可以使用付费能力 (Paid Abilities)”、(R) 表示“可以激活非防火墙卡牌 (Rez)”、(S) 表示“可以计分议案 (Score)”。
+  local_text: 概述
+- section: sec_appendix_timing_structure_corps_turn
+  text: Timing Structure of The Corp's Turn ({ref:Sec_steps_corp_turn})
+  toc_entry: Timing Structure of The Corp's Turn
+  rules:
+  - timing_structure:
+    bold:
+    elements:
+    - text: Draw Phase
+      elements:
+      - text: The Corp gains allotted clicks.
+        local_text: 公司获得起始时点。
+      - text: 'Paid ability window: (P) (R) (S).'
+        local_text: 付费能力窗口：(P) (R) (S)。
+      - text: The Corp's recurring credits refill.
+        local_text: 公司补充可再生信用点。
+      - text: The Corp's turn begins.
+        local_text: 公司的回合开始。
+      - text: The Corp draws 1 card.
+        local_text: 公司抽1张牌。
+      local_text: 抽牌阶段
+    - text: Action Phase
+      elements:
+      - text: 'Paid ability window: (P) (R) (S).'
+        local_text: 付费能力窗口：(P) (R) (S)。
+      - text: Does the Corp have unspent clicks?
+        elements:
+        - text: If no, go to {n}(d){/n}.
+          local_text: 如果否，前往{n}(d){/n}。
+        - text: If yes, the Corp takes an action.
+          local_text: 如果是，公司执行一个行动。
+        local_text: 公司是否有未使用的时点？
+      - text: Return to (a).
+        local_text: 返回 (a)。
+      - text: The Corp's action phase ends.
+        new:
+        local_text: 公司的行动阶段结束。
+      local_text: 行动阶段
+    - text: Discard Phase
+      elements:
+      - text: The Corp discards cards.
+        local_text: 公司弃除卡牌。
+      - text: 'Paid ability window: (P) (R).'
+        local_text: 付费能力窗口：(P) (R)。
+      - text: The Corp loses unspent [click].
+        local_text: 公司失去未使用的[click]。
+      - text: The Corp's turn ends.
+        local_text: 公司的回合结束。
+      - text: The Corp's turn is complete, and the game moves to the Runner's turn.
+        local_text: 公司的回合完成，游戏进行至潜袭者的回合。
+      local_text: 弃牌阶段
+  local_text: 公司回合时序（{ref:Sec_steps_corp_turn}）
+  local_toc_entry: 公司回合时序
+- section: sec_appendix_timing_structure_runners_turn
+  text: Timing Structure of The Runner's Turn ({ref:Sec_steps_runner_turn})
+  toc_entry: Timing Structure of The Runner's Turn
+  rules:
+  - timing_structure:
+    bold:
+    elements:
+    - text: Action Phase
+      elements:
+      - text: The Runner gains allotted clicks.
+        local_text: 潜袭者获得起始时点。
+      - text: 'Paid ability window: (P) (R).'
+        local_text: 付费能力窗口：(P) (R)。
+      - text: The Runner's recurring credits refill.
+        local_text: '潜袭者补充可再生信用点。 '
+      - text: The Runner's turn begins.
+        local_text: '潜袭者的回合开始。 '
+      - text: 'Paid ability window: (P) (R).'
+        local_text: 付费能力窗口：(P) (R)。
+      - text: Does the Runner have unspent clicks?
+        elements:
+        - text: If no, go to {n}(h){/n}.
+          local_text: 如果否，前往{n}(h){/n}。
+        - text: If yes, the Runner takes an action.
+          local_text: 如果是，潜袭者执行一个行动。
+        local_text: '潜袭者是否有未使用的时点？ '
+      - text: Return to (e).
+        local_text: 返回 (e)。
+      - text: The Runner's action phase ends.
+        new:
+        local_text: 潜袭者的行动阶段结束。
+      local_text: 行动阶段
+    - text: Discard Phase
+      elements:
+      - text: The Runner discards cards.
+        local_text: 潜袭者弃除卡牌。
+      - text: 'Paid ability window: (P) (R).'
+        local_text: 付费能力窗口：(P) (R)。
+      - text: The Runner loses unspent [click].
+        local_text: 潜袭者失去未使用的[click]。
+      - text: The Runner's turn ends.
+        local_text: 潜袭者的回合结束。
+      - text: The Runner's turn is complete, and the game moves to the Corp's turn.
+        local_text: 潜袭者的回合完成，游戏进行至公司的回合。
+      local_text: 弃牌阶段
+  local_text: 潜袭者回合时序（{ref:Sec_steps_runner_turn}）
+  local_toc_entry: 潜袭者回合时序
+- section: sec_appendix_timing_structure_of_a_run
+  text: Timing Structure of a Run ({ref:Sec_steps_of_a_run})
+  toc_entry: Timing Structure of a Run
+  rules:
+  - timing_structure:
+    bold:
+    elements:
+    - text: Initiation Phase
+      elements:
+      - text: The Runner announces the attacked server.
+        local_text: 潜袭者宣告攻击的服务器。
+      - text: The Runner gains bad publicity credits.
+        local_text: 潜袭者获得负面声誉信用点。
+      - text: The run begins.
+        local_text: 潜袭开始。
+      - text: The Runner's position is set to the outermost ice, if any.
+        new:
+        local_text: 如果有防火墙保护被攻击的服务器，则潜袭者的位置被设定为与最外层的防火墙对应。
+      - text: 'Paid ability window: (P) (R).'
+        new:
+        local_text: 付费能力窗口：(P) (R)。
+      - text: Does the Runner have a position corresponding to a piece of ice?
+        new:
+        elements:
+        - text: If yes, go to (2).
+          local_text: 如果是，前往 (2)。
+        - text: If no, go to (4).
+          local_text: 如果否，前往 (4)。
+        local_text: 潜袭者的位置是否对应一层防火墙？
+      local_text: 发起阶段
+    - text: Approach Ice Phase
+      elements:
+      - text: The Runner approaches ice.
+        local_text: 潜袭者接驳防火墙。
+      - text: 'Paid ability window: (P) (R) and ice can be rezzed.'
+        local_text: 付费能力窗口：(P) (R)，且防火墙可以被激活。
+      - text: Is the approached ice rezzed?
+        elements:
+        - text: If yes, go to (3).
+          local_text: 如果是，前往 (3)。
+        - text: If no, go to (4).
+          local_text: 如果否，前往 (4)。
+        local_text: 被接驳的防火墙是否已激活？
+      local_text: 接驳防火墙阶段
+    - text: Encounter Ice Phase
+      elements:
+      - text: The Runner encounters ice.
+        local_text: 潜袭者遭遇防火墙。
+      - text: 'Paid ability window: (P) and subroutines can be broken.'
+        local_text: 付费能力窗口：(P)，且子进程可以被破解。
+      - text: Are there unbroken subroutines to resolve?
+        elements:
+        - text: If yes, the Corp resolves the next one.
+          local_text: 如果是，公司结算下一条。
+        - text: If no, go to (e).
+          local_text: 如果否，前往 (e)。
+        local_text: 是否有未破解的子进程待结算？
+      - text: Return to (c).
+        local_text: 返回 (c)。
+      - text: Go to (4).
+        local_text: 前往 (4)。
+      local_text: 遭遇防火墙阶段
+    - text: Movement Phase
+      elements:
+      - text: If the run got here from (2) or (3), the Runner passes ice.
+        local_text: 如果潜袭从 (2) 或 (3) 到达此阶段，则潜袭者通过防火墙。
+      - text: 'Paid ability window: (P).'
+        local_text: 付费能力窗口：(P)。
+      - text: The Runner may jack out.
+        local_text: 潜袭者可以退出。
+      - text: The Runner moves 1 position inward, if possible.
+        local_text: 如可能，潜袭者向内移动1位置。
+      - text: 'Paid ability window: (P) (R).'
+        local_text: 付费能力窗口：(P) (R)。
+      - text: Did the Runner move to a new position?
+        elements:
+        - text: If yes, go to (2).
+          local_text: 如果是，前往 (2)。
+        - text: If no, go to (g).
+          local_text: 如果否，前往 (g)。
+        local_text: 潜袭者是否移动到了新的位置？
+      - text: The Runner approaches the server.
+        local_text: 潜袭者接驳服务器。
+      - text: Go to (5).
+        local_text: 前往 (5)。
+      local_text: 移动阶段
+    - text: Success Phase
+      elements:
+      - text: The run is declared successful.
+        local_text: 潜袭宣告为成功。
+      - text: The Runner breaches the attacked server.
+        local_text: 潜袭者侵入攻击的服务器。
+      - text: Go to (6).
+        local_text: 前往 (6)。
+      local_text: 成功阶段
+    - text: Run Ends Phase
+      elements:
+      - text: Close or resolve priority windows from before "end the run".
+        local_text: 关闭或结算在“终止本次潜袭”之前开放的优先权窗口。
+      - text: The Runner loses unspent bad publicity credits.
+        local_text: 潜袭者失去未花费的负面声誉信用点。
+      - text: If applicable, the run is declared unsuccessful.
+        local_text: 如适用，潜袭宣告为失败。
+      - text: The run is complete.
+        local_text: 潜袭完成。
+      local_text: 潜袭结束阶段
+  local_text: 潜袭时序（{ref:Sec_steps_of_a_run}）
+  local_toc_entry: 潜袭时序
+- section: sec_appendix_timing_structure_of_breaching_a_server
+  text: Timing Structure of Breaching a Server ({ref:Sec_breaching_steps})
+  toc_entry: Timing Structure of Breaching a Server
+  rules:
+  - timing_structure:
+    elements:
+    - text: The breach begins.
+      local_text: 侵入开始。
+    - text: If breaching Archives, facedown cards in Archives are turned faceup.
+      local_text: 如果侵入档案库，则档案库中牌面朝下的卡牌翻至牌面朝上。
+    - text: If breaching HQ or R&D, determine how many accesses from Corp's hand or deck.
+      local_text: 如果侵入总部或研发中心，则决定从公司的手牌或牌组中读取的卡牌数量。
+    - text: Are there candidate cards remaining to access?
+      elements:
+      - text: If yes, the Runner chooses a candidate.
+        local_text: 如果是，潜袭者选择一张可读取卡牌。
+      - text: If no, go to (7).
+        local_text: 如果否，前往 (7)。
+      local_text: 是否有剩余待读取的可读取卡牌？
+    - text: The Runner accesses the chosen card.
+      local_text: 潜袭者读取所选择的卡牌。
+    - text: Return to (4).
+      local_text: 返回 (4)。
+    - text: Breaching the server is complete.
+      local_text: 侵入服务器完成。
+  local_text: 侵入服务器时序（{ref:Sec_breaching_steps}）
+  local_toc_entry: 侵入服务器时序
+- section: sec_appendix_timing_structure_of_accessing_a_card
+  text: Timing Structure of Accessing a Card ({ref:Sec_steps_accessing_card})
+  toc_entry: Timing Structure of Accessing a Card
+  rules:
+  - timing_structure:
+    elements:
+    - text: The card is accessed.
+      local_text: 卡牌被读取。
+    - text: The Runner may trash the card or use another mid-access ability.
+      local_text: 潜袭者可以销毁此卡牌，或使用另一个读取时能力。
+    - text: If the card is an agenda, the Runner steals it.
+      local_text: 如果该卡牌是一个议案，则潜袭者窃取之。
+    - text: Access is complete.
+      local_text: 读取完成。
+  local_text: 读取卡牌时序（{ref:Sec_steps_accessing_card}）
+  local_toc_entry: 读取卡牌时序
+local_text: 附录：时序参考
