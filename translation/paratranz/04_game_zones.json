@@ -844,5 +844,41 @@
     "original": "4.9.6. Cards that have been removed from the game are open information. Any player may look through or count the cards that have been removed from the game at any time.",
     "translation": "被移出游戏的卡牌是公开信息。任意玩家都可以在任意时间浏览或清点被移出游戏的卡牌。",
     "stage": 1
+  },
+  {
+    "key": "subsec_rnd-snippet",
+    "original": "R&D stands for Research and Development. It represents upcoming projects and acquisitions the Corp will soon have at their disposal.",
+    "translation": "研发中心（R&D）是研究（Research）与开发（Development）的缩写，代表了公司即将开展的项目与即将进行的收购。",
+    "stage": 1
+  },
+  {
+    "key": "subsec_stack-snippet",
+    "original": "The stack represents the Runner's untapped potential: future plans, connections, and opportunities they have yet to discover.",
+    "translation": "存储栈代表了潜袭者尚未开发的潜力：对未来的计划、人脉关系、以及潜袭者尚未发现的机会。",
+    "stage": 1
+  },
+  {
+    "key": "subsec_hq-snippet",
+    "original": "HQ stands for Headquarters. It represents the projects, staff, technology, and other assets the Corp is authorized to deploy.",
+    "translation": "总部（HQ）是“Headquarters”的缩写，代表了公司有权部署的项目、人员、技术与其他资产。",
+    "stage": 1
+  },
+  {
+    "key": "subsec_grip-snippet",
+    "original": "The grip represents the Runner's currently accessible thoughts, plans, knowledge, potential social connections, and other intangible information that can be leveraged.",
+    "translation": "操控器代表了潜袭者当前可获得的想法、计划、知识、潜在的社会关系，以及其他可加以利用的无形的信息。",
+    "stage": 1
+  },
+  {
+    "key": "subsec_archives-snippet",
+    "original": "Archives represents the Corp's internal record database of all scrapped, abandoned, or discontinued projects, contracts, assignments, and other endeavors.",
+    "translation": "档案库代表了公司的内部记录数据库，其中包含所有报废、放弃或中止的项目、合同、任务及其他工作。",
+    "stage": 1
+  },
+  {
+    "key": "subsec_heap-snippet",
+    "original": "The heap represents what the Runner has lost: their old jobs, favours burned, friends long gone, gear wrecked, and code erased.",
+    "translation": "堆阵代表了潜袭者所失去的事物：曾经的工作、被摧毁的恩惠、远去的朋友、被毁坏的装备以及被删除的代码。",
+    "stage": 1
   }
 ]

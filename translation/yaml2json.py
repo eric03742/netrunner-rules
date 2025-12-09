@@ -61,6 +61,10 @@ def parse_rule(collector: list[dict[str, str]], content: dict[str, Any], index: 
             examples = content["examples"]
             for order, example in enumerate(examples, start=1):
                 parse_example(collector, example, identifier, order)
+        
+        if "snippet" in content:
+            snippet = content["snippet"]
+            write_line(collector, f"{identifier}-snippet", snippet)
 
         rules = content["rules"]
         for sub_index, rule in enumerate(rules, start=1):

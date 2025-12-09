@@ -140,6 +140,11 @@
         "translation": "研发中心"
     },
     {
+        "key": "subsec_rnd-snippet",
+        "original": "R&D stands for Research and Development. It represents upcoming projects and acquisitions the Corp will soon have at their disposal.",
+        "translation": "研发中心（R&D）是研究（Research）与开发（Development）的缩写，代表了公司即将开展的项目与即将进行的收购。"
+    },
+    {
         "key": "rule_rnd_name",
         "original": "4.2.7.a. {term:R&D} is the name for the Corp's deck. It is also one of the Corp's central servers. See {ref:subsec_central_servers}.",
         "translation": "{term:研发中心}是公司牌组的名称，也是公司的一台中央服务器。参见{ref:subsec_central_servers}。"
@@ -153,6 +158,11 @@
         "key": "subsec_stack",
         "original": "4.2.8. Stack",
         "translation": "存储栈"
+    },
+    {
+        "key": "subsec_stack-snippet",
+        "original": "The stack represents the Runner's untapped potential: future plans, connections, and opportunities they have yet to discover.",
+        "translation": "存储栈代表了潜袭者尚未开发的潜力：对未来的计划、人脉关系、以及潜袭者尚未发现的机会。"
     },
     {
         "key": "rule_stack_name",
@@ -205,6 +215,11 @@
         "translation": "总部"
     },
     {
+        "key": "subsec_hq-snippet",
+        "original": "HQ stands for Headquarters. It represents the projects, staff, technology, and other assets the Corp is authorized to deploy.",
+        "translation": "总部（HQ）是“Headquarters”的缩写，代表了公司有权部署的项目、人员、技术与其他资产。"
+    },
+    {
         "key": "rule_hq_name",
         "original": "4.3.8.a. {term:HQ} is the name for the Corp's hand. It is also one of the Corp's central servers. See {ref:subsec_central_servers}.",
         "translation": "{term:总部}是公司手牌的名称。也是公司的一台中央服务器。参见{ref:subsec_central_servers}。"
@@ -218,6 +233,11 @@
         "key": "subsec_grip",
         "original": "4.3.9. Grip",
         "translation": "操控器"
+    },
+    {
+        "key": "subsec_grip-snippet",
+        "original": "The grip represents the Runner's currently accessible thoughts, plans, knowledge, potential social connections, and other intangible information that can be leveraged.",
+        "translation": "操控器代表了潜袭者当前可获得的想法、计划、知识、潜在的社会关系，以及其他可加以利用的无形的信息。"
     },
     {
         "key": "rule_grip_name",
@@ -260,6 +280,11 @@
         "translation": "档案库"
     },
     {
+        "key": "subsec_archives-snippet",
+        "original": "Archives represents the Corp's internal record database of all scrapped, abandoned, or discontinued projects, contracts, assignments, and other endeavors.",
+        "translation": "档案库代表了公司的内部记录数据库，其中包含所有报废、放弃或中止的项目、合同、任务及其他工作。"
+    },
+    {
         "key": "rule_archives_name",
         "original": "4.4.6.a. {term:Archives} is the name for the Corp's discard pile. It is also one of the Corp's central servers. See {ref:subsec_central_servers}.",
         "translation": "{term:档案库}是公司弃牌堆的名称，也是公司的一台中央服务器。参见{ref:subsec_central_servers}。"
@@ -278,6 +303,11 @@
         "key": "subsec_heap",
         "original": "4.4.7. Heap",
         "translation": "堆阵"
+    },
+    {
+        "key": "subsec_heap-snippet",
+        "original": "The heap represents what the Runner has lost: their old jobs, favours burned, friends long gone, gear wrecked, and code erased.",
+        "translation": "堆阵代表了潜袭者所失去的事物：曾经的工作、被摧毁的恩惠、远去的朋友、被毁坏的装备以及被删除的代码。"
     },
     {
         "key": "rule_heap_name",
