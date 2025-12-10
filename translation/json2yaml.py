@@ -16,9 +16,7 @@ def translate_content(translator: dict[str, str], content: dict[str, Any], index
 def translate_chapter(translator: dict[str, str], content: dict[str, Any], index: str):
     identifier = content["chapter"]
     if identifier in translator:
-        content["local_text"] = translator[identifier]
-    else:
-        content["local_text"] = ""
+        content["text"] = translator[identifier]
 
     sections = content["sections"]
     for sub_index, section in enumerate(sections, start=1):
@@ -28,23 +26,17 @@ def translate_chapter(translator: dict[str, str], content: dict[str, Any], index
 def translate_section(translator: dict[str, str], content: dict[str, Any], index: str):
     identifier = content["section"]
     if identifier in translator:
-        content["local_text"] = translator[identifier]
-    else:
-        content["local_text"] = ""
+        content["text"] = translator[identifier]
 
     if "snippet" in content:
         snippet_identifier = f"{identifier}-snippet"
         if snippet_identifier in translator:
-            content["local_snippet"] = translator[snippet_identifier]
-        else:
-            content["local_snippet"] = ""
+            content["snippet"] = translator[snippet_identifier]
 
     if "toc_entry" in content:
         toc_identifier = f"{identifier}-toc"
         if toc_identifier in translator:
-            content["local_toc_entry"] = translator[toc_identifier]
-        else:
-            content["local_toc_entry"] = ""
+            content["toc_entry"] = translator[toc_identifier]
 
     rules = content["rules"]
     for sub_index, rule in enumerate(rules, start=1):
@@ -55,9 +47,7 @@ def translate_rule(translator: dict[str, str], content: dict[str, Any], index: s
     if "rule" in content:
         identifier = content["rule"]
         if identifier in translator:
-            content["local_text"] = translator[identifier]
-        else:
-            content["local_text"] = ""
+            content["text"] = translator[identifier]
 
         if "examples" in content:
             examples = content["examples"]
@@ -66,9 +56,7 @@ def translate_rule(translator: dict[str, str], content: dict[str, Any], index: s
     elif "subsection" in content:
         identifier = content["subsection"]
         if identifier in translator:
-            content["local_text"] = translator[identifier]
-        else:
-            content["local_text"] = ""
+            content["text"] = translator[identifier]
 
         if "examples" in content:
             examples = content["examples"]
@@ -88,9 +76,7 @@ def translate_element(translator: dict[str, str], content: dict[str, Any], index
     identifier = f"{index}-element"
     if "text" in content:
         if identifier in translator:
-            content["local_text"] = translator[identifier]
-        else:
-            content["local_text"] = ""
+            content["text"] = translator[identifier]
 
     if "elements" in content:
         elements = content["elements"]
@@ -101,9 +87,7 @@ def translate_element(translator: dict[str, str], content: dict[str, Any], index
 def translate_example(translator: dict[str, str], content: dict[str, Any], identifier: str, order: int):
     identifier = f"{identifier}-{order}-example"
     if identifier in translator:
-        content["local_text"] = translator[identifier]
-    else:
-        content["local_text"] = ""
+        content["text"] = translator[identifier]
 
 
 def main():

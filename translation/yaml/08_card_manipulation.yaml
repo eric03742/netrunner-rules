@@ -6,62 +6,43 @@ sections:
   rules:
   - rule: rule_rezzed_unrezzed
     text: An agenda, asset, upgrade, or piece of ice is {term:unrezzed} if it is installed and facedown. An asset, upgrade, or piece of ice is {term:rezzed} if it is installed and faceup. Runner cards, faceup agendas, operations, events, and counters are neither rezzed nor unrezzed.
-    local_text: ''
   - subsection: sec_rez
     text: To {term:rez} an unrezzed card is to turn it faceup.
     rules:
     - rule: rule_rez_in_paw
       text: Some paid ability windows allow the Corp to rez assets and upgrades. See {ref:rule_paid_ability_window}. The paid ability window at {ref:step_approach_paw} of a run allows the Corp to rez ice.
-      local_text: ''
     - rule: rule_rez_by_ability
       text: Card abilities can direct or allow the Corp to rez cards at other times.
-      local_text: ''
     - rule: rule_cannot_rez_agendas
       text: Agendas cannot be rezzed.
-      local_text: ''
     - rule: rule_inherent_rez_cost
       text: Before rezzing a card, the Corp must pay that card's rez cost. This includes both rezzing in a paid ability window and rezzing through a card ability. Card abilities can modify or ignore rez costs, but must state this explicitly.
-      local_text: ''
     - rule: rule_rez_procedure
       text: To resolve rezzing a card, the Corp pays its rez cost (accounting for any modifiers or additional costs), a checkpoint occurs (as required by {ref:rule_checkpoint_after_paying_cost}), then the Corp turns the card faceup. For purposes of meeting trigger conditions, the card is considered to be rezzed at the conclusion of this process.
-      local_text: ''
-    local_text: ''
   - subsection: sec_derez
     text: To {term:derez} a rezzed card is to turn it facedown.
     rules:
     - rule: rule_derez_by_ability
       text: Cards are only derezzed by card effects.
-      local_text: ''
     - rule: rule_derez_cost
       text: There is no inherent cost associated with derezzing a card.
-      local_text: ''
     - rule: rule_derez_procedure
       text: Derezzing a card is instantaneous and has no component steps.
-      local_text: ''
-    local_text: ''
   - subsection: sec_facedown_runner_cards
     text: Some abilities can install Runner cards facedown or turn already-installed Runner cards facedown.
     rules:
     - rule: rule_facedown_runner_cards_are_blank
       text: Installed Runner cards that are facedown do not have a name, type, or subtypes, and their abilities are not active.
-      local_text: ''
     - rule: rule_facedown_runner_cards_are_distinct
       text: Facedown installed Runner cards are distinct. The origin of each such card (when and how it was installed facedown, or what faceup installed card was turned facedown) is open information.
-      local_text: ''
     - rule: rule_facedown_runner_cards_flip_in_heap
       text: After a facedown Runner card enters the heap, it is turned faceup.
-      local_text: ''
     - rule: rule_flip_is_not_uninstall
       text: A Runner card turned facedown is not considered to be uninstalled and simply remains in the play area.
-      local_text: ''
     - rule: rule_unflipping_runner_cards
       text: If an installed facedown Runner card is turned faceup, the card gains its name, type, and subtypes, and it becomes active. Turning an installed facedown Runner card faceup does not meet the trigger conditions of "when installed" abilities.
-      local_text: ''
     - rule: rule_runner_cards_neither_rezzed_nor_unrezzed
       text: Runner cards are never considered rezzed or unrezzed.
-      local_text: ''
-    local_text: ''
-  local_text: ''
 - section: sec_card_movements
   text: Card Movements
   rules:
@@ -70,52 +51,35 @@ sections:
     rules:
     - rule: rule_non_movements
       text: Other terms that change the locations of cards are not movements. If an ability directs a player to "add" or "move" cards to 1 or more locations, simply put those cards in the indicated locations. If an ability or game rule directs a player to "discard", "set aside", or "remove from the game" 1 or more cards, simply put those cards in their owner's discard pile, the set-aside zone, or the removed-from-game zone, respectively.
-      local_text: ''
-    local_text: ''
   - subsection: sec_replacing_movements
     text: If a replacement effect modifies the effects of a movement, but does not replace the entire movement by name, the modified effect is still an occurrence of that movement and can still meet trigger conditions relating to that type of movement.
     examples:
     - text: '{card:Harbinger}''s ability modifies the effects of trashing it by replacing adding {card:Harbinger} to the heap with turning it facedown. {card:Harbinger} is still trashed when the modified effect resolves. If this is the first time this turn that the Runner trashed one of their installed cards, they will be able to resolve {card:Wasteland}''s ability.'
-      local_text: ''
     rules:
     - rule: rule_cancelled_movement
       text: If a movement is replaced or prevented entirely or otherwise cannot be carried out, that movement does not take place and conditions related to that type of movement are not met.
       examples:
       - text: The Corp is resolving the first subroutine on {card:Rototurret} to trash an installed program. The Runner uses {card:Sacrificial Construct} to prevent the program from being trashed. Since trashing did not occur, the Runner does not place a power counter on {card:District 99}, and {card:District 99} can still meet its trigger condition if a program or piece of hardware is successfully trashed later in the turn.
-        local_text: ''
-      local_text: ''
-    local_text: ''
   - rule: movement_arrange
     text: To {term:arrange} a set of cards is to reposition them among their current locations. The full rules for arranging are detailed in {ref:sec_arranging_rearranging}.
-    local_text: ''
   - rule: movement_draw
     text: To {term:draw} a given number of cards is to move that many cards from the top of a player's deck to their hand. The full rules for drawing cards are detailed in {ref:sec_drawing_cards}.
-    local_text: ''
   - rule: movement_forfeit
     text: To {term:forfeit} an agenda is to move it from a player's score area to the removed-from-game zone. When a player forfeits an agenda, its agenda points no longer contribute to that player's score, and any objects hosted on it are trashed.
-    local_text: ''
   - rule: movement_install
     text: To {term:install} a card is to move it from its current zone to the play area. The full rules for installing cards are detailed in {ref:sec_install_uninstall}.
-    local_text: ''
   - rule: movement_play
     text: To {term:play} an event or operation is to move it from its current zone to the play area, resolve its play abilities, and then trash it. The full rules for playing events and operations are detailed in {ref:sec_playing_events_and_operations}.
-    local_text: ''
   - rule: movement_search
     text: To {term:search} is to look at a specified zone and potentially set aside cards from that zone. The full rules for searching are detailed in {ref:sec_searching_cards}.
-    local_text: ''
   - rule: movement_score
     text: To {term:score} an agenda is to move it from its current zone to the Corp's score area. The full rules for scoring are detailed in {ref:sec_score_scoring_steal}.
-    local_text: ''
   - rule: movement_steal
     text: To {term:steal} an agenda is to move it from its current zone to the Runner's score area. The full rules for stealing are detailed in {ref:sec_score_scoring_steal}.
-    local_text: ''
   - rule: movement_swap
     text: To {term:swap} a pair of cards is to move each card to the other's location simultaneously. The full rules for swapping are detailed in {ref:sec_swapping_cards}.
-    local_text: ''
   - rule: movement_trash
     text: To {term:trash} a card is to move it from its current zone to its owner's discard pile. The full rules for trashing are detailed in {ref:sec_trashing}.
-    local_text: ''
-  local_text: ''
 - section: sec_arranging_rearranging
   text: Arranging and Rearranging Cards
   rules:
@@ -124,55 +88,39 @@ sections:
     rules:
     - rule: rule_arrange_1_or_fewer
       text: If a player is instructed to arrange 1 or fewer cards, instead that player does nothing.
-      local_text: ''
-    local_text: ''
   - subsection: rule_arrange_ice
     text: When a player arranges a set of installed ice, that player carries out the arrangement by repeatedly choosing and swapping 2 pieces of ice. Each swap follows all the usual rules for swapping cards in {ref:sec_swapping_cards}.
     rules:
     - rule: rule_no_checkpoints_during_swaps
       text: No checkpoints occur during the sequence of swaps. An ability that meets its condition while ice is being arranged will become pending at the end of resolving the instruction in which arranging ice is taking place.
-      local_text: ''
-    local_text: ''
   - rule: rule_arrange_secretly
     text: When a player arranges cards from the top of their deck or their opponent's deck, that player sets those cards aside facedown, secretly puts them in the order of their choice, and returns them to the top of that deck. They do not declare which cards moved to which positions. If the player is arranging an opponent's deck, that opponent cannot look at the set-aside cards during this process. All of the arranged cards become new objects after they are arranged, even cards that remain in the same location in the deck.
-    local_text: ''
-  local_text: ''
 - section: sec_drawing_cards
   text: Drawing Cards
   rules:
   - rule: rule_drawing
     text: '{term:drawing} cards is a process that moves cards from a player''s deck to their hand.'
-    local_text: ''
   - subsection: rule_draw_procedure
     text: To draw 1 or more cards, a player sets aside that many cards from the top of their deck facedown. The cards are then considered drawn, and abilities with trigger conditions related to cards being drawn can act on them. When resolving any such abilities is complete, the set-aside cards are added to their owner's hand.
     rules:
     - rule: rule_draw_relevant_abilities_see_set_aside
       text: Abilities with a trigger condition that refers to cards being drawn can see the drawn cards in the set-aside zone. This is an exception to {ref:rule_set_aside_zone_passthrough}.
-      local_text: ''
     - rule: rule_draw_irrelevant_abilities_dont_see_set_aside
       text: Abilities that do not refer specifically to cards a player has drawn are subject to {ref:rule_set_aside_zone_passthrough}, and only see the drawn cards move directly from the player's deck to their hand.
-      local_text: ''
-    local_text: ''
   - subsection: rule_modify_drawn_cards
     text: Abilities that resolve while drawn cards are set aside can move those cards or add new cards to that set.
     rules:
     - rule: rule_card_leaves_drawn_set
       text: If a drawn card leaves the set-aside zone, it is no longer considered "drawn" and remains in its new location when the drawn cards are added to the hand.
-      local_text: ''
     - rule: rule_drawn_card_swapped
       text: If a drawn card is swapped with another card, the card swapped into the set-aside zone is now considered "drawn", can be manipulated by other abilities, and will be added to the hand with the other drawn cards.
       examples:
       - text: The Corp takes their mandatory draw while they have {card:Daily Business Show} and {card:Raman Rai} rezzed. They set aside {card:Wraparound} and {card:Enigma} from the top of R&D. After looking at those cards and the cards in Archives, the Corp uses {card:Raman Rai} to reveal the {card:Enigma} and a {card:Tollbooth} from Archives and swap them. Then, the corp uses {card:Daily Business Show} to add {card:Tollbooth} to the bottom of the deck. Finally, the Corp adds {card:Wraparound} to HQ.
-        local_text: ''
-      local_text: ''
-    local_text: ''
   - subsection: rule_drawing_simultaneously
     text: If an ability directs multiple players to draw cards at the same time, those players follow the procedure for drawing cards together. Abilities relating to all of those draws will become pending in the same reaction window.
     rules:
     - rule: rule_optional_drawing_simultaneously
       text: If an ability gives multiple players the option to draw cards at the same time, first each player indicates whether or how many cards they will draw, starting with the active player. Then the indicated draws are performed simultaneously.
-      local_text: ''
-    local_text: ''
   - subsection: sec_steps_of_drawing_n_cards
     text: Steps of Drawing N Cards
     toc:
@@ -180,15 +128,10 @@ sections:
     rules:
     - rule: step_draw_set_aside
       text: Set aside N cards from the top of the drawing player's deck. The cards are now considered drawn and can be looked at by their controller.
-      local_text: ''
     - rule: step_draw_checkpoint
       text: A checkpoint occurs.
-      local_text: ''
     - rule: step_draw_add_to_hand
       text: Add the set-aside cards to the player's hand.
-      local_text: ''
-    local_text: ''
-  local_text: ''
 - section: sec_install_uninstall
   text: Installing and Uninstalling Cards
   rules:
@@ -197,87 +140,60 @@ sections:
     rules:
     - rule: rule_installed_onto_cards
       text: Cards and counters can also be installed onto other cards if either the card being installed onto or the card or counter being installed has an ability allowing this. The relationship created this way is called {term:hosting} and is discussed in {ref:sec_host}. Some abilities also host cards without installing them.
-      local_text: ''
     - rule: rule_uninstalled
       text: A card or counter is {term:uninstalled} when it stops being installed for any reason.
-      local_text: ''
-    local_text: ''
   - subsection: rule_corp_cards_default_install
     text: Corp cards are installed facedown, unrezzed, and remain inactive until rezzed. Corp cards are installed into specific locations. See {ref:subsec_servers} for more information on servers and the locations of installed Corp cards.
     rules:
     - rule: rule_corp_install_choose_destination_server
       text: As part of installing a card, the Corp chooses which server will be the destination for that card. The Corp can either choose an already existing server as the destination or announces that the card will create a new remote server.
-      local_text: ''
     - rule: rule_agenda_asset_root_remote_server
       text: The Corp always installs an agenda or asset into the root of a remote server.
-      local_text: ''
     - rule: rule_upgrade_root_central_remote_server
       text: The Corp always installs an upgrade into the root of a central or remote server.
-      local_text: ''
     - rule: rule_ice_outermost_position
       text: Unless otherwise indicated, the Corp always installs ice to the outermost position protecting the destination server. See {ref:rule_create_position}.
-      local_text: ''
-    local_text: ''
   - subsection: rule_cards_in_server_cannot_be_rearranged
     text: 'Cards in servers cannot be rearranged unless instructed by a card ability. To organize this hidden information for both players, it is important that the Corp observes the following rules for card orientation:'
     rules:
     - rule: rule_cards_in_root_vertical
       text: Agendas, assets, and upgrades are always installed in a vertical orientation. An upgrade in the root of a remote server is installed in the same position as an agenda or asset. The Runner should not be able to tell what type of card is installed in the root of a remote server by its position.
-      local_text: ''
     - rule: rule_ice_horizontal
       text: Ice is always installed in a horizontal orientation.
-      local_text: ''
-    local_text: ''
   - rule: rule_runner_cards_default_install
     text: Runner cards are normally installed faceup, active. Runner cards are generally installed without designated locations.
-    local_text: ''
   - rule: rule_install_one_at_a_time
     text: Installing cards is an exception to {ref:rule_act_on_multiple_cards}. If an effect would install more than one card, then those cards are chosen and installed one at a time, following all of the steps of the installation process ({ref:sec_steps_installing}) for each card before choosing and installing the next. Each such installation is performed as a separate instruction. See {ref:rule_split_up_instruction}.
     examples:
     - text: The Runner uses {card:Mass Install} to install three programs. The Runner can install {card:Dhegdheer} first, and then host one of the other two programs on {card:Dhegdheer} in order to reduce the install cost.
-      local_text: ''
-    local_text: ''
   - subsection: rule_install_trash_like_cards
     text: As part of the installation process, a player installing an agenda, asset, upgrade, ice, or program has the opportunity to trash like cards.
     rules:
     - rule: rule_must_trash_cases_in_root_of_server
       text: When installing an agenda or asset in the root of a remote server, or an upgrade in the root of any server, the Corp may first trash any number of other cards already installed in the root of that server. If the card to be installed is an asset or agenda, the Corp must trash any other asset or agenda from that server. If the card to be installed is a region, the Corp must trash any other region from that server.
-      local_text: ''
     - rule: rule_install_trash_ice
       text: When installing ice protecting a server, the Corp may first trash any number of other ice already installed protecting that server. Ice trashed in this way will not be counted when determining the install cost of the new ice.
-      local_text: ''
     - rule: rule_install_trash_programs
       text: When installing a program, the Runner may first trash any number of programs already installed. They must do so if installing the new program would exceed their memory limit.
-      local_text: ''
-    local_text: ''
   - rule: rule_install_corp_cards_trashed_facedown_archives
     text: If the Corp trashes any cards during the installation process, the trashed cards are placed in Archives with the same faceup or facedown status they had while installed.
-    local_text: ''
   - rule: rule_server_ceases_to_exist
     text: If the last card protecting a remote server or in the root of that server is uninstalled outside of the process of installing another card, then the server ceases to exist during the next checkpoint. See {ref:sec_checkpoints}.
-    local_text: ''
   - rule: rule_install_cannot_destroy_server
     text: The Corp cannot destroy a server by installing cards. While the Corp is installing a card with a remote server as its destination, that server does not cease to exist during any checkpoints that occur before the install effect is complete. Even if the last card installed in the root of or protecting a remote server is trashed during the installation process, it is still considered the same server after the new card has been installed.
-    local_text: ''
   - rule: rule_uninstall_ice_during_run
     text: If a piece of ice is uninstalled while being approached or encountered, any open paid ability window is completed. Then the approach or encounter ends without completing any further steps of that timing structure. The Runner passes the position the uninstalled ice had occupied, and the run continues. See {ref:sec_position} for rules about positions during a run.
-    local_text: ''
   - subsection: sec_install_cost
     text: Some types of cards have an install cost, which must be paid before the card can become installed, unless an ability indicates that this cost should be ignored.
     rules:
     - rule: rule_install_cost_link
       text: The install cost of a piece of ice is 1 credit for each piece of ice already installed protecting the destination server at the time the cost is to be paid. The install cost of a piece of hardware, program, or resource is indicated on the card. Assets, agendas, upgrades, and facedown Runner cards have no install cost. See also {ref:rule_install_cost_ice}.
-      local_text: ''
     - rule: rule_install_cost_x
       text: If a card has an install cost of X, the value for X is chosen by the player at the time the cost would normally be paid, according to any stipulations indicated in the card's text box. This value of X is maintained until the install effect is complete.
-      local_text: ''
     - rule: rule_install_cost_checkpoint
       text: After the install cost is paid, a checkpoint occurs, as required by {ref:rule_checkpoint_after_paying_cost}.
-      local_text: ''
-    local_text: ''
   - rule: rule_x_server_only
     text: Some upgrades have an ability that specifies 1 or more central servers or "remote server" followed by the word "only". This is a restriction on the locations an upgrade can occupy that applies at all times, even if the upgrade is inactive. The Corp cannot choose the root of a non-specified server as the installation destination for such an upgrade, and such an upgrade cannot be swapped into the root of a non-specified server.
-    local_text: ''
   - subsection: rule_install_from_hidden_or_secret_zone
     text: If a player attempts to install a facedown card or a card from a hidden or secret zone, they are required in certain cases to reveal that card in order to verify that the installation is valid.
     rules:
@@ -285,44 +201,29 @@ sections:
       text: Players are not required to and should not reveal an installed card simply to verify that it has an appropriate card type.
       examples:
       - text: The Corp controls a remote server with a facedown card in its root, and uses a basic action to install another card into that root. To satisfy the rules, the new card must be an asset, upgrade, or agenda, since those are the only card types that can normally be installed in the root of a remote server. Additionally, at least one of the two cards must be an upgrade, since there can only be at most 1 asset or agenda in the root of a server. However, the Corp does not reveal cards to verify either of these properties.
-        local_text: ''
       - text: The Corp resolves the first subroutine on {card:Brân 1.0}. They do not reveal the card they install to verify that it is a piece of ice as stipulated in the text of the subroutine, nor do they reveal the card to verify that it is a piece of ice as necessitated from installing it protecting a server.
-        local_text: ''
-      local_text: ''
     - rule: rule_no_reveal_for_server_limitation
       text: Players are not required to and should not reveal an installed card to verify that it meets server limitations.
       examples:
       - text: The Corp installs a card in the root of a server with a rezzed {subtype:region} upgrade. The new card cannot also be a {subtype:region} upgrade (unless the old one is trashed as part of the installation), as per {ref:subsec_regions}. They do not reveal the installed card to verify this.
-        local_text: ''
-      local_text: ''
     - rule: rule_reveal_for_ability_limitations
       text: Players are required to reveal an installed card to verify any other requirements imposed by the ability that installs the card.
       examples:
       - text: The Corp triggers the ability on {card:Ob Superheavy Logistics} by trashing a card with printed rez cost 5. They search R&D for {card:Archer} and install it, but decline to pay the additional cost to rez {card:Archer}. Since the ability requires the installed card to have printed rez cost 4, and the card is not otherwise visible to the Runner at any point in this process, the Corp must reveal {card:Archer} to verify that the installation is legal.
-        local_text: ''
-      local_text: ''
     - rule: rule_reveal_for_install_and_rez
       text: Some abilities "install and rez" 1 or more cards. If the player resolving an "install and rez" effect is allowed to choose a card that they are unable to rez, or if the installed card has an additional cost to rez that the player declines to pay (see {ref:rule_inherent_and_additional_cost}), the player must reveal the installed card, regardless of whether other restrictions apply.
       examples:
       - text: The Corp plays {card:Trust Operation} and installs an agenda from Archives with its "install and rez" effect. Since agendas cannot be rezzed, the Corp must reveal the installed agenda.
-        local_text: ''
       - text: The Corp plays {card:Ad Blitz}. Since the "install and rez" effect on this card stipulates "if able", the Corp cannot choose to install cards they are unable to rez, nor can they decline additional costs if any apply.
-        local_text: ''
-      local_text: ''
-    local_text: ''
   - rule: rule_install_to_invalid_destination
     text: Some abilities install cards to a specific location. If an ability specifies a destination that is invalid or cannot be identified, no installation can take place.
     examples:
     - text: The Corp uses {card:Nanisivik Grid} to resolve the first subroutine on a copy of {card:Brân 1.0} in Archives. This subroutine attempts to install ice "directly inward" from {card:Brân 1.0}, but this copy of {card:Brân 1.0} is not protecting a server and therefore does not have a position from which "directly inward" can be evaluated. There is no legal way to install a card as directed, so the subroutine will have no effect.
-      local_text: ''
-    local_text: ''
   - subsection: rule_install_and_rez
     text: Some abilities instruct the Corp to "install and rez" a card. To resolve this instruction, the Corp first installs the card normally. After the installation is complete, the Corp rezzes the card. See also {ref:rule_reveal_for_install_and_rez}.
     rules:
     - rule: rule_install_and_rez_one_at_a_time
       text: Some "install and rez" abilities affect more than 1 card. In this case, each card is rezzed directly after it is installed, as part of the same instruction and before the next installation begins. See also {ref:rule_install_one_at_a_time}.
-      local_text: ''
-    local_text: ''
   - subsection: sec_steps_installing
     steps:
     toc:
@@ -330,55 +231,38 @@ sections:
     rules:
     - rule: rule_steps_installing_place
       text: Place the card into the play area with the same faceup or facedown status it will have when the installation is complete. It is not yet installed or active.
-      local_text: ''
     - rule: rule_steps_installing_destination
       text: Choose and declare the install destination appropriate to the card that will be installed, including any host relationships, if applicable.
-      local_text: ''
     - rule: rule_steps_installing_trash_like_cards
       text: Trash like cards as described in {ref:rule_install_trash_like_cards}.
-      local_text: ''
     - rule: rule_steps_installing_pay_install_cost
       text: Pay the appropriate install cost. (The cost-paid checkpoint then occurs.)
-      local_text: ''
     - rule: rule_steps_installing_become_installed
       text: If the card is to be the first card in the root of or protecting a new remote server, that server is created. Move the card to the chosen install location. It becomes installed. If the card is faceup, it becomes active.
-      local_text: ''
     - rule: rule_steps_installing_installed_condition
       text: Any "When installed..." abilities that apply to the installation meet their trigger conditions, including those on the installed card, and the install effect is complete.
-      local_text: ''
-    local_text: ''
-  local_text: ''
 - section: sec_playing_events_and_operations
   text: Playing Events and Operations
   rules:
   - rule: rule_playing
     text: '{term:Playing} an event or operation is a process in which that card is placed into the play area, its play abilities are resolved, and then the card is trashed. Agendas, assets, ice, upgrades, hardware, programs, resources, and identities are never played.'
-    local_text: ''
   - subsection: rule_playing_play_cost
     text: Normally, playing an operation or event requires paying its play cost. Abilities that initiate playing a card may ignore the play cost or require it to be paid.
     rules:
     - rule: rule_play_cost_x
       text: If a card has a play cost of X, the value for X is chosen by the player at the time the play cost is paid, according to any stipulations written on the card. This value of X is maintained while resolving the event or operation.
-      local_text: ''
     - rule: rule_play_cost_checkpoint
       text: After the play cost is paid, a checkpoint occurs, as required by {ref:rule_checkpoint_after_paying_cost}.
-      local_text: ''
-    local_text: ''
   - rule: rule_playing_one_at_a_time
     text: Playing cards is an exception to {ref:rule_act_on_multiple_cards}. If an effect would play more than one card, then those cards are chosen and played one at a time, following all of the steps of the play process ({ref:sec_steps_playing}) for each card before choosing and playing the next. Each such card is played as a separate instruction. See {ref:rule_split_up_instruction}.
     examples:
     - text: The Corp uses {card:Subcontract} to play {card:Hedge Fund} and another operation. The Corp can use the credits gained from {card:Hedge Fund} to pay for the second operation.
-      local_text: ''
-    local_text: ''
   - rule: rule_playing_lingering_effects
     text: Operations and events can create lingering effects. Once those effects exist, they become independent of the source operation or event and the card is considered fully resolved and ready to be trashed. See {ref:sec_lingering_effects}.
     examples:
     - text: '{card:Test Run} creates a delayed conditional ability that will resolve at the end of the turn, but {card:Test Run} itself is considered fully resolved and is trashed once it finishes installing a program.'
-      local_text: ''
-    local_text: ''
   - rule: rule_playing_timing_structure
     text: An operation or event that initiates a timing structure remains active in the play area for the duration of that timing structure. It is not considered fully resolved until the timing structure is completed and any abilities on the card that meet their trigger conditions when the timing structure ends are resolved.
-    local_text: ''
   - subsection: rule_play_no_trash
     text: In certain circumstances, a played card is not trashed after resolving it.
     rules:
@@ -386,18 +270,12 @@ sections:
       text: If the played card is no longer in the play area when {ref:rule_steps_playing_trash_played_card} is reached, it is not trashed.
       examples:
       - text: The Runner plays {card:Ashen Epilogue} and resolves its play abilities. Its last ability removes it from the game.
-        local_text: ''
-      local_text: ''
     - rule: rule_play_no_trash_hosted
       text: If the played card has been converted to a condition counter or otherwise hosted on a card while resolving its play abilities, it is not trashed. See also {ref:rule_card_to_counter}.
-      local_text: ''
     - rule: rule_play_not_trashed_until
       text: If the played card has an ability indicating that it is not trashed until a certain effect occurs, instead of trashing it, a lingering effect is created with a duration that expires as the indicated effect occurs. See also {ref:sec_lingering_effects}.
-      local_text: ''
     - rule: rule_play_no_trash_if_play_effect_will_rfg
       text: If an ability that plays an event or operation also contains the nested conditional ability "After it resolves, remove it from the game.", the event or operation is not trashed. The card remains in the play area until the conditional ability removes it from the game.
-      local_text: ''
-    local_text: ''
   - subsection: sec_steps_playing
     steps:
     toc:
@@ -405,33 +283,22 @@ sections:
     rules:
     - rule: rule_steps_playing_place
       text: Place the card faceup into the play area. It is not installed and not yet active.
-      local_text: ''
     - rule: rule_steps_playing_play_cost
       text: Pay the play cost. (The cost-paid checkpoint then occurs.)
-      local_text: ''
     - rule: rule_steps_playing_active
       text: The card becomes active.
-      local_text: ''
     - rule: rule_steps_playing_played_condition
       text: Conditions related to playing an event or operation are met.
-      local_text: ''
     - rule: rule_steps_playing_played_checkpoint
       text: A checkpoint occurs.
-      local_text: ''
     - rule: rule_steps_playing_resolve_play_abilities
       text: Resolve the play abilities of the card.
-      local_text: ''
     - rule: rule_steps_playing_trash_played_card
       text: Trash the card if applicable.
-      local_text: ''
     - rule: rule_steps_playing_after_resolve_condition
       text: Conditions related to after resolving or finishing resolving an event or operation are met.
-      local_text: ''
     - rule: rule_steps_playing_complete
       text: The play effect is complete.
-      local_text: ''
-    local_text: ''
-  local_text: ''
 - section: sec_searching_cards
   text: Searching for Cards
   rules:
@@ -440,59 +307,40 @@ sections:
     rules:
     - rule: rule_search_hidden_secret_zone
       text: If a player is instructed to search a hidden or secret zone, they are temporarily allowed to look at those cards until the search is complete, so long as they maintain that zone as hidden or secret as necessary to the other player.
-      local_text: ''
-    local_text: ''
   - subsection: rule_find
     text: While a player is searching, they may {term:find} an appropriate number of cards matching any criteria of the search by taking them from the zone being searched and setting them aside facedown.
     rules:
     - rule: rule_valid_search_target_criteria
       text: The card found with a search must match the criteria specified by the search effect.
-      local_text: ''
     - rule: rule_valid_search_target_install_play
       text: When a search is followed by an install instruction referring to the found card(s), then the player must be able to install the card(s) they find. The same is true when the search is followed by a play instruction.
       examples:
       - text: The Runner uses {card:Artist Colony} to search for a card and install it. They cannot find an event with the search because events can never be installed. They also cannot find a program, hardware, or resource that they cannot afford to install.
-        local_text: ''
       - text: The Runner uses {card:Self-modifying Code} to search for a program and install it. They have no more credits after using the ability of {card:Self-modifying Code}, but they have an installed copy of {card:Patchwork}. They can search for {card:Imp} and install it, but they must use {card:Patchwork} by trashing a card from their grip to install {card:Imp}. If the Runner does not have a card in their grip, they cannot find and install {card:Imp}.
-        local_text: ''
       - text: The Corp uses {card:Tucana} to search for {card:Pharos} while they have 0 credits. They are allowed to find and install {card:Pharos}, even though they cannot afford to rez it. The Corp must reveal {card:Pharos} to show that it cannot be rezzed. See {ref:rule_reveal_for_install_and_rez}.
-        local_text: ''
-      local_text: ''
     - rule: rule_reveal_for_search
       text: The searching player is not required to reveal any found cards unless instructed to do so by the ability that initiated the search. Found cards are not revealed until resolution of the ability that initiated the search resumes, pending any necessary shuffling.
-      local_text: ''
     - rule: rule_search_multiple_cards
       text: If a player is searching for a set number of cards without any specified criteria, they must find that many cards from that zone or all the cards in that zone if there are not enough.
-      local_text: ''
     - rule: rule_fail_to_find
       text: If a player is searching a deck for one or more cards with specified criteria, they may choose to fail to find anything, even if one or more cards matching the criteria exist in that deck.
-      local_text: ''
-    local_text: ''
   - rule: rule_shuffle_deck_after_search
     text: Once a search through a deck is complete, whether or not any cards are found, the deck must be immediately reshuffled before continuing to resolve any remaining effects from the ability that initiated the search. The shuffling takes precedence over anything that would be done with the found card(s), as well as any chain reactions that occur as a result of the search, finding, or remaining abilities.
     examples:
     - text: The Corp is playing {card:Near-Earth Hub} and uses the ability on {card:Tech Startup} to search their deck for an asset and install it. After finding the asset, R&D must be immediately shuffled before the Corp installs the asset or triggers {card:Near-Earth Hub}'s ability.
-      local_text: ''
-    local_text: ''
   - rule: rule_continue_after_search
     text: Once the search is complete, and any shuffling necessary has occurred, resolution of the ability that initiated the search resumes. If no cards were found during the search, any effects referencing found cards fail to resolve, but as much of the remaining effects resolve as possible.
-    local_text: ''
   - rule: rule_search_condition
     text: If the trigger condition of a conditional ability involves a search, that ability becomes pending after the search is completed and any shuffling is performed, but before the found cards are acted on.
-    local_text: ''
-  local_text: ''
 - section: sec_swapping_cards
   text: Swapping Cards
   rules:
   - rule: rule_swap
     text: To {term:swap} two cards is to exchange their locations.
-    local_text: ''
   - rule: rule_swap_only_to_valid_location
     text: A card can only ever be swapped into a location it is normally allowed to occupy. When a player resolves a swap effect, they must observe any applicable game rules or card abilities that would affect that card in its final destination. If a swap effect would resolve while there are no legal exchanges possible, then that effect does nothing.
     examples:
     - text: When the subroutine on {card:Metamorph} resolves, the Corp cannot choose to swap an agenda and an upgrade such that the agenda would end up in the same remote server as an asset.
-      local_text: ''
-    local_text: ''
   - subsection: rule_swap_installed_cards
     text: If two installed cards are swapped, each card moves to the other's location simultaneously. The two cards remain installed throughout the process of swapping, and do not otherwise affect any other part of the game state.
     rules:
@@ -500,27 +348,16 @@ sections:
       text: When swapping installed cards, any cards or counters hosted on either of the swapped cards maintain their hosting relationships.
       examples:
       - text: The Corp uses {card:Thimblerig}'s ability to swap it with a {card:Palisade} hosting {card:Botulus}. The {card:Botulus} remains hosted on the {card:Palisade} throughout this process.
-        local_text: ''
-      local_text: ''
-    local_text: ''
   - subsection: rule_swap_simultaneous
     text: If two cards are swapped between zones, each card moves to the zone the other is in simultaneously.
     rules:
     - rule: rule_state_of_swap_into_zone
       text: Each of the swapped cards enters its destination zone in the same state that a card would normally enter that zone. A card swapped into Archives enters Archives facedown unless it was visible to the Runner at the time of the swap, a Corp card swapped into the play area enters unrezzed, etc.
-      local_text: ''
     - rule: rule_swap_become_installed
       text: If only one of the cards to be swapped is installed, then it becomes uninstalled as it moves to the destination zone. Any cards or counters hosted on it are trashed. The other card becomes installed in the exact position the first card occupied, maintaining any specific location (such as server, ice position, or host). The normal procedure for installing a card is not followed, so no install cost is paid and like cards cannot be trashed. At the next checkpoint after the swap takes place, trigger conditions related to uninstalling or installing the two cards are met, respectively.
       examples:
       - text: 'The Corp is playing {card:A Teia: IP Recovery} and has {card:Tatu-Bola} protecting a remote server. The Runner runs that server and passes {card:Tatu-Bola}. The Corp swaps it with a piece of ice from HQ. After the swap, the Corp can use {card:A Teia}''s ability to install a card in the root of another remote server. They then continue resolving the next instruction of {card:Tatu-Bola}''s ability, gaining 4[c].'
-        local_text: ''
-      local_text: ''
     - rule: rule_swap_score_areas
       text: If two agendas are swapped between the players' score areas, any hosted cards or counters remain hosted on their respective host agendas.
-      local_text: ''
     - rule: rule_swap_to_set_aside
       text: If a card is swapped with a set-aside card, the card moving into the set-aside zone becomes part of the group of cards being acted on by the ability that had set the other card aside, and the card moving out of the set-aside zone ceases to be acted on by that ability. See {ref:rule_drawn_card_swapped} for a specific case where this can happen, and see also {ref:rule_set_aside_zone_passthrough} regarding effects acting on cards in the set-aside zone.
-      local_text: ''
-    local_text: ''
-  local_text: ''
-local_text: ''

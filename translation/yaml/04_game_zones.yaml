@@ -1,463 +1,322 @@
 chapter: chpt_game_zones
-text: Game Zones
+text: 游戏区域
 sections:
 - section: sec_game_zones_general
-  text: General
+  text: 概述
   rules:
   - subsection: rule_zone
-    text: A {term:zone} is a place in which cards and counters can exist during the game.
+    text: '{term:区域}指的是游戏中卡牌与指示物可以存在的场所。'
     rules:
     - rule: rule_zone_types
-      text: 'There are 8 zone types: deck, hand, discard pile, score area, play area, bank, set aside, and removed from the game.'
-      local_text: 游戏中共有8个区域类型：牌组、手牌、弃牌堆、分数区、游戏区、银行、置于一旁、以及移出游戏。
+      text: 游戏中共有8个区域类型：牌组、手牌、弃牌堆、分数区、游戏区、银行、置于一旁、以及移出游戏。
     - rule: rule_player_zones
-      text: Each player has their own deck, hand, discard pile, and score area. All players share the play area, the bank, the set-aside zone, and the removed-from-game zone.
-      local_text: 每位玩家拥有其各自的牌组、手牌、弃牌堆和分数区。所有玩家共享同一个游戏区、银行、置于一旁区和移出游戏区。
+      text: 每位玩家拥有其各自的牌组、手牌、弃牌堆和分数区。所有玩家共享同一个游戏区、银行、置于一旁区和移出游戏区。
     - rule: rule_card_in_one_zone
-      text: Each card in the game exists in exactly 1 zone at a time.
-      local_text: 游戏中的每张卡牌在同一时间只能存在于1个区域。
-    local_text: '{term:区域}指的是游戏中卡牌与指示物可以存在的场所。'
+      text: 游戏中的每张卡牌在同一时间只能存在于1个区域。
   - subsection: rule_move_between_zones
-    text: Game rules and card effects can move cards and counters between zones. See {ref:sec_card_movements} for rules on card movements.
+    text: 游戏规则与卡牌效果可以在区域之间移动卡牌与指示物。有关卡牌移动的规则参见{ref:sec_card_movements}。
     rules:
     - rule: rule_reveal_from_hidden
-      text: If a facedown card or a card in a hidden zone would ever move to another zone as part of an effect that requires that card to have a specific attribute, that card must be revealed before being moved to the new zone. If the card is being installed, this rule only applies as indicated by {ref:rule_install_from_hidden_or_secret_zone}.
+      text: 如果一张牌面朝下的卡牌或隐藏区域中的的一张卡牌将要移动到另一个区域，以作为某个效果的一部分，且此效果需要该卡牌具有某个特定的属性，则该卡牌在被移动到新的区域前必须被展示。如果该卡牌是被安装，则此规则只适用于{ref:rule_install_from_hidden_or_secret_zone}中所指定的情况。
       examples:
-      - text: When resolving {card:Clone Suffrage Movement}, the Corp chooses a facedown {card:Fast Break} in Archives. The Corp must reveal the {card:Fast Break} before adding it to HQ, to demonstrate that it is indeed an operation, meeting {card:Clone Suffrage Movement}'s requirement.
-        local_text: 当结算{card:克隆体参政运动}时，公司选择档案库中一张正面朝下的{card:快速突破}。在将{card:快速突破}加入总部之前，公司必须展示之，以证明其确实为一个事务，满足{card:克隆体参政运动}的要求。
-      local_text: 如果一张牌面朝下的卡牌或隐藏区域中的的一张卡牌将要移动到另一个区域，以作为某个效果的一部分，且此效果需要该卡牌具有某个特定的属性，则该卡牌在被移动到新的区域前必须被展示。如果该卡牌是被安装，则此规则只适用于{ref:rule_install_from_hidden_or_secret_zone}中所指定的情况。
+      - text: 当结算{card:克隆体参政运动}时，公司选择档案库中一张正面朝下的{card:快速突破}。在将{card:快速突破}加入总部之前，公司必须展示之，以证明其确实为一个事务，满足{card:克隆体参政运动}的要求。
     - rule: rule_move_instantaneous
-      text: When a card is moved from one zone to another, the move is instantaneous. The card is never in both zones at once, and it is never not in any zone at all.
-      local_text: 当一张卡牌从一个区域移动到另一个区域时，移动是立即完成的。该卡牌永远不会同时出现在两个区域，也不会不出现在任何区域。
-    local_text: 游戏规则与卡牌效果可以在区域之间移动卡牌与指示物。有关卡牌移动的规则参见{ref:sec_card_movements}。
+      text: 当一张卡牌从一个区域移动到另一个区域时，移动是立即完成的。该卡牌永远不会同时出现在两个区域，也不会不出现在任何区域。
   - rule: rule_outside_game
-    text: A card that is not in any zone is outside the game. Cards outside of the game are distinct from cards in the removed-from-game zone, and cannot affect the game. They can only be affected by abilities that explicitly bring in extra cards from outside the game. See {ref:sec_extra_cards}.
-    local_text: 不在任何区域中的卡牌即位于游戏之外。位于游戏之外的卡牌不同于移出游戏区中的卡牌，这些卡牌也不能对游戏造成影响。一些能力会明确地引入位于游戏之外的额外卡牌，这些卡牌只能被这类能力所影响。
+    text: 不在任何区域中的卡牌即位于游戏之外。位于游戏之外的卡牌不同于移出游戏区中的卡牌，这些卡牌也不能对游戏造成影响。一些能力会明确地引入位于游戏之外的额外卡牌，这些卡牌只能被这类能力所影响。
   - rule: rule_public_zone
-    text: A {term:public} zone is one where cards are freely visible to both players unless they are facedown. The play area, the bank, the set-aside zone, the removed-from-game zone, and both players' score areas and discard piles are public zones. See {ref:sec_card_visibility} for rules on card visibility and {ref:sec_faceup_facedown_status} for rules on the faceup and facedown status of a card.
-    local_text: '{term:公开}区域指的是除非牌面朝下、否则其中的卡牌对双方玩家均任意可见的区域。游戏区、银行、置于一旁区、移出游戏区以及双方玩家的分数区与弃牌堆均为公开区域。有关卡牌可见性的规则参见{ref:sec_card_visibility}，有关卡牌的牌面朝上与牌面朝下状态的规则参见{ref:sec_faceup_facedown_status}。'
+    text: '{term:公开}区域指的是除非牌面朝下、否则其中的卡牌对双方玩家均任意可见的区域。游戏区、银行、置于一旁区、移出游戏区以及双方玩家的分数区与弃牌堆均为公开区域。有关卡牌可见性的规则参见{ref:sec_card_visibility}，有关卡牌的牌面朝上与牌面朝下状态的规则参见{ref:sec_faceup_facedown_status}。'
   - rule: rule_hidden_zone
-    text: A {term:hidden} zone is one where cards are not visible to either player. Each player's deck is a hidden zone.
-    local_text: '{term:隐藏}区域指的是其中的卡牌对任意一位玩家都不可见的区域。每位玩家的牌组都是一个隐藏区域。'
+    text: '{term:隐藏}区域指的是其中的卡牌对任意一位玩家都不可见的区域。每位玩家的牌组都是一个隐藏区域。'
   - rule: rule_secret_zone
-    text: A {term:secret} zone is one where cards are visible only to their controller. Each player's hand is a secret zone.
-    local_text: '{term:秘密}区域指的是其中的卡牌仅对其操控者可见的区域。每位玩家的手牌都是一个秘密区域。'
+    text: '{term:秘密}区域指的是其中的卡牌仅对其操控者可见的区域。每位玩家的手牌都是一个秘密区域。'
   - subsection: rule_location
-    text: A {term:location} is a specific position within a zone that an object can occupy. A {term:destination} is a location to which an object is to be moved.
+    text: '{term:位置}指的是在区域中一个物件可以占用的某个特定的点位。{term:目的地}指的是一个物件将要被移动到的位置。'
     rules:
     - rule: rule_deck_location
-      text: A card in a player's deck has a location identified by how many cards it is from the top of that deck.
-      local_text: 玩家牌组中一张卡牌的位置由其距离该卡组顶端之间的卡牌张数所确定。
+      text: 玩家牌组中一张卡牌的位置由其距离该卡组顶端之间的卡牌张数所确定。
     - rule: rule_play_area_location
-      text: Some objects in the play area are in specific locations. See {ref:rule_play_area_organization}.
-      local_text: 游戏区中的一些物件位于特定的位置上。参见{ref:rule_play_area_organization}。
+      text: 游戏区中的一些物件位于特定的位置上。参见{ref:rule_play_area_organization}。
     - rule: rule_hosted_object_location
-      text: The location of a hosted object is its host card.
-      local_text: 卡牌所附载的物件，其位置为被其附载的卡牌。
+      text: 卡牌所附载的物件，其位置为被其附载的卡牌。
     - rule: rule_default_location
-      text: All other objects are simply located in their zone and do not have a more specific location.
-      local_text: 其他所有物件只位于其区域中，没有更进一步的特定的位置。
-    local_text: '{term:位置}指的是在区域中一个物件可以占用的某个特定的点位。{term:目的地}指的是一个物件将要被移动到的位置。'
-  local_text: 概述
+      text: 其他所有物件只位于其区域中，没有更进一步的特定的位置。
 - section: sec_deck
-  text: Deck
+  text: 牌组
   rules:
   - rule: rule_draw_deck
-    text: When the game begins, each player's deck presented during setup becomes their in-game draw deck.
-    local_text: 当游戏开始时，每位玩家在游戏设置过程中展示的牌组即成为其游戏中的抽取牌组。
+    text: 当游戏开始时，每位玩家在游戏设置过程中展示的牌组即成为其游戏中的抽取牌组。
   - rule: rule_deck_hidden
-    text: Decks must be kept facedown with their cards hidden from both players. Neither player may look at the cards in any deck without being explicitly directed to do so by a rule or card ability.
-    local_text: 牌组必须保持牌面朝下，使其中的卡牌对双方玩家都是隐藏的。在没有得到规则或卡牌能力的明确指示时，双方玩家都不能查看任意一副牌组中的卡牌。
+    text: 牌组必须保持牌面朝下，使其中的卡牌对双方玩家都是隐藏的。在没有得到规则或卡牌能力的明确指示时，双方玩家都不能查看任意一副牌组中的卡牌。
   - subsection: rule_deck_ordered
-    text: Decks are ordered. The location of each card in a deck must be maintained except when a player is explicitly directed to manipulate the cards in a deck by a rule or card ability. See {ref:rule_deck_location}.
+    text: 牌组是有序的。牌组中每张卡牌的位置必须保持不变，除非有规则或卡牌能力明确指示玩家操作牌组中的卡牌。参见{ref:rule_deck_location}。
     rules:
     - rule: rule_deck_order_while_searching
-      text: While searching a deck, a player is not required to maintain the order of the searched cards or indicate the previous location of any card found by the search. Note that the deck is always shuffled upon completion of the search, as required by {ref:rule_shuffle_deck_after_search}.
-      local_text: 在搜寻牌组期间，玩家不需要保持被搜寻的卡牌的顺序，也不需要指明被搜寻到的任意卡牌先前所在的位置。注意在搜寻结束后，牌组总是会被洗混，参见{ref:rule_shuffle_deck_after_search}。
-    local_text: 牌组是有序的。牌组中每张卡牌的位置必须保持不变，除非有规则或卡牌能力明确指示玩家操作牌组中的卡牌。参见{ref:rule_deck_location}。
+      text: 在搜寻牌组期间，玩家不需要保持被搜寻的卡牌的顺序，也不需要指明被搜寻到的任意卡牌先前所在的位置。注意在搜寻结束后，牌组总是会被洗混，参见{ref:rule_shuffle_deck_after_search}。
   - rule: rule_deck_size_open_info
-    text: The number of cards in a deck is open information. Any player may count the number of cards in a deck at any time.
-    local_text: 牌组中卡牌的数量是公开信息。任意玩家都可以在任意时间清点牌组中卡牌的数量。
+    text: 牌组中卡牌的数量是公开信息。任意玩家都可以在任意时间清点牌组中卡牌的数量。
   - rule: rule_deck_inactive
-    text: Cards in a deck are inactive.
-    local_text: 牌组中的卡牌是闲置的。
+    text: 牌组中的卡牌是闲置的。
   - rule: rule_deck_name
-    text: Each player's deck has its own name as a means of differentiating between the two.
-    local_text: 每位玩家的牌组都具有其各自的名称，作为区别二者的方式。
+    text: 每位玩家的牌组都具有其各自的名称，作为区别二者的方式。
   - subsection: subsec_rnd
-    text: R&D
+    text: 研发中心
     toc:
     snippet: R&D stands for Research and Development. It represents upcoming projects and acquisitions the Corp will soon have at their disposal.
     rules:
     - rule: rule_rnd_name
-      text: '{term:R&D} is the name for the Corp''s deck. It is also one of the Corp''s central servers. See {ref:subsec_central_servers}.'
-      local_text: '{term:研发中心}是公司牌组的名称，也是公司的一台中央服务器。参见{ref:subsec_central_servers}。'
+      text: '{term:研发中心}是公司牌组的名称，也是公司的一台中央服务器。参见{ref:subsec_central_servers}。'
     - rule: rule_rnd_empty_rnd
-      text: If the Corp must ever draw from R&D while it is empty, the Runner wins the game. See {ref:sec_ending_the_game}.
-      local_text: 如果在研发中心为空时，公司必须从中抽牌，则潜袭者赢得游戏胜利。参见{ref:sec_ending_the_game}。
-    local_text: 研发中心
+      text: 如果在研发中心为空时，公司必须从中抽牌，则潜袭者赢得游戏胜利。参见{ref:sec_ending_the_game}。
   - subsection: subsec_stack
-    text: Stack
+    text: 存储栈
     toc:
     snippet: 'The stack represents the Runner''s untapped potential: future plans, connections, and opportunities they have yet to discover.'
     rules:
     - rule: rule_stack_name
-      text: The {term:stack} is the name for the Runner's deck.
-      local_text: '{term:存储栈}是潜袭者牌组的名称。'
-    local_text: 存储栈
-  local_text: 牌组
+      text: '{term:存储栈}是潜袭者牌组的名称。'
 - section: sec_hand
-  text: Hand
+  text: 手牌
   rules:
   - rule: rule_hand
-    text: A player's {term:hand} is the zone in which they hold the cards they have drawn from their deck. Cards can be added to a player's hand by other rules and card abilities as well. During setup, each player draws a starting hand. See {ref:sec_starting_the_game}.
-    local_text: 玩家的{term:手牌}是其持有从其牌组中所抽取的卡牌的区域。卡牌也能通过其他规则与卡牌能力加入玩家的手牌。在游戏设置过程中，每位玩家抽取初始手牌。参见{ref:sec_starting_the_game}。
+    text: 玩家的{term:手牌}是其持有从其牌组中所抽取的卡牌的区域。卡牌也能通过其他规则与卡牌能力加入玩家的手牌。在游戏设置过程中，每位玩家抽取初始手牌。参见{ref:sec_starting_the_game}。
   - rule: rule_hand_secret
-    text: A player's hand is kept secret from their opponent. A player may look at the cards in their own hand, but not at any of the cards in their opponent's hands.
-    local_text: 玩家的手牌对其对手保密。玩家可以查看其手牌中的卡牌，但不能查看其对手手牌中的任意卡牌。
+    text: 玩家的手牌对其对手保密。玩家可以查看其手牌中的卡牌，但不能查看其对手手牌中的任意卡牌。
   - rule: rule_hand_unordered
-    text: Hands are not ordered. A player may freely arrange the cards in their hand in any order at any time.
-    local_text: 手牌是无序的。玩家可以在任意时间以任意顺序随意排列其手牌中的卡牌。
+    text: 手牌是无序的。玩家可以在任意时间以任意顺序随意排列其手牌中的卡牌。
   - rule: rule_hand_size_open_info
-    text: The number of cards in a hand is open information to all players. Any player may count the number of cards in a hand at any time.
-    local_text: 手牌中卡牌的数量对所有玩家都是公开信息。任意玩家都可以在任意时间清点手牌中卡牌的数量。
+    text: 手牌中卡牌的数量对所有玩家都是公开信息。任意玩家都可以在任意时间清点手牌中卡牌的数量。
   - rule: rule_hand_inactive
-    text: Cards in a hand are inactive.
-    local_text: 手牌中的卡牌是闲置的。
+    text: 手牌中的卡牌是闲置的。
   - rule: rule_maximum_hand_size
-    text: Each player has a maximum hand size, usually five. A player may have any number of cards in their hand at any given time, but during the discard phase of a player's turn they must discard cards from their hand until there are no more cards in their hand than their maximum hand size allows. See {ref:sec_discard_phase}.
-    local_text: 每位玩家都有手牌上限，通常为五。玩家在任何时间都可以在其手牌中拥有任意数量的卡牌，但在其回合的弃牌阶段中，玩家必须从其手牌弃除卡牌，直到其手牌中的卡牌数量不超过其手牌上限所允许的数量。参见{ref:sec_discard_phase}。
+    text: 每位玩家都有手牌上限，通常为五。玩家在任何时间都可以在其手牌中拥有任意数量的卡牌，但在其回合的弃牌阶段中，玩家必须从其手牌弃除卡牌，直到其手牌中的卡牌数量不超过其手牌上限所允许的数量。参见{ref:sec_discard_phase}。
   - rule: rule_hand_name
-    text: Each player's hand has its own name as a means of differentiating between the two.
-    local_text: 每位玩家的手牌都具有其各自的名称，作为区别二者的方式。
+    text: 每位玩家的手牌都具有其各自的名称，作为区别二者的方式。
   - subsection: subsec_hq
-    text: HQ
+    text: 总部
     toc:
     snippet: HQ stands for Headquarters. It represents the projects, staff, technology, and other assets the Corp is authorized to deploy.
     rules:
     - rule: rule_hq_name
-      text: '{term:HQ} is the name for the Corp''s hand. It is also one of the Corp''s central servers. See {ref:subsec_central_servers}.'
-      local_text: '{term:总部}是公司手牌的名称。也是公司的一台中央服务器。参见{ref:subsec_central_servers}。'
+      text: '{term:总部}是公司手牌的名称。也是公司的一台中央服务器。参见{ref:subsec_central_servers}。'
     - rule: rule_identity_represents_hq
-      text: The Corp's identity card represents their HQ server for the purposes of gameplay. Ice protecting HQ is installed in front of the Corp's identity card and upgrades installed in the root of HQ are installed behind the Corp's identity card.
-      local_text: 在游戏过程中，公司的特性卡牌代表其总部服务器。保护总部的防火墙会被安装在公司的特性卡牌前方，安装在总部根目录中的升级则放置在公司的特性卡牌之后。
-    local_text: 总部
+      text: 在游戏过程中，公司的特性卡牌代表其总部服务器。保护总部的防火墙会被安装在公司的特性卡牌前方，安装在总部根目录中的升级则放置在公司的特性卡牌之后。
   - subsection: subsec_grip
-    text: Grip
+    text: 操控器
     toc:
     snippet: The grip represents the Runner's currently accessible thoughts, plans, knowledge, potential social connections, and other intangible information that can be leveraged.
     rules:
     - rule: rule_grip_name
-      text: The {term:grip} is the name for the Runner's hand.
-      local_text: '{term:操控器}是潜袭者手牌的名称。'
-    local_text: 操控器
-  local_text: 手牌
+      text: '{term:操控器}是潜袭者手牌的名称。'
 - section: sec_discard_pile
-  text: Discard Pile
+  text: 弃牌堆
   rules:
   - rule: rule_discard_pile
-    text: A player's {term:discard pile} is the zone in which they place cards that have been trashed or discarded. Discard piles start the game empty.
-    local_text: 弃牌堆是玩家放置其销毁或弃除的卡牌的区域。游戏开始时弃牌堆为空。
+    text: 弃牌堆是玩家放置其销毁或弃除的卡牌的区域。游戏开始时弃牌堆为空。
   - rule: rule_discard_pile_unordered
-    text: Discard piles are not ordered. A player may freely arrange the cards in their discard pile in any order at any time.
-    local_text: 弃牌堆是无序的。玩家可以在任意时间以任意顺序随意排列其弃牌堆中的卡牌。
+    text: 弃牌堆是无序的。玩家可以在任意时间以任意顺序随意排列其弃牌堆中的卡牌。
   - rule: rule_discard_pile_open_info
-    text: The number of cards in a discard pile is open information. Any player may count the number of cards in a discard pile at any time.
-    local_text: 弃牌堆中卡牌的数量是公开信息。任意玩家都可以在任意时间清点弃牌堆中卡牌的数量。
+    text: 弃牌堆中卡牌的数量是公开信息。任意玩家都可以在任意时间清点弃牌堆中卡牌的数量。
   - rule: rule_discard_pile_inactive
-    text: Cards in a discard pile are inactive.
-    local_text: 弃牌堆中的卡牌是闲置的。
+    text: 弃牌堆中的卡牌是闲置的。
   - rule: rule_discard_pile_inactive_name
-    text: Each player's discard pile has its own name as a means of differentiating between the two.
-    local_text: 每位玩家的弃牌堆都具有其各自的名称，作为区别二者的方式。
+    text: 每位玩家的弃牌堆都具有其各自的名称，作为区别二者的方式。
   - subsection: subsec_archives
-    text: Archives
+    text: 档案库
     toc:
     snippet: Archives represents the Corp's internal record database of all scrapped, abandoned, or discontinued projects, contracts, assignments, and other endeavors.
     rules:
     - rule: rule_archives_name
-      text: '{term:Archives} is the name for the Corp''s discard pile. It is also one of the Corp''s central servers. See {ref:subsec_central_servers}.'
-      local_text: '{term:档案库}是公司弃牌堆的名称，也是公司的一台中央服务器。参见{ref:subsec_central_servers}。'
+      text: '{term:档案库}是公司弃牌堆的名称，也是公司的一台中央服务器。参见{ref:subsec_central_servers}。'
     - rule: rule_archives_faceup_facedown
-      text: Cards in Archives can be either faceup or facedown. If a Corp card is visible to the Runner when it is trashed or discarded, it is put in Archives faceup. If a Corp card is not visible to the Runner when it is trashed or discarded, then it is put in Archives facedown. Facedown cards in Archives should be oriented horizontally so that the Runner can easily see they are present.
-      local_text: 档案库中的卡牌可以既可以牌面朝上，也可以牌面朝下。如果一张公司卡牌在被销毁或弃除时对潜袭者是可见的，则牌面朝上放入档案库。如果一张公司卡牌在被销毁或弃除时对潜袭者是不可见的，则牌面朝下放入档案库。档案库中牌面朝下的卡牌应当横置，以便潜袭者能够明确且清楚地看到这些卡牌。
+      text: 档案库中的卡牌可以既可以牌面朝上，也可以牌面朝下。如果一张公司卡牌在被销毁或弃除时对潜袭者是可见的，则牌面朝上放入档案库。如果一张公司卡牌在被销毁或弃除时对潜袭者是不可见的，则牌面朝下放入档案库。档案库中牌面朝下的卡牌应当横置，以便潜袭者能够明确且清楚地看到这些卡牌。
     - rule: rule_archives_faceup_open_info
-      text: The faceup cards in Archives are open information. Any player may look through the faceup cards in Archives at any time. The facedown cards in Archives are visible only to the Corp. The Corp may look through the facedown cards in Archives at any time, but the Runner cannot look at them.
-      local_text: 档案库中牌面朝上的卡牌是公开信息。任意玩家都可以在任意时间浏览档案库中牌面朝上的卡牌。档案库中牌面朝下的卡牌只对公司可见。公司可以在任意时间浏览档案库中牌面朝下的卡牌，但是潜袭者不能查看这些卡牌。
-    local_text: 档案库
+      text: 档案库中牌面朝上的卡牌是公开信息。任意玩家都可以在任意时间浏览档案库中牌面朝上的卡牌。档案库中牌面朝下的卡牌只对公司可见。公司可以在任意时间浏览档案库中牌面朝下的卡牌，但是潜袭者不能查看这些卡牌。
   - subsection: subsec_heap
-    text: Heap
+    text: 堆阵
     toc:
     snippet: 'The heap represents what the Runner has lost: their old jobs, favours burned, friends long gone, gear wrecked, and code erased.'
     rules:
     - rule: rule_heap_name
-      text: The {term:heap} is the name for the Runner's discard pile.
-      local_text: '{term:堆阵}是潜袭者弃牌堆的名称。'
+      text: '{term:堆阵}是潜袭者弃牌堆的名称。'
     - rule: rule_heap_open_info
-      text: The cards in the heap are open information. Any player may look through the cards in the heap at any time.
-      local_text: 堆阵中的卡牌是公开信息。任意玩家都可以在任意时间浏览堆阵中的卡牌。
-    local_text: 堆阵
-  local_text: 弃牌堆
+      text: 堆阵中的卡牌是公开信息。任意玩家都可以在任意时间浏览堆阵中的卡牌。
 - section: sec_score_area
-  text: Score Area
-  snippet: The score areas represent major accomplishments for each player in service of their long-term ambitions. The Corp's score area contains all large-scale projects they have seen to completion. The Runner's score area is a memorial to all such initiatives they have successfully disrupted, exposed, or sold details of to the highest bidder.
+  text: 分数区
+  snippet: 分数区代表每位玩家为实现其长期目标而取得的重大成就。公司分数区包含其顺利完成的所有大规模项目。潜袭者分数区则是一座纪念碑，记录了所有被他们成功破坏、曝光、或出售给竞价最高者的凡此所有种种计划。
   rules:
   - rule: rule_score_area
-    text: A player's {term:score area} is the zone in which they place agendas they have scored or stolen. {ref:Sec_score_scoring_steal} details scoring and stealing agendas. Score areas start the game empty.
-    local_text: 玩家的{term:分数区}是其放置已被其计分或窃取的议案的区域。{ref:Sec_score_scoring_steal}详细描述了计分和窃取议案。游戏开始时分数区为空。
+    text: 玩家的{term:分数区}是其放置已被其计分或窃取的议案的区域。{ref:Sec_score_scoring_steal}详细描述了计分和窃取议案。游戏开始时分数区为空。
   - rule: rule_score_area_open_info
-    text: The agendas in a score area are open information. A player may look through or count the agendas in a score area at any time.
-    local_text: 分数区中的议案是公开信息。玩家可以在任意时间浏览或清点分数区中的议案。
+    text: 分数区中的议案是公开信息。玩家可以在任意时间浏览或清点分数区中的议案。
   - rule: rule_score_area_unordered
-    text: Score areas are not ordered. A player may freely arrange the agendas in their score area in any order at any time.
-    local_text: 分数区是无序的。玩家可以在任意时间以任意顺序随意排列其分数区中的议案。
+    text: 分数区是无序的。玩家可以在任意时间以任意顺序随意排列其分数区中的议案。
   - rule: rule_score_area_active_inactive
-    text: Agendas in the Corp's score area are active. Agendas in the Runner's score area are inactive unless stated otherwise.
-    local_text: 公司分数区中的议案是活动的。除非另有说明，否则潜袭者分数区中的议案是闲置的。
-  local_text: 分数区
-  local_snippet: 分数区代表每位玩家为实现其长期目标而取得的重大成就。公司分数区包含其顺利完成的所有大规模项目。潜袭者分数区则是一座纪念碑，记录了所有被他们成功破坏、曝光、或出售给竞价最高者的凡此所有种种计划。
+    text: 公司分数区中的议案是活动的。除非另有说明，否则潜袭者分数区中的议案是闲置的。
 - section: sec_play_area
-  text: Play Area
+  text: 游戏区
   rules:
   - subsection: rule_play_area
-    text: The {term:play area} is the shared active zone into which cards are played or installed. The play area normally starts the game empty except for each of the player's identities.
+    text: '{term:游戏区}是双方玩家共享的、用于打出或安装卡牌的活动区域。通常情况下，除了每位玩家的特性以外，游戏开始时游戏区为空。'
     rules:
     - rule: rule_play_area_start_game
-      text: '{ref:Sec_extra_cards} details cases where an ability may cause cards to start the game in the play area.'
-      local_text: '{ref:Sec_extra_cards}详细描述了某些能力可能导致卡牌在游戏开始时就位于游戏区中的情况。'
-    local_text: '{term:游戏区}是双方玩家共享的、用于打出或安装卡牌的活动区域。通常情况下，除了每位玩家的特性以外，游戏开始时游戏区为空。'
+      text: '{ref:Sec_extra_cards}详细描述了某些能力可能导致卡牌在游戏开始时就位于游戏区中的情况。'
   - rule: rule_play_area_number_location_open_info
-    text: The number of cards in the play area and the location of each card in the play area is always open information.
-    local_text: 游戏区中卡牌的数量，以及游戏区中每张卡牌的位置，始终都是公开信息。
+    text: 游戏区中卡牌的数量，以及游戏区中每张卡牌的位置，始终都是公开信息。
   - rule: rule_play_area_card_open_info
-    text: Whether or not a card itself and its attributes are open information while in the play area is determined by the card's status. Cards that are faceup are open information and can be examined by any player at any time. Cards that are facedown are secret information and can only be examined by the player who controls the card. See {ref:sec_information}.
-    local_text: 当一张卡牌位于游戏区时，其本身及其属性是否为公开信息由该卡牌的状态所决定。牌面朝上的卡牌是公开信息，且可以被任意玩家在任意时间查看。牌面朝下的卡牌是秘密信息，只能被操控该卡牌的玩家查看。参见{ref:sec_information}。
+    text: 当一张卡牌位于游戏区时，其本身及其属性是否为公开信息由该卡牌的状态所决定。牌面朝上的卡牌是公开信息，且可以被任意玩家在任意时间查看。牌面朝下的卡牌是秘密信息，只能被操控该卡牌的玩家查看。参见{ref:sec_information}。
   - subsection: rule_play_area_active_inactive
-    text: Whether or not a card is active while in the play area is determined by the card's status.
+    text: 当一张卡牌位于游戏区时，其是否为活动的由该卡牌的状态所决定。
     rules:
     - rule: rule_play_area_identity
-      text: Identities start the game in the play area and are always active.
-      local_text: 特性在游戏开始时位于游戏区，且始终是活动的。
+      text: 特性在游戏开始时位于游戏区，且始终是活动的。
     - rule: rule_play_area_corp_cards
-      text: Generally, Corp agendas, assets, ice, and upgrades are installed into the play area unrezzed and thus inactive. They are active while rezzed. See {ref:sec_install_uninstall}.
-      local_text: 通常情况下，公司议案、资产、防火墙与升级在被安装到游戏区时是未激活的，因此是闲置的。这些卡牌在已被激活的期间是活动的。参见{ref:sec_install_uninstall}。
+      text: 通常情况下，公司议案、资产、防火墙与升级在被安装到游戏区时是未激活的，因此是闲置的。这些卡牌在已被激活的期间是活动的。参见{ref:sec_install_uninstall}。
     - rule: rule_play_area_runner_cards
-      text: Generally, Runner hardware, programs, and resources are installed into the play area faceup and active. See {ref:sec_install_uninstall}.
-      local_text: 通常情况下，潜袭者硬件、程序与资源是在被到游戏区时是牌面朝上且活动的。参见{ref:sec_install_uninstall}。
+      text: 通常情况下，潜袭者硬件、程序与资源是在被到游戏区时是牌面朝上且活动的。参见{ref:sec_install_uninstall}。
     - rule: rule_play_area_faceup_facedown
-      text: Some Runner cards are installed facedown or turned facedown through card abilities. This is distinct from the status of rezzed/unrezzed that Corp cards can have. Facedown Runner cards are not active. See {ref:sec_facedown_runner_cards}.
-      local_text: 一些潜袭者卡牌是牌面朝下安装的，或是被卡牌能力翻转至牌面朝下。这有别于公司卡牌所具有的已激活/未激活状态。牌面朝下的潜袭者卡牌不是活动的。参见{ref:sec_facedown_runner_cards}。
+      text: 一些潜袭者卡牌是牌面朝下安装的，或是被卡牌能力翻转至牌面朝下。这有别于公司卡牌所具有的已激活/未激活状态。牌面朝下的潜袭者卡牌不是活动的。参见{ref:sec_facedown_runner_cards}。
     - rule: rule_play_area_operations_events
-      text: Operations and events are played into the play area faceup and are active for the duration of their resolution before being trashed. See {ref:sec_playing_events_and_operations}.
-      local_text: 事务与事件在被打出至游戏区时是牌面朝上的，且在其结算期间、被销毁之前是活动的。参见{ref:sec_playing_events_and_operations}。
-    local_text: 当一张卡牌位于游戏区时，其是否为活动的由该卡牌的状态所决定。
+      text: 事务与事件在被打出至游戏区时是牌面朝上的，且在其结算期间、被销毁之前是活动的。参见{ref:sec_playing_events_and_operations}。
   - subsection: rule_play_area_organization
-    text: Some objects in the play area are organized into specific orientations and/or locations.
+    text: 游戏区中的一些物件会按照特定的朝向和/或位置排列。
     rules:
     - rule: rule_play_area_corp_cards_distinct_server
-      text: Corp cards are arranged into distinct servers. Agendas and assets are installed in the roots of remote servers, upgrades are installed in the roots of any servers, and pieces of ice are installed horizontally protecting servers. See {ref:subsec_servers} and {ref:subsec_protecting_a_server}.
-      local_text: 公司卡牌会根据各个的服务器进行排列。议案与资产会被安装在远程服务器的根目录中，升级会被安装在任意服务器的根目录中，防火墙则会被横置安装以保护服务器。参见{ref:subsec_servers}及{ref:subsec_protecting_a_server}。
+      text: 公司卡牌会根据各个的服务器进行排列。议案与资产会被安装在远程服务器的根目录中，升级会被安装在任意服务器的根目录中，防火墙则会被横置安装以保护服务器。参见{ref:subsec_servers}及{ref:subsec_protecting_a_server}。
     - rule: rule_play_area_corp_identity
-      text: The Corp's identity is used to indicate where in the play area HQ exists for the purposes of installing upgrades in the root of HQ and ice protecting HQ. See {ref:subsec_central_servers}.
-      local_text: 公司的特性用于标明总部在游戏区中的位置，以便在总部的根目录中安装升级，以及安装防火墙保护总部。参见{ref:subsec_central_servers}。
+      text: 公司的特性用于标明总部在游戏区中的位置，以便在总部的根目录中安装升级，以及安装防火墙保护总部。参见{ref:subsec_central_servers}。
     - rule: rule_play_area_runner_identity
-      text: The Runner's identity, hardware, programs, and resources do not have specific locations in the play area.
-      local_text: 潜袭者的特性、硬件、程序与资源在游戏区中没有特定的位置。
+      text: 潜袭者的特性、硬件、程序与资源在游戏区中没有特定的位置。
     - rule: rule_play_area_operation_events
-      text: There is no specific location in the play area for operations or events. They are simply played into the play area, where they resolve before being trashed. See {ref:sec_playing_events_and_operations}.
-      local_text: 事务与事件在游戏区中没有特定的位置。这些卡牌只会被打出至游戏区并在此结算，然后被销毁。参见{ref:sec_playing_events_and_operations}。
+      text: 事务与事件在游戏区中没有特定的位置。这些卡牌只会被打出至游戏区并在此结算，然后被销毁。参见{ref:sec_playing_events_and_operations}。
     - rule: rule_play_area_credit_pool
-      text: Each player has a credit pool, which is a location in the play area where credits they control are kept.
-      local_text: 每位玩家各有一个信用池，这是玩家在游戏区中存放其操控的信用点的场所。
+      text: 每位玩家各有一个信用池，这是玩家在游戏区中存放其操控的信用点的场所。
     - rule: rule_play_area_counters
-      text: Counters other than credits have no specific location in the play area. Tag counters are always controlled by the Runner, and bad publicity counters are always controlled by the Corp. Other types of counters are either nonfunctional gameplay aids or appear only in host relationships. See also {ref:sec_counters_and_tokens}.
-      local_text: 在游戏区中除信用点外的指示物没有特定的位置。锁定指示物始终由潜袭者操控，负面声誉指示物始终由公司操控。其他类型的指示物或者是非功能性的游戏辅助道具，或者只出现于附载关系中。参见{ref:sec_counters_and_tokens}。
+      text: 在游戏区中除信用点外的指示物没有特定的位置。锁定指示物始终由潜袭者操控，负面声誉指示物始终由公司操控。其他类型的指示物或者是非功能性的游戏辅助道具，或者只出现于附载关系中。参见{ref:sec_counters_and_tokens}。
     - rule: rule_play_area_installed_hosted
-      text: Some cards can act as install locations for other cards while in the play area, such that cards of a specific type can be hosted directly onto them during the installation process. In this type of host relationship, both the host card and the hosted card are in the play area, but the host relationship can affect certain aspects of either the card or the installation process. See {ref:sec_host}.
-      local_text: 一些卡牌在位于游戏区期间可以作为其他卡牌的安装位置，使得特定类型的卡牌可以在安装过程中直接附载到这些卡牌上。在这类附载关系中，无论是被附载的卡牌还是其所附载的卡牌都位于游戏区中，但是附载关系有可能会影响这些卡牌或是安装过程的某些方面。参见{ref:sec_host}。
+      text: 一些卡牌在位于游戏区期间可以作为其他卡牌的安装位置，使得特定类型的卡牌可以在安装过程中直接附载到这些卡牌上。在这类附载关系中，无论是被附载的卡牌还是其所附载的卡牌都位于游戏区中，但是附载关系有可能会影响这些卡牌或是安装过程的某些方面。参见{ref:sec_host}。
     - rule: rule_play_area_not_installed_hosted
-      text: Some cards can host other cards without installing them. In this type of host relationship, both the host card and the hosted card are in the play area, but the hosted card is not installed and thus not active. See {ref:sec_host}.
-      local_text: 一些卡牌可以被其他卡牌在不安装的情况下附载。在这类附载关系中，无论是被附载的卡牌还是其所附载的卡牌都位于游戏区中，但是后者没有被安装，因此是闲置的。参见{ref:sec_host}。
-    local_text: 游戏区中的一些物件会按照特定的朝向和/或位置排列。
+      text: 一些卡牌可以被其他卡牌在不安装的情况下附载。在这类附载关系中，无论是被附载的卡牌还是其所附载的卡牌都位于游戏区中，但是后者没有被安装，因此是闲置的。参见{ref:sec_host}。
   - subsection: subsec_servers
-    text: Servers
+    text: 服务器
     toc:
     rules:
     - rule: rule_server
-      text: A {term:server} is a set of locations where the Corp installs their cards into the play area and against which the Runner can initiate runs. Whenever a Corp installs an agenda, asset, ice, or upgrade, they must choose a destination server for that card. See {ref:sec_install_uninstall}.
-      local_text: '{term:服务器}是公司将其卡牌安装到游戏区的一系列位置，也是潜袭者可以发起潜袭的对象。每当公司安装议案、资产、防火墙或升级时，其必须为该卡牌选择一台目的地服务器。参见{ref:sec_install_uninstall}。'
+      text: '{term:服务器}是公司将其卡牌安装到游戏区的一系列位置，也是潜袭者可以发起潜袭的对象。每当公司安装议案、资产、防火墙或升级时，其必须为该卡牌选择一台目的地服务器。参见{ref:sec_install_uninstall}。'
     - rule: rule_corp_cards_cannot_be_moved
-      text: Once a Corp card is installed, it cannot be moved from its server without explicit direction from a game rule or card effect.
-      local_text: 公司卡牌一旦被安装，便不能从其服务器移出，除非有游戏规则或卡牌效果的明确指示。
+      text: 公司卡牌一旦被安装，便不能从其服务器移出，除非有游戏规则或卡牌效果的明确指示。
     - rule: rule_server_types
-      text: The two types of servers are central servers and remote servers. See {ref:subsec_central_servers,subsec_remote_servers}, respectively.
-      local_text: 服务器分为中央服务器和远程服务器两类。分别参见{ref:subsec_central_servers,subsec_remote_servers}。
+      text: 服务器分为中央服务器和远程服务器两类。分别参见{ref:subsec_central_servers,subsec_remote_servers}。
     - rule: rule_server_ice
-      text: All servers can have ice installed protecting them. See {ref:subsec_protecting_a_server}.
-      local_text: 所有的服务器都可以安装防火墙以保护之。参见{ref:subsec_protecting_a_server}。
+      text: 所有的服务器都可以安装防火墙以保护之。参见{ref:subsec_protecting_a_server}。
     - rule: rule_server_root
-      text: All servers have a {term:root} where cards can be installed. A central server's root can contain any number of upgrades, while a remote server's root can contain 1 asset or agenda and any number of upgrades. Assets and agendas cannot be installed in the root of a central server.
-      local_text: 所有的服务器都拥有一个可以安装卡牌的{term:根目录}。中央服务器的根目录可以包含任意数量的升级，远程服务器的根目录则可以包含1个资产或议案，以及任意数量的升级。资产与议案不能被安装到中央服务器的根目录当中。
+      text: 所有的服务器都拥有一个可以安装卡牌的{term:根目录}。中央服务器的根目录可以包含任意数量的升级，远程服务器的根目录则可以包含1个资产或议案，以及任意数量的升级。资产与议案不能被安装到中央服务器的根目录当中。
     - rule: rule_server_root_order
-      text: All cards installed in the root of a server are kept in the same orientation and location together. The order in which the cards are installed is open information, but the type of cards installed in the root of a remote server should not be derivable from their orientation or location.
-      local_text: 服务器根目录中安装的所有卡牌都放在相同的位置并保持相同的朝向。卡牌被安装的顺序是公开信息，但是远程服务器根目录中安装的卡牌类型不应根据其朝向或位置可推导得出。
+      text: 服务器根目录中安装的所有卡牌都放在相同的位置并保持相同的朝向。卡牌被安装的顺序是公开信息，但是远程服务器根目录中安装的卡牌类型不应根据其朝向或位置可推导得出。
     - rule: rule_region_unique
-      text: Only 1 {subtype:region} upgrade can be installed in the root of a server at a time. See {ref:subsec_regions}.
-      local_text: 一台服务器的根目录中同一时间只能安装1个{subtype:区域}升级。参见{ref:subsec_regions}。
+      text: 一台服务器的根目录中同一时间只能安装1个{subtype:区域}升级。参见{ref:subsec_regions}。
     - rule: rule_upgrade_server_restriction
-      text: Some upgrades have restrictions limiting them to specific servers. See {ref:rule_x_server_only}.
-      local_text: 一些升级具有限制，只能被安装到特定的服务器。参见{ref:rule_x_server_only}。
+      text: 一些升级具有限制，只能被安装到特定的服务器。参见{ref:rule_x_server_only}。
     - rule: rule_this_server
-      text: Some cards refer to the server where they are located (or the central server corresponding to the zone where they are located) using the phrase "this server". If an ability is initiated by a trigger condition or cost involving the ability's source card moving from a server, its root, or protecting it to another server or to a location not associated with any server, treat "this server" as referring to the server associated with the previous location of the card throughout resolution of that ability. If an ability moves its source card while it is resolving, continue to interpret "this server" based on the card's previous location.
+      text: 一些卡牌会使用“本服务器”指代其所在的服务器（或与其所在区域对应的中央服务器）。如果一项能力通过触发条件或费用发动，且该条件或费用涉及将此能力的来源卡牌从某台服务器、或是其根目录、或是保护该服务器的位置，移动到另一台服务器，或移动到不与任何服务器相关的位置，则在该能力结算的整个过程中，“本服务器”视为指代与其所在卡牌先前的位置相关联的服务器。如果一项能力在结算过程中移动了其来源卡牌，则仍然根据卡牌之前的位置解释“本服务器”。
       examples:
-      - text: The Runner trashes a rezzed {card:Warroid Tracker}. This meets the trigger condition of {card:Warroid Tracker}'s ability, but by the time a checkpoint is resolved and an instance of the ability would become pending, {card:Warroid Tracker} itself is no longer installed. The use of "this server" in the trigger condition still refers to the server from which {card:Warroid Tracker} was trashed, not to the server of {card:Warroid Tracker}'s new location in Archives.
-        local_text: 潜袭者销毁已激活的{card:生化战士追迹者}。这满足了{card:生化战士追迹者}的能力的触发条件，但在检查点结算、这项能力的一个实例将要变为待定时，{card:生化战士追迹者}其自身不再是已安装的。其触发条件中的“本服务器”仍然指代{card:生化战士追迹者}被销毁时所在的服务器，而不是{card:生化战士追迹者}的新位置所在的档案库对应的服务器。
-      - text: The Corp uses the ability granted by {card:ZATO City Grid} to trash {card:Border Control} and resolve its first subroutine. The phrase "this server" in that subroutine refers to the server from which the {card:Border Control} was trashed. However, {card:Border Control} is no longer protecting that server, so it is not included in the number of ice counted.
-        local_text: 示例：公司使用{card:保密行政区网阵}所赋予的能力销毁{card:边境管控}并结算其第一条子进程。该子进程中的“本服务器”仍然指代{card:边境管控}被销毁时所在的服务器。然而，由于{card:边境管控}已经不再保护该服务器，因此其不会被计入保护该服务器的防火墙数量之中。
-      - text: The Corp uses {card:Nanisivik Grid} to turn a facedown {card:Border Control} in Archives faceup and resolve its first subroutine. {card:Border Control} was not moved between servers, so "this server" in that subroutine refers to Archives.
-        local_text: 公司使用{card:纳尼西维克网阵}，将档案库中一张牌面朝下的{card:边境管控}翻转至牌面朝上，并结算其第一条子进程。由于{card:边境管控}并没有在服务器之间转移，因此该子进程中的“本服务器”指代档案库。
-      local_text: 一些卡牌会使用“本服务器”指代其所在的服务器（或与其所在区域对应的中央服务器）。如果一项能力通过触发条件或费用发动，且该条件或费用涉及将此能力的来源卡牌从某台服务器、或是其根目录、或是保护该服务器的位置，移动到另一台服务器，或移动到不与任何服务器相关的位置，则在该能力结算的整个过程中，“本服务器”视为指代与其所在卡牌先前的位置相关联的服务器。如果一项能力在结算过程中移动了其来源卡牌，则仍然根据卡牌之前的位置解释“本服务器”。
+      - text: 潜袭者销毁已激活的{card:生化战士追迹者}。这满足了{card:生化战士追迹者}的能力的触发条件，但在检查点结算、这项能力的一个实例将要变为待定时，{card:生化战士追迹者}其自身不再是已安装的。其触发条件中的“本服务器”仍然指代{card:生化战士追迹者}被销毁时所在的服务器，而不是{card:生化战士追迹者}的新位置所在的档案库对应的服务器。
+      - text: 示例：公司使用{card:保密行政区网阵}所赋予的能力销毁{card:边境管控}并结算其第一条子进程。该子进程中的“本服务器”仍然指代{card:边境管控}被销毁时所在的服务器。然而，由于{card:边境管控}已经不再保护该服务器，因此其不会被计入保护该服务器的防火墙数量之中。
+      - text: 公司使用{card:纳尼西维克网阵}，将档案库中一张牌面朝下的{card:边境管控}翻转至牌面朝上，并结算其第一条子进程。由于{card:边境管控}并没有在服务器之间转移，因此该子进程中的“本服务器”指代档案库。
     - rule: rule_another_server
-      text: If an ability on a card currently or previously located in a server, its root, or protecting it  refers to "another server", this means any server except "this server" as interpreted by {ref:rule_this_server}. If a card's abilities involve choosing a server, "another server" in a linked ability means any server except the chosen server. If neither of the previous cases apply and a run is in progress, "another server" means any server except the attacked server.
-      local_text: 如果当前或先前位于一台服务器——无论是其根目录中还是保护此服务器——的一张卡牌上的能力涉及“另一台服务器”，则其含义是除了根据规则{ref:rule_this_server}所诠释的“本服务器”以外的任意服务器。如果一张卡牌上的能力涉及选择一台服务器，则与之相关联的能力中的“另一台服务器”指的是除了所选服务器以外的任意服务器。如果以上两种情况都不适用，而当前有一次正在进行的潜袭，则“另一台服务器”指的是除了被攻击的服务器以外的任意服务器。
+      text: 如果当前或先前位于一台服务器——无论是其根目录中还是保护此服务器——的一张卡牌上的能力涉及“另一台服务器”，则其含义是除了根据规则{ref:rule_this_server}所诠释的“本服务器”以外的任意服务器。如果一张卡牌上的能力涉及选择一台服务器，则与之相关联的能力中的“另一台服务器”指的是除了所选服务器以外的任意服务器。如果以上两种情况都不适用，而当前有一次正在进行的潜袭，则“另一台服务器”指的是除了被攻击的服务器以外的任意服务器。
     - rule: rule_host_server
-      text: If an ability on an object uses the phrase "this server", and that object is hosted on another object (see {ref:sec_host}), the server referred to is the server of the host object.
-      local_text: 如果一个物件上的一项能力涉及“本服务器”，且该物件负载另一个物件（参见{ref:sec_host}），则“本服务器”指代被附载的物件的服务器。
-    local_text: 服务器
+      text: 如果一个物件上的一项能力涉及“本服务器”，且该物件负载另一个物件（参见{ref:sec_host}），则“本服务器”指代被附载的物件的服务器。
   - subsection: subsec_central_servers
-    text: Central Servers
+    text: 中央服务器
     toc:
     rules:
     - rule: rule_three_central_servers
-      text: 'The Corp has three {term:central servers} at all times. Each central server corresponds to one of the Corp''s zones: HQ corresponds to the Corp''s hand, R&D corresponds to the Corp''s deck, and Archives corresponds to the Corp''s discard pile.'
-      local_text: 公司在任何时候都拥有三台中央服务器。每台中央服务器对应公司的一个区域：总部对应公司的手牌，研发中心对应公司的牌组，以及档案库对应公司的弃牌堆。
+      text: 公司在任何时候都拥有三台中央服务器。每台中央服务器对应公司的一个区域：总部对应公司的手牌，研发中心对应公司的牌组，以及档案库对应公司的弃牌堆。
     - rule: rule_hq_identity
-      text: The Corp's identity is in the play area to indicate the location of HQ relative to other servers, but it is not in HQ, in the root of HQ, or protecting HQ. The cards in HQ are held in the Corp's hand. The upgrades installed in the root of HQ are placed in a vertical orientation near the Corp's identity. The ice installed protecting HQ are placed in a horizontal orientation in front of the Corp's identity outwards towards the Runner.
-      local_text: 公司特性位于游戏区中，标明了总部相对于其他服务器的位置，但是特性既不在总部、也不在总部的根目录、也不保护总部。总部中的卡牌位于公司的手牌中。安装在总部根目录中的升级竖置在公司特性附近。安装以保护总部的防火墙横置在公司特性之前，以朝向潜袭者的方向为向外。
+      text: 公司特性位于游戏区中，标明了总部相对于其他服务器的位置，但是特性既不在总部、也不在总部的根目录、也不保护总部。总部中的卡牌位于公司的手牌中。安装在总部根目录中的升级竖置在公司特性附近。安装以保护总部的防火墙横置在公司特性之前，以朝向潜袭者的方向为向外。
     - rule: rule_rnd_deck
-      text: The Corp's deck is placed in the play area to indicate the location of R&D relative to other servers, but the cards in the deck are not installed. The cards in R&D are the cards in the deck. The upgrades installed in the root of R&D are placed in a vertical orientation near the deck. The ice installed protecting R&D are placed in a horizontal orientation in front of the deck outwards towards the Runner.
-      local_text: 公司的牌组放置在游戏区中，标明了研发中心相对于其他服务器的位置，但是牌组中的卡牌不是已安装的。研发中心中的卡牌即牌组中的卡牌。安装在研发中心根目录的升级竖置在牌组附近。安装以保护研发中心的防火墙横置在牌组之前，以朝向潜袭者的方向为向外。
+      text: 公司的牌组放置在游戏区中，标明了研发中心相对于其他服务器的位置，但是牌组中的卡牌不是已安装的。研发中心中的卡牌即牌组中的卡牌。安装在研发中心根目录的升级竖置在牌组附近。安装以保护研发中心的防火墙横置在牌组之前，以朝向潜袭者的方向为向外。
     - rule: rule_archives_discard_pile
-      text: The Corp's discard pile is placed in the play area to indicate the location of Archives relative to other servers, but the cards in the discard pile are not installed. The cards in Archives are the cards in the discard pile. The upgrades installed in the root of Archives are placed in a vertical orientation near the discard pile. The ice installed protecting Archives are placed in a horizontal orientation in front of the discard pile outwards towards the Runner.
-      local_text: 公司的弃牌堆放置在游戏区中，标明了档案库相对于其他服务器的位置，但是弃牌堆中的卡牌不是已安装的。档案库中的卡牌即弃牌堆中的卡牌。安装在档案库根目录的升级竖置在弃牌堆附近。安装以保护档案库的防火墙横置在弃牌堆之前，以朝向潜袭者的方向为向外。
-    local_text: 中央服务器
+      text: 公司的弃牌堆放置在游戏区中，标明了档案库相对于其他服务器的位置，但是弃牌堆中的卡牌不是已安装的。档案库中的卡牌即弃牌堆中的卡牌。安装在档案库根目录的升级竖置在弃牌堆附近。安装以保护档案库的防火墙横置在弃牌堆之前，以朝向潜袭者的方向为向外。
   - subsection: subsec_remote_servers
-    text: Remote Servers
+    text: 远程服务器
     toc:
     rules:
     - rule: rule_remote_server
-      text: A {term:remote server} is the only type of server that can contain an asset or agenda in its root.
-      local_text: '{term:远程服务器}是唯一能够在其根目录中包含资产或议案的服务器类型。'
+      text: '{term:远程服务器}是唯一能够在其根目录中包含资产或议案的服务器类型。'
     - rule: rule_creating_remote_servers
-      text: The Corp starts the game with no remote servers. The Corp creates a new remote server by declaring it as the destination server for a card they are about to install. There is usually no limit to the number of remote servers the Corp can have at any given time.
-      local_text: 游戏开始时，公司没有远程服务器。公司声明一台新的远程服务器，作为其将要安装的一张卡牌的目的地服务器，通过这种方式来建立一台新的远程服务器。通常来说，在任何时间公司可以拥有的远程服务器数量都是没有限制的。
+      text: 游戏开始时，公司没有远程服务器。公司声明一台新的远程服务器，作为其将要安装的一张卡牌的目的地服务器，通过这种方式来建立一台新的远程服务器。通常来说，在任何时间公司可以拥有的远程服务器数量都是没有限制的。
     - rule: rule_separate_remote_servers
-      text: Cards installed in the roots of separate remote servers are placed in a vertical orientation in a row extending away from the central servers to indicate the locations of the remote servers relative to other servers. The ice installed protecting each remote server are placed in a horizontal orientation in front of any cards in the root of that server, outwards towards the Runner.
-      local_text: 安装在不同远程服务器根目录的卡牌竖向放置，排成一行，向远离中央服务器的方向延伸出去，以标明远程服务器相对于其他服务器的位置。被安装以保护每台远程服务器的防火墙横置在该服务器根目录的所有卡牌之前，以朝向潜袭者的方向为向外。
+      text: 安装在不同远程服务器根目录的卡牌竖向放置，排成一行，向远离中央服务器的方向延伸出去，以标明远程服务器相对于其他服务器的位置。被安装以保护每台远程服务器的防火墙横置在该服务器根目录的所有卡牌之前，以朝向潜袭者的方向为向外。
     - rule: rule_remote_server_existence
-      text: A remote server exists as long as there is at least one card in the root of or protecting it. A remote server can be made up of only ice protecting it, only cards installed in it, or a combination of both.
-      local_text: 只要有至少一张卡牌位于一台远程服务器的根目录中或保护该服务器，这台远程服务器就存在。一台远程服务器可以只由保护该服务器的防火墙组成，也可以只由安装在其根目录中的卡牌组成，也可以由二者共同组成。
+      text: 只要有至少一张卡牌位于一台远程服务器的根目录中或保护该服务器，这台远程服务器就存在。一台远程服务器可以只由保护该服务器的防火墙组成，也可以只由安装在其根目录中的卡牌组成，也可以由二者共同组成。
     - rule: rule_remote_server_cease_to_exist
-      text: During checkpoints, a remote server ceases to exist if there are no cards installed in its root and no cards installed protecting it. If a server ceases to exist during a run against it, then the run ends after any currently open paid ability window closes. Unless the run has already been declared either successful or unsuccessful, it is neither. See {ref:rule_server_ceases_to_exist}.
-      local_text: 在检查点中，如果一台服务器的根目录中没有已安装的卡牌，也没有已安装的卡牌保护该服务器，则这台服务器消失。如果一台服务器在对其的一次潜袭中消失，则在当前任意开放的付费能力窗口关闭时，这次潜袭结束。除非这次潜袭已经被声明为成功或失败，否则其既不成功也不失败。参见{ref:rule_server_ceases_to_exist}。
+      text: 在检查点中，如果一台服务器的根目录中没有已安装的卡牌，也没有已安装的卡牌保护该服务器，则这台服务器消失。如果一台服务器在对其的一次潜袭中消失，则在当前任意开放的付费能力窗口关闭时，这次潜袭结束。除非这次潜袭已经被声明为成功或失败，否则其既不成功也不失败。参见{ref:rule_server_ceases_to_exist}。
     - rule: rule_limit_remote_servers
-      text: Some abilities limit the number of remote servers. While such an ability is active, the Corp cannot create a new remote server if this would raise the total number of remote servers above the specified limit. During {ref:step_checkpoint_card_restrictions} of each checkpoint, if there are more remote servers than an active limit allows, the Corp player chooses a number of servers equal to the limit. The checkpoint then trashes all cards in the root of and protecting each remote server that was not chosen.
+      text: 一些能力会限制远程服务器的的数量。在此类能力生效期间，如果建立一台新的远程服务器会导致远程服务器的总数超过指定的限制，则公司不能建立这台服务器。在每个检查点的{ref:step_checkpoint_card_restrictions}中，如果远程服务器的数量超过了某个生效的限制所允许的数量，则公司玩家从中选择数量等于该限制的服务器。检查点随后会销毁每个未被被选中的远程服务器根目录中的所有卡牌，以及保护这些服务器的所有卡牌。
       examples:
-      - text: 'The Corp''s identity is {card:Earth Station: SEA Headquarters}, which has the ability "Limit 1 remote server." If any remote servers exist, the Corp cannot create a new remote server.'
-        local_text: 公司特性为{card:地球站：空梯管理局总部}，该特性拥有能力“限制1台远程服务器”。如果当前存在任意的远程服务器，则公司不能建立新的远程服务器。
-      local_text: 一些能力会限制远程服务器的的数量。在此类能力生效期间，如果建立一台新的远程服务器会导致远程服务器的总数超过指定的限制，则公司不能建立这台服务器。在每个检查点的{ref:step_checkpoint_card_restrictions}中，如果远程服务器的数量超过了某个生效的限制所允许的数量，则公司玩家从中选择数量等于该限制的服务器。检查点随后会销毁每个未被被选中的远程服务器根目录中的所有卡牌，以及保护这些服务器的所有卡牌。
-    local_text: 远程服务器
+      - text: 公司特性为{card:地球站：空梯管理局总部}，该特性拥有能力“限制1台远程服务器”。如果当前存在任意的远程服务器，则公司不能建立新的远程服务器。
   - subsection: subsec_protecting_a_server
-    text: Protecting a Server
+    text: 保护服务器
     toc:
     rules:
     - rule: rule_ice_ordered
-      text: An installed piece of ice is arranged in a horizontal position in front of the server it is protecting. Ice are ordered within the play area. The location of a piece of ice is defined by the server it is protecting and the number of other pieces of ice between it and the server.
-      local_text: 已安装的防火墙横置在其保护的服务器前方。游戏区中的防火墙是有序的。一层防火墙的位置由其保护的服务器及其与该服务器之间其他防火墙的层数所决定。
+      text: 已安装的防火墙横置在其保护的服务器前方。游戏区中的防火墙是有序的。一层防火墙的位置由其保护的服务器及其与该服务器之间其他防火墙的层数所决定。
     - rule: rule_innermost_ice
-      text: If there is no other ice between the server and a piece of ice, that ice is the innermost piece of ice. If there is no ice farther from the server than a piece of ice, that ice is the outermost piece of ice. If there is only one piece of ice protecting a server, that ice is both the innermost and the outermost piece of ice.
-      local_text: 如果在一层防火墙与服务器之间没有其他防火墙，则该防火墙是最内层防火墙。对于一层防火墙，如果没有其他与之相比距离服务器更远的防火墙，则该防火墙是最外层防火墙。如果只有一层防火墙保护服务器，则该防火墙既是最内层防火墙，也是最外层防火墙。
+      text: 如果在一层防火墙与服务器之间没有其他防火墙，则该防火墙是最内层防火墙。对于一层防火墙，如果没有其他与之相比距离服务器更远的防火墙，则该防火墙是最外层防火墙。如果只有一层防火墙保护服务器，则该防火墙既是最内层防火墙，也是最外层防火墙。
     - rule: rule_ice_same_position
-      text: If two pieces of ice protecting two different servers share the same number of ice between them and their respective servers, those pieces of ice are considered to be in the same position.
-      local_text: 保护两台不同服务器的两层防火墙如果分别与各自的服务器之间存在相同数量的防火墙，则这两层防火墙被视作位于相同的位置。
+      text: 保护两台不同服务器的两层防火墙如果分别与各自的服务器之间存在相同数量的防火墙，则这两层防火墙被视作位于相同的位置。
     - rule: rule_ice_install_outermost
-      text: When the Corp installs a piece of ice protecting a server, they must place it in the outermost position protecting that server. See {ref:sec_install_uninstall}.
-      local_text: 当公司安装一层防火墙以保护一台服务器时，其必须将该防火墙置于保护该服务器的最外层位置。参见{ref:sec_install_uninstall}。
+      text: 当公司安装一层防火墙以保护一台服务器时，其必须将该防火墙置于保护该服务器的最外层位置。参见{ref:sec_install_uninstall}。
     - rule: rule_ice_move
-      text: If the number of other ice between a piece of ice and the server changes, its position will change accordingly, moving either closer or farther from the server. If this occurs while that ice is being approached, encountered, or passed during a run, the Runner's position attacking the server changes in the same way.
-      local_text: 如果在一层防火墙与服务器之间的其他防火墙数量发生变化，则该防火墙的位置也会相应地发生变化，视情况移动至距离服务器更近或更远的位置。如果这发生在一次潜袭中该防火墙被接驳、遭遇或通过期间，则潜袭者攻击该服务器的位置也以同样的方式变化。
-    local_text: 保护服务器
-  local_text: 游戏区
+      text: 如果在一层防火墙与服务器之间的其他防火墙数量发生变化，则该防火墙的位置也会相应地发生变化，视情况移动至距离服务器更近或更远的位置。如果这发生在一次潜袭中该防火墙被接驳、遭遇或通过期间，则潜袭者攻击该服务器的位置也以同样的方式变化。
 - section: sec_bank
-  text: Bank
+  text: 银行
   rules:
   - rule: rule_bank_counter_supply
-    text: The {term:bank} is an inactive zone shared by both players. It holds an unlimited supply of counters for use during gameplay.
-    local_text: '{term:银行}是由双方玩家共享的闲置区域。银行拥有无限量的指示物，供玩家在游戏中使用。'
+    text: '{term:银行}是由双方玩家共享的闲置区域。银行拥有无限量的指示物，供玩家在游戏中使用。'
   - rule: rule_counters_default_from_bank
-    text: Counters placed or loaded onto a card are taken from the bank unless otherwise specified. Counters gained by players are taken from the bank unless otherwise specified.
-    local_text: 除非另有说明，否则放置或填装到一张卡牌上的指示物从银行拿取。除非另有说明，否则玩家获得的指示物从银行拿取。
+    text: 除非另有说明，否则放置或填装到一张卡牌上的指示物从银行拿取。除非另有说明，否则玩家获得的指示物从银行拿取。
   - rule: rule_spent_counters_returned_to_bank
-    text: Credits and other counters that are spent to pay costs return to the bank.
-    local_text: 被花费以支付费用的信用点及其他指示物返回银行。
+    text: 被花费以支付费用的信用点及其他指示物返回银行。
   - rule: rule_illegal_location_counters_returned_to_bank
-    text: Counters that are not in a legal location return to the bank during checkpoints. See {ref:sec_checkpoints}.
-    local_text: 在检查点中，所有并不位于合法位置的指示物返回银行。参见{ref:sec_checkpoints}。
+    text: 在检查点中，所有并不位于合法位置的指示物返回银行。参见{ref:sec_checkpoints}。
   - rule: rule_cards_never_in_bank
-    text: Cards are never located in the bank.
-    local_text: 卡牌不会位于银行中。
-  local_text: 银行
+    text: 卡牌不会位于银行中。
 - section: sec_set_aside
-  text: Set Aside
+  text: 置于一旁
   rules:
   - rule: rule_set_aside_zone
-    text: The {term:set-aside zone} is an inactive zone shared by both players. It is used as a temporary holding space for objects being affected by abilities.
-    local_text: '{term:置于一旁区}是由双方玩家共享的闲置区域。这一区域用于临时放置受到能力影响的物件。'
+    text: '{term:置于一旁区}是由双方玩家共享的闲置区域。这一区域用于临时放置受到能力影响的物件。'
   - rule: rule_set_aside
-    text: If an object is "set aside", it is moved from its current zone to the set-aside zone.
-    local_text: 如果一个物件被“置于一旁”，则该物件从其当前区域移动至置于一旁区。
+    text: 如果一个物件被“置于一旁”，则该物件从其当前区域移动至置于一旁区。
   - rule: rule_set_aside_zone_passthrough
-    text: An ability cannot see the set-aside zone unless it specifically sets objects aside or refers to set-aside objects. Outside of these cases, cards moved into another zone from the set-aside zone are treated as though they entered that zone directly from their location prior to being set aside.
+    text: 置于一旁区对能力是不可见的，除非该能力明确地将物件置于一旁或提到被置于一旁的物件。除这些情况之外，从置于一旁区移动至另一区域的卡牌，视为从该卡牌被置于一旁之前所在的位置直接进入到该区域。
     examples:
-    - text: The Runner is playing as {card:Exile} and plays Test Run, searching their heap for a program. Although the program is set aside before being installed, {card:Exile}'s ability treats it as though it were installed directly from the heap, and so {card:Exile} will draw a card.
-      local_text: 潜袭者使用{card:流亡者：街头猎鹰}并打出{card:测试运行}，在其堆阵搜寻一个程序。虽然该程序在被安装前会被置于一旁，但{card:流亡者：街头猎鹰}的能力仍然将其视为是直接从堆阵安装的，因此{card:流亡者：街头猎鹰}抽一张牌。
-    local_text: 置于一旁区对能力是不可见的，除非该能力明确地将物件置于一旁或提到被置于一旁的物件。除这些情况之外，从置于一旁区移动至另一区域的卡牌，视为从该卡牌被置于一旁之前所在的位置直接进入到该区域。
+    - text: 潜袭者使用{card:流亡者：街头猎鹰}并打出{card:测试运行}，在其堆阵搜寻一个程序。虽然该程序在被安装前会被置于一旁，但{card:流亡者：街头猎鹰}的能力仍然将其视为是直接从堆阵安装的，因此{card:流亡者：街头猎鹰}抽一张牌。
   - rule: rule_searched_cards_set_aside
-    text: Cards found during a search are set aside facedown while the search completes (in particular, while any deck that was searched is shuffled). See {ref:sec_searching_cards}.
-    local_text: 在一次搜寻中搜寻到的卡牌在搜寻完成的期间（具体来说，指的是在搜寻的牌组被洗混期间）牌面朝下置于一旁。参见{ref:sec_searching_cards}。
+    text: 在一次搜寻中搜寻到的卡牌在搜寻完成的期间（具体来说，指的是在搜寻的牌组被洗混期间）牌面朝下置于一旁。参见{ref:sec_searching_cards}。
   - rule: rule_set_aside_hosted_counters_trash_ability
-    text: Some paid abilities with a trigger cost that uninstalls or forfeits the ability's source card need to refer to or act on that card's hosted cards or counters. These abilities set aside the hosted cards or counters as the trigger cost is paid. See {ref:rule_trash_ability_keeps_track_of_hosted_objects}.
-    local_text: 一些付费能力会将该能力的来源卡牌卸载或废除，作为触发费用，其中有一些需要涉及到或作用于来源卡牌所附载的卡牌或指示物。此类能力在支付触发费用时，会将所负载的卡牌或指示物置于一旁。参见{ref:rule_trash_ability_keeps_track_of_hosted_objects}。
+    text: 一些付费能力会将该能力的来源卡牌卸载或废除，作为触发费用，其中有一些需要涉及到或作用于来源卡牌所附载的卡牌或指示物。此类能力在支付触发费用时，会将所负载的卡牌或指示物置于一旁。参见{ref:rule_trash_ability_keeps_track_of_hosted_objects}。
   - rule: rule_set_aside_default_faceup
-    text: Cards set aside by a card ability are faceup unless the ability specifically instructs that they be set aside facedown.
-    local_text: 被卡牌能力置于一旁的卡牌牌面朝上，除非该能力明确指示这些卡牌在被置于一旁时牌面朝下。
+    text: 被卡牌能力置于一旁的卡牌牌面朝上，除非该能力明确指示这些卡牌在被置于一旁时牌面朝下。
   - rule: rule_facedown_set_aside_distinct_groups
-    text: Facedown cards in the set-aside zone must be kept in distinct groups according to the effect that sets them aside. Cards within such a group are not ordered and can be freely arranged by their controller.
+    text: 在置于一旁区中牌面朝下的卡牌，必须根据将其置于一旁的效果分为彼此不同的组。在这样的组中，卡牌是无序的，且可以被其操控者任意排列。
     examples:
-    - text: The Runner accesses the top card of R&D and does not steal or trash it. On the next turn, the Corp uses {card:Daily Business Show} to draw that card and 1 other card simultaneously, but must put 1 of the drawn cards on the bottom of R&D. While resolving the draw, the cards are set aside facedown, so the Corp can shuffle them. They do not have to tell the Runner whether the previously-accessed card ends up in HQ or on the bottom of R&D.
-      local_text: 潜袭者读取研发中心顶端的卡牌，且并未将其窃取或销毁。公司在下个回合使用{card:每日商业秀}抽取该卡牌与1张其他卡牌，并将1张被抽取的卡牌加入研发中心底端。在结算此次抽牌期间，这些卡牌牌面朝下置于一旁，因此公司可以将这些卡牌洗混。公司无需告知潜袭者先前被读取的卡牌最终位于总部中还是研发中心底端。
-    local_text: 在置于一旁区中牌面朝下的卡牌，必须根据将其置于一旁的效果分为彼此不同的组。在这样的组中，卡牌是无序的，且可以被其操控者任意排列。
-  local_text: 置于一旁
+    - text: 潜袭者读取研发中心顶端的卡牌，且并未将其窃取或销毁。公司在下个回合使用{card:每日商业秀}抽取该卡牌与1张其他卡牌，并将1张被抽取的卡牌加入研发中心底端。在结算此次抽牌期间，这些卡牌牌面朝下置于一旁，因此公司可以将这些卡牌洗混。公司无需告知潜袭者先前被读取的卡牌最终位于总部中还是研发中心底端。
 - section: sec_removed_from_game
-  text: Remove from the Game
+  text: 移出游戏
   rules:
   - rule: rule_removed_from_game_zone
-    text: The {term:removed-from-game zone} is an inactive zone shared by both players. It is used to take cards out of any player's control until the end of the game.
-    local_text: '{term:移出游戏区}是由双方玩家共享的闲置区域。这一区域用于让卡牌脱离任意一位玩家的操控，直到游戏结束。'
+    text: '{term:移出游戏区}是由双方玩家共享的闲置区域。这一区域用于让卡牌脱离任意一位玩家的操控，直到游戏结束。'
   - rule: rule_rfg_move
-    text: If a card is removed from the game, it is moved from its current zone to the removed-from-game zone.
-    local_text: 如果一张卡牌被移出游戏，则该卡牌从其当前区域移动至移出游戏区。
+    text: 如果一张卡牌被移出游戏，则该卡牌从其当前区域移动至移出游戏区。
   - rule: rule_forfeit_rfg
-    text: Forfeiting an agenda removes it from the game. See {ref:movement_forfeit}.
-    local_text: 废除一个议案会将其移出游戏。参见{ref:movement_forfeit}。
+    text: 废除一个议案会将其移出游戏。参见{ref:movement_forfeit}。
   - rule: rule_rfg_inactive
-    text: Cards that have been removed from the game are inactive.
-    local_text: 被移出游戏的卡牌是闲置的。
+    text: 被移出游戏的卡牌是闲置的。
   - rule: rule_rfg_no_interaction
-    text: A card that has been removed from the game cannot move out of the removed-from-game zone or otherwise be interacted with.
-    local_text: 被移出游戏的卡牌不能离开移出游戏区，也无法参与交互。
+    text: 被移出游戏的卡牌不能离开移出游戏区，也无法参与交互。
   - rule: rule_rfg_open_information
-    text: Cards that have been removed from the game are open information. Any player may look through or count the cards that have been removed from the game at any time.
-    local_text: 被移出游戏的卡牌是公开信息。任意玩家都可以在任意时间浏览或清点被移出游戏的卡牌。
-  local_text: 移出游戏
-local_text: 游戏区域
+    text: 被移出游戏的卡牌是公开信息。任意玩家都可以在任意时间浏览或清点被移出游戏的卡牌。
