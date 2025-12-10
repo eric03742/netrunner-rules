@@ -36,7 +36,7 @@ class Config:
   def effective_date_str(self):
     if not self.effective_month in short_month_to_full:
       raise Exception(f'Not a valid month string: {self.effective_month}')
-    return f'{self.effective_day} {short_month_to_full[self.effective_month]} {self.effective_year}'
+    return f'{self.effective_year}年{self.effective_month}月{self.effective_day}日'
   
 def parse_output_types(arguments: list[str]):
   lowercase_arguments = list(map(lambda x: x.lower(), arguments))

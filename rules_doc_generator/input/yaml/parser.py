@@ -14,7 +14,7 @@ def parseTextElement(str: str) -> TextElement:
     text = str[4:].lower()
     capitalize = str[4].isupper()
     ids = text.split(',')
-    return Ref(ids, capitalize, 'and')
+    return Ref(ids, capitalize, '与')
   if str.startswith('ref/'):
     text = str[4:].lower()
     combiner_and_ids = re.split(':|,', text)
@@ -196,7 +196,7 @@ def read_changelog_from_file(config: Config) -> list[FormatText]:
 
 def read_chapter_from_file(section_file: str) -> Chapter:
   print(f"Parsing {section_file}")
-  with open(f'data/input/{section_file}.yaml', "r", encoding="utf8") as stream:
+  with open(f'translation/yaml/{section_file}.yaml', "r", encoding="utf8") as stream:
     yaml_input = load_yaml(stream)
     return parse_chapter(yaml_input)
 
@@ -239,7 +239,12 @@ def yaml_to_document(config: Config) -> Document:
 def read_nrdb_info_from_file() -> dict[str, str]:
   with open(f'generated/nrdb/nrdb.yaml', "r", encoding="utf8") as stream:
     nrdb_info = load_yaml(stream)
-    return nrdb_info
+  
+  with open(f"translation/nrdb/nrdb.yaml", "r", encoding="utf8") as stream2:
+    localize_info = load_yaml(stream2)
+    nrdb_info.update(localize_info)
+
+  return nrdb_info
 
 if __name__ == "__main__":
   doc = yaml_to_document(default_config)

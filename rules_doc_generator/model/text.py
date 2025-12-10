@@ -76,7 +76,7 @@ class Ref:
         ref_text = ref_info.type
         if self.capitalize:
           ref_text = ref_text.capitalize()
-        return mk_link(ref_info.id, f'{ref_text}{spacer}{ref_info.reference}')
+        return mk_link(ref_info.id, f'第{spacer}{ref_info.reference}{spacer}{ref_text}')
       elif len(self.referenced_ids) > 1:
         latex_refs = list(map(lambda ref_id: mk_link(ref_id, lookup_ref(model_data, ref_id).reference), self.referenced_ids))
         joined = f' {self.combiner} '.join([', '.join(latex_refs[:-1]), latex_refs[-1]])
@@ -235,7 +235,7 @@ class Example:
   new: bool
 
   def to_html(self, config: Config, model_data: ModelData) -> str:
-    return f'<li class="Example">Example: {self.text.to_html(config, model_data)}</li>'
+    return f'<li class="Example">示例：{self.text.to_html(config, model_data)}</li>'
 
   def to_latex(self, config: Config, model_data: ModelData) -> str:
     result = r'\emph{'
